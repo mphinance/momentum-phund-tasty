@@ -62,6 +62,8 @@ Open your browser to `http://localhost:8080`
 
 ## Screenshots
 
+![Dashboard Preview](assets/dashboard-preview.png)
+
 The dashboard displays:
 - Net Liquidating Value
 - Buying Power & Utilization %
