@@ -5,12 +5,15 @@ from typing import List, Dict, Optional, Union
 import os
 import asyncio
 from decimal import Decimal
+import time
 
 class TastytradeService:
     def __init__(self):
         self.session: Optional[Session] = None
         self.accounts: List[Account] = []
         self._current_account: Optional[Account] = None
+        self._last_activity: float = 0
+        self._keep_alive_interval: int = 300  # 5 minutes
 
     async def login(self) -> bool:
         """Authenticates using environment variables."""
@@ -23,10 +26,70 @@ class TastytradeService:
                 return False
                 
             self.session = Session(client_secret, refresh_token)
+            self._last_activity = time.time()
             return True
         except Exception as e:
             print(f"Login failed: {e}")
             return False
+
+    async def validate_session(self) -> bool:
+        """
+        Validates if the current session is still active.
+        Returns True if valid, False if needs re-auth.
+        """
+        if not self.session:
+            return False
+        
+        try:
+            # Make a lightweight API call to validate the session
+            await Account.a_get(self.session)
+            self._last_activity = time.time()
+            return True
+        except Exception as e:
+            print(f"Session validation failed: {e}")
+            return False
+
+    async def ensure_session(self) -> bool:
+        """
+        Ensures we have a valid session, re-authenticating if necessary.
+        Call this before any API operation.
+        """
+        if not self.session:
+            return await self.login()
+        
+        # If recent activity, assume session is valid
+        if time.time() - self._last_activity < self._keep_alive_interval:
+            return True
+        
+        # Validate and re-auth if needed
+        if not await self.validate_session():
+            print("Session expired, re-authenticating...")
+            self.session = None
+            self.accounts = []
+            return await self.login()
+        
+        return True
+
+    async def keep_alive(self) -> bool:
+        """
+        Heartbeat to keep the session alive.
+        Makes a lightweight API call to prevent token expiration.
+        Returns True if session is still active.
+        """
+        if not await self.ensure_session():
+            return False
+        
+        try:
+            # Lightweight call - just get account info
+            await Account.a_get(self.session)
+            self._last_activity = time.time()
+            print(f"Keep-alive successful at {time.strftime('%H:%M:%S')}")
+            return True
+        except Exception as e:
+            print(f"Keep-alive failed: {e}")
+            # Try to re-authenticate
+            self.session = None
+            return await self.login()
 
     async def get_accounts(self) -> List[Account]:
         """Fetches all available accounts."""

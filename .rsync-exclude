@@ -1,0 +1,35 @@
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Environment/secrets (keep on server, don't overwrite)
+.env
+
+# Logs and temp files
+*.log
+*.tmp
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
