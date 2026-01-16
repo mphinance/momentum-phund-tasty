@@ -29,9 +29,11 @@ async def main_page():
     # State
     state = {
         'positions': [],
+        'transactions': [],
         'accounts': [],
         'selected_account': None,
         'balance': {},
+        'ytd_deposits': 0.0,
         'last_refresh': None,
         'last_keepalive': None,
         'auto_refresh': False
@@ -50,7 +52,7 @@ async def main_page():
                 # Set default account description for dropdown
                 state['selected_account'] = accs[0]
 
-        # Fetch positions & balance
+        # Fetch positions, balance, transactions & deposits
         try:
             state['balance'] = await service.get_balance(state['selected_account'])
             raw_rows = await service.get_positions(state['selected_account'])
@@ -59,6 +61,11 @@ async def main_page():
             display_rows = service.get_dashboard_rows(raw_rows)
             
             state['positions'] = display_rows
+            
+            # Fetch transactions and YTD deposits for return calculation
+            state['transactions'] = await service.get_transactions(state['selected_account'])
+            state['ytd_deposits'] = await service.get_ytd_deposits(state['selected_account'])
+            
             state['last_refresh'] = datetime.now()
             
             # Update UI
@@ -285,15 +292,15 @@ async def main_page():
             
             net_liq = bal.get('net_liq', 0.0)
             avail_bal = bal.get('equity_buying_power', 0.0)
+            ytd_deposits = state['ytd_deposits']
+            transactions = state['transactions']
             
             # Summary Metrics
             total_pl = sum(p['p_l'] for p in positions) if positions else 0.0
-            total_cost = sum(p['cost_basis'] for p in positions) if positions else 0.0
             
-            # Portfolio P/L % (Return on Account Basis)
-            # Basis = Net Liq - Unrealized P/L (Proxy for Principal + Realized)
-            account_basis = net_liq - total_pl
-            portfolio_pl_pct = (total_pl / account_basis * 100) if account_basis > 0 else 0.0
+            # YTD Return: (Net Liq - Deposits) / Deposits
+            # This shows actual return on invested capital for the year
+            ytd_return_pct = ((net_liq - ytd_deposits) / ytd_deposits * 100) if ytd_deposits > 0 else 0.0
             
             # Cash Utilization
             # Utilized = 1 - (Avail / Net Liq)
@@ -316,10 +323,12 @@ async def main_page():
                     ui.label('P/L').classes('text-gray-400 text-xs uppercase metric-label')
                     ui.label(format_currency(total_pl)).classes(f'text-xl font-bold metric-value {format_color(total_pl)}')
                     
-                # 4. Portfolio P/L %
+                # 4. YTD Return %
                 with ui.card().classes('bg-gray-800 border-l-4 border-yellow-500 metric-card'):
-                    ui.label('Return').classes('text-gray-400 text-xs uppercase metric-label')
-                    ui.label(f"{portfolio_pl_pct:.2f}%").classes(f'text-xl font-bold metric-value {format_color(portfolio_pl_pct)}')
+                    ui.label('YTD Return').classes('text-gray-400 text-xs uppercase metric-label')
+                    ui.label(f"{ytd_return_pct:.2f}%").classes(f'text-xl font-bold metric-value {format_color(ytd_return_pct)}')
+                    if ytd_deposits > 0:
+                        ui.label(f"on {format_currency(ytd_deposits)}").classes('text-xs text-gray-500')
                 
                 # 5. Total Positions
                 with ui.card().classes('bg-gray-800 border-l-4 border-gray-500 metric-card'):
@@ -386,6 +395,55 @@ async def main_page():
                     </div>
                 </q-td>
             ''')
+
+            # Transactions Table
+            if transactions:
+                ui.separator().classes('my-4')
+                with ui.row().classes('items-center gap-2 mb-2'):
+                    ui.icon('receipt_long', size='md').classes('text-purple-400')
+                    ui.label('YTD Transactions').classes('text-lg font-bold')
+                    ui.badge(str(len(transactions))).props('color=purple')
+                
+                txn_columns = [
+                    {'name': 'date', 'label': 'Date', 'field': 'date', 'sortable': True, 'align': 'left'},
+                    {'name': 'type', 'label': 'Type', 'field': 'type', 'sortable': True, 'align': 'left'},
+                    {'name': 'sub_type', 'label': 'Sub-Type', 'field': 'sub_type', 'sortable': True, 'align': 'left'},
+                    {'name': 'description', 'label': 'Description', 'field': 'description', 'sortable': False, 'align': 'left'},
+                    {'name': 'symbol', 'label': 'Symbol', 'field': 'symbol', 'sortable': True, 'align': 'left'},
+                    {'name': 'action', 'label': 'Action', 'field': 'action', 'sortable': True, 'align': 'left'},
+                    {'name': 'quantity', 'label': 'Qty', 'field': 'quantity', 'sortable': True, 'align': 'right'},
+                    {'name': 'price', 'label': 'Price', 'field': 'price', 'sortable': True, 'align': 'right'},
+                    {'name': 'net_value', 'label': 'Net Value', 'field': 'net_value', 'sortable': True, 'align': 'right'},
+                ]
+                
+                txn_table = ui.table(columns=txn_columns, rows=transactions, pagination=15).classes('w-full bg-gray-800 text-white rounded-lg shadow-lg')
+                
+                # Format price column
+                txn_table.add_slot('body-cell-price', r'''
+                    <q-td key="price" :props="props">
+                        <div v-if="props.value > 0">
+                            {{ Number(props.value).toLocaleString('en-US', {style: 'currency', currency: 'USD'}) }}
+                        </div>
+                        <div v-else class="text-gray-500">-</div>
+                    </q-td>
+                ''')
+                
+                # Format net_value column with color
+                txn_table.add_slot('body-cell-net_value', r'''
+                    <q-td key="net_value" :props="props">
+                        <div :class="props.value >= 0 ? 'text-green-400' : 'text-red-400'">
+                            {{ Number(props.value).toLocaleString('en-US', {style: 'currency', currency: 'USD', signDisplay: 'always'}) }}
+                        </div>
+                    </q-td>
+                ''')
+                
+                # Format quantity column
+                txn_table.add_slot('body-cell-quantity', r'''
+                    <q-td key="quantity" :props="props">
+                        <div v-if="props.value !== 0">{{ props.value }}</div>
+                        <div v-else class="text-gray-500">-</div>
+                    </q-td>
+                ''')
 
         content_container()
 

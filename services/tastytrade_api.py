@@ -1,11 +1,12 @@
 from tastytrade import Session, Account, DXLinkStreamer
 from tastytrade.dxfeed import Quote
-from tastytrade.account import CurrentPosition
+from tastytrade.account import CurrentPosition, Transaction
 from typing import List, Dict, Optional, Union
 import os
 import asyncio
 from decimal import Decimal
 import time
+from datetime import date, datetime
 
 class TastytradeService:
     def __init__(self):
@@ -275,3 +276,80 @@ class TastytradeService:
     @current_account.setter
     def current_account(self, account: Account):
         self._current_account = account
+
+    async def get_transactions(self, account: Optional[Account] = None, start_date: Optional[date] = None) -> List[Dict]:
+        """
+        Fetches transaction history for the specified account.
+        
+        :param account: The account to fetch transactions for.
+        :param start_date: Start date for transactions (defaults to Jan 1 of current year).
+        """
+        target_account = account or self._current_account
+        if not target_account or not self.session:
+            return []
+        
+        try:
+            # Default to YTD if no start date provided
+            if start_date is None:
+                start_date = date(datetime.now().year, 1, 1)
+            
+            transactions: List[Transaction] = await target_account.a_get_history(
+                self.session,
+                start_date=start_date,
+                sort='Desc'
+            )
+            
+            # Process into display-friendly format
+            processed = []
+            for t in transactions:
+                processed.append({
+                    'id': t.id,
+                    'date': t.executed_at.strftime('%Y-%m-%d %H:%M') if t.executed_at else '',
+                    'type': t.transaction_type,
+                    'sub_type': t.transaction_sub_type,
+                    'description': t.description,
+                    'symbol': t.symbol or '',
+                    'action': t.action.value if t.action else '',
+                    'quantity': float(t.quantity) if t.quantity else 0,
+                    'price': float(t.price) if t.price else 0,
+                    'value': float(t.value),
+                    'net_value': float(t.net_value),
+                    'commission': float(t.commission) if t.commission else 0,
+                    'fees': float(t.regulatory_fees or 0) + float(t.clearing_fees or 0),
+                })
+            
+            return processed
+        except Exception as e:
+            print(f"Failed to fetch transactions: {e}")
+            return []
+
+    async def get_ytd_deposits(self, account: Optional[Account] = None) -> float:
+        """
+        Gets total deposits for the current year.
+        Used for YTD return calculation: (Net Liq - Deposits) / Deposits
+        """
+        target_account = account or self._current_account
+        if not target_account or not self.session:
+            return 0.0
+        
+        try:
+            start_of_year = date(datetime.now().year, 1, 1)
+            
+            # Fetch only money movement transactions
+            transactions: List[Transaction] = await target_account.a_get_history(
+                self.session,
+                start_date=start_of_year,
+                type='Money Movement',
+                sort='Asc'
+            )
+            
+            # Sum deposits (positive values typically)
+            total_deposits = 0.0
+            for t in transactions:
+                if t.transaction_sub_type == 'Deposit':
+                    total_deposits += float(t.value)
+            
+            return total_deposits
+        except Exception as e:
+            print(f"Failed to fetch deposits: {e}")
+            return 0.0
