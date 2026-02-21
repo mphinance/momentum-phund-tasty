@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Phinance - Holdings</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #00d4ff, #9c40ff, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        [v-cloak] { display: none; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gray: { 800: '#1f2937', 900: '#111827' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white p-4 font-sans">
+    <div id="app" v-cloak class="max-w-7xl mx-auto space-y-4">
+        <!-- Header -->
+        <div class="flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="text-blue-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-black tracking-tight gradient-text">Momentum Phund</h1>
+                    <div class="text-xs text-gray-500">by Momentum Phinance LLC</div>
+                    <div class="text-sm text-gray-400">Tastytrade Portfolio Holdings</div>
+                </div>
+            </div>
+            <a href="https://mphinance.substack.com" target="_blank" class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-full text-sm font-semibold shadow-lg transition-colors">📄 Substack</a>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="bg-gray-800 rounded-lg p-3 flex justify-between items-center text-sm shadow">
+            <div class="flex items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full" :class="data ? 'bg-green-400 z-10' : 'bg-red-400'"></span>
+                    <span :class="data ? 'text-green-400' : 'text-red-400'">{{ data ? 'Static Delivery Active' : 'Loading data.json...' }}</span>
+                </div>
+                <div class="flex items-center gap-1 text-gray-400" v-if="data">
+                    <span>Snapshot:</span>
+                    <span class="text-gray-300">{{ formattedRefreshTime }}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- content loaded -->
+        <div v-if="data" class="space-y-6">
+            
+            <!-- Metrics Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+                <div class="bg-gray-800 border-l-4 border-blue-500 p-3 rounded shadow">
+                    <div class="text-gray-400 text-xs uppercase mb-1">Net Liq</div>
+                    <div class="text-xl font-bold">{{ formatCurrency(data.balance.net_liq) }}</div>
+                </div>
+                <div class="bg-gray-800 border-l-4 border-green-500 p-3 rounded shadow">
+                    <div class="text-gray-400 text-xs uppercase mb-1">Buying Power</div>
+                    <div class="text-xl font-bold">{{ formatCurrency(data.balance.equity_buying_power) }}</div>
+                    <div class="text-xs text-gray-500">{{ computeUtilization().toFixed(0) }}% Used</div>
+                </div>
+                <div class="bg-gray-800 border-l-4 border-purple-500 p-3 rounded shadow">
+                    <div class="text-gray-400 text-xs uppercase mb-1">P/L</div>
+                    <div class="text-xl font-bold" :class="colorClass(totalPl)">{{ formatCurrency(totalPl) }}</div>
+                </div>
+                <div class="bg-gray-800 border-l-4 border-yellow-500 p-3 rounded shadow">
+                    <div class="text-gray-400 text-xs uppercase mb-1">YTD Return</div>
+                    <div class="text-xl font-bold" :class="colorClass(ytdReturn)">{{ ytdReturn.toFixed(2) }}%</div>
+                    <div class="text-xs text-gray-500" v-if="data.ytd_deposits > 0">on {{ formatCurrency(data.ytd_deposits) }}</div>
+                </div>
+                <div class="bg-gray-800 border-l-4 border-gray-500 p-3 rounded shadow">
+                    <div class="text-gray-400 text-xs uppercase mb-1">Positions</div>
+                    <div class="text-xl font-bold">{{ data.positions ? data.positions.length : 0 }}</div>
+                </div>
+            </div>
+
+            <!-- Analytics -->
+            <div v-if="data.analytics && data.analytics.stats" class="space-y-3">
+                <div class="flex items-center gap-2">
+                    <span class="text-cyan-400">📊</span>
+                    <h2 class="text-lg font-bold">Portfolio Analytics</h2>
+                    <span class="text-xs text-gray-500 ml-2">Updated {{ formatCacheTime(data.analytics.updated) }}</span>
+                </div>
+                <div class="bg-gray-800 rounded shadow p-4">
+                    <div class="text-xs text-gray-400 uppercase mb-3">Return Metrics</div>
+                    <div class="flex flex-wrap gap-6" v-if="data.analytics.stats.sharpe !== undefined">
+                        <div class="flex flex-col items-center">
+                            <span class="text-xs text-gray-500 uppercase">Sharpe</span>
+                            <span class="text-lg font-mono font-bold">{{ data.analytics.stats.sharpe }}</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-xs text-gray-500 uppercase">Sortino</span>
+                            <span class="text-lg font-mono font-bold">{{ data.analytics.stats.sortino }}</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-xs text-gray-500 uppercase">Drawdown</span>
+                            <span class="text-lg font-mono font-bold text-red-400">{{ data.analytics.stats.max_drawdown }}%</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-xs text-gray-500 uppercase">Vol</span>
+                            <span class="text-lg font-mono font-bold">{{ data.analytics.stats.volatility }}%</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-xs text-gray-500 uppercase">Win Rate</span>
+                            <span class="text-lg font-mono font-bold text-green-400">{{ data.analytics.stats.win_rate }}%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Positions Table -->
+            <div class="overflow-x-auto bg-gray-800 rounded-lg shadow">
+                <table class="w-full text-left text-sm whitespace-nowrap">
+                    <thead class="text-xs text-gray-400 bg-gray-700/50 uppercase border-b border-gray-700">
+                        <tr>
+                            <th class="px-4 py-3 text-right">Qty</th>
+                            <th class="px-4 py-3">Symbol</th>
+                            <th class="px-4 py-3">Type</th>
+                            <th class="px-4 py-3">Avg Price</th>
+                            <th class="px-4 py-3">Price</th>
+                            <th class="px-4 py-3 text-right">Total</th>
+                            <th class="px-4 py-3 text-right">Alloc %</th>
+                            <th class="px-4 py-3">P/L Open</th>
+                            <th class="px-4 py-3">P/L %</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700/50">
+                        <tr v-for="pos in data.positions" :key="pos.symbol" class="hover:bg-gray-700/30 cursor-pointer transition-colors" @click="openChart(pos)">
+                             <td class="px-4 py-2 text-right">{{ pos.quantity }}</td>
+                             <td class="px-4 py-2">
+                                <span v-if="pos.is_composite" class="font-bold text-blue-400" title="Covered Call Strategy">{{ pos.symbol }}</span>
+                                <span v-else>{{ pos.symbol }}</span>
+                             </td>
+                             <td class="px-4 py-2">{{ pos.type }}</td>
+                             
+                             <td class="px-4 py-2">
+                                <span class="text-gray-500 italic" v-if="pos.is_composite">Mix</span>
+                                <span v-else>{{ formatCurrency(pos.avg_open_price) }}</span>
+                             </td>
+                             
+                             <td class="px-4 py-2">
+                                <span class="text-gray-500 italic" v-if="pos.is_composite">Mix</span>
+                                <span v-else>{{ formatCurrency(pos.current_price) }}</span>
+                             </td>
+                             
+                             <td class="px-4 py-2 text-right">
+                                <span class="text-gray-500 italic" v-if="pos.is_composite">-</span>
+                                <span v-else>{{ formatCurrency(pos.total_value) }}</span>
+                             </td>
+                             <td class="px-4 py-2 text-right font-mono">
+                                <span class="text-gray-500 italic" v-if="pos.is_composite">-</span>
+                                <span v-else>{{ pos.pct_portfolio.toFixed(1) }}%</span>
+                             </td>
+                             
+                             <td class="px-4 py-2" :class="colorClass(pos.p_l)">
+                                {{ formatCurrency(pos.p_l) }}
+                             </td>
+                             <td class="px-4 py-2" :class="colorClass(pos.p_l_percent)">
+                                {{ pos.p_l_percent.toFixed(2) }}%
+                             </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Transactions Table -->
+            <div v-if="data.transactions && data.transactions.length > 0" class="mt-8 space-y-3">
+                <div class="flex items-center gap-2">
+                    <span class="text-purple-400">🧾</span>
+                    <h2 class="text-lg font-bold">YTD Transactions</h2>
+                    <span class="bg-purple-500/20 text-purple-300 text-xs px-2 py-0.5 rounded">{{ data.transactions.length }}</span>
+                </div>
+                <div class="overflow-x-auto bg-gray-800 rounded-lg shadow">
+                    <table class="w-full text-left text-sm whitespace-nowrap">
+                        <thead class="text-xs text-gray-400 bg-gray-700/50 uppercase border-b border-gray-700">
+                            <tr>
+                                <th class="px-4 py-3">Date</th>
+                                <th class="px-4 py-3">Type</th>
+                                <th class="px-4 py-3">Sub-Type</th>
+                                <th class="px-4 py-3 text-left">Description</th>
+                                <th class="px-4 py-3">Symbol</th>
+                                <th class="px-4 py-3">Action</th>
+                                <th class="px-4 py-3 text-right">Qty</th>
+                                <th class="px-4 py-3 text-right">Price</th>
+                                <th class="px-4 py-3 text-right">Net Value</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-700/50">
+                            <tr v-for="(txn, i) in data.transactions" :key="i" class="hover:bg-gray-700/30">
+                                <td class="px-4 py-2">{{ txn.date }}</td>
+                                <td class="px-4 py-2">{{ txn.type }}</td>
+                                <td class="px-4 py-2">{{ txn.sub_type }}</td>
+                                <td class="px-4 py-2 text-gray-300">{{ txn.description }}</td>
+                                <td class="px-4 py-2 font-mono">{{ txn.symbol }}</td>
+                                <td class="px-4 py-2">{{ txn.action }}</td>
+                                <td class="px-4 py-2 text-right">
+                                    <span v-if="txn.quantity !== 0">{{ txn.quantity }}</span>
+                                    <span v-else class="text-gray-500">-</span>
+                                </td>
+                                <td class="px-4 py-2 text-right">
+                                    <span v-if="txn.price > 0">{{ formatCurrency(txn.price) }}</span>
+                                    <span v-else class="text-gray-500">-</span>
+                                </td>
+                                <td class="px-4 py-2 text-right" :class="colorClass(txn.net_value)">
+                                    {{ formatCurrency(txn.net_value) }}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div> <!-- end content -->
+        
+        <!-- Chart Dialog -->
+        <div v-if="chartOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80" @click.self="closeChart">
+            <div class="bg-gray-900 w-full max-w-4xl h-[600px] rounded relative overflow-hidden shadow-2xl">
+                <button @click="closeChart" class="absolute top-2 right-2 z-10 bg-gray-800/80 text-white rounded-full p-2 hover:bg-gray-700">&times;</button>
+                <div id="tv_container" class="w-full h-full"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        const { createApp, ref, computed, onMounted, nextTick } = Vue
+
+        createApp({
+            setup() {
+                const data = ref(null)
+                const chartOpen = ref(false)
+                let widget = null
+
+                onMounted(async () => {
+                    try {
+                        const res = await fetch('data.json')
+                        if (res.ok) {
+                            data.value = await res.json()
+                        } else {
+                            console.error('Failed to load data.json')
+                        }
+                    } catch (e) {
+                        console.error('Fetch error:', e)
+                    }
+                })
+
+                const totalPl = computed(() => {
+                    if (!data.value || !data.value.positions) return 0
+                    return data.value.positions.reduce((acc, p) => acc + (p.p_l || 0), 0)
+                })
+
+                const ytdReturn = computed(() => {
+                    if (!data.value || !data.value.balance) return 0
+                    const liq = data.value.balance.net_liq || 0
+                    const dep = data.value.ytd_deposits || 0
+                    if (dep > 0) {
+                        return ((liq - dep) / dep) * 100
+                    }
+                    return 0
+                })
+
+                const formattedRefreshTime = computed(() => {
+                    if (!data.value || !data.value.last_refresh) return '--'
+                    const d = new Date(data.value.last_refresh)
+                    return d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+                })
+
+                function formatCacheTime(isoStr) {
+                    if (!isoStr) return ''
+                    const d = new Date(isoStr)
+                    return d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+                }
+
+                function computeUtilization() {
+                    if (!data.value || !data.value.balance) return 0
+                    const liq = data.value.balance.net_liq || 0
+                    const bp = data.value.balance.equity_buying_power || 0
+                    if (liq > 0) {
+                        return (1 - (bp / liq)) * 100
+                    }
+                    return 0
+                }
+
+                function formatCurrency(val) {
+                    if (val === undefined || val === null) return ''
+                    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(val)
+                }
+
+                function colorClass(val) {
+                    return val >= 0 ? 'text-green-400' : 'text-red-400'
+                }
+
+                function openChart(pos) {
+                    let sym = pos.symbol || 'SPY'
+                    if (sym.includes('(CC)')) {
+                        sym = sym.split(' ')[0]
+                    }
+                    chartOpen.value = true
+                    
+                    nextTick(() => {
+                        widget = new TradingView.widget({
+                            "autosize": true,
+                            "symbol": sym,
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "dark",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#1f2937",
+                            "enable_publishing": false,
+                            "hide_side_toolbar": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tv_container",
+                            "width": "100%",
+                            "height": "100%"
+                        })
+                    })
+                }
+
+                function closeChart() {
+                    chartOpen.value = false
+                    if (widget) {
+                        widget = null
+                    }
+                }
+
+                return {
+                    data,
+                    totalPl,
+                    ytdReturn,
+                    formattedRefreshTime,
+                    computeUtilization,
+                    formatCurrency,
+                    colorClass,
+                    formatCacheTime,
+                    openChart,
+                    closeChart,
+                    chartOpen
+                }
+            }
+        }).mount('#app')
+    </script>
+</body>
+</html>
