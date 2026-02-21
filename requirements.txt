@@ -1,4 +1,6 @@
 nicegui
 tastytrade
 python-dotenv
-
+quantstats-lumi
+yfinance
+pandas

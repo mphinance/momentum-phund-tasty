@@ -2,6 +2,8 @@ from nicegui import ui, app
 from services.tastytrade_api import TastytradeService
 from dotenv import load_dotenv
 import asyncio
+import json
+from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
 
@@ -55,7 +57,13 @@ async def main_page():
         # Fetch positions, balance, transactions & deposits
         try:
             state['balance'] = await service.get_balance(state['selected_account'])
+            net_liq = state['balance'].get('net_liq', 0.0)
             raw_rows = await service.get_positions(state['selected_account'])
+            
+            # Compute pct_portfolio now that we have net_liq
+            for p in raw_rows:
+                tv = p.get('total_value', 0)
+                p['pct_portfolio'] = round(tv / net_liq * 100, 2) if net_liq > 0 else 0.0
             
             # Process for hybrid view (CC grouping)
             display_rows = service.get_dashboard_rows(raw_rows)
@@ -335,8 +343,55 @@ async def main_page():
                     ui.label('Positions').classes('text-gray-400 text-xs uppercase')
                     ui.label(str(len(positions) if positions else 0)).classes('text-2xl font-bold')
 
+            # ── Analytics Panel (Moved to Top) ───────────────────────────────
+            analytics_cache = Path('/home/mphinance/tt/analytics_cache.json')
+            if analytics_cache.exists():
+                try:
+                    data = json.loads(analytics_cache.read_text())
+                    ui.separator().classes('my-4')
+                    with ui.row().classes('items-center gap-2 mb-3'):
+                        ui.icon('insights', size='md').classes('text-cyan-400')
+                        ui.label('Portfolio Analytics').classes('text-lg font-bold')
+                        updated = data.get('updated', '')
+                        if updated:
+                            ts = datetime.fromisoformat(updated).strftime('%b %d %I:%M %p')
+                            ui.label(f'Updated {ts}').classes('text-xs text-gray-500 ml-2')
+
+                    # Stats card (Horizontal Layout)
+                    stats = data.get('stats', {})
+                    if stats and 'sharpe' in stats:
+                        with ui.card().classes('bg-gray-800 w-full p-4'):
+                            ui.label('Return Metrics').classes('text-xs text-gray-400 uppercase mb-2')
+                            stat_items = [
+                                ('Sharpe', stats.get('sharpe'), ''),
+                                ('Sortino', stats.get('sortino'), ''),
+                                ('Drawdown', stats.get('max_drawdown'), '%'),
+                                ('Vol', stats.get('volatility'), '%'),
+                                ('Win Rate', stats.get('win_rate'), '%'),
+                                ('VaR', stats.get('var'), '%'),
+                                ('Best', stats.get('best_day'), '%'),
+                                ('Worst', stats.get('worst_day'), '%'),
+                            ]
+                            with ui.row().classes('w-full justify-between gap-4 flex-wrap'):
+                                for label, val, suffix in stat_items:
+                                    if val is not None:
+                                        color = ''
+                                        if suffix == '%' and label not in ('Vol', 'VaR'):
+                                            color = 'text-green-400' if val >= 0 else 'text-red-400'
+                                        with ui.column().classes('items-center gap-0'):
+                                            ui.label(label).classes('text-xs text-gray-500 uppercase')
+                                            ui.label(f"{val}{suffix}").classes(f'text-lg font-mono font-bold {color}')
+                    elif isinstance(stats, dict) and 'note' in stats:
+                        with ui.card().classes('bg-gray-800 w-full p-4'):
+                            ui.label('Return Metrics').classes('text-xs text-gray-400 uppercase mb-2')
+                            ui.label(stats['note']).classes('text-sm text-gray-400 italic')
+
+                except Exception as e:
+                    print(f'Analytics panel error: {e}')
+
             # Flat Table with Hybrid Rows
             if not positions:
+                ui.label("No positions found. Check connection or try refreshing.").classes('text-amber-400 text-lg my-4')
                 return
 
             columns = [
@@ -344,7 +399,9 @@ async def main_page():
                 {'name': 'symbol', 'label': 'Symbol', 'field': 'symbol', 'sortable': True, 'align': 'left'},
                 {'name': 'type', 'label': 'Type', 'field': 'type', 'sortable': True, 'align': 'left'},
                 {'name': 'avg_open_price', 'label': 'Avg Price', 'field': 'avg_open_price', 'sortable': True},
-                {'name': 'current_price', 'label': 'Mark', 'field': 'current_price', 'sortable': True},
+                {'name': 'current_price', 'label': 'Price', 'field': 'current_price', 'sortable': True},
+                {'name': 'total_value', 'label': 'Total', 'field': 'total_value', 'sortable': True, 'align': 'right'},
+                {'name': 'pct_portfolio', 'label': 'Alloc %', 'field': 'pct_portfolio', 'sortable': True, 'align': 'right'},
                 {'name': 'p_l', 'label': 'P/L Open', 'field': 'p_l', 'sortable': True},
                 {'name': 'p_l_percent', 'label': 'P/L %', 'field': 'p_l_percent', 'sortable': True},
             ]
@@ -362,6 +419,24 @@ async def main_page():
                         </div>
                     </q-td>
                 ''')
+
+            # Total value column
+            table.add_slot('body-cell-total_value', r'''
+                <q-td key="total_value" :props="props">
+                    <div v-if="props.row.is_composite" class="text-gray-500 italic">-</div>
+                    <div v-else>
+                        {{ Number(props.value).toLocaleString('en-US', {style: 'currency', currency: 'USD'}) }}
+                    </div>
+                </q-td>
+            ''')
+
+            # Alloc % column
+            table.add_slot('body-cell-pct_portfolio', r'''
+                <q-td key="pct_portfolio" :props="props">
+                    <div v-if="props.row.is_composite" class="text-gray-500 italic">-</div>
+                    <div v-else class="font-mono">{{ Number(props.value).toFixed(1) }}%</div>
+                </q-td>
+            ''')
             
             # Color formatted columns (P/L)
             for col in ['p_l']:
@@ -444,6 +519,8 @@ async def main_page():
                         <div v-else class="text-gray-500">-</div>
                     </q-td>
                 ''')
+
+
 
         content_container()
 

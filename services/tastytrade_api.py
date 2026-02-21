@@ -15,6 +15,10 @@ class TastytradeService:
         self._current_account: Optional[Account] = None
         self._last_activity: float = 0
         self._keep_alive_interval: int = 300  # 5 minutes
+        
+        # Caching
+        self._cache = {}
+        self._cache_ttl = 60 # seconds
 
     async def login(self) -> bool:
         """Authenticates using environment variables."""
@@ -92,13 +96,28 @@ class TastytradeService:
             self.session = None
             return await self.login()
 
+    async def _retry(self, func, *args, retries=3, delay=1, **kwargs):
+        """Helper to retry async functions."""
+        for i in range(retries):
+            try:
+                return await func(*args, **kwargs)
+            except Exception as e:
+                if i == retries - 1:
+                    print(f"Operation failed after {retries} attempts: {e}")
+                    raise e
+                print(f"Retry {i+1}/{retries} due to: {e}")
+                await asyncio.sleep(delay)
+
     async def get_accounts(self) -> List[Account]:
         """Fetches all available accounts."""
         if not self.session:
             return []
         
         try:
-            self.accounts = await Account.a_get(self.session)
+            async def _fetch():
+                return await Account.a_get(self.session)
+            
+            self.accounts = await self._retry(_fetch)
             if self.accounts and not self._current_account:
                 self._current_account = self.accounts[0]
             return self.accounts
@@ -108,29 +127,54 @@ class TastytradeService:
 
     async def get_balance(self, account: Optional[Account] = None) -> Dict[str, float]:
         """Fetches detailed balance metrics."""
+        # Check cache
+        cache_key = 'balance'
+        if cache_key in self._cache:
+            ts, data = self._cache[cache_key]
+            if time.time() - ts < self._cache_ttl:
+                return data
+
         target_account = account or self._current_account
         if not target_account or not self.session:
             return {}
             
         try:
-            balances = await target_account.a_get_balances(self.session)
-            return {
-                'net_liq': float(balances.net_liquidating_value),
+            async def _fetch():
+                return await target_account.a_get_balances(self.session)
+
+            balances = await self._retry(_fetch)
+            net_liq = float(balances.net_liquidating_value)
+            data = {
+                'net_liq': net_liq,
+                'net_liquidating_value': net_liq,  # alias used by analytics
                 'equity_buying_power': float(balances.equity_buying_power)
             }
+            # Update cache
+            self._cache[cache_key] = (time.time(), data)
+            return data
         except Exception as e:
             print(f"Failed to fetch balance: {e}")
             return {}
 
     async def get_positions(self, account: Optional[Account] = None) -> List[Dict]:
         """Fetches positions for the specified account."""
+        # Check cache
+        cache_key = 'positions'
+        if cache_key in self._cache:
+            ts, data = self._cache[cache_key]
+            if time.time() - ts < self._cache_ttl:
+                return data
+
         target_account = account or self._current_account
         if not target_account or not self.session:
             return []
 
         try:
             # Get raw positions from SDK
-            positions: List[CurrentPosition] = await target_account.a_get_positions(self.session)
+            async def _fetch_pos():
+                return await target_account.a_get_positions(self.session)
+                
+            positions: List[CurrentPosition] = await self._retry(_fetch_pos)
             
             # Fetch real-time quotes
             quotes = {}
@@ -140,19 +184,18 @@ class TastytradeService:
                     async with DXLinkStreamer(self.session) as streamer:
                         await streamer.subscribe(Quote, symbols)
                         
-                        # Collect quotes for a short duration
+                        # Collect quotes — budget 5s total, stop early if all received
                         start_time = asyncio.get_event_loop().time()
-                        while asyncio.get_event_loop().time() - start_time < 2.0: # 2s timeout
+                        while asyncio.get_event_loop().time() - start_time < 5.0:
                             if len(quotes) >= len(symbols):
                                 break
                             try:
-                                # Non-blocking check? Streamer is async iterator usually or get_event
-                                # Using wait_for to ensure we don't block forever
-                                quote = await asyncio.wait_for(streamer.get_event(Quote), timeout=0.1)
+                                quote = await asyncio.wait_for(streamer.get_event(Quote), timeout=0.5)
                                 if quote.event_symbol not in quotes:
                                     quotes[quote.event_symbol] = quote
                             except asyncio.TimeoutError:
                                 continue
+                        print(f"Quotes received: {len(quotes)}/{len(symbols)}")
                 except Exception as e:
                     print(f"Quote streaming error: {e}")
             
@@ -166,19 +209,23 @@ class TastytradeService:
                 
                 avg_open_price = float(p.average_open_price)
                 
-                # Determine current price (Mark)
-                # Priority: 1. Live Quote  2. Position Mark  3. Fallback
-                current_price = avg_open_price # Default
+                # Determine current price
+                # Priority: 1. Live DXLink mid  2. Close price  3. Avg open (last resort)
+                current_price = avg_open_price  # fallback
                 
                 if p.symbol in quotes:
                     q = quotes[p.symbol]
-                    # Mid price logic
-                    if q.bid_price and q.ask_price:
-                        current_price = (float(q.bid_price) + float(q.ask_price)) / 2
-                    elif q.bid_price:
-                        current_price = float(q.bid_price)
-                    elif q.ask_price:
-                        current_price = float(q.ask_price)
+                    # Mid price: (bid + ask) / 2
+                    bid = float(q.bid_price) if q.bid_price else None
+                    ask = float(q.ask_price) if q.ask_price else None
+                    if bid and ask:
+                        current_price = (bid + ask) / 2
+                    elif bid:
+                        current_price = bid
+                    elif ask:
+                        current_price = ask
+                elif p.close_price is not None:
+                    current_price = float(p.close_price)
                 elif p.mark_price is not None:
                     current_price = float(p.mark_price)
                 
@@ -193,6 +240,9 @@ class TastytradeService:
                 cost_basis = avg_open_price * abs(quantity) * multiplier
                 p_l_percent = (unrealized_pl / cost_basis * 100) if cost_basis > 0 else 0.0
 
+                # Market value of position
+                total_value = current_price * abs(quantity) * multiplier
+
                 pos_data = {
                     'symbol': p.symbol,
                     'underlying_symbol': p.underlying_symbol,
@@ -204,10 +254,14 @@ class TastytradeService:
                     'p_l': unrealized_pl,
                     'p_l_percent': p_l_percent,
                     'cost_basis': cost_basis,
-                    'multiplier': multiplier
+                    'multiplier': multiplier,
+                    'total_value': total_value,
+                    'pct_portfolio': 0.0,  # filled in by refresh_data after balance fetch
                 }
                 processed_positions.append(pos_data)
                 
+            # Update cache
+            self._cache[cache_key] = (time.time(), processed_positions)
             return processed_positions
         except Exception as e:
             print(f"Failed to fetch positions: {e}")
