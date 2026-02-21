@@ -245,23 +245,22 @@
                             <thead
                                 class="text-xs font-bold tracking-wider text-gray-400 uppercase bg-black/20 border-b border-white/5">
                                 <tr>
-                                    <th class="px-6 py-4 text-right">Qty</th>
-                                    <th class="px-6 py-4">Symbol</th>
-                                    <th class="px-6 py-4">Type</th>
-                                    <th class="px-6 py-4">Avg Price</th>
-                                    <th class="px-6 py-4">Price</th>
-                                    <th class="px-6 py-4 text-right">Total</th>
-                                    <th class="px-6 py-4 text-right">Alloc %</th>
-                                    <th class="px-6 py-4">P/L Open</th>
-                                    <th class="px-6 py-4">P/L %</th>
+                                    <th class="px-3 py-3 text-right">Qty</th>
+                                    <th class="px-3 py-3">Symbol</th>
+                                    <th class="px-3 py-3">Avg Price</th>
+                                    <th class="px-3 py-3">Price</th>
+                                    <th class="px-3 py-3 text-right">Total</th>
+                                    <th class="px-3 py-3 text-right">Alloc %</th>
+                                    <th class="px-3 py-3">P/L Open</th>
+                                    <th class="px-3 py-3">P/L %</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-white/5">
                                 <tr v-for="pos in data.positions" :key="pos.symbol"
                                     class="hover:bg-white/5 cursor-pointer transition-colors group"
                                     @click="openChart(pos)">
-                                    <td class="px-6 py-4 text-right font-mono">{{ pos.quantity }}</td>
-                                    <td class="px-6 py-4">
+                                    <td class="px-3 py-3 text-right font-mono">{{ pos.quantity }}</td>
+                                    <td class="px-3 py-3">
                                         <div class="flex items-center gap-2">
                                             <span v-if="pos.is_composite"
                                                 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:from-blue-300 group-hover:to-cyan-300"
@@ -270,32 +269,31 @@
                                                 pos.symbol }}</span>
                                         </div>
                                     </td>
-                                    <td class="px-6 py-4 text-sm text-gray-400">{{ pos.type }}</td>
 
-                                    <td class="px-6 py-4 font-mono text-sm">
+                                    <td class="px-3 py-3 font-mono text-sm">
                                         <span class="text-gray-500 italic" v-if="pos.is_composite">Mix</span>
                                         <span v-else>{{ formatCurrency(pos.avg_open_price) }}</span>
                                     </td>
 
-                                    <td class="px-6 py-4 font-mono text-sm">
+                                    <td class="px-3 py-3 font-mono text-sm">
                                         <span class="text-gray-500 italic" v-if="pos.is_composite">Mix</span>
                                         <span v-else class="text-gray-200">{{ formatCurrency(pos.current_price)
                                             }}</span>
                                     </td>
 
-                                    <td class="px-6 py-4 text-right font-mono text-sm text-gray-200">
+                                    <td class="px-3 py-3 text-right font-mono text-sm text-gray-200">
                                         <span class="text-gray-500 italic" v-if="pos.is_composite">-</span>
                                         <span v-else>{{ formatCurrency(pos.total_value) }}</span>
                                     </td>
-                                    <td class="px-6 py-4 text-right font-mono text-sm">
+                                    <td class="px-3 py-3 text-right font-mono text-sm">
                                         <span class="text-gray-500 italic" v-if="pos.is_composite">-</span>
                                         <span v-else class="text-gray-400">{{ pos.pct_portfolio.toFixed(1) }}%</span>
                                     </td>
 
-                                    <td class="px-6 py-4 font-mono text-sm font-semibold" :class="colorClass(pos.p_l)">
+                                    <td class="px-3 py-3 font-mono text-sm font-semibold" :class="colorClass(pos.p_l)">
                                         {{ formatCurrency(pos.p_l) }}
                                     </td>
-                                    <td class="px-6 py-4 font-mono text-sm font-semibold"
+                                    <td class="px-3 py-3 font-mono text-sm font-semibold"
                                         :class="colorClass(pos.p_l_percent)">
                                         <div class="flex items-center gap-1">
                                             <span v-if="pos.p_l_percent > 0">↑</span>
