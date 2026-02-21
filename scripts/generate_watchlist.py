@@ -27,14 +27,19 @@ def process_watchlist(output_json_path):
         'weekly_only': True,    # Filters: Weekly Only
         'golden_cross': True,   # Filters: Golden Cross
         'ema_atr_filter': True, # Filters: Near EMA20
+        'sort_tv_by_price_asc': True, # Prioritize querying cheaper stocks
         'tv_limit': 150,        # Default TV limit
-        'max_results': 15,      # Limit the sidebar items
+        'max_results': 40,      # Increased limit from 15 to 40
         'process_limit': 150    # Limit the total stocks processed to avoid rate limits
     }
     
     # Run scan
     results_df = scanner.scan(config)
     
+    if not results_df.empty:
+        # Sort the final output by capital ascending so cheapest are at the top
+        results_df = results_df.sort_values('capital', ascending=True)
+
     if results_df.empty:
         print("No results found from scan.")
         watchlist_data = []

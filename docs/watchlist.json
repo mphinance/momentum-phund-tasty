@@ -1,13 +1,68 @@
 [
   {
-    "symbol": "AGQ",
-    "name": "ProShares Ultra Silver",
-    "sector": "Miscellaneous",
-    "price": 158.52,
-    "strike": 143.0,
-    "capital": 14300.0,
+    "symbol": "ONDS",
+    "name": "Ondas Inc",
+    "sector": "Electronic Technology",
+    "price": 10.03,
+    "strike": 9.0,
+    "capital": 900.0,
     "dte": 6,
-    "roc_weekly": 6.32,
+    "roc_weekly": 2.98,
+    "expiry": "2026-02-27"
+  },
+  {
+    "symbol": "TSLL",
+    "name": "Direxion Daily TSLA Bull 2X Sha",
+    "sector": "Miscellaneous",
+    "price": 15.44,
+    "strike": 14.0,
+    "capital": 1400.0,
+    "dte": 6,
+    "roc_weekly": 1.42,
+    "expiry": "2026-02-27"
+  },
+  {
+    "symbol": "NU",
+    "name": "Nu Holdings Ltd.",
+    "sector": "Finance",
+    "price": 17.53,
+    "strike": 16.0,
+    "capital": 1600.0,
+    "dte": 6,
+    "roc_weekly": 1.57,
+    "expiry": "2026-02-27"
+  },
+  {
+    "symbol": "HL",
+    "name": "Hecla Mining Company",
+    "sector": "Non-Energy Minerals",
+    "price": 24.02,
+    "strike": 22.0,
+    "capital": 2200.0,
+    "dte": 13,
+    "roc_weekly": 1.69,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "TQQQ",
+    "name": "ProShares UltraPro QQQ",
+    "sector": "Miscellaneous",
+    "price": 50.06,
+    "strike": 45.0,
+    "capital": 4500.0,
+    "dte": 6,
+    "roc_weekly": 1.26,
+    "expiry": "2026-02-27"
+  },
+  {
+    "symbol": "TNA",
+    "name": "Direxion Small Cap Bull 3X Shar",
+    "sector": "Miscellaneous",
+    "price": 54.98,
+    "strike": 49.5,
+    "capital": 4950.0,
+    "dte": 6,
+    "roc_weekly": 1.39,
     "expiry": "2026-02-27"
   },
   {
@@ -22,6 +77,17 @@
     "expiry": "2026-02-27"
   },
   {
+    "symbol": "KRE",
+    "name": "State Street SPDR S&P Regional ",
+    "sector": "Miscellaneous",
+    "price": 71.9,
+    "strike": 63.0,
+    "capital": 6300.0,
+    "dte": 6,
+    "roc_weekly": 2.06,
+    "expiry": "2026-02-27"
+  },
+  {
     "symbol": "RKLB",
     "name": "Rocket Lab Corporation",
     "sector": "Electronic Technology",
@@ -33,25 +99,47 @@
     "expiry": "2026-02-27"
   },
   {
-    "symbol": "ONDS",
-    "name": "Ondas Inc",
+    "symbol": "SLV",
+    "name": "iShares Silver Trust",
+    "sector": "Miscellaneous",
+    "price": 76.62,
+    "strike": 69.0,
+    "capital": 6900.0,
+    "dte": 4,
+    "roc_weekly": 1.36,
+    "expiry": "2026-02-25"
+  },
+  {
+    "symbol": "MRVL",
+    "name": "Marvell Technology, Inc.",
     "sector": "Electronic Technology",
-    "price": 10.03,
-    "strike": 9.0,
-    "capital": 900.0,
+    "price": 79.48,
+    "strike": 72.0,
+    "capital": 7200.0,
+    "dte": 13,
+    "roc_weekly": 1.57,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "NVDL",
+    "name": "GraniteShares 2x Long NVDA Dail",
+    "sector": "Miscellaneous",
+    "price": 88.48,
+    "strike": 80.0,
+    "capital": 8000.0,
     "dte": 6,
-    "roc_weekly": 2.98,
+    "roc_weekly": 3.3,
     "expiry": "2026-02-27"
   },
   {
-    "symbol": "BE",
-    "name": "Bloom Energy Corporation",
-    "sector": "Electronic Technology",
-    "price": 147.55,
-    "strike": 133.0,
-    "capital": 13300.0,
+    "symbol": "XRT",
+    "name": "State Street SPDR S&P Retail ET",
+    "sector": "Miscellaneous",
+    "price": 88.66,
+    "strike": 82.0,
+    "capital": 8200.0,
     "dte": 6,
-    "roc_weekly": 2.61,
+    "roc_weekly": 1.4,
     "expiry": "2026-02-27"
   },
   {
@@ -66,14 +154,25 @@
     "expiry": "2026-02-27"
   },
   {
-    "symbol": "KRE",
-    "name": "State Street SPDR S&P Regional ",
-    "sector": "Miscellaneous",
-    "price": 71.9,
-    "strike": 63.0,
-    "capital": 6300.0,
+    "symbol": "BE",
+    "name": "Bloom Energy Corporation",
+    "sector": "Electronic Technology",
+    "price": 147.55,
+    "strike": 133.0,
+    "capital": 13300.0,
     "dte": 6,
-    "roc_weekly": 2.06,
+    "roc_weekly": 2.61,
+    "expiry": "2026-02-27"
+  },
+  {
+    "symbol": "AGQ",
+    "name": "ProShares Ultra Silver",
+    "sector": "Miscellaneous",
+    "price": 158.52,
+    "strike": 143.0,
+    "capital": 14300.0,
+    "dte": 6,
+    "roc_weekly": 6.32,
     "expiry": "2026-02-27"
   },
   {
@@ -99,39 +198,6 @@
     "expiry": "2026-02-27"
   },
   {
-    "symbol": "XRT",
-    "name": "State Street SPDR S&P Retail ET",
-    "sector": "Miscellaneous",
-    "price": 88.66,
-    "strike": 82.0,
-    "capital": 8200.0,
-    "dte": 6,
-    "roc_weekly": 1.4,
-    "expiry": "2026-02-27"
-  },
-  {
-    "symbol": "SLV",
-    "name": "iShares Silver Trust",
-    "sector": "Miscellaneous",
-    "price": 76.62,
-    "strike": 69.0,
-    "capital": 6900.0,
-    "dte": 4,
-    "roc_weekly": 1.36,
-    "expiry": "2026-02-25"
-  },
-  {
-    "symbol": "TQQQ",
-    "name": "ProShares UltraPro QQQ",
-    "sector": "Miscellaneous",
-    "price": 50.06,
-    "strike": 45.0,
-    "capital": 4500.0,
-    "dte": 6,
-    "roc_weekly": 1.26,
-    "expiry": "2026-02-27"
-  },
-  {
     "symbol": "AVGO",
     "name": "Broadcom Inc.",
     "sector": "Electronic Technology",
@@ -140,6 +206,17 @@
     "capital": 30000.0,
     "dte": 13,
     "roc_weekly": 1.19,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "STX",
+    "name": "Seagate Technology Holdings PLC",
+    "sector": "Electronic Technology",
+    "price": 411.11,
+    "strike": 370.0,
+    "capital": 37000.0,
+    "dte": 13,
+    "roc_weekly": 1.11,
     "expiry": "2026-03-06"
   },
   {
@@ -152,16 +229,5 @@
     "dte": 6,
     "roc_weekly": 1.11,
     "expiry": "2026-02-27"
-  },
-  {
-    "symbol": "STX",
-    "name": "Seagate Technology Holdings PLC",
-    "sector": "Electronic Technology",
-    "price": 411.11,
-    "strike": 370.0,
-    "capital": 37000.0,
-    "dte": 13,
-    "roc_weekly": 1.11,
-    "expiry": "2026-03-06"
   }
 ]

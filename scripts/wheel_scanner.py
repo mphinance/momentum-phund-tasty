@@ -106,6 +106,10 @@ class WheelScanner:
             else:
                 self.log(f"  EMA/ATR Filter: DISABLED")
             
+            if config.get('sort_tv_by_price_asc', False):
+                df = df.sort_values('price', ascending=True)
+                self.log("  ★ Sorted TV candidates by Price (Asc)")
+            
             self.log(f"  ✓ Candidates for yfinance: {len(df)}")
             self.log(f"")
             self.log(f"═══════════════════════════════════════════════════")
