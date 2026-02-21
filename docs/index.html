@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,232 +8,407 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <style>
         .gradient-text {
-            background: linear-gradient(90deg, #00d4ff, #9c40ff, #ff6b6b);
+            background: linear-gradient(135deg, #00d4ff, #9c40ff, #ff6b6b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        [v-cloak] { display: none; }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .glass-panel:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        [v-cloak] {
+            display: none;
+        }
     </style>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+                    },
                     colors: {
-                        gray: { 800: '#1f2937', 900: '#111827' }
+                        gray: { 800: '#1e293b', 900: '#0f172a' }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-gray-900 text-white p-4 font-sans">
-    <div id="app" v-cloak class="max-w-7xl mx-auto space-y-4">
+
+<body
+    class="bg-[#0b0f19] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-[#0b0f19] to-black text-gray-200 min-h-screen font-sans antialiased pb-12">
+    <div id="app" v-cloak class="max-w-7xl mx-auto space-y-6 pt-6 px-4">
         <!-- Header -->
         <div class="flex flex-wrap items-center justify-between gap-4">
-            <div class="flex items-center gap-3">
-                <div class="text-blue-400">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            <div class="flex items-center gap-4">
+                <div
+                    class="text-cyan-400 p-3 bg-cyan-500/10 rounded-2xl border border-cyan-500/20 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
                 </div>
                 <div>
-                    <h1 class="text-3xl font-black tracking-tight gradient-text">Momentum Phund</h1>
-                    <div class="text-xs text-gray-500">by Momentum Phinance LLC</div>
-                    <div class="text-sm text-gray-400">Tastytrade Portfolio Holdings</div>
+                    <h1 class="text-4xl font-black tracking-tight gradient-text drop-shadow-sm">Momentum Phund</h1>
+                    <div class="text-sm font-medium text-gray-400 tracking-wide uppercase mt-1">Tastytrade Portfolio
+                        Holdings</div>
                 </div>
             </div>
-            <a href="https://mphinance.substack.com" target="_blank" class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-full text-sm font-semibold shadow-lg transition-colors">📄 Substack</a>
+            <a href="https://mphinance.substack.com" target="_blank"
+                class="bg-gradient-to-r from-orange-500 to-rose-500 hover:from-orange-400 hover:to-rose-400 px-6 py-2.5 rounded-full text-sm font-bold text-white shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 transition-all duration-300 hover:-translate-y-0.5">
+                📄 Substack
+            </a>
         </div>
 
         <!-- Status Bar -->
-        <div class="bg-gray-800 rounded-lg p-3 flex justify-between items-center text-sm shadow">
+        <div class="glass-panel rounded-2xl p-4 flex justify-between items-center text-sm">
             <div class="flex items-center gap-4">
-                <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full" :class="data ? 'bg-green-400 z-10' : 'bg-red-400'"></span>
-                    <span :class="data ? 'text-green-400' : 'text-red-400'">{{ data ? 'Static Delivery Active' : 'Loading data.json...' }}</span>
+                <div class="flex items-center gap-2 bg-black/20 px-3 py-1.5 rounded-full border border-white/5">
+                    <span class="w-2.5 h-2.5 rounded-full animate-pulse-slow"
+                        :class="data ? 'bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.8)]' : 'bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.8)]'"></span>
+                    <span class="font-medium tracking-wide" :class="data ? 'text-green-400' : 'text-red-400'">{{ data ?
+                        'Static Delivery Active' :
+                        'Loading data.json...' }}</span>
                 </div>
-                <div class="flex items-center gap-1 text-gray-400" v-if="data">
-                    <span>Snapshot:</span>
-                    <span class="text-gray-300">{{ formattedRefreshTime }}</span>
+                <div class="flex items-center gap-2 text-gray-400" v-if="data">
+                    <span class="uppercase text-xs font-semibold tracking-wider opacity-70">Snapshot</span>
+                    <span class="text-gray-300 font-mono bg-white/5 px-2 py-0.5 rounded">{{ formattedRefreshTime
+                        }}</span>
                 </div>
             </div>
         </div>
 
         <!-- content loaded -->
-        <div v-if="data" class="space-y-6">
-            
-            <!-- Metrics Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
-                <div class="bg-gray-800 border-l-4 border-blue-500 p-3 rounded shadow">
-                    <div class="text-gray-400 text-xs uppercase mb-1">Net Liq</div>
-                    <div class="text-xl font-bold">{{ formatCurrency(data.balance.net_liq) }}</div>
-                </div>
-                <div class="bg-gray-800 border-l-4 border-green-500 p-3 rounded shadow">
-                    <div class="text-gray-400 text-xs uppercase mb-1">Buying Power</div>
-                    <div class="text-xl font-bold">{{ formatCurrency(data.balance.equity_buying_power) }}</div>
-                    <div class="text-xs text-gray-500">{{ computeUtilization().toFixed(0) }}% Used</div>
-                </div>
-                <div class="bg-gray-800 border-l-4 border-purple-500 p-3 rounded shadow">
-                    <div class="text-gray-400 text-xs uppercase mb-1">P/L</div>
-                    <div class="text-xl font-bold" :class="colorClass(totalPl)">{{ formatCurrency(totalPl) }}</div>
-                </div>
-                <div class="bg-gray-800 border-l-4 border-yellow-500 p-3 rounded shadow">
-                    <div class="text-gray-400 text-xs uppercase mb-1">YTD Return</div>
-                    <div class="text-xl font-bold" :class="colorClass(ytdReturn)">{{ ytdReturn.toFixed(2) }}%</div>
-                    <div class="text-xs text-gray-500" v-if="data.ytd_deposits > 0">on {{ formatCurrency(data.ytd_deposits) }}</div>
-                </div>
-                <div class="bg-gray-800 border-l-4 border-gray-500 p-3 rounded shadow">
-                    <div class="text-gray-400 text-xs uppercase mb-1">Positions</div>
-                    <div class="text-xl font-bold">{{ data.positions ? data.positions.length : 0 }}</div>
-                </div>
-            </div>
+        <div v-if="data" class="space-y-6 lg:grid lg:grid-cols-4 lg:gap-8 lg:space-y-0 relative">
 
-            <!-- Analytics -->
-            <div v-if="data.analytics && data.analytics.stats" class="space-y-3">
-                <div class="flex items-center gap-2">
-                    <span class="text-cyan-400">📊</span>
-                    <h2 class="text-lg font-bold">Portfolio Analytics</h2>
-                    <span class="text-xs text-gray-500 ml-2">Updated {{ formatCacheTime(data.analytics.updated) }}</span>
+            <!-- Main Content Area (3 Columns) -->
+            <div class="lg:col-span-3 space-y-8">
+
+                <!-- Metrics Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div
+                        class="glass-panel relative overflow-hidden p-5 rounded-2xl group transition-all duration-300 hover:-translate-y-1">
+                        <div
+                            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-80">
+                        </div>
+                        <div
+                            class="absolute -top-10 -right-10 w-24 h-24 bg-cyan-500/10 rounded-full blur-xl group-hover:bg-cyan-500/20 transition-all">
+                        </div>
+                        <div class="text-gray-400 text-xs font-bold tracking-wider uppercase mb-1 drop-shadow-sm">Net
+                            Liq</div>
+                        <div class="text-2xl font-black text-white tracking-tight">{{
+                            formatCurrency(data.balance.net_liq) }}</div>
+                    </div>
+
+                    <div
+                        class="glass-panel relative overflow-hidden p-5 rounded-2xl group transition-all duration-300 hover:-translate-y-1">
+                        <div
+                            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-green-500 opacity-80">
+                        </div>
+                        <div
+                            class="absolute -top-10 -right-10 w-24 h-24 bg-emerald-500/10 rounded-full blur-xl group-hover:bg-emerald-500/20 transition-all">
+                        </div>
+                        <div class="text-gray-400 text-xs font-bold tracking-wider uppercase mb-1 drop-shadow-sm">Buying
+                            Power</div>
+                        <div class="text-2xl font-black text-white tracking-tight">{{
+                            formatCurrency(data.balance.equity_buying_power) }}</div>
+                        <div class="text-xs text-emerald-400/80 font-medium mt-1">{{ computeUtilization().toFixed(0) }}%
+                            Used</div>
+                    </div>
+
+                    <div
+                        class="glass-panel relative overflow-hidden p-5 rounded-2xl group transition-all duration-300 hover:-translate-y-1">
+                        <div
+                            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-pink-500 opacity-80">
+                        </div>
+                        <div
+                            class="absolute -top-10 -right-10 w-24 h-24 bg-purple-500/10 rounded-full blur-xl group-hover:bg-purple-500/20 transition-all">
+                        </div>
+                        <div class="text-gray-400 text-xs font-bold tracking-wider uppercase mb-1 drop-shadow-sm">Open
+                            P/L</div>
+                        <div class="text-2xl font-black tracking-tight" :class="colorClass(totalPl)">{{
+                            formatCurrency(totalPl) }}</div>
+                    </div>
+
+                    <div
+                        class="glass-panel relative overflow-hidden p-5 rounded-2xl group transition-all duration-300 hover:-translate-y-1">
+                        <div
+                            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-orange-500 opacity-80">
+                        </div>
+                        <div
+                            class="absolute -top-10 -right-10 w-24 h-24 bg-amber-500/10 rounded-full blur-xl group-hover:bg-amber-500/20 transition-all">
+                        </div>
+                        <div class="text-gray-400 text-xs font-bold tracking-wider uppercase mb-1 drop-shadow-sm">YTD
+                            Return</div>
+                        <div class="text-2xl font-black tracking-tight" :class="colorClass(ytdReturn)">{{
+                            ytdReturn.toFixed(2) }}%</div>
+                        <div class="text-xs text-gray-500 font-medium mt-1" v-if="data.ytd_deposits > 0">on {{
+                            formatCurrency(data.ytd_deposits) }}</div>
+                    </div>
+
+                    <div
+                        class="glass-panel relative overflow-hidden p-5 rounded-2xl group transition-all duration-300 hover:-translate-y-1">
+                        <div
+                            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gray-400 to-slate-500 opacity-80">
+                        </div>
+                        <div
+                            class="absolute -top-10 -right-10 w-24 h-24 bg-gray-500/10 rounded-full blur-xl group-hover:bg-gray-500/20 transition-all">
+                        </div>
+                        <div class="text-gray-400 text-xs font-bold tracking-wider uppercase mb-1 drop-shadow-sm">
+                            Positions</div>
+                        <div class="text-2xl font-black text-white tracking-tight">{{ data.positions ?
+                            data.positions.length : 0 }}</div>
+                    </div>
                 </div>
-                <div class="bg-gray-800 rounded shadow p-4">
-                    <div class="text-xs text-gray-400 uppercase mb-3">Return Metrics</div>
-                    <div class="flex flex-wrap gap-6" v-if="data.analytics.stats.sharpe !== undefined">
-                        <div class="flex flex-col items-center">
-                            <span class="text-xs text-gray-500 uppercase">Sharpe</span>
-                            <span class="text-lg font-mono font-bold">{{ data.analytics.stats.sharpe }}</span>
+
+                <!-- Analytics -->
+                <div v-if="data.analytics && data.analytics.stats" class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 bg-indigo-500/10 rounded-lg border border-indigo-500/20">
+                            <span class="text-indigo-400 text-lg">📊</span>
                         </div>
-                        <div class="flex flex-col items-center">
-                            <span class="text-xs text-gray-500 uppercase">Sortino</span>
-                            <span class="text-lg font-mono font-bold">{{ data.analytics.stats.sortino }}</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <span class="text-xs text-gray-500 uppercase">Drawdown</span>
-                            <span class="text-lg font-mono font-bold text-red-400">{{ data.analytics.stats.max_drawdown }}%</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <span class="text-xs text-gray-500 uppercase">Vol</span>
-                            <span class="text-lg font-mono font-bold">{{ data.analytics.stats.volatility }}%</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <span class="text-xs text-gray-500 uppercase">Win Rate</span>
-                            <span class="text-lg font-mono font-bold text-green-400">{{ data.analytics.stats.win_rate }}%</span>
+                        <h2 class="text-xl font-bold tracking-tight text-white/90">Portfolio Analytics</h2>
+                        <span class="text-xs text-gray-500 font-mono ml-2 bg-white/5 px-2 py-1 rounded">Update: {{
+                            formatCacheTime(data.analytics.updated) }}</span>
+                    </div>
+
+                    <div class="glass-panel rounded-2xl p-6 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/5 rounded-full blur-3xl -z-10"></div>
+                        <div class="text-xs font-bold tracking-widest text-indigo-400/80 uppercase mb-5">Performance
+                            Metrics</div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-6"
+                            v-if="data.analytics.stats.sharpe !== undefined">
+                            <div class="flex flex-col">
+                                <span
+                                    class="text-xs text-gray-500 font-bold tracking-wider uppercase mb-1">Sharpe</span>
+                                <span class="text-2xl font-mono font-light text-white">{{ data.analytics.stats.sharpe
+                                    }}</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span
+                                    class="text-xs text-gray-500 font-bold tracking-wider uppercase mb-1">Sortino</span>
+                                <span class="text-2xl font-mono font-light text-white">{{ data.analytics.stats.sortino
+                                    }}</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-xs text-gray-500 font-bold tracking-wider uppercase mb-1">Max
+                                    Drawdown</span>
+                                <span class="text-2xl font-mono font-light text-rose-400">{{
+                                    data.analytics.stats.max_drawdown }}%</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span
+                                    class="text-xs text-gray-500 font-bold tracking-wider uppercase mb-1">Volatility</span>
+                                <span class="text-2xl font-mono font-light text-white">{{
+                                    data.analytics.stats.volatility }}%</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-xs text-gray-500 font-bold tracking-wider uppercase mb-1">Win
+                                    Rate</span>
+                                <span class="text-2xl font-mono font-light text-emerald-400">{{
+                                    data.analytics.stats.win_rate }}%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Positions Table -->
-            <div class="overflow-x-auto bg-gray-800 rounded-lg shadow">
-                <table class="w-full text-left text-sm whitespace-nowrap">
-                    <thead class="text-xs text-gray-400 bg-gray-700/50 uppercase border-b border-gray-700">
-                        <tr>
-                            <th class="px-4 py-3 text-right">Qty</th>
-                            <th class="px-4 py-3">Symbol</th>
-                            <th class="px-4 py-3">Type</th>
-                            <th class="px-4 py-3">Avg Price</th>
-                            <th class="px-4 py-3">Price</th>
-                            <th class="px-4 py-3 text-right">Total</th>
-                            <th class="px-4 py-3 text-right">Alloc %</th>
-                            <th class="px-4 py-3">P/L Open</th>
-                            <th class="px-4 py-3">P/L %</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-700/50">
-                        <tr v-for="pos in data.positions" :key="pos.symbol" class="hover:bg-gray-700/30 cursor-pointer transition-colors" @click="openChart(pos)">
-                             <td class="px-4 py-2 text-right">{{ pos.quantity }}</td>
-                             <td class="px-4 py-2">
-                                <span v-if="pos.is_composite" class="font-bold text-blue-400" title="Covered Call Strategy">{{ pos.symbol }}</span>
-                                <span v-else>{{ pos.symbol }}</span>
-                             </td>
-                             <td class="px-4 py-2">{{ pos.type }}</td>
-                             
-                             <td class="px-4 py-2">
-                                <span class="text-gray-500 italic" v-if="pos.is_composite">Mix</span>
-                                <span v-else>{{ formatCurrency(pos.avg_open_price) }}</span>
-                             </td>
-                             
-                             <td class="px-4 py-2">
-                                <span class="text-gray-500 italic" v-if="pos.is_composite">Mix</span>
-                                <span v-else>{{ formatCurrency(pos.current_price) }}</span>
-                             </td>
-                             
-                             <td class="px-4 py-2 text-right">
-                                <span class="text-gray-500 italic" v-if="pos.is_composite">-</span>
-                                <span v-else>{{ formatCurrency(pos.total_value) }}</span>
-                             </td>
-                             <td class="px-4 py-2 text-right font-mono">
-                                <span class="text-gray-500 italic" v-if="pos.is_composite">-</span>
-                                <span v-else>{{ pos.pct_portfolio.toFixed(1) }}%</span>
-                             </td>
-                             
-                             <td class="px-4 py-2" :class="colorClass(pos.p_l)">
-                                {{ formatCurrency(pos.p_l) }}
-                             </td>
-                             <td class="px-4 py-2" :class="colorClass(pos.p_l_percent)">
-                                {{ pos.p_l_percent.toFixed(2) }}%
-                             </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <!-- Positions Table -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 bg-blue-500/10 rounded-lg border border-blue-500/20">
+                            <span class="text-blue-400 text-lg">📁</span>
+                        </div>
+                        <h2 class="text-xl font-bold tracking-tight text-white/90">Active Positions</h2>
+                    </div>
+                    <div class="glass-panel overflow-x-auto rounded-2xl">
+                        <table class="w-full text-left whitespace-nowrap">
+                            <thead
+                                class="text-xs font-bold tracking-wider text-gray-400 uppercase bg-black/20 border-b border-white/5">
+                                <tr>
+                                    <th class="px-6 py-4 text-right">Qty</th>
+                                    <th class="px-6 py-4">Symbol</th>
+                                    <th class="px-6 py-4">Type</th>
+                                    <th class="px-6 py-4">Avg Price</th>
+                                    <th class="px-6 py-4">Price</th>
+                                    <th class="px-6 py-4 text-right">Total</th>
+                                    <th class="px-6 py-4 text-right">Alloc %</th>
+                                    <th class="px-6 py-4">P/L Open</th>
+                                    <th class="px-6 py-4">P/L %</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-white/5">
+                                <tr v-for="pos in data.positions" :key="pos.symbol"
+                                    class="hover:bg-white/5 cursor-pointer transition-colors group"
+                                    @click="openChart(pos)">
+                                    <td class="px-6 py-4 text-right font-mono">{{ pos.quantity }}</td>
+                                    <td class="px-6 py-4">
+                                        <div class="flex items-center gap-2">
+                                            <span v-if="pos.is_composite"
+                                                class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:from-blue-300 group-hover:to-cyan-300"
+                                                title="Covered Call Strategy">{{ pos.symbol }}</span>
+                                            <span v-else class="font-bold text-gray-200 group-hover:text-white">{{
+                                                pos.symbol }}</span>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-400">{{ pos.type }}</td>
 
-            <!-- Transactions Table -->
-            <div v-if="data.transactions && data.transactions.length > 0" class="mt-8 space-y-3">
-                <div class="flex items-center gap-2">
-                    <span class="text-purple-400">🧾</span>
-                    <h2 class="text-lg font-bold">YTD Transactions</h2>
-                    <span class="bg-purple-500/20 text-purple-300 text-xs px-2 py-0.5 rounded">{{ data.transactions.length }}</span>
+                                    <td class="px-6 py-4 font-mono text-sm">
+                                        <span class="text-gray-500 italic" v-if="pos.is_composite">Mix</span>
+                                        <span v-else>{{ formatCurrency(pos.avg_open_price) }}</span>
+                                    </td>
+
+                                    <td class="px-6 py-4 font-mono text-sm">
+                                        <span class="text-gray-500 italic" v-if="pos.is_composite">Mix</span>
+                                        <span v-else class="text-gray-200">{{ formatCurrency(pos.current_price)
+                                            }}</span>
+                                    </td>
+
+                                    <td class="px-6 py-4 text-right font-mono text-sm text-gray-200">
+                                        <span class="text-gray-500 italic" v-if="pos.is_composite">-</span>
+                                        <span v-else>{{ formatCurrency(pos.total_value) }}</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-right font-mono text-sm">
+                                        <span class="text-gray-500 italic" v-if="pos.is_composite">-</span>
+                                        <span v-else class="text-gray-400">{{ pos.pct_portfolio.toFixed(1) }}%</span>
+                                    </td>
+
+                                    <td class="px-6 py-4 font-mono text-sm font-semibold" :class="colorClass(pos.p_l)">
+                                        {{ formatCurrency(pos.p_l) }}
+                                    </td>
+                                    <td class="px-6 py-4 font-mono text-sm font-semibold"
+                                        :class="colorClass(pos.p_l_percent)">
+                                        <div class="flex items-center gap-1">
+                                            <span v-if="pos.p_l_percent > 0">↑</span>
+                                            <span v-else-if="pos.p_l_percent < 0">↓</span>
+                                            {{ pos.p_l_percent.toFixed(2) }}%
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="overflow-x-auto bg-gray-800 rounded-lg shadow">
-                    <table class="w-full text-left text-sm whitespace-nowrap">
-                        <thead class="text-xs text-gray-400 bg-gray-700/50 uppercase border-b border-gray-700">
-                            <tr>
-                                <th class="px-4 py-3">Date</th>
-                                <th class="px-4 py-3">Type</th>
-                                <th class="px-4 py-3">Sub-Type</th>
-                                <th class="px-4 py-3 text-left">Description</th>
-                                <th class="px-4 py-3">Symbol</th>
-                                <th class="px-4 py-3">Action</th>
-                                <th class="px-4 py-3 text-right">Qty</th>
-                                <th class="px-4 py-3 text-right">Price</th>
-                                <th class="px-4 py-3 text-right">Net Value</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-700/50">
-                            <tr v-for="(txn, i) in data.transactions" :key="i" class="hover:bg-gray-700/30">
-                                <td class="px-4 py-2">{{ txn.date }}</td>
-                                <td class="px-4 py-2">{{ txn.type }}</td>
-                                <td class="px-4 py-2">{{ txn.sub_type }}</td>
-                                <td class="px-4 py-2 text-gray-300">{{ txn.description }}</td>
-                                <td class="px-4 py-2 font-mono">{{ txn.symbol }}</td>
-                                <td class="px-4 py-2">{{ txn.action }}</td>
-                                <td class="px-4 py-2 text-right">
-                                    <span v-if="txn.quantity !== 0">{{ txn.quantity }}</span>
-                                    <span v-else class="text-gray-500">-</span>
-                                </td>
-                                <td class="px-4 py-2 text-right">
-                                    <span v-if="txn.price > 0">{{ formatCurrency(txn.price) }}</span>
-                                    <span v-else class="text-gray-500">-</span>
-                                </td>
-                                <td class="px-4 py-2 text-right" :class="colorClass(txn.net_value)">
-                                    {{ formatCurrency(txn.net_value) }}
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
 
-        </div> <!-- end content -->
-        
+                <!-- Transactions Removed -->
+
+            </div> <!-- end main content column -->
+
+            <!-- Right Sidebar: Watchlist -->
+            <div class="lg:col-span-1 space-y-4">
+                <div class="flex items-center gap-3 sticky top-4 z-10 bg-[#0b0f19] py-2">
+                    <div class="p-2 bg-orange-500/10 rounded-lg border border-orange-500/20">
+                        <span class="text-orange-400 text-lg">⚡</span>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold tracking-tight text-white/90">CSP Screener</h2>
+                        <div class="text-[10px] text-orange-400/80 font-mono tracking-widest uppercase mt-0.5">Ran: {{
+                            data.analytics ? formatCacheTime(data.analytics.updated) : formattedRefreshTime }}</div>
+                    </div>
+                </div>
+
+                <div v-if="watchlist && watchlist.length > 0"
+                    class="space-y-3 overflow-y-auto max-h-[80vh] pr-2 pb-10 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-white/10 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:rounded-full">
+                    <div v-for="item in watchlist" :key="item.symbol"
+                        class="glass-panel rounded-xl p-4 cursor-pointer group hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(249,115,22,0.1)] transition-all duration-300 relative overflow-hidden"
+                        @click="openChart({symbol: item.symbol})">
+
+                        <!-- Accent Bar -->
+                        <div class="absolute left-0 top-0 bottom-0 w-1 opacity-50 transition-colors duration-300"
+                            :class="item.roc_weekly >= 2.0 ? 'bg-emerald-400' : (item.roc_weekly > 0 ? 'bg-cyan-400' : 'bg-red-400')">
+                        </div>
+
+                        <div class="flex justify-between items-start mb-2 pl-2">
+                            <div>
+                                <div class="font-bold text-lg text-white group-hover:text-cyan-400 transition-colors">{{
+                                    item.symbol }}</div>
+                                <div class="text-xs font-medium text-gray-400 truncate w-32 tracking-wide"
+                                    :title="item.name">{{ item.name }}</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-mono text-sm font-semibold text-gray-200">{{ formatCurrency(item.price)
+                                    }}</div>
+                                <div class="flex items-center justify-end gap-1 mt-0.5">
+                                    <span class="font-mono font-bold"
+                                        :class="item.roc_weekly >= 0 ? 'text-emerald-400 drop-shadow-[0_0_2px_rgba(52,211,153,0.8)]' : 'text-rose-400 drop-shadow-[0_0_2px_rgba(251,113,133,0.8)]'">
+                                        {{ item.roc_weekly > 0 ? '+' : '' }}{{ item.roc_weekly }}%
+                                    </span>
+                                    <span
+                                        class="text-gray-500 text-[9px] font-bold uppercase tracking-widest bg-black/30 px-1 rounded">ROC</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center mt-3 pl-2 gap-2">
+                            <div
+                                class="flex items-center gap-1 bg-black/20 border border-white/5 rounded pl-1.5 pr-2 py-1">
+                                <span class="uppercase text-[8px] font-bold tracking-widest text-gray-500">STK</span>
+                                <span class="font-mono text-xs font-medium text-gray-300">{{ item.strike }}</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-1 bg-black/20 border border-white/5 rounded pl-1.5 pr-2 py-1">
+                                <span class="uppercase text-[8px] font-bold tracking-widest text-gray-500">DTE</span>
+                                <span class="font-mono text-xs font-medium text-gray-300">{{ item.dte }}</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-1 bg-black/20 border border-white/5 rounded pl-1.5 pr-2 py-1 ml-auto">
+                                <span class="font-mono text-xs text-gray-400">{{ formatCurrency(item.capital) }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div v-else class="glass-panel rounded-2xl p-8 text-center border-dashed border-2 border-white/10">
+                    <div class="text-gray-500 text-sm font-medium">No watchlist data to display right now.</div>
+                </div>
+            </div> <!-- end right sidebar -->
+
+        </div> <!-- end content grid -->
+
         <!-- Chart Dialog -->
-        <div v-if="chartOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80" @click.self="closeChart">
-            <div class="bg-gray-900 w-full max-w-4xl h-[600px] rounded relative overflow-hidden shadow-2xl">
-                <button @click="closeChart" class="absolute top-2 right-2 z-10 bg-gray-800/80 text-white rounded-full p-2 hover:bg-gray-700">&times;</button>
-                <div id="tv_container" class="w-full h-full"></div>
+        <teleport to="body">
+            <div v-if="chartOpen"
+                class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-hidden"
+                @click.self="closeChart">
+                <div
+                    class="glass-panel !bg-[#0f172a] w-full max-w-6xl h-[85vh] rounded-2xl relative shadow-2xl flex flex-col overflow-hidden">
+                    <div class="flex justify-between items-center px-4 py-3 bg-black/40 border-b border-white/10">
+                        <div class="flex items-center gap-2">
+                            <span class="text-cyan-400">📈</span>
+                            <div class="text-xs text-gray-300 font-bold tracking-widest">TRADINGVIEW</div>
+                        </div>
+                        <button @click="closeChart"
+                            class="text-gray-400 hover:text-white transition-colors bg-white/5 hover:bg-red-500/20 rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-red-500/50">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="tv_container" class="w-full flex-1 min-h-0 bg-[#0f172a]"></div>
+                </div>
             </div>
-        </div>
-        
+        </teleport>
+
     </div>
 
     <script>
@@ -241,16 +417,27 @@
         createApp({
             setup() {
                 const data = ref(null)
+                const watchlist = ref(null)
                 const chartOpen = ref(false)
                 let widget = null
 
                 onMounted(async () => {
                     try {
-                        const res = await fetch('data.json')
-                        if (res.ok) {
-                            data.value = await res.json()
+                        const [resData, resWatchlist] = await Promise.allSettled([
+                            fetch('data.json'),
+                            fetch('watchlist.json')
+                        ]);
+
+                        if (resData.status === 'fulfilled' && resData.value.ok) {
+                            data.value = await resData.value.json()
                         } else {
                             console.error('Failed to load data.json')
+                        }
+
+                        if (resWatchlist.status === 'fulfilled' && resWatchlist.value.ok) {
+                            watchlist.value = await resWatchlist.value.json()
+                        } else {
+                            console.log('No watchlist.json found or failed to load.')
                         }
                     } catch (e) {
                         console.error('Fetch error:', e)
@@ -309,7 +496,7 @@
                         sym = sym.split(' ')[0]
                     }
                     chartOpen.value = true
-                    
+
                     nextTick(() => {
                         widget = new TradingView.widget({
                             "autosize": true,
@@ -339,6 +526,7 @@
 
                 return {
                     data,
+                    watchlist,
                     totalPl,
                     ytdReturn,
                     formattedRefreshTime,
@@ -354,4 +542,5 @@
         }).mount('#app')
     </script>
 </body>
+
 </html>
