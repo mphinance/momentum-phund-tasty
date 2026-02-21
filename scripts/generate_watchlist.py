@@ -28,8 +28,8 @@ def process_watchlist(output_json_path):
         'golden_cross': True,   # Filters: Golden Cross
         'ema_atr_filter': True, # Filters: Near EMA20
         'sort_tv_by_price_asc': True, # Prioritize querying cheaper stocks
-        'tv_limit': 150,        # Default TV limit
-        'max_results': 40,      # Increased limit from 15 to 40
+        'tv_limit': 200,        # Default TV limit
+        'max_results': 50,      # Over-fetch up to 50 cheap stocks to filter from
         'process_limit': 150    # Limit the total stocks processed to avoid rate limits
     }
     
@@ -37,7 +37,11 @@ def process_watchlist(output_json_path):
     results_df = scanner.scan(config)
     
     if not results_df.empty:
-        # Sort the final output by capital ascending so cheapest are at the top
+        # We might have up to 50 results. Let's pick the "best" 25.
+        # Prioritize the absolute highest weekly ROC% from the pool of cheap stocks
+        results_df = results_df.sort_values('roc_weekly', ascending=False).head(25)
+        
+        # Sort the final top 25 output by capital ascending so cheapest are at the top of the UI
         results_df = results_df.sort_values('capital', ascending=True)
 
     if results_df.empty:

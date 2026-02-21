@@ -1,5 +1,16 @@
 [
   {
+    "symbol": "OPEN",
+    "name": "Opendoor Technologies Inc",
+    "sector": "Finance",
+    "price": 5.0,
+    "strike": 4.5,
+    "capital": 450.0,
+    "dte": 6,
+    "roc_weekly": 1.94,
+    "expiry": "2026-02-27"
+  },
+  {
     "symbol": "ONDS",
     "name": "Ondas Inc",
     "sector": "Electronic Technology",
@@ -154,6 +165,17 @@
     "expiry": "2026-02-27"
   },
   {
+    "symbol": "CRDO",
+    "name": "Credo Technology Group Holding ",
+    "sector": "Technology Services",
+    "price": 124.06,
+    "strike": 112.0,
+    "capital": 11200.0,
+    "dte": 6,
+    "roc_weekly": 1.88,
+    "expiry": "2026-02-27"
+  },
+  {
     "symbol": "BE",
     "name": "Bloom Energy Corporation",
     "sector": "Electronic Technology",
@@ -187,6 +209,17 @@
     "expiry": "2026-02-27"
   },
   {
+    "symbol": "FSLR",
+    "name": "First Solar, Inc.",
+    "sector": "Electronic Technology",
+    "price": 241.88,
+    "strike": 217.5,
+    "capital": 21750.0,
+    "dte": 6,
+    "roc_weekly": 1.9,
+    "expiry": "2026-02-27"
+  },
+  {
     "symbol": "WDC",
     "name": "Western Digital Corporation",
     "sector": "Electronic Technology",
@@ -196,6 +229,17 @@
     "dte": 6,
     "roc_weekly": 1.64,
     "expiry": "2026-02-27"
+  },
+  {
+    "symbol": "CLS",
+    "name": "Celestica, Inc.",
+    "sector": "Electronic Technology",
+    "price": 292.69,
+    "strike": 265.0,
+    "capital": 26500.0,
+    "dte": 13,
+    "roc_weekly": 1.11,
+    "expiry": "2026-03-06"
   },
   {
     "symbol": "AVGO",
