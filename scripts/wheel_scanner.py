@@ -42,6 +42,7 @@ class WheelScanner:
 
         conditions = [
             col('exchange') != "OTC",
+            col('type') == "stock", # IMPORTANT: Specifically filter out 'fund' like QQQM, SPY
             col('close').between(config.get('min_price', 1.0), final_max_price),
             col('average_volume_30d_calc') > config.get('min_volume', 150000),
             col('ADX').between(0, config.get('max_adx', 45)),
