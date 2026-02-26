@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-02-26T07:10:15.703131",
+  "last_refresh": "2026-02-26T07:23:53.734786",
   "balance": {
-    "net_liq": 939.166,
-    "net_liquidating_value": 939.166,
-    "equity_buying_power": 23.336
+    "net_liq": 936.239,
+    "net_liquidating_value": 936.239,
+    "equity_buying_power": 19.346
   },
   "ytd_deposits": 1109.0,
   "positions": [
@@ -14,13 +14,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 24.7767,
-      "current_price": 24.814999999999998,
-      "p_l": 0.038299999999996004,
-      "p_l_percent": 0.1545807149458806,
+      "current_price": 24.805,
+      "p_l": 0.028299999999997993,
+      "p_l_percent": 0.11422021496001482,
       "cost_basis": 24.7767,
       "multiplier": 1.0,
-      "total_value": 24.814999999999998,
-      "pct_portfolio": 2.64
+      "total_value": 24.805,
+      "pct_portfolio": 2.65
     },
     {
       "symbol": "RR    260227C00003000",
@@ -44,13 +44,13 @@
       "quantity": 103,
       "direction": "Long",
       "avg_open_price": 2.99609029,
-      "current_price": 2.6950000000000003,
-      "p_l": -31.012299869999985,
-      "p_l_percent": -10.04943979842476,
+      "current_price": 2.7,
+      "p_l": -30.49729987,
+      "p_l_percent": -9.88255564220663,
       "cost_basis": 308.59729987000003,
       "multiplier": 1.0,
-      "total_value": 277.58500000000004,
-      "pct_portfolio": 29.56
+      "total_value": 278.1,
+      "pct_portfolio": 29.7
     },
     {
       "symbol": "DDD   260227P00002000",
@@ -95,7 +95,7 @@
       "cost_basis": 258.8421004,
       "multiplier": 1.0,
       "total_value": 215.27999999999997,
-      "pct_portfolio": 22.92
+      "pct_portfolio": 22.99
     },
     {
       "symbol": "ONDS",
@@ -110,7 +110,7 @@
       "cost_basis": 45.0002,
       "multiplier": 1.0,
       "total_value": 51.475,
-      "pct_portfolio": 5.48
+      "pct_portfolio": 5.5
     },
     {
       "symbol": "GOOW",
@@ -119,13 +119,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 66.99,
-      "current_price": 63.254999999999995,
-      "p_l": -3.7349999999999994,
-      "p_l_percent": -5.5754590237348856,
+      "current_price": 63.315,
+      "p_l": -3.674999999999997,
+      "p_l_percent": -5.485893416927896,
       "cost_basis": 66.99,
       "multiplier": 1.0,
-      "total_value": 63.254999999999995,
-      "pct_portfolio": 6.74
+      "total_value": 63.315,
+      "pct_portfolio": 6.76
     },
     {
       "symbol": "UAMY",
@@ -140,7 +140,7 @@
       "cost_basis": 14.5998,
       "multiplier": 1.0,
       "total_value": 17.979999999999997,
-      "pct_portfolio": 1.91
+      "pct_portfolio": 1.92
     },
     {
       "symbol": "GDXW",
@@ -155,7 +155,7 @@
       "cost_basis": 63.99,
       "multiplier": 1.0,
       "total_value": 71.81,
-      "pct_portfolio": 7.65
+      "pct_portfolio": 7.67
     }
   ],
   "transactions": [
@@ -2216,32 +2216,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-02-26T07:10:07.986163",
+    "updated": "2026-02-26T07:23:45.893613",
     "sector_allocation": {
-      "Industrials": 38.2,
+      "Industrials": 38.3,
       "Technology": 37.5,
       "Basic Materials": 2.4
     },
     "missing_sectors": [
-      "Utilities",
-      "Communication Services",
-      "Real Estate",
-      "Consumer Cyclical",
-      "Financial Services",
-      "Energy",
       "Consumer Defensive",
-      "Healthcare"
+      "Healthcare",
+      "Consumer Cyclical",
+      "Communication Services",
+      "Financial Services",
+      "Utilities",
+      "Real Estate",
+      "Energy"
     ],
     "stats": {
       "sharpe": 0.58,
       "sortino": 0.92,
       "calmar": -1.33,
-      "max_drawdown": -73.4,
-      "volatility": 385.0,
+      "max_drawdown": -73.6,
+      "volatility": 386.2,
       "win_rate": 51.0,
-      "var": -32.5,
-      "best_day": 88.3,
-      "worst_day": -57.7
+      "var": -32.6,
+      "best_day": 88.5,
+      "worst_day": -57.9
     }
   }
 }

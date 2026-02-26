@@ -1,1 +1,277 @@
-[]
+[
+  {
+    "symbol": "BITF",
+    "name": "Bitfarms Ltd.",
+    "sector": "Technology Services",
+    "price": 2.31,
+    "strike": 2.0,
+    "capital": 200.0,
+    "dte": 7,
+    "roc_weekly": 3.0,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "OPEN",
+    "name": "Opendoor Technologies Inc",
+    "sector": "Finance",
+    "price": 4.98,
+    "strike": 4.5,
+    "capital": 450.0,
+    "dte": 7,
+    "roc_weekly": 2.0,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "TE",
+    "name": "T1 Energy Inc.",
+    "sector": "Producer Manufacturing",
+    "price": 7.22,
+    "strike": 6.5,
+    "capital": 650.0,
+    "dte": 7,
+    "roc_weekly": 3.85,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "CRML",
+    "name": "Critical Metals Corp.",
+    "sector": "Non-Energy Minerals",
+    "price": 10.76,
+    "strike": 9.5,
+    "capital": 950.0,
+    "dte": 7,
+    "roc_weekly": 4.21,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "ONDS",
+    "name": "Ondas Inc",
+    "sector": "Electronic Technology",
+    "price": 10.3,
+    "strike": 9.5,
+    "capital": 950.0,
+    "dte": 7,
+    "roc_weekly": 3.68,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "EOSE",
+    "name": "Eos Energy Enterprises, Inc.",
+    "sector": "Producer Manufacturing",
+    "price": 11.13,
+    "strike": 10.0,
+    "capital": 1000.0,
+    "dte": 7,
+    "roc_weekly": 6.0,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "RCAT",
+    "name": "Red Cat Holdings, Inc.",
+    "sector": "Technology Services",
+    "price": 12.42,
+    "strike": 11.0,
+    "capital": 1100.0,
+    "dte": 7,
+    "roc_weekly": 3.27,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "UEC",
+    "name": "Uranium Energy Corp.",
+    "sector": "Non-Energy Minerals",
+    "price": 15.63,
+    "strike": 14.0,
+    "capital": 1400.0,
+    "dte": 7,
+    "roc_weekly": 2.07,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "LUNR",
+    "name": "Intuitive Machines, Inc.",
+    "sector": "Electronic Technology",
+    "price": 15.89,
+    "strike": 14.5,
+    "capital": 1450.0,
+    "dte": 7,
+    "roc_weekly": 3.86,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "CIFR",
+    "name": "Cipher Mining Inc.",
+    "sector": "Technology Services",
+    "price": 16.61,
+    "strike": 15.0,
+    "capital": 1500.0,
+    "dte": 7,
+    "roc_weekly": 3.33,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "CORZ",
+    "name": "Core Scientific, Inc.",
+    "sector": "Technology Services",
+    "price": 18.08,
+    "strike": 16.5,
+    "capital": 1650.0,
+    "dte": 7,
+    "roc_weekly": 6.12,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "QBTS",
+    "name": "D-Wave Quantum Inc.",
+    "sector": "Electronic Technology",
+    "price": 19.65,
+    "strike": 17.5,
+    "capital": 1750.0,
+    "dte": 7,
+    "roc_weekly": 4.06,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "RUN",
+    "name": "Sunrun Inc.",
+    "sector": "Electronic Technology",
+    "price": 19.55,
+    "strike": 17.5,
+    "capital": 1750.0,
+    "dte": 7,
+    "roc_weekly": 3.54,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "UUUU",
+    "name": "Energy Fuels Inc",
+    "sector": "Non-Energy Minerals",
+    "price": 22.6,
+    "strike": 20.5,
+    "capital": 2050.0,
+    "dte": 7,
+    "roc_weekly": 2.54,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "AEO",
+    "name": "American Eagle Outfitters, Inc.",
+    "sector": "Retail Trade",
+    "price": 24.04,
+    "strike": 21.5,
+    "capital": 2150.0,
+    "dte": 7,
+    "roc_weekly": 2.98,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "GAP",
+    "name": "Gap, Inc. (The)",
+    "sector": "Retail Trade",
+    "price": 27.18,
+    "strike": 24.5,
+    "capital": 2450.0,
+    "dte": 7,
+    "roc_weekly": 2.61,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "IREN",
+    "name": "IREN LIMITED",
+    "sector": "Technology Services",
+    "price": 44.03,
+    "strike": 39.5,
+    "capital": 3950.0,
+    "dte": 7,
+    "roc_weekly": 3.82,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "HUT",
+    "name": "Hut 8 Corp.",
+    "sector": "Technology Services",
+    "price": 55.3,
+    "strike": 50.0,
+    "capital": 5000.0,
+    "dte": 7,
+    "roc_weekly": 3.56,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "RKLB",
+    "name": "Rocket Lab Corporation",
+    "sector": "Electronic Technology",
+    "price": 70.2,
+    "strike": 63.0,
+    "capital": 6300.0,
+    "dte": 7,
+    "roc_weekly": 3.38,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "MRVL",
+    "name": "Marvell Technology, Inc.",
+    "sector": "Electronic Technology",
+    "price": 80.92,
+    "strike": 73.0,
+    "capital": 7300.0,
+    "dte": 7,
+    "roc_weekly": 2.68,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "ASTS",
+    "name": "AST SpaceMobile, Inc.",
+    "sector": "Communications",
+    "price": 82.36,
+    "strike": 74.0,
+    "capital": 7400.0,
+    "dte": 7,
+    "roc_weekly": 4.59,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "KRMN",
+    "name": "Karman Holdings Inc.",
+    "sector": "Electronic Technology",
+    "price": 83.44,
+    "strike": 75.0,
+    "capital": 7500.0,
+    "dte": 21,
+    "roc_weekly": 1.96,
+    "expiry": "2026-03-20"
+  },
+  {
+    "symbol": "TWLO",
+    "name": "Twilio Inc.",
+    "sector": "Technology Services",
+    "price": 118.32,
+    "strike": 106.0,
+    "capital": 10600.0,
+    "dte": 7,
+    "roc_weekly": 3.25,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "CRDO",
+    "name": "Credo Technology Group Holding ",
+    "sector": "Technology Services",
+    "price": 123.46,
+    "strike": 111.0,
+    "capital": 11100.0,
+    "dte": 7,
+    "roc_weekly": 3.96,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "PSX",
+    "name": "Phillips 66",
+    "sector": "Energy Minerals",
+    "price": 151.91,
+    "strike": 137.0,
+    "capital": 13700.0,
+    "dte": 7,
+    "roc_weekly": 2.31,
+    "expiry": "2026-03-06"
+  }
+]
