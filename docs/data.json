@@ -1,8 +1,8 @@
 {
-  "last_refresh": "2026-02-26T06:41:05.441533",
+  "last_refresh": "2026-02-26T06:45:02.259411",
   "balance": {
-    "net_liq": 936.986,
-    "net_liquidating_value": 936.986,
+    "net_liq": 937.154,
+    "net_liquidating_value": 937.154,
     "equity_buying_power": 48.114
   },
   "ytd_deposits": 1109.0,
@@ -29,13 +29,13 @@
       "quantity": 103,
       "direction": "Long",
       "avg_open_price": 2.99609029,
-      "current_price": 2.7,
-      "p_l": -30.49729987,
-      "p_l_percent": -9.88255564220663,
+      "current_price": 2.705,
+      "p_l": -29.98229987000001,
+      "p_l_percent": -9.715671485988498,
       "cost_basis": 308.59729987000003,
       "multiplier": 1.0,
-      "total_value": 278.1,
-      "pct_portfolio": 29.68
+      "total_value": 278.615,
+      "pct_portfolio": 29.73
     },
     {
       "symbol": "DDD   260227P00002000",
@@ -80,7 +80,7 @@
       "cost_basis": 258.8421004,
       "multiplier": 1.0,
       "total_value": 215.27999999999997,
-      "pct_portfolio": 22.98
+      "pct_portfolio": 22.97
     },
     {
       "symbol": "ONDS",
@@ -89,13 +89,13 @@
       "quantity": 5,
       "direction": "Long",
       "avg_open_price": 9.00004,
-      "current_price": 10.31,
-      "p_l": 6.549800000000001,
-      "p_l_percent": 14.555046422015906,
+      "current_price": 10.325,
+      "p_l": 6.624799999999995,
+      "p_l_percent": 14.72171234794511,
       "cost_basis": 45.0002,
       "multiplier": 1.0,
-      "total_value": 51.550000000000004,
-      "pct_portfolio": 5.5
+      "total_value": 51.625,
+      "pct_portfolio": 5.51
     },
     {
       "symbol": "GOOW",
@@ -119,13 +119,13 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 7.2999,
-      "current_price": 8.945,
-      "p_l": 3.2902000000000005,
-      "p_l_percent": 22.53592514965959,
+      "current_price": 9.004999999999999,
+      "p_l": 3.410199999999998,
+      "p_l_percent": 23.357854217181043,
       "cost_basis": 14.5998,
       "multiplier": 1.0,
-      "total_value": 17.89,
-      "pct_portfolio": 1.91
+      "total_value": 18.009999999999998,
+      "pct_portfolio": 1.92
     },
     {
       "symbol": "GDXW",
@@ -134,13 +134,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 63.99,
-      "current_price": 71.28,
-      "p_l": 7.289999999999999,
-      "p_l_percent": 11.392405063291138,
+      "current_price": 71.81,
+      "p_l": 7.82,
+      "p_l_percent": 12.220659478043444,
       "cost_basis": 63.99,
       "multiplier": 1.0,
-      "total_value": 71.28,
-      "pct_portfolio": 7.61
+      "total_value": 71.81,
+      "pct_portfolio": 7.66
     }
   ],
   "transactions": [
@@ -2186,21 +2186,21 @@
     }
   ],
   "analytics": {
-    "updated": "2026-02-26T06:40:57.469164",
+    "updated": "2026-02-26T06:44:54.706689",
     "sector_allocation": {
       "Industrials": 39.6,
-      "Technology": 38.9,
+      "Technology": 38.8,
       "Basic Materials": 2.5
     },
     "missing_sectors": [
-      "Consumer Defensive",
-      "Financial Services",
-      "Energy",
       "Utilities",
-      "Healthcare",
+      "Financial Services",
+      "Consumer Defensive",
+      "Energy",
+      "Communication Services",
       "Consumer Cyclical",
       "Real Estate",
-      "Communication Services"
+      "Healthcare"
     ],
     "stats": {
       "sharpe": 0.65,
@@ -2211,7 +2211,7 @@
       "win_rate": 53.0,
       "var": -33.0,
       "best_day": 88.5,
-      "worst_day": -57.9
+      "worst_day": -57.8
     }
   }
 }

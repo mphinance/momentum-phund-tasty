@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "symbol": "F",
+    "name": "Ford Motor Company",
+    "sector": "Consumer Durables",
+    "price": 14.43,
+    "strike": 11.82,
+    "capital": 1182.0,
+    "dte": 294,
+    "roc_weekly": 0.61,
+    "expiry": "2026-12-18"
+  },
+  {
+    "symbol": "BE",
+    "name": "Bloom Energy Corporation",
+    "sector": "Electronic Technology",
+    "price": 174.77,
+    "strike": 165.0,
+    "capital": 16500.0,
+    "dte": 294,
+    "roc_weekly": 1.04,
+    "expiry": "2026-12-18"
+  }
+]
