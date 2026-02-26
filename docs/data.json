@@ -1,5 +1,5 @@
 {
-  "last_refresh": "2026-02-26T07:23:53.734786",
+  "last_refresh": "2026-02-26T07:30:54.926746",
   "balance": {
     "net_liq": 936.239,
     "net_liquidating_value": 936.239,
@@ -14,13 +14,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 24.7767,
-      "current_price": 24.805,
-      "p_l": 0.028299999999997993,
-      "p_l_percent": 0.11422021496001482,
+      "current_price": 25.814999999999998,
+      "p_l": 1.038299999999996,
+      "p_l_percent": 4.190630713533263,
       "cost_basis": 24.7767,
       "multiplier": 1.0,
-      "total_value": 24.805,
-      "pct_portfolio": 2.65
+      "total_value": 25.814999999999998,
+      "pct_portfolio": 2.76
     },
     {
       "symbol": "RR    260227C00003000",
@@ -44,13 +44,13 @@
       "quantity": 103,
       "direction": "Long",
       "avg_open_price": 2.99609029,
-      "current_price": 2.7,
-      "p_l": -30.49729987,
-      "p_l_percent": -9.88255564220663,
+      "current_price": 2.71,
+      "p_l": -29.46729987000002,
+      "p_l_percent": -9.548787329770365,
       "cost_basis": 308.59729987000003,
       "multiplier": 1.0,
-      "total_value": 278.1,
-      "pct_portfolio": 29.7
+      "total_value": 279.13,
+      "pct_portfolio": 29.81
     },
     {
       "symbol": "DDD   260227P00002000",
@@ -104,12 +104,12 @@
       "quantity": 5,
       "direction": "Long",
       "avg_open_price": 9.00004,
-      "current_price": 10.295,
-      "p_l": 6.474799999999998,
-      "p_l_percent": 14.38838049608668,
+      "current_price": 10.305,
+      "p_l": 6.524799999999997,
+      "p_l_percent": 14.499491113372823,
       "cost_basis": 45.0002,
       "multiplier": 1.0,
-      "total_value": 51.475,
+      "total_value": 51.525,
       "pct_portfolio": 5.5
     },
     {
@@ -134,13 +134,13 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 7.2999,
-      "current_price": 8.989999999999998,
-      "p_l": 3.3801999999999968,
-      "p_l_percent": 23.15237195030067,
+      "current_price": 8.945,
+      "p_l": 3.2902000000000005,
+      "p_l_percent": 22.53592514965959,
       "cost_basis": 14.5998,
       "multiplier": 1.0,
-      "total_value": 17.979999999999997,
-      "pct_portfolio": 1.92
+      "total_value": 17.89,
+      "pct_portfolio": 1.91
     },
     {
       "symbol": "GDXW",
@@ -2216,21 +2216,21 @@
     }
   ],
   "analytics": {
-    "updated": "2026-02-26T07:23:45.893613",
+    "updated": "2026-02-26T07:30:24.461450",
     "sector_allocation": {
-      "Industrials": 38.3,
+      "Industrials": 38.4,
       "Technology": 37.5,
       "Basic Materials": 2.4
     },
     "missing_sectors": [
-      "Consumer Defensive",
-      "Healthcare",
-      "Consumer Cyclical",
       "Communication Services",
-      "Financial Services",
-      "Utilities",
+      "Energy",
       "Real Estate",
-      "Energy"
+      "Consumer Cyclical",
+      "Financial Services",
+      "Healthcare",
+      "Consumer Defensive",
+      "Utilities"
     ],
     "stats": {
       "sharpe": 0.58,
