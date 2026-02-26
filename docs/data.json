@@ -1,5 +1,5 @@
 {
-  "last_refresh": "2026-02-26T06:27:05.591083",
+  "last_refresh": "2026-02-26T06:41:05.441533",
   "balance": {
     "net_liq": 936.986,
     "net_liquidating_value": 936.986,
@@ -29,13 +29,13 @@
       "quantity": 103,
       "direction": "Long",
       "avg_open_price": 2.99609029,
-      "current_price": 2.6950000000000003,
-      "p_l": -31.012299869999985,
-      "p_l_percent": -10.04943979842476,
+      "current_price": 2.7,
+      "p_l": -30.49729987,
+      "p_l_percent": -9.88255564220663,
       "cost_basis": 308.59729987000003,
       "multiplier": 1.0,
-      "total_value": 277.58500000000004,
-      "pct_portfolio": 29.63
+      "total_value": 278.1,
+      "pct_portfolio": 29.68
     },
     {
       "symbol": "DDD   260227P00002000",
@@ -74,13 +74,13 @@
       "quantity": 104,
       "direction": "Long",
       "avg_open_price": 2.48886635,
-      "current_price": 2.085,
-      "p_l": -42.00210039999999,
-      "p_l_percent": -16.22691993887096,
+      "current_price": 2.07,
+      "p_l": -43.562100400000006,
+      "p_l_percent": -16.82960396808772,
       "cost_basis": 258.8421004,
       "multiplier": 1.0,
-      "total_value": 216.84,
-      "pct_portfolio": 23.14
+      "total_value": 215.27999999999997,
+      "pct_portfolio": 22.98
     },
     {
       "symbol": "ONDS",
@@ -89,13 +89,13 @@
       "quantity": 5,
       "direction": "Long",
       "avg_open_price": 9.00004,
-      "current_price": 10.325,
-      "p_l": 6.624799999999995,
-      "p_l_percent": 14.72171234794511,
+      "current_price": 10.31,
+      "p_l": 6.549800000000001,
+      "p_l_percent": 14.555046422015906,
       "cost_basis": 45.0002,
       "multiplier": 1.0,
-      "total_value": 51.625,
-      "pct_portfolio": 5.51
+      "total_value": 51.550000000000004,
+      "pct_portfolio": 5.5
     },
     {
       "symbol": "GOOW",
@@ -104,12 +104,12 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 66.99,
-      "current_price": 63.75,
-      "p_l": -3.239999999999995,
-      "p_l_percent": -4.836542767577243,
+      "current_price": 63.73,
+      "p_l": -3.259999999999998,
+      "p_l_percent": -4.866397969846243,
       "cost_basis": 66.99,
       "multiplier": 1.0,
-      "total_value": 63.75,
+      "total_value": 63.73,
       "pct_portfolio": 6.8
     },
     {
@@ -2186,21 +2186,21 @@
     }
   ],
   "analytics": {
-    "updated": "2026-02-26T06:26:57.170664",
+    "updated": "2026-02-26T06:40:57.469164",
     "sector_allocation": {
-      "Industrials": 39.5,
-      "Technology": 39.0,
+      "Industrials": 39.6,
+      "Technology": 38.9,
       "Basic Materials": 2.5
     },
     "missing_sectors": [
-      "Communication Services",
-      "Real Estate",
       "Consumer Defensive",
       "Financial Services",
+      "Energy",
       "Utilities",
-      "Consumer Cyclical",
       "Healthcare",
-      "Energy"
+      "Consumer Cyclical",
+      "Real Estate",
+      "Communication Services"
     ],
     "stats": {
       "sharpe": 0.65,
