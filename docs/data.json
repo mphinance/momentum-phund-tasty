@@ -1,5 +1,5 @@
 {
-  "last_refresh": "2026-02-26T07:07:42.588807",
+  "last_refresh": "2026-02-26T07:10:15.703131",
   "balance": {
     "net_liq": 939.166,
     "net_liquidating_value": 939.166,
@@ -14,12 +14,12 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 24.7767,
-      "current_price": 24.82,
-      "p_l": 0.04329999999999856,
-      "p_l_percent": 0.17476096493882784,
+      "current_price": 24.814999999999998,
+      "p_l": 0.038299999999996004,
+      "p_l_percent": 0.1545807149458806,
       "cost_basis": 24.7767,
       "multiplier": 1.0,
-      "total_value": 24.82,
+      "total_value": 24.814999999999998,
       "pct_portfolio": 2.64
     },
     {
@@ -104,13 +104,13 @@
       "quantity": 5,
       "direction": "Long",
       "avg_open_price": 9.00004,
-      "current_price": 10.305,
-      "p_l": 6.524799999999997,
-      "p_l_percent": 14.499491113372823,
+      "current_price": 10.295,
+      "p_l": 6.474799999999998,
+      "p_l_percent": 14.38838049608668,
       "cost_basis": 45.0002,
       "multiplier": 1.0,
-      "total_value": 51.525,
-      "pct_portfolio": 5.49
+      "total_value": 51.475,
+      "pct_portfolio": 5.48
     },
     {
       "symbol": "GOOW",
@@ -2216,20 +2216,20 @@
     }
   ],
   "analytics": {
-    "updated": "2026-02-26T07:07:33.762635",
+    "updated": "2026-02-26T07:10:07.986163",
     "sector_allocation": {
       "Industrials": 38.2,
-      "Technology": 37.6,
+      "Technology": 37.5,
       "Basic Materials": 2.4
     },
     "missing_sectors": [
-      "Real Estate",
-      "Communication Services",
-      "Financial Services",
-      "Consumer Cyclical",
       "Utilities",
-      "Consumer Defensive",
+      "Communication Services",
+      "Real Estate",
+      "Consumer Cyclical",
+      "Financial Services",
       "Energy",
+      "Consumer Defensive",
       "Healthcare"
     ],
     "stats": {
