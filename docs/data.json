@@ -1,8 +1,8 @@
 {
-  "last_refresh": "2026-02-26T07:30:54.926746",
+  "last_refresh": "2026-02-26T07:35:45.851567",
   "balance": {
-    "net_liq": 936.239,
-    "net_liquidating_value": 936.239,
+    "net_liq": 936.39,
+    "net_liquidating_value": 936.39,
     "equity_buying_power": 19.346
   },
   "ytd_deposits": 1109.0,
@@ -14,13 +14,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 24.7767,
-      "current_price": 25.814999999999998,
-      "p_l": 1.038299999999996,
-      "p_l_percent": 4.190630713533263,
+      "current_price": 24.810000000000002,
+      "p_l": 0.03330000000000055,
+      "p_l_percent": 0.13440046495296207,
       "cost_basis": 24.7767,
       "multiplier": 1.0,
-      "total_value": 25.814999999999998,
-      "pct_portfolio": 2.76
+      "total_value": 24.810000000000002,
+      "pct_portfolio": 2.65
     },
     {
       "symbol": "RR    260227C00003000",
@@ -44,13 +44,13 @@
       "quantity": 103,
       "direction": "Long",
       "avg_open_price": 2.99609029,
-      "current_price": 2.71,
-      "p_l": -29.46729987000002,
-      "p_l_percent": -9.548787329770365,
+      "current_price": 2.685,
+      "p_l": -32.04229987000001,
+      "p_l_percent": -10.38320811086104,
       "cost_basis": 308.59729987000003,
       "multiplier": 1.0,
-      "total_value": 279.13,
-      "pct_portfolio": 29.81
+      "total_value": 276.555,
+      "pct_portfolio": 29.53
     },
     {
       "symbol": "DDD   260227P00002000",
@@ -104,13 +104,13 @@
       "quantity": 5,
       "direction": "Long",
       "avg_open_price": 9.00004,
-      "current_price": 10.305,
-      "p_l": 6.524799999999997,
-      "p_l_percent": 14.499491113372823,
+      "current_price": 10.285,
+      "p_l": 6.424799999999999,
+      "p_l_percent": 14.277269878800539,
       "cost_basis": 45.0002,
       "multiplier": 1.0,
-      "total_value": 51.525,
-      "pct_portfolio": 5.5
+      "total_value": 51.425,
+      "pct_portfolio": 5.49
     },
     {
       "symbol": "GOOW",
@@ -2216,21 +2216,21 @@
     }
   ],
   "analytics": {
-    "updated": "2026-02-26T07:30:24.461450",
+    "updated": "2026-02-26T07:35:37.169041",
     "sector_allocation": {
-      "Industrials": 38.4,
-      "Technology": 37.5,
+      "Industrials": 38.1,
+      "Technology": 37.6,
       "Basic Materials": 2.4
     },
     "missing_sectors": [
-      "Communication Services",
-      "Energy",
-      "Real Estate",
-      "Consumer Cyclical",
       "Financial Services",
+      "Consumer Cyclical",
+      "Energy",
       "Healthcare",
+      "Utilities",
+      "Communication Services",
       "Consumer Defensive",
-      "Utilities"
+      "Real Estate"
     ],
     "stats": {
       "sharpe": 0.58,
