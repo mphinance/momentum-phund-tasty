@@ -1,26 +1,41 @@
 {
-  "last_refresh": "2026-02-26T07:35:45.851567",
+  "last_refresh": "2026-02-26T20:37:01.555018",
   "balance": {
-    "net_liq": 936.39,
-    "net_liquidating_value": 936.39,
-    "equity_buying_power": 19.346
+    "net_liq": 934.246,
+    "net_liquidating_value": 934.246,
+    "equity_buying_power": 74.446
   },
   "ytd_deposits": 1109.0,
   "positions": [
     {
-      "symbol": "NFLU",
-      "underlying_symbol": "NFLU",
+      "symbol": "FCF",
+      "underlying_symbol": "FCF",
       "type": "EQUITY",
       "quantity": 1,
       "direction": "Long",
-      "avg_open_price": 24.7767,
-      "current_price": 24.810000000000002,
-      "p_l": 0.03330000000000055,
-      "p_l_percent": 0.13440046495296207,
-      "cost_basis": 24.7767,
+      "avg_open_price": 18.1166,
+      "current_price": 17.93,
+      "p_l": -0.18659999999999854,
+      "p_l_percent": -1.0299945905964616,
+      "cost_basis": 18.1166,
       "multiplier": 1.0,
-      "total_value": 24.810000000000002,
-      "pct_portfolio": 2.65
+      "total_value": 17.93,
+      "pct_portfolio": 1.92
+    },
+    {
+      "symbol": "ASM",
+      "underlying_symbol": "ASM",
+      "type": "EQUITY",
+      "quantity": 3,
+      "direction": "Long",
+      "avg_open_price": 8.81233333,
+      "current_price": 9.305,
+      "p_l": 1.4780000100000006,
+      "p_l_percent": 5.590649508488353,
+      "cost_basis": 26.436999989999997,
+      "multiplier": 1.0,
+      "total_value": 27.915,
+      "pct_portfolio": 2.99
     },
     {
       "symbol": "RR    260227C00003000",
@@ -44,13 +59,13 @@
       "quantity": 103,
       "direction": "Long",
       "avg_open_price": 2.99609029,
-      "current_price": 2.685,
-      "p_l": -32.04229987000001,
-      "p_l_percent": -10.38320811086104,
+      "current_price": 2.725,
+      "p_l": -27.922299870000007,
+      "p_l_percent": -9.048134861115953,
       "cost_basis": 308.59729987000003,
       "multiplier": 1.0,
-      "total_value": 276.555,
-      "pct_portfolio": 29.53
+      "total_value": 280.675,
+      "pct_portfolio": 30.04
     },
     {
       "symbol": "DDD   260227P00002000",
@@ -65,7 +80,7 @@
       "cost_basis": 5.0,
       "multiplier": 100.0,
       "total_value": 8.0,
-      "pct_portfolio": 0.85
+      "pct_portfolio": 0.86
     },
     {
       "symbol": "DDD   260227C00002500",
@@ -89,13 +104,13 @@
       "quantity": 104,
       "direction": "Long",
       "avg_open_price": 2.48886635,
-      "current_price": 2.07,
-      "p_l": -43.562100400000006,
-      "p_l_percent": -16.82960396808772,
+      "current_price": 2.01,
+      "p_l": -49.802100400000015,
+      "p_l_percent": -19.24034008495475,
       "cost_basis": 258.8421004,
       "multiplier": 1.0,
-      "total_value": 215.27999999999997,
-      "pct_portfolio": 22.99
+      "total_value": 209.03999999999996,
+      "pct_portfolio": 22.38
     },
     {
       "symbol": "ONDS",
@@ -104,13 +119,13 @@
       "quantity": 5,
       "direction": "Long",
       "avg_open_price": 9.00004,
-      "current_price": 10.285,
-      "p_l": 6.424799999999999,
-      "p_l_percent": 14.277269878800539,
+      "current_price": 10.309999999999999,
+      "p_l": 6.549799999999992,
+      "p_l_percent": 14.555046422015886,
       "cost_basis": 45.0002,
       "multiplier": 1.0,
-      "total_value": 51.425,
-      "pct_portfolio": 5.49
+      "total_value": 51.55,
+      "pct_portfolio": 5.52
     },
     {
       "symbol": "GOOW",
@@ -119,13 +134,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 66.99,
-      "current_price": 63.315,
-      "p_l": -3.674999999999997,
-      "p_l_percent": -5.485893416927896,
+      "current_price": 65.205,
+      "p_l": -1.7849999999999966,
+      "p_l_percent": -2.664576802507832,
       "cost_basis": 66.99,
       "multiplier": 1.0,
-      "total_value": 63.315,
-      "pct_portfolio": 6.76
+      "total_value": 65.205,
+      "pct_portfolio": 6.98
     },
     {
       "symbol": "UAMY",
@@ -134,31 +149,91 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 7.2999,
-      "current_price": 8.945,
-      "p_l": 3.2902000000000005,
-      "p_l_percent": 22.53592514965959,
+      "current_price": 8.885,
+      "p_l": 3.1701999999999995,
+      "p_l_percent": 21.713996082138106,
       "cost_basis": 14.5998,
       "multiplier": 1.0,
-      "total_value": 17.89,
-      "pct_portfolio": 1.91
-    },
-    {
-      "symbol": "GDXW",
-      "underlying_symbol": "GDXW",
-      "type": "EQUITY",
-      "quantity": 1,
-      "direction": "Long",
-      "avg_open_price": 63.99,
-      "current_price": 71.81,
-      "p_l": 7.82,
-      "p_l_percent": 12.220659478043444,
-      "cost_basis": 63.99,
-      "multiplier": 1.0,
-      "total_value": 71.81,
-      "pct_portfolio": 7.67
+      "total_value": 17.77,
+      "pct_portfolio": 1.9
     }
   ],
   "transactions": [
+    {
+      "id": 421748097,
+      "date": "2026-02-26 16:30",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 FCF @ 18.12",
+      "symbol": "FCF",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 18.1166,
+      "value": -18.117,
+      "net_value": -18.118,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 421616204,
+      "date": "2026-02-26 14:30",
+      "type": "Trade",
+      "sub_type": "Sell to Close",
+      "description": "Sold 1 GDXW @ 71.01",
+      "symbol": "GDXW",
+      "action": "Sell to Close",
+      "quantity": 1.0,
+      "price": 71.01,
+      "value": 71.01,
+      "net_value": 71.009,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 421615243,
+      "date": "2026-02-26 14:18",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 ASM @ 8.78",
+      "symbol": "ASM",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 8.78,
+      "value": -8.78,
+      "net_value": -8.781,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 421615234,
+      "date": "2026-02-26 14:17",
+      "type": "Trade",
+      "sub_type": "Sell to Close",
+      "description": "Sold 1 NFLU @ 24.66",
+      "symbol": "NFLU",
+      "action": "Sell to Close",
+      "quantity": 1.0,
+      "price": 24.66,
+      "value": 24.66,
+      "net_value": 24.659,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 421614824,
+      "date": "2026-02-26 14:02",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 2 ASM @ 8.83",
+      "symbol": "ASM",
+      "action": "Buy to Open",
+      "quantity": 2.0,
+      "price": 8.8285,
+      "value": -17.657,
+      "net_value": -17.659,
+      "commission": 0,
+      "fees": -0.002
+    },
     {
       "id": 421612920,
       "date": "2026-02-26 12:50",
@@ -2216,32 +2291,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-02-26T07:35:37.169041",
+    "updated": "2026-02-26T20:36:52.485734",
     "sector_allocation": {
-      "Industrials": 38.1,
-      "Technology": 37.6,
-      "Basic Materials": 2.4
+      "Financial Services": 2.6,
+      "Basic Materials": 6.7,
+      "Industrials": 41.6,
+      "Technology": 39.5
     },
     "missing_sectors": [
-      "Financial Services",
-      "Consumer Cyclical",
+      "Communication Services",
       "Energy",
       "Healthcare",
-      "Utilities",
-      "Communication Services",
+      "Consumer Cyclical",
+      "Real Estate",
       "Consumer Defensive",
-      "Real Estate"
+      "Utilities"
     ],
     "stats": {
-      "sharpe": 0.58,
-      "sortino": 0.92,
-      "calmar": -1.33,
-      "max_drawdown": -73.6,
-      "volatility": 386.2,
-      "win_rate": 51.0,
+      "sharpe": 0.71,
+      "sortino": 1.13,
+      "calmar": -1.32,
+      "max_drawdown": -73.7,
+      "volatility": 387.0,
+      "win_rate": 54.0,
       "var": -32.6,
-      "best_day": 88.5,
-      "worst_day": -57.9
+      "best_day": 88.7,
+      "worst_day": -58.0
     }
   }
 }
