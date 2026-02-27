@@ -6,8 +6,8 @@
     "price": 5.41,
     "strike": 5.0,
     "capital": 500.0,
-    "dte": 8,
-    "roc_weekly": 2.28,
+    "dte": 7,
+    "roc_weekly": 2.2,
     "expiry": "2026-03-06"
   },
   {
@@ -17,8 +17,8 @@
     "price": 7.29,
     "strike": 6.5,
     "capital": 650.0,
-    "dte": 8,
-    "roc_weekly": 3.03,
+    "dte": 7,
+    "roc_weekly": 3.08,
     "expiry": "2026-03-06"
   },
   {
@@ -28,8 +28,8 @@
     "price": 9.51,
     "strike": 8.5,
     "capital": 850.0,
-    "dte": 8,
-    "roc_weekly": 2.01,
+    "dte": 7,
+    "roc_weekly": 2.24,
     "expiry": "2026-03-06"
   },
   {
@@ -39,8 +39,8 @@
     "price": 10.45,
     "strike": 9.5,
     "capital": 950.0,
-    "dte": 8,
-    "roc_weekly": 2.72,
+    "dte": 7,
+    "roc_weekly": 3.16,
     "expiry": "2026-03-06"
   },
   {
@@ -50,8 +50,8 @@
     "price": 12.99,
     "strike": 11.5,
     "capital": 1150.0,
-    "dte": 8,
-    "roc_weekly": 2.59,
+    "dte": 7,
+    "roc_weekly": 3.04,
     "expiry": "2026-03-06"
   },
   {
@@ -61,8 +61,8 @@
     "price": 15.38,
     "strike": 14.0,
     "capital": 1400.0,
-    "dte": 8,
-    "roc_weekly": 1.72,
+    "dte": 7,
+    "roc_weekly": 2.0,
     "expiry": "2026-03-06"
   },
   {
@@ -72,30 +72,8 @@
     "price": 16.48,
     "strike": 15.0,
     "capital": 1500.0,
-    "dte": 8,
-    "roc_weekly": 2.22,
-    "expiry": "2026-03-06"
-  },
-  {
-    "symbol": "CORZ",
-    "name": "Core Scientific, Inc.",
-    "sector": "Technology Services",
-    "price": 17.98,
-    "strike": 16.0,
-    "capital": 1600.0,
-    "dte": 8,
-    "roc_weekly": 4.68,
-    "expiry": "2026-03-06"
-  },
-  {
-    "symbol": "RKT",
-    "name": "Rocket Companies, Inc.",
-    "sector": "Finance",
-    "price": 17.77,
-    "strike": 16.0,
-    "capital": 1600.0,
-    "dte": 8,
-    "roc_weekly": 2.05,
+    "dte": 7,
+    "roc_weekly": 3.33,
     "expiry": "2026-03-06"
   },
   {
@@ -105,19 +83,30 @@
     "price": 17.67,
     "strike": 16.0,
     "capital": 1600.0,
-    "dte": 8,
-    "roc_weekly": 2.68,
+    "dte": 7,
+    "roc_weekly": 3.12,
     "expiry": "2026-03-06"
   },
   {
-    "symbol": "QBTS",
-    "name": "D-Wave Quantum Inc.",
-    "sector": "Electronic Technology",
-    "price": 20.14,
-    "strike": 18.0,
-    "capital": 1800.0,
-    "dte": 8,
-    "roc_weekly": 1.73,
+    "symbol": "RKT",
+    "name": "Rocket Companies, Inc.",
+    "sector": "Finance",
+    "price": 17.77,
+    "strike": 16.0,
+    "capital": 1600.0,
+    "dte": 7,
+    "roc_weekly": 2.38,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "CORZ",
+    "name": "Core Scientific, Inc.",
+    "sector": "Technology Services",
+    "price": 17.98,
+    "strike": 16.0,
+    "capital": 1600.0,
+    "dte": 7,
+    "roc_weekly": 5.0,
     "expiry": "2026-03-06"
   },
   {
@@ -127,8 +116,8 @@
     "price": 20.42,
     "strike": 18.5,
     "capital": 1850.0,
-    "dte": 8,
-    "roc_weekly": 3.76,
+    "dte": 7,
+    "roc_weekly": 4.97,
     "expiry": "2026-03-06"
   },
   {
@@ -138,8 +127,8 @@
     "price": 22.84,
     "strike": 20.5,
     "capital": 2050.0,
-    "dte": 8,
-    "roc_weekly": 2.69,
+    "dte": 7,
+    "roc_weekly": 2.98,
     "expiry": "2026-03-06"
   },
   {
@@ -149,8 +138,8 @@
     "price": 24.91,
     "strike": 22.5,
     "capital": 2250.0,
-    "dte": 8,
-    "roc_weekly": 2.37,
+    "dte": 7,
+    "roc_weekly": 3.07,
     "expiry": "2026-03-06"
   },
   {
@@ -160,8 +149,8 @@
     "price": 44.24,
     "strike": 40.0,
     "capital": 4000.0,
-    "dte": 8,
-    "roc_weekly": 2.61,
+    "dte": 7,
+    "roc_weekly": 2.97,
     "expiry": "2026-03-06"
   },
   {
@@ -171,8 +160,8 @@
     "price": 54.82,
     "strike": 49.5,
     "capital": 4950.0,
-    "dte": 8,
-    "roc_weekly": 2.81,
+    "dte": 7,
+    "roc_weekly": 2.63,
     "expiry": "2026-03-06"
   },
   {
@@ -182,8 +171,8 @@
     "price": 72.65,
     "strike": 65.0,
     "capital": 6500.0,
-    "dte": 8,
-    "roc_weekly": 2.44,
+    "dte": 7,
+    "roc_weekly": 3.0,
     "expiry": "2026-03-06"
   },
   {
@@ -193,8 +182,8 @@
     "price": 79.29,
     "strike": 71.0,
     "capital": 7100.0,
-    "dte": 8,
-    "roc_weekly": 1.64,
+    "dte": 7,
+    "roc_weekly": 2.11,
     "expiry": "2026-03-06"
   },
   {
@@ -204,20 +193,20 @@
     "price": 85.76,
     "strike": 77.0,
     "capital": 7700.0,
-    "dte": 8,
-    "roc_weekly": 3.75,
+    "dte": 7,
+    "roc_weekly": 4.29,
     "expiry": "2026-03-06"
   },
   {
-    "symbol": "KRMN",
-    "name": "Karman Holdings Inc.",
-    "sector": "Electronic Technology",
-    "price": 88.31,
-    "strike": 80.0,
-    "capital": 8000.0,
-    "dte": 22,
-    "roc_weekly": 1.73,
-    "expiry": "2026-03-20"
+    "symbol": "ROKU",
+    "name": "Roku, Inc.",
+    "sector": "Technology Services",
+    "price": 93.47,
+    "strike": 84.0,
+    "capital": 8400.0,
+    "dte": 14,
+    "roc_weekly": 2.32,
+    "expiry": "2026-03-13"
   },
   {
     "symbol": "ANF",
@@ -226,19 +215,19 @@
     "price": 98.99,
     "strike": 90.0,
     "capital": 9000.0,
-    "dte": 8,
-    "roc_weekly": 2.99,
+    "dte": 7,
+    "roc_weekly": 3.43,
     "expiry": "2026-03-06"
   },
   {
-    "symbol": "NBIS",
-    "name": "Nebius Group N.V.",
-    "sector": "Technology Services",
-    "price": 104.88,
-    "strike": 94.0,
-    "capital": 9400.0,
-    "dte": 8,
-    "roc_weekly": 1.71,
+    "symbol": "SATS",
+    "name": "EchoStar Corporation",
+    "sector": "Communications",
+    "price": 108.37,
+    "strike": 98.0,
+    "capital": 9800.0,
+    "dte": 7,
+    "roc_weekly": 2.31,
     "expiry": "2026-03-06"
   },
   {
@@ -248,8 +237,19 @@
     "price": 114.48,
     "strike": 103.0,
     "capital": 10300.0,
-    "dte": 8,
-    "roc_weekly": 3.02,
+    "dte": 7,
+    "roc_weekly": 4.17,
+    "expiry": "2026-03-06"
+  },
+  {
+    "symbol": "TWLO",
+    "name": "Twilio Inc.",
+    "sector": "Technology Services",
+    "price": 119.61,
+    "strike": 108.0,
+    "capital": 10800.0,
+    "dte": 7,
+    "roc_weekly": 3.19,
     "expiry": "2026-03-06"
   },
   {
@@ -259,8 +259,8 @@
     "price": 152.46,
     "strike": 137.0,
     "capital": 13700.0,
-    "dte": 8,
-    "roc_weekly": 2.02,
+    "dte": 7,
+    "roc_weekly": 2.31,
     "expiry": "2026-03-06"
   },
   {
@@ -270,8 +270,8 @@
     "price": 168.57,
     "strike": 152.5,
     "capital": 15250.0,
-    "dte": 8,
-    "roc_weekly": 2.7,
+    "dte": 7,
+    "roc_weekly": 3.48,
     "expiry": "2026-03-06"
   }
 ]
