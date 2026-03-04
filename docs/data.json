@@ -1,12 +1,42 @@
 {
-  "last_refresh": "2026-03-03T07:30:37.653496",
+  "last_refresh": "2026-03-04T07:31:51.090078",
   "balance": {
-    "net_liq": 950.672,
-    "net_liquidating_value": 950.672,
-    "equity_buying_power": 106.811
+    "net_liq": 959.813,
+    "net_liquidating_value": 959.813,
+    "equity_buying_power": 14.683
   },
   "ytd_deposits": 1149.0,
   "positions": [
+    {
+      "symbol": "BTG",
+      "underlying_symbol": "BTG",
+      "type": "EQUITY",
+      "quantity": 5,
+      "direction": "Long",
+      "avg_open_price": 5.4563,
+      "current_price": 5.6899999999999995,
+      "p_l": 1.168499999999999,
+      "p_l_percent": 4.283122262338944,
+      "cost_basis": 27.281499999999998,
+      "multiplier": 1.0,
+      "total_value": 28.449999999999996,
+      "pct_portfolio": 2.96
+    },
+    {
+      "symbol": "GDXW",
+      "underlying_symbol": "GDXW",
+      "type": "EQUITY",
+      "quantity": 1,
+      "direction": "Long",
+      "avg_open_price": 65.391,
+      "current_price": 67.765,
+      "p_l": 2.3739999999999952,
+      "p_l_percent": 3.6304690247893365,
+      "cost_basis": 65.391,
+      "multiplier": 1.0,
+      "total_value": 67.765,
+      "pct_portfolio": 7.06
+    },
     {
       "symbol": "DDD   260313C00002500",
       "underlying_symbol": "DDD",
@@ -14,13 +44,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.05,
-      "current_price": 0.05,
-      "p_l": -0.0,
-      "p_l_percent": -0.0,
+      "current_price": 0.08,
+      "p_l": -3.0,
+      "p_l_percent": -60.0,
       "cost_basis": 5.0,
       "multiplier": 100.0,
-      "total_value": 5.0,
-      "pct_portfolio": 0.53
+      "total_value": 8.0,
+      "pct_portfolio": 0.83
     },
     {
       "symbol": "DDD",
@@ -29,13 +59,13 @@
       "quantity": 204,
       "direction": "Long",
       "avg_open_price": 2.24922598,
-      "current_price": 1.98,
-      "p_l": -54.92209991999997,
-      "p_l_percent": -11.96971680008782,
+      "current_price": 2.0549999999999997,
+      "p_l": -39.622099920000025,
+      "p_l_percent": -8.635236375848732,
       "cost_basis": 458.84209991999995,
       "multiplier": 1.0,
-      "total_value": 403.92,
-      "pct_portfolio": 42.49
+      "total_value": 419.2199999999999,
+      "pct_portfolio": 43.68
     },
     {
       "symbol": "RR    260306C00003000",
@@ -44,13 +74,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.03,
-      "current_price": 0.03,
-      "p_l": -0.0,
-      "p_l_percent": -0.0,
+      "current_price": 0.02,
+      "p_l": 0.9999999999999999,
+      "p_l_percent": 33.33333333333333,
       "cost_basis": 3.0,
       "multiplier": 100.0,
-      "total_value": 3.0,
-      "pct_portfolio": 0.32
+      "total_value": 2.0,
+      "pct_portfolio": 0.21
     },
     {
       "symbol": "RR",
@@ -59,13 +89,13 @@
       "quantity": 103,
       "direction": "Long",
       "avg_open_price": 2.99609029,
-      "current_price": 2.5,
-      "p_l": -51.097299870000015,
-      "p_l_percent": -16.557921890932068,
+      "current_price": 2.4450000000000003,
+      "p_l": -56.762299869999985,
+      "p_l_percent": -18.393647609331552,
       "cost_basis": 308.59729987000003,
       "multiplier": 1.0,
-      "total_value": 257.5,
-      "pct_portfolio": 27.09
+      "total_value": 251.83500000000004,
+      "pct_portfolio": 26.24
     },
     {
       "symbol": "FCF",
@@ -74,13 +104,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 18.1166,
-      "current_price": 17.48,
-      "p_l": -0.6365999999999978,
-      "p_l_percent": -3.5139043749930883,
+      "current_price": 17.955,
+      "p_l": -0.16159999999999997,
+      "p_l_percent": -0.8919996025744343,
       "cost_basis": 18.1166,
       "multiplier": 1.0,
-      "total_value": 17.48,
-      "pct_portfolio": 1.84
+      "total_value": 17.955,
+      "pct_portfolio": 1.87
     },
     {
       "symbol": "ASM",
@@ -89,13 +119,13 @@
       "quantity": 4,
       "direction": "Long",
       "avg_open_price": 8.832125,
-      "current_price": 9.135000000000002,
-      "p_l": 1.211500000000008,
-      "p_l_percent": 3.4292426794231514,
+      "current_price": 8.64,
+      "p_l": -0.768499999999996,
+      "p_l_percent": -2.175297564289443,
       "cost_basis": 35.3285,
       "multiplier": 1.0,
-      "total_value": 36.540000000000006,
-      "pct_portfolio": 3.84
+      "total_value": 34.56,
+      "pct_portfolio": 3.6
     },
     {
       "symbol": "ONDS",
@@ -104,13 +134,13 @@
       "quantity": 5,
       "direction": "Long",
       "avg_open_price": 9.00004,
-      "current_price": 10.809999999999999,
-      "p_l": 9.049799999999992,
-      "p_l_percent": 20.110577286323156,
+      "current_price": 10.33,
+      "p_l": 6.649799999999999,
+      "p_l_percent": 14.777267656588192,
       "cost_basis": 45.0002,
       "multiplier": 1.0,
-      "total_value": 54.05,
-      "pct_portfolio": 5.69
+      "total_value": 51.65,
+      "pct_portfolio": 5.38
     },
     {
       "symbol": "GOOW",
@@ -119,13 +149,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 66.99,
-      "current_price": 62.6,
-      "p_l": -4.3899999999999935,
-      "p_l_percent": -6.553216898044475,
+      "current_price": 65.45,
+      "p_l": -1.539999999999992,
+      "p_l_percent": -2.298850574712632,
       "cost_basis": 66.99,
       "multiplier": 1.0,
-      "total_value": 62.6,
-      "pct_portfolio": 6.58
+      "total_value": 65.45,
+      "pct_portfolio": 6.82
     },
     {
       "symbol": "UAMY",
@@ -134,16 +164,61 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 7.2999,
-      "current_price": 10.055,
-      "p_l": 5.510199999999999,
-      "p_l_percent": 37.74161289880683,
+      "current_price": 9.879999999999999,
+      "p_l": 5.160199999999998,
+      "p_l_percent": 35.34431978520252,
       "cost_basis": 14.5998,
       "multiplier": 1.0,
-      "total_value": 20.11,
-      "pct_portfolio": 2.12
+      "total_value": 19.759999999999998,
+      "pct_portfolio": 2.06
     }
   ],
   "transactions": [
+    {
+      "id": 422982535,
+      "date": "2026-03-03 22:00",
+      "type": "Money Movement",
+      "sub_type": "Dividend",
+      "description": "ROUNDHILL ETF TR",
+      "symbol": "GOOW",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 0.55,
+      "net_value": 0.55,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 422795101,
+      "date": "2026-03-03 15:58",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 5 BTG @ 5.46",
+      "symbol": "BTG",
+      "action": "Buy to Open",
+      "quantity": 5.0,
+      "price": 5.4563,
+      "value": -27.282,
+      "net_value": -27.286,
+      "commission": 0,
+      "fees": -0.004
+    },
+    {
+      "id": 422775776,
+      "date": "2026-03-03 15:33",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 GDXW @ 65.39",
+      "symbol": "GDXW",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 65.391,
+      "value": -65.391,
+      "net_value": -65.392,
+      "commission": 0,
+      "fees": -0.001
+    },
     {
       "id": 422678025,
       "date": "2026-03-03 13:06",
@@ -2456,32 +2531,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-03-03T07:30:25.765988",
+    "updated": "2026-03-04T07:30:58.993397",
     "sector_allocation": {
-      "Technology": 53.8,
-      "Industrials": 30.3,
-      "Financial Services": 2.0,
-      "Basic Materials": 6.6
+      "Basic Materials": 8.5,
+      "Technology": 49.5,
+      "Industrials": 26.3,
+      "Financial Services": 1.9
     },
     "missing_sectors": [
+      "Consumer Defensive",
+      "Healthcare",
+      "Energy",
       "Communication Services",
       "Real Estate",
-      "Energy",
       "Utilities",
-      "Consumer Defensive",
-      "Consumer Cyclical",
-      "Healthcare"
+      "Consumer Cyclical"
     ],
     "stats": {
-      "sharpe": 0.26,
-      "sortino": 0.4,
-      "calmar": -1.36,
-      "max_drawdown": -72.9,
-      "volatility": 367.5,
+      "sharpe": 0.04,
+      "sortino": 0.05,
+      "calmar": -1.32,
+      "max_drawdown": -75.0,
+      "volatility": 365.6,
       "win_rate": 51.0,
       "var": -31.4,
-      "best_day": 87.2,
-      "worst_day": -57.0
+      "best_day": 86.4,
+      "worst_day": -56.5
     }
   }
 }
