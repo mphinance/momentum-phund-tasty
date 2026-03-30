@@ -1,12 +1,27 @@
 {
-  "last_refresh": "2026-03-27T07:30:40.278353",
+  "last_refresh": "2026-03-30T07:31:03.519046",
   "balance": {
-    "net_liq": 1022.776,
-    "net_liquidating_value": 1022.776,
-    "equity_buying_power": 129.31
+    "net_liq": 1006.376,
+    "net_liquidating_value": 1006.376,
+    "equity_buying_power": 100.35
   },
   "ytd_deposits": 1284.0,
   "positions": [
+    {
+      "symbol": "DDD",
+      "underlying_symbol": "DDD",
+      "type": "EQUITY",
+      "quantity": 205,
+      "direction": "Long",
+      "avg_open_price": 2.2479122,
+      "current_price": 1.95,
+      "p_l": -61.072001000000014,
+      "p_l_percent": -13.252839679414526,
+      "cost_basis": 460.822001,
+      "multiplier": 1.0,
+      "total_value": 399.75,
+      "pct_portfolio": 39.72
+    },
     {
       "symbol": "DDD   260417C00002500",
       "underlying_symbol": "DDD",
@@ -20,7 +35,7 @@
       "cost_basis": 10.0,
       "multiplier": 100.0,
       "total_value": 8.0,
-      "pct_portfolio": 0.78
+      "pct_portfolio": 0.79
     },
     {
       "symbol": "DDD   260410C00002500",
@@ -35,52 +50,7 @@
       "cost_basis": 5.0,
       "multiplier": 100.0,
       "total_value": 8.0,
-      "pct_portfolio": 0.78
-    },
-    {
-      "symbol": "DDD",
-      "underlying_symbol": "DDD",
-      "type": "EQUITY",
-      "quantity": 204,
-      "direction": "Long",
-      "avg_open_price": 2.24922598,
-      "current_price": 2.065,
-      "p_l": -37.582099919999976,
-      "p_l_percent": -8.190638985950176,
-      "cost_basis": 458.84209991999995,
-      "multiplier": 1.0,
-      "total_value": 421.26,
-      "pct_portfolio": 41.19
-    },
-    {
-      "symbol": "RR    260327C00003000",
-      "underlying_symbol": "RR",
-      "type": "EQUITY_OPTION",
-      "quantity": -1,
-      "direction": "Short",
-      "avg_open_price": 0.03,
-      "current_price": 0.0015,
-      "p_l": 2.8499999999999996,
-      "p_l_percent": 94.99999999999999,
-      "cost_basis": 3.0,
-      "multiplier": 100.0,
-      "total_value": 0.15,
-      "pct_portfolio": 0.01
-    },
-    {
-      "symbol": "RR",
-      "underlying_symbol": "RR",
-      "type": "EQUITY",
-      "quantity": 103,
-      "direction": "Long",
-      "avg_open_price": 2.99609029,
-      "current_price": 2.075,
-      "p_l": -94.87229986999999,
-      "p_l_percent": -30.74307516947361,
-      "cost_basis": 308.59729987000003,
-      "multiplier": 1.0,
-      "total_value": 213.72500000000002,
-      "pct_portfolio": 20.9
+      "pct_portfolio": 0.79
     },
     {
       "symbol": "BTG",
@@ -89,13 +59,13 @@
       "quantity": 10,
       "direction": "Long",
       "avg_open_price": 4.86279,
-      "current_price": 4.125,
-      "p_l": -7.377900000000004,
-      "p_l_percent": -15.172154257124005,
+      "current_price": 4.35,
+      "p_l": -5.1279000000000075,
+      "p_l_percent": -10.545180852967139,
       "cost_basis": 48.627900000000004,
       "multiplier": 1.0,
-      "total_value": 41.25,
-      "pct_portfolio": 4.03
+      "total_value": 43.5,
+      "pct_portfolio": 4.32
     },
     {
       "symbol": "GDXW",
@@ -104,13 +74,13 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 61.52785,
-      "current_price": 48.349999999999994,
-      "p_l": -26.355700000000013,
-      "p_l_percent": -21.41769946455143,
+      "current_price": 50.755,
+      "p_l": -21.545699999999997,
+      "p_l_percent": -17.508900441019794,
       "cost_basis": 123.0557,
       "multiplier": 1.0,
-      "total_value": 96.69999999999999,
-      "pct_portfolio": 9.45
+      "total_value": 101.51,
+      "pct_portfolio": 10.09
     },
     {
       "symbol": "FCF",
@@ -119,28 +89,28 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 18.1166,
-      "current_price": 13.005,
-      "p_l": -5.1115999999999975,
-      "p_l_percent": -28.21500723093736,
+      "current_price": 17.43,
+      "p_l": -0.6865999999999985,
+      "p_l_percent": -3.7898943510371623,
       "cost_basis": 18.1166,
       "multiplier": 1.0,
-      "total_value": 13.005,
-      "pct_portfolio": 1.27
+      "total_value": 17.43,
+      "pct_portfolio": 1.73
     },
     {
       "symbol": "ONDS",
       "underlying_symbol": "ONDS",
       "type": "EQUITY",
-      "quantity": 5,
+      "quantity": 8,
       "direction": "Long",
-      "avg_open_price": 9.00004,
-      "current_price": 9.375,
-      "p_l": 1.8747999999999987,
-      "p_l_percent": 4.166203705761305,
-      "cost_basis": 45.0002,
+      "avg_open_price": 8.996275,
+      "current_price": 8.995000000000001,
+      "p_l": -0.010199999999997544,
+      "p_l_percent": -0.014172532520400865,
+      "cost_basis": 71.9702,
       "multiplier": 1.0,
-      "total_value": 46.875,
-      "pct_portfolio": 4.58
+      "total_value": 71.96000000000001,
+      "pct_portfolio": 7.15
     },
     {
       "symbol": "GOOW",
@@ -149,13 +119,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 66.99,
-      "current_price": 56.945,
-      "p_l": -10.044999999999995,
-      "p_l_percent": -14.99477533960292,
+      "current_price": 52.7,
+      "p_l": -14.289999999999992,
+      "p_l_percent": -21.331542021197183,
       "cost_basis": 66.99,
       "multiplier": 1.0,
-      "total_value": 56.945,
-      "pct_portfolio": 5.57
+      "total_value": 52.7,
+      "pct_portfolio": 5.24
     },
     {
       "symbol": "UAMY",
@@ -164,16 +134,91 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 7.2999,
-      "current_price": 8.86,
-      "p_l": 3.1201999999999988,
-      "p_l_percent": 21.371525637337488,
+      "current_price": 8.915,
+      "p_l": 3.230199999999998,
+      "p_l_percent": 22.124960615898836,
       "cost_basis": 14.5998,
       "multiplier": 1.0,
-      "total_value": 17.72,
-      "pct_portfolio": 1.73
+      "total_value": 17.83,
+      "pct_portfolio": 1.77
+    },
+    {
+      "symbol": "RR",
+      "underlying_symbol": "RR",
+      "type": "EQUITY",
+      "quantity": 103,
+      "direction": "Long",
+      "avg_open_price": 2.99609029,
+      "current_price": 1.975,
+      "p_l": -105.17229987,
+      "p_l_percent": -34.080758293836325,
+      "cost_basis": 308.59729987000003,
+      "multiplier": 1.0,
+      "total_value": 203.425,
+      "pct_portfolio": 20.21
     }
   ],
   "transactions": [
+    {
+      "id": 429655683,
+      "date": "2026-03-28 18:57",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -0.006,
+      "net_value": -0.006,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 429620451,
+      "date": "2026-03-27 20:00",
+      "type": "Receive Deliver",
+      "sub_type": "Expiration",
+      "description": "Removal of 1.0 RR 03/27/26 Call 3.00 due to expiration.",
+      "symbol": "RR    260327C00003000",
+      "action": "Buy to Close",
+      "quantity": 1.0,
+      "price": 0,
+      "value": 0.0,
+      "net_value": 0.0,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 429411645,
+      "date": "2026-03-27 16:37",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 3 ONDS @ 8.99",
+      "symbol": "ONDS",
+      "action": "Buy to Open",
+      "quantity": 3.0,
+      "price": 8.99,
+      "value": -26.97,
+      "net_value": -26.973,
+      "commission": 0,
+      "fees": -0.003
+    },
+    {
+      "id": 429376768,
+      "date": "2026-03-27 15:37",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 DDD @ 1.98",
+      "symbol": "DDD",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 1.9799,
+      "value": -1.98,
+      "net_value": -1.981,
+      "commission": 0,
+      "fees": -0.001
+    },
     {
       "id": 428810480,
       "date": "2026-03-25 21:00",
@@ -2906,32 +2951,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-03-27T07:30:27.902427",
+    "updated": "2026-03-30T07:30:29.684815",
     "sector_allocation": {
-      "Technology": 52.5,
-      "Industrials": 23.1,
-      "Basic Materials": 6.4,
-      "Financial Services": 1.4
+      "Technology": 52.8,
+      "Basic Materials": 6.6,
+      "Financial Services": 1.9,
+      "Industrials": 22.0
     },
     "missing_sectors": [
-      "Energy",
+      "Consumer Defensive",
       "Consumer Cyclical",
-      "Healthcare",
-      "Real Estate",
       "Communication Services",
       "Utilities",
-      "Consumer Defensive"
+      "Healthcare",
+      "Real Estate",
+      "Energy"
     ],
     "stats": {
-      "sharpe": 0.27,
-      "sortino": 0.42,
+      "sharpe": 0.21,
+      "sortino": 0.32,
       "calmar": -1.29,
-      "max_drawdown": -71.7,
-      "volatility": 295.8,
-      "win_rate": 55.0,
-      "var": -25.2,
-      "best_day": 81.1,
-      "worst_day": -53.0
+      "max_drawdown": -72.6,
+      "volatility": 295.6,
+      "win_rate": 53.0,
+      "var": -25.3,
+      "best_day": 82.4,
+      "worst_day": -53.9
     }
   }
 }
