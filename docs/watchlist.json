@@ -6,20 +6,9 @@
     "price": 3.66,
     "strike": 3.5,
     "capital": 350.0,
-    "dte": 14,
-    "roc_weekly": 2.14,
+    "dte": 11,
+    "roc_weekly": 3.64,
     "expiry": "2026-04-17"
-  },
-  {
-    "symbol": "BTG",
-    "name": "B2Gold Corp",
-    "sector": "Non-Energy Minerals",
-    "price": 4.73,
-    "strike": 4.5,
-    "capital": 450.0,
-    "dte": 7,
-    "roc_weekly": 1.67,
-    "expiry": "2026-04-10"
   },
   {
     "symbol": "IBRX",
@@ -28,20 +17,9 @@
     "price": 7.3,
     "strike": 6.5,
     "capital": 650.0,
-    "dte": 7,
-    "roc_weekly": 1.92,
-    "expiry": "2026-04-10"
-  },
-  {
-    "symbol": "UAMY",
-    "name": "United States Antimony Corporat",
-    "sector": "Non-Energy Minerals",
-    "price": 8.69,
-    "strike": 8.0,
-    "capital": 800.0,
-    "dte": 7,
-    "roc_weekly": 3.44,
-    "expiry": "2026-04-10"
+    "dte": 18,
+    "roc_weekly": 2.39,
+    "expiry": "2026-04-24"
   },
   {
     "symbol": "NVTS",
@@ -50,20 +28,20 @@
     "price": 8.8,
     "strike": 8.0,
     "capital": 800.0,
-    "dte": 7,
-    "roc_weekly": 1.94,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 2.94,
+    "expiry": "2026-04-17"
   },
   {
-    "symbol": "RCAT",
-    "name": "Red Cat Holdings, Inc.",
-    "sector": "Technology Services",
-    "price": 12.94,
-    "strike": 11.5,
-    "capital": 1150.0,
-    "dte": 7,
-    "roc_weekly": 1.96,
-    "expiry": "2026-04-10"
+    "symbol": "UAMY",
+    "name": "United States Antimony Corporat",
+    "sector": "Non-Energy Minerals",
+    "price": 8.69,
+    "strike": 8.0,
+    "capital": 800.0,
+    "dte": 11,
+    "roc_weekly": 3.98,
+    "expiry": "2026-04-17"
   },
   {
     "symbol": "CIFR",
@@ -72,9 +50,20 @@
     "price": 12.82,
     "strike": 11.5,
     "capital": 1150.0,
-    "dte": 7,
-    "roc_weekly": 1.87,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 2.93,
+    "expiry": "2026-04-17"
+  },
+  {
+    "symbol": "RCAT",
+    "name": "Red Cat Holdings, Inc.",
+    "sector": "Technology Services",
+    "price": 12.94,
+    "strike": 11.5,
+    "capital": 1150.0,
+    "dte": 11,
+    "roc_weekly": 2.99,
+    "expiry": "2026-04-17"
   },
   {
     "symbol": "WULF",
@@ -83,9 +72,9 @@
     "price": 14.88,
     "strike": 13.5,
     "capital": 1350.0,
-    "dte": 7,
-    "roc_weekly": 2.3,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 2.83,
+    "expiry": "2026-04-17"
   },
   {
     "symbol": "USAR",
@@ -94,9 +83,20 @@
     "price": 15.92,
     "strike": 14.5,
     "capital": 1450.0,
-    "dte": 7,
-    "roc_weekly": 1.93,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 2.68,
+    "expiry": "2026-04-17"
+  },
+  {
+    "symbol": "CORZ",
+    "name": "Core Scientific, Inc.",
+    "sector": "Technology Services",
+    "price": 16.23,
+    "strike": 14.5,
+    "capital": 1450.0,
+    "dte": 11,
+    "roc_weekly": 2.41,
+    "expiry": "2026-04-17"
   },
   {
     "symbol": "UUUU",
@@ -105,9 +105,20 @@
     "price": 17.75,
     "strike": 16.0,
     "capital": 1600.0,
-    "dte": 7,
-    "roc_weekly": 1.81,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 2.35,
+    "expiry": "2026-04-17"
+  },
+  {
+    "symbol": "CDE",
+    "name": "Coeur Mining, Inc.",
+    "sector": "Non-Energy Minerals",
+    "price": 19.09,
+    "strike": 17.0,
+    "capital": 1700.0,
+    "dte": 11,
+    "roc_weekly": 2.28,
+    "expiry": "2026-04-17"
   },
   {
     "symbol": "APLD",
@@ -116,20 +127,9 @@
     "price": 24.56,
     "strike": 22.0,
     "capital": 2200.0,
-    "dte": 7,
-    "roc_weekly": 4.39,
-    "expiry": "2026-04-10"
-  },
-  {
-    "symbol": "CNC",
-    "name": "Centene Corporation",
-    "sector": "Health Services",
-    "price": 35.11,
-    "strike": 31.5,
-    "capital": 3150.0,
-    "dte": 7,
-    "roc_weekly": 1.68,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 3.7,
+    "expiry": "2026-04-17"
   },
   {
     "symbol": "HYMC",
@@ -138,20 +138,9 @@
     "price": 36.01,
     "strike": 32.0,
     "capital": 3200.0,
-    "dte": 14,
-    "roc_weekly": 2.19,
+    "dte": 11,
+    "roc_weekly": 2.98,
     "expiry": "2026-04-17"
-  },
-  {
-    "symbol": "AR",
-    "name": "Antero Resources Corporation",
-    "sector": "Energy Minerals",
-    "price": 40.45,
-    "strike": 36.0,
-    "capital": 3600.0,
-    "dte": 7,
-    "roc_weekly": 1.67,
-    "expiry": "2026-04-10"
   },
   {
     "symbol": "HUT",
@@ -160,9 +149,9 @@
     "price": 48.11,
     "strike": 43.0,
     "capital": 4300.0,
-    "dte": 7,
-    "roc_weekly": 1.67,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 2.55,
+    "expiry": "2026-04-17"
   },
   {
     "symbol": "SEDG",
@@ -171,19 +160,8 @@
     "price": 48.75,
     "strike": 44.0,
     "capital": 4400.0,
-    "dte": 7,
-    "roc_weekly": 1.99,
-    "expiry": "2026-04-10"
-  },
-  {
-    "symbol": "SEI",
-    "name": "Solaris Energy Infrastructure, ",
-    "sector": "Technology Services",
-    "price": 55.8,
-    "strike": 50.0,
-    "capital": 5000.0,
-    "dte": 14,
-    "roc_weekly": 1.68,
+    "dte": 11,
+    "roc_weekly": 2.39,
     "expiry": "2026-04-17"
   },
   {
@@ -193,9 +171,9 @@
     "price": 52.84,
     "strike": 50.0,
     "capital": 5000.0,
-    "dte": 7,
-    "roc_weekly": 7.1,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 6.68,
+    "expiry": "2026-04-17"
   },
   {
     "symbol": "LASR",
@@ -204,8 +182,8 @@
     "price": 60.12,
     "strike": 55.0,
     "capital": 5500.0,
-    "dte": 14,
-    "roc_weekly": 2.25,
+    "dte": 11,
+    "roc_weekly": 2.83,
     "expiry": "2026-04-17"
   },
   {
@@ -215,9 +193,9 @@
     "price": 67.73,
     "strike": 61.0,
     "capital": 6100.0,
-    "dte": 7,
-    "roc_weekly": 1.75,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 2.3,
+    "expiry": "2026-04-17"
   },
   {
     "symbol": "ASTS",
@@ -226,9 +204,9 @@
     "price": 92.62,
     "strike": 83.0,
     "capital": 8300.0,
-    "dte": 7,
-    "roc_weekly": 1.96,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 2.6,
+    "expiry": "2026-04-17"
   },
   {
     "symbol": "RVMD",
@@ -237,8 +215,8 @@
     "price": 99.12,
     "strike": 90.0,
     "capital": 9000.0,
-    "dte": 14,
-    "roc_weekly": 2.11,
+    "dte": 11,
+    "roc_weekly": 2.55,
     "expiry": "2026-04-17"
   },
   {
@@ -248,9 +226,42 @@
     "price": 103.91,
     "strike": 94.0,
     "capital": 9400.0,
-    "dte": 7,
-    "roc_weekly": 4.41,
-    "expiry": "2026-04-10"
+    "dte": 11,
+    "roc_weekly": 4.33,
+    "expiry": "2026-04-17"
+  },
+  {
+    "symbol": "FORM",
+    "name": "FormFactor, Inc.",
+    "sector": "Electronic Technology",
+    "price": 103.16,
+    "strike": 95.0,
+    "capital": 9500.0,
+    "dte": 11,
+    "roc_weekly": 2.63,
+    "expiry": "2026-04-17"
+  },
+  {
+    "symbol": "NBIS",
+    "name": "Nebius Group N.V.",
+    "sector": "Technology Services",
+    "price": 108.82,
+    "strike": 100.0,
+    "capital": 10000.0,
+    "dte": 11,
+    "roc_weekly": 2.34,
+    "expiry": "2026-04-17"
+  },
+  {
+    "symbol": "NEM",
+    "name": "Newmont Corporation",
+    "sector": "Non-Energy Minerals",
+    "price": 114.05,
+    "strike": 103.0,
+    "capital": 10300.0,
+    "dte": 18,
+    "roc_weekly": 2.36,
+    "expiry": "2026-04-24"
   },
   {
     "symbol": "BE",
@@ -259,19 +270,8 @@
     "price": 135.63,
     "strike": 122.0,
     "capital": 12200.0,
-    "dte": 7,
-    "roc_weekly": 2.44,
-    "expiry": "2026-04-10"
-  },
-  {
-    "symbol": "VICR",
-    "name": "Vicor Corporation",
-    "sector": "Electronic Technology",
-    "price": 155.64,
-    "strike": 140.0,
-    "capital": 14000.0,
-    "dte": 14,
-    "roc_weekly": 1.66,
+    "dte": 11,
+    "roc_weekly": 2.96,
     "expiry": "2026-04-17"
   }
 ]
