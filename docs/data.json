@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-04-06T07:30:42.451350",
+  "last_refresh": "2026-04-07T07:30:43.071800",
   "balance": {
-    "net_liq": 1023.902,
-    "net_liquidating_value": 1023.902,
-    "equity_buying_power": 97.328
+    "net_liq": 1001.287,
+    "net_liquidating_value": 1001.287,
+    "equity_buying_power": 157.887
   },
   "ytd_deposits": 1284.0,
   "positions": [
@@ -14,13 +14,13 @@
       "quantity": 205,
       "direction": "Long",
       "avg_open_price": 2.2479122,
-      "current_price": 1.935,
-      "p_l": -64.14700099999999,
-      "p_l_percent": -13.920125528034411,
+      "current_price": 1.8599999999999999,
+      "p_l": -79.52200100000003,
+      "p_l_percent": -17.25655477113386,
       "cost_basis": 460.822001,
       "multiplier": 1.0,
-      "total_value": 396.675,
-      "pct_portfolio": 38.74
+      "total_value": 381.29999999999995,
+      "pct_portfolio": 38.08
     },
     {
       "symbol": "DDD   260417C00002500",
@@ -29,13 +29,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.1,
-      "current_price": 0.04,
-      "p_l": 6.000000000000001,
-      "p_l_percent": 60.00000000000001,
+      "current_price": 0.01,
+      "p_l": 9.000000000000002,
+      "p_l_percent": 90.00000000000001,
       "cost_basis": 10.0,
       "multiplier": 100.0,
-      "total_value": 4.0,
-      "pct_portfolio": 0.39
+      "total_value": 1.0,
+      "pct_portfolio": 0.1
     },
     {
       "symbol": "DDD   260410C00002500",
@@ -44,12 +44,12 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.05,
-      "current_price": 0.0018,
-      "p_l": 4.82,
-      "p_l_percent": 96.4,
+      "current_price": 0.0019,
+      "p_l": 4.8100000000000005,
+      "p_l_percent": 96.2,
       "cost_basis": 5.0,
       "multiplier": 100.0,
-      "total_value": 0.18,
+      "total_value": 0.19,
       "pct_portfolio": 0.02
     },
     {
@@ -59,13 +59,13 @@
       "quantity": 10,
       "direction": "Long",
       "avg_open_price": 4.86279,
-      "current_price": 4.675000000000001,
-      "p_l": -1.8778999999999968,
-      "p_l_percent": -3.861774824740523,
+      "current_price": 4.585,
+      "p_l": -2.7779000000000043,
+      "p_l_percent": -5.712564186403287,
       "cost_basis": 48.627900000000004,
       "multiplier": 1.0,
-      "total_value": 46.75000000000001,
-      "pct_portfolio": 4.57
+      "total_value": 45.85,
+      "pct_portfolio": 4.58
     },
     {
       "symbol": "GDXW",
@@ -74,13 +74,13 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 61.52785,
-      "current_price": 55.56,
-      "p_l": -11.935699999999997,
-      "p_l_percent": -9.69942879525288,
+      "current_price": 54.43,
+      "p_l": -14.195700000000002,
+      "p_l_percent": -11.535995488222001,
       "cost_basis": 123.0557,
       "multiplier": 1.0,
-      "total_value": 111.12,
-      "pct_portfolio": 10.85
+      "total_value": 108.86,
+      "pct_portfolio": 10.87
     },
     {
       "symbol": "FCF",
@@ -89,13 +89,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 18.1166,
-      "current_price": 17.89,
-      "p_l": -0.2265999999999977,
-      "p_l_percent": -1.250786571431713,
+      "current_price": 18.585,
+      "p_l": 0.4684000000000026,
+      "p_l_percent": 2.5854740955808633,
       "cost_basis": 18.1166,
       "multiplier": 1.0,
-      "total_value": 17.89,
-      "pct_portfolio": 1.75
+      "total_value": 18.585,
+      "pct_portfolio": 1.86
     },
     {
       "symbol": "ONDS",
@@ -104,28 +104,13 @@
       "quantity": 8,
       "direction": "Long",
       "avg_open_price": 8.996275,
-      "current_price": 9.68,
-      "p_l": 5.469799999999992,
-      "p_l_percent": 7.600090037265413,
+      "current_price": 9.335,
+      "p_l": 2.7098000000000013,
+      "p_l_percent": 3.7651694729207383,
       "cost_basis": 71.9702,
       "multiplier": 1.0,
-      "total_value": 77.44,
-      "pct_portfolio": 7.56
-    },
-    {
-      "symbol": "GOOW",
-      "underlying_symbol": "GOOW",
-      "type": "EQUITY",
-      "quantity": 1,
-      "direction": "Long",
-      "avg_open_price": 66.99,
-      "current_price": 60.14,
-      "p_l": -6.849999999999994,
-      "p_l_percent": -10.225406777130907,
-      "cost_basis": 66.99,
-      "multiplier": 1.0,
-      "total_value": 60.14,
-      "pct_portfolio": 5.87
+      "total_value": 74.68,
+      "pct_portfolio": 7.46
     },
     {
       "symbol": "UAMY",
@@ -134,13 +119,13 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 7.2999,
-      "current_price": 8.765,
-      "p_l": 2.930200000000001,
-      "p_l_percent": 20.070137947095173,
+      "current_price": 8.17,
+      "p_l": 1.7401999999999997,
+      "p_l_percent": 11.919341360840557,
       "cost_basis": 14.5998,
       "multiplier": 1.0,
-      "total_value": 17.53,
-      "pct_portfolio": 1.71
+      "total_value": 16.34,
+      "pct_portfolio": 1.63
     },
     {
       "symbol": "RR",
@@ -149,16 +134,31 @@
       "quantity": 105,
       "direction": "Long",
       "avg_open_price": 2.97568857,
-      "current_price": 2.0700000000000003,
-      "p_l": -95.09729984999997,
-      "p_l_percent": -30.43626873896954,
+      "current_price": 2.01,
+      "p_l": -101.39729985000002,
+      "p_l_percent": -32.45260877552116,
       "cost_basis": 312.44729985,
       "multiplier": 1.0,
-      "total_value": 217.35000000000002,
-      "pct_portfolio": 21.23
+      "total_value": 211.04999999999998,
+      "pct_portfolio": 21.08
     }
   ],
   "transactions": [
+    {
+      "id": 431532168,
+      "date": "2026-04-06 19:40",
+      "type": "Trade",
+      "sub_type": "Sell to Close",
+      "description": "Sold 1 GOOW @ 60.57",
+      "symbol": "GOOW",
+      "action": "Sell to Close",
+      "quantity": 1.0,
+      "price": 60.57,
+      "value": 60.57,
+      "net_value": 60.559,
+      "commission": 0,
+      "fees": -0.011
+    },
     {
       "id": 430924092,
       "date": "2026-04-02 12:03",
@@ -2996,32 +2996,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-04-06T07:30:28.069107",
+    "updated": "2026-04-07T07:30:28.037149",
     "sector_allocation": {
-      "Technology": 50.4,
-      "Basic Materials": 6.8,
-      "Financial Services": 1.9,
-      "Industrials": 22.9
+      "Technology": 53.3,
+      "Basic Materials": 7.2,
+      "Financial Services": 2.2,
+      "Industrials": 24.6
     },
     "missing_sectors": [
-      "Healthcare",
-      "Real Estate",
-      "Consumer Defensive",
-      "Communication Services",
-      "Utilities",
       "Consumer Cyclical",
-      "Energy"
+      "Consumer Defensive",
+      "Healthcare",
+      "Energy",
+      "Real Estate",
+      "Utilities",
+      "Communication Services"
     ],
     "stats": {
-      "sharpe": 0.2,
-      "sortino": 0.3,
-      "calmar": -1.28,
-      "max_drawdown": -71.6,
-      "volatility": 285.7,
+      "sharpe": 0.31,
+      "sortino": 0.49,
+      "calmar": -1.23,
+      "max_drawdown": -72.8,
+      "volatility": 290.1,
       "win_rate": 53.0,
-      "var": -24.4,
-      "best_day": 81.0,
-      "worst_day": -52.9
+      "var": -24.7,
+      "best_day": 82.8,
+      "worst_day": -54.1
     }
   }
 }
