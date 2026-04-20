@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-04-17T07:30:35.227300",
+  "last_refresh": "2026-04-20T07:30:44.313553",
   "balance": {
-    "net_liq": 1308.583,
-    "net_liquidating_value": 1308.583,
-    "equity_buying_power": 303.631
+    "net_liq": 1301.198,
+    "net_liquidating_value": 1301.198,
+    "equity_buying_power": 303.62
   },
   "ytd_deposits": 1454.0,
   "positions": [
@@ -14,13 +14,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 44.99,
-      "current_price": 35.46,
-      "p_l": -9.530000000000001,
-      "p_l_percent": -21.182484996665927,
+      "current_price": 35.35,
+      "p_l": -9.64,
+      "p_l_percent": -21.42698377417204,
       "cost_basis": 44.99,
       "multiplier": 1.0,
-      "total_value": 35.46,
-      "pct_portfolio": 2.71
+      "total_value": 35.35,
+      "pct_portfolio": 2.72
     },
     {
       "symbol": "DDD   260508C00002500",
@@ -35,7 +35,7 @@
       "cost_basis": 10.0,
       "multiplier": 100.0,
       "total_value": 13.0,
-      "pct_portfolio": 0.99
+      "pct_portfolio": 1.0
     },
     {
       "symbol": "DDD",
@@ -44,28 +44,13 @@
       "quantity": 210,
       "direction": "Long",
       "avg_open_price": 2.24153333,
-      "current_price": 2.15,
-      "p_l": -19.221999300000064,
-      "p_l_percent": -4.083514118436074,
+      "current_price": 2.0999999999999996,
+      "p_l": -29.72199930000012,
+      "p_l_percent": -6.314130069170131,
       "cost_basis": 470.72199930000005,
       "multiplier": 1.0,
-      "total_value": 451.5,
-      "pct_portfolio": 34.5
-    },
-    {
-      "symbol": "DDD   260417C00002500",
-      "underlying_symbol": "DDD",
-      "type": "EQUITY_OPTION",
-      "quantity": -1,
-      "direction": "Short",
-      "avg_open_price": 0.1,
-      "current_price": 0.0008,
-      "p_l": 9.920000000000002,
-      "p_l_percent": 99.20000000000002,
-      "cost_basis": 10.0,
-      "multiplier": 100.0,
-      "total_value": 0.08,
-      "pct_portfolio": 0.01
+      "total_value": 440.99999999999994,
+      "pct_portfolio": 33.89
     },
     {
       "symbol": "BTG",
@@ -74,13 +59,13 @@
       "quantity": 10,
       "direction": "Long",
       "avg_open_price": 4.86279,
-      "current_price": 5.050000000000001,
-      "p_l": 1.8721000000000032,
-      "p_l_percent": 3.8498475155209313,
+      "current_price": 4.895,
+      "p_l": 0.32209999999999184,
+      "p_l_percent": 0.6623769482128404,
       "cost_basis": 48.627900000000004,
       "multiplier": 1.0,
-      "total_value": 50.50000000000001,
-      "pct_portfolio": 3.86
+      "total_value": 48.949999999999996,
+      "pct_portfolio": 3.76
     },
     {
       "symbol": "GDXW",
@@ -89,13 +74,13 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 61.52785,
-      "current_price": 57.0,
-      "p_l": -9.055700000000002,
-      "p_l_percent": -7.359025221911705,
+      "current_price": 56.900000000000006,
+      "p_l": -9.25569999999999,
+      "p_l_percent": -7.521553247838166,
       "cost_basis": 123.0557,
       "multiplier": 1.0,
-      "total_value": 114.0,
-      "pct_portfolio": 8.71
+      "total_value": 113.80000000000001,
+      "pct_portfolio": 8.75
     },
     {
       "symbol": "ONDS",
@@ -104,13 +89,13 @@
       "quantity": 8,
       "direction": "Long",
       "avg_open_price": 8.996275,
-      "current_price": 10.325,
-      "p_l": 10.629799999999989,
-      "p_l_percent": 14.769724135822864,
+      "current_price": 9.83,
+      "p_l": 6.669799999999995,
+      "p_l_percent": 9.267446804371803,
       "cost_basis": 71.9702,
       "multiplier": 1.0,
-      "total_value": 82.6,
-      "pct_portfolio": 6.31
+      "total_value": 78.64,
+      "pct_portfolio": 6.04
     },
     {
       "symbol": "UAMY",
@@ -119,13 +104,13 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 7.2999,
-      "current_price": 10.68,
-      "p_l": 6.760199999999999,
-      "p_l_percent": 46.30337401882217,
+      "current_price": 10.715,
+      "p_l": 6.8302,
+      "p_l_percent": 46.78283264154303,
       "cost_basis": 14.5998,
       "multiplier": 1.0,
-      "total_value": 21.36,
-      "pct_portfolio": 1.63
+      "total_value": 21.43,
+      "pct_portfolio": 1.65
     },
     {
       "symbol": "RR",
@@ -134,16 +119,46 @@
       "quantity": 105,
       "direction": "Long",
       "avg_open_price": 2.97568857,
-      "current_price": 2.425,
-      "p_l": -57.822299850000014,
-      "p_l_percent": -18.50625685603921,
+      "current_price": 2.3600000000000003,
+      "p_l": -64.64729984999997,
+      "p_l_percent": -20.690625228970106,
       "cost_basis": 312.44729985,
       "multiplier": 1.0,
-      "total_value": 254.62499999999997,
-      "pct_portfolio": 19.46
+      "total_value": 247.80000000000004,
+      "pct_portfolio": 19.04
     }
   ],
   "transactions": [
+    {
+      "id": 435056559,
+      "date": "2026-04-18 19:24",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -0.011,
+      "net_value": -0.011,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 435016597,
+      "date": "2026-04-17 20:00",
+      "type": "Receive Deliver",
+      "sub_type": "Expiration",
+      "description": "Removal of 1.0 DDD 04/17/26 Call 2.50 due to expiration.",
+      "symbol": "DDD   260417C00002500",
+      "action": "Buy to Close",
+      "quantity": 1.0,
+      "price": 0,
+      "value": 0.0,
+      "net_value": 0.0,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 433788555,
       "date": "2026-04-14 21:00",
@@ -3161,32 +3176,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-04-17T07:30:26.386902",
+    "updated": "2026-04-20T07:30:29.745982",
     "sector_allocation": {
-      "Technology": 53.5,
+      "Technology": 53.2,
       "Basic Materials": 7.0,
-      "Industrials": 24.9
+      "Industrials": 24.8
     },
     "missing_sectors": [
-      "Real Estate",
-      "Energy",
-      "Communication Services",
       "Consumer Cyclical",
       "Utilities",
       "Consumer Defensive",
+      "Real Estate",
+      "Energy",
       "Financial Services",
+      "Communication Services",
       "Healthcare"
     ],
     "stats": {
-      "sharpe": 0.58,
-      "sortino": 0.9,
-      "calmar": -0.83,
-      "max_drawdown": -58.8,
-      "volatility": 214.3,
-      "win_rate": 55.0,
-      "var": -18.1,
-      "best_day": 63.4,
-      "worst_day": -41.4
+      "sharpe": 0.57,
+      "sortino": 0.89,
+      "calmar": -0.81,
+      "max_drawdown": -59.1,
+      "volatility": 212.3,
+      "win_rate": 54.0,
+      "var": -17.9,
+      "best_day": 63.7,
+      "worst_day": -41.7
     }
   }
 }
