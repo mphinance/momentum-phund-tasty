@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-04-29T07:30:37.744809",
+  "last_refresh": "2026-05-01T07:30:39.661044",
   "balance": {
-    "net_liq": 1397.985,
-    "net_liquidating_value": 1397.985,
-    "equity_buying_power": 44.342
+    "net_liq": 1437.274,
+    "net_liquidating_value": 1437.274,
+    "equity_buying_power": 81.284
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -14,28 +14,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 116.51192,
-      "current_price": 116.505,
-      "p_l": -0.006920000000008031,
-      "p_l_percent": -0.005939306467533992,
+      "current_price": 116.56,
+      "p_l": 0.04807999999999879,
+      "p_l_percent": 0.04126616401137222,
       "cost_basis": 116.51192,
       "multiplier": 1.0,
-      "total_value": 116.505,
-      "pct_portfolio": 8.33
-    },
-    {
-      "symbol": "SGOV",
-      "underlying_symbol": "SGOV",
-      "type": "EQUITY",
-      "quantity": 0.5,
-      "direction": "Long",
-      "avg_open_price": 100.65092,
-      "current_price": 100.66499999999999,
-      "p_l": 0.0070399999999963825,
-      "p_l_percent": 0.01398894317110342,
-      "cost_basis": 50.32546,
-      "multiplier": 1.0,
-      "total_value": 50.332499999999996,
-      "pct_portfolio": 3.6
+      "total_value": 116.56,
+      "pct_portfolio": 8.11
     },
     {
       "symbol": "BTG   260501C00005000",
@@ -44,28 +29,28 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.1,
-      "current_price": 0.01,
-      "p_l": 9.000000000000002,
-      "p_l_percent": 90.00000000000001,
+      "current_price": 0.0031,
+      "p_l": 9.69,
+      "p_l_percent": 96.89999999999999,
       "cost_basis": 10.0,
       "multiplier": 100.0,
-      "total_value": 1.0,
-      "pct_portfolio": 0.07
+      "total_value": 0.31,
+      "pct_portfolio": 0.02
     },
     {
       "symbol": "BTG",
       "underlying_symbol": "BTG",
       "type": "EQUITY",
-      "quantity": 110,
+      "quantity": 113,
       "direction": "Long",
-      "avg_open_price": 4.72435909,
-      "current_price": 4.355,
-      "p_l": -40.62949989999996,
-      "p_l_percent": -7.818184074572529,
-      "cost_basis": 519.6794999,
+      "avg_open_price": 4.71645752,
+      "current_price": 4.52,
+      "p_l": -22.199699760000005,
+      "p_l_percent": -4.165361803152636,
+      "cost_basis": 532.9596997599999,
       "multiplier": 1.0,
-      "total_value": 479.05000000000007,
-      "pct_portfolio": 34.27
+      "total_value": 510.75999999999993,
+      "pct_portfolio": 35.54
     },
     {
       "symbol": "DDD   260515C00002500",
@@ -74,13 +59,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.25,
-      "current_price": 0.1,
-      "p_l": 15.0,
-      "p_l_percent": 60.0,
+      "current_price": 0.25,
+      "p_l": -0.0,
+      "p_l_percent": -0.0,
       "cost_basis": 25.0,
       "multiplier": 100.0,
-      "total_value": 10.0,
-      "pct_portfolio": 0.72
+      "total_value": 25.0,
+      "pct_portfolio": 1.74
     },
     {
       "symbol": "DDD   260508C00002500",
@@ -89,13 +74,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.1,
-      "current_price": 0.08,
-      "p_l": 2.0000000000000004,
-      "p_l_percent": 20.000000000000004,
+      "current_price": 0.13,
+      "p_l": -3.0,
+      "p_l_percent": -30.0,
       "cost_basis": 10.0,
       "multiplier": 100.0,
-      "total_value": 8.0,
-      "pct_portfolio": 0.57
+      "total_value": 13.0,
+      "pct_portfolio": 0.9
     },
     {
       "symbol": "DDD",
@@ -104,13 +89,13 @@
       "quantity": 210,
       "direction": "Long",
       "avg_open_price": 2.24153333,
-      "current_price": 2.295,
-      "p_l": 11.22800069999994,
-      "p_l_percent": 2.385272138692656,
+      "current_price": 2.4450000000000003,
+      "p_l": 42.72800070000002,
+      "p_l_percent": 9.077119990894806,
       "cost_basis": 470.72199930000005,
       "multiplier": 1.0,
-      "total_value": 481.95,
-      "pct_portfolio": 34.47
+      "total_value": 513.45,
+      "pct_portfolio": 35.72
     },
     {
       "symbol": "RR    260501C00003000",
@@ -119,13 +104,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.07,
-      "current_price": 0.0027,
-      "p_l": 6.730000000000001,
-      "p_l_percent": 96.14285714285715,
+      "current_price": 0.0001,
+      "p_l": 6.99,
+      "p_l_percent": 99.85714285714285,
       "cost_basis": 7.000000000000001,
       "multiplier": 100.0,
-      "total_value": 0.27,
-      "pct_portfolio": 0.02
+      "total_value": 0.01,
+      "pct_portfolio": 0.0
     },
     {
       "symbol": "RR",
@@ -134,16 +119,61 @@
       "quantity": 105,
       "direction": "Long",
       "avg_open_price": 2.97568857,
-      "current_price": 2.4699999999999998,
-      "p_l": -53.09729985000003,
-      "p_l_percent": -16.99400182862551,
+      "current_price": 2.47,
+      "p_l": -53.09729984999998,
+      "p_l_percent": -16.994001828625493,
       "cost_basis": 312.44729985,
       "multiplier": 1.0,
-      "total_value": 259.34999999999997,
-      "pct_portfolio": 18.55
+      "total_value": 259.35,
+      "pct_portfolio": 18.04
     }
   ],
   "transactions": [
+    {
+      "id": 438231045,
+      "date": "2026-04-30 19:04",
+      "type": "Trade",
+      "sub_type": "Sell to Close",
+      "description": "Sold 0.5 SGOV @ 100.67",
+      "symbol": "SGOV",
+      "action": "Sell to Close",
+      "quantity": 0.5,
+      "price": 100.67,
+      "value": 50.335,
+      "net_value": 50.225,
+      "commission": 0,
+      "fees": -0.11
+    },
+    {
+      "id": 438192589,
+      "date": "2026-04-30 18:07",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BTG @ 4.42",
+      "symbol": "BTG",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 4.425,
+      "value": -4.425,
+      "net_value": -4.426,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 438188590,
+      "date": "2026-04-30 18:02",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 2 BTG @ 4.43",
+      "symbol": "BTG",
+      "action": "Buy to Open",
+      "quantity": 2.0,
+      "price": 4.4276,
+      "value": -8.855,
+      "net_value": -8.857,
+      "commission": 0,
+      "fees": -0.002
+    },
     {
       "id": 437591705,
       "date": "2026-04-28 21:00",
@@ -3701,32 +3731,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-04-29T07:30:24.887246",
+    "updated": "2026-05-01T07:30:26.632781",
     "sector_allocation": {
-      "Basic Materials": 34.1,
-      "Technology": 35.5,
-      "Industrials": 18.5
+      "Basic Materials": 35.5,
+      "Technology": 38.3,
+      "Industrials": 18.0
     },
     "missing_sectors": [
-      "Communication Services",
-      "Utilities",
       "Financial Services",
+      "Consumer Defensive",
+      "Utilities",
+      "Energy",
+      "Communication Services",
       "Healthcare",
       "Consumer Cyclical",
-      "Energy",
-      "Real Estate",
-      "Consumer Defensive"
+      "Real Estate"
     ],
     "stats": {
-      "sharpe": 0.08,
-      "sortino": 0.12,
-      "calmar": -1.21,
-      "max_drawdown": -56.3,
-      "volatility": 194.7,
+      "sharpe": 0.14,
+      "sortino": 0.21,
+      "calmar": -1.13,
+      "max_drawdown": -54.9,
+      "volatility": 188.2,
       "win_rate": 54.0,
-      "var": -16.7,
-      "best_day": 59.3,
-      "worst_day": -38.8
+      "var": -16.1,
+      "best_day": 57.7,
+      "worst_day": -37.7
     }
   }
 }
