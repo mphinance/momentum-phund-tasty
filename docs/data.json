@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-05-01T07:30:39.661044",
+  "last_refresh": "2026-05-04T07:30:39.001102",
   "balance": {
-    "net_liq": 1437.274,
-    "net_liquidating_value": 1437.274,
-    "equity_buying_power": 81.284
+    "net_liq": 1412.23,
+    "net_liquidating_value": 1412.23,
+    "equity_buying_power": 81.23
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -14,28 +14,26 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 116.51192,
-      "current_price": 116.56,
-      "p_l": 0.04807999999999879,
-      "p_l_percent": 0.04126616401137222,
+      "current_price": 116.60499999999999,
+      "p_l": 0.09307999999998628,
+      "p_l_percent": 0.07988882167591632,
       "cost_basis": 116.51192,
       "multiplier": 1.0,
-      "total_value": 116.56,
-      "pct_portfolio": 8.11
+      "total_value": 116.60499999999999,
+      "pct_portfolio": 8.26
     },
     {
-      "symbol": "BTG   260501C00005000",
-      "underlying_symbol": "BTG",
-      "type": "EQUITY_OPTION",
-      "quantity": -1,
-      "direction": "Short",
-      "avg_open_price": 0.1,
-      "current_price": 0.0031,
-      "p_l": 9.69,
-      "p_l_percent": 96.89999999999999,
-      "cost_basis": 10.0,
-      "multiplier": 100.0,
-      "total_value": 0.31,
-      "pct_portfolio": 0.02
+      "symbol": "DDD (CC)",
+      "type": "Covered Call",
+      "direction": "Net Long",
+      "quantity": "210 / -2",
+      "avg_open_price": 1.8719238095238095,
+      "current_price": 2.24,
+      "p_l": 107.29600000000005,
+      "p_l_percent": 27.294558183076244,
+      "is_composite": true,
+      "description": "True Basis: $1.87/sh",
+      "cost_basis": 393.104
     },
     {
       "symbol": "BTG",
@@ -44,73 +42,13 @@
       "quantity": 113,
       "direction": "Long",
       "avg_open_price": 4.71645752,
-      "current_price": 4.52,
-      "p_l": -22.199699760000005,
-      "p_l_percent": -4.165361803152636,
+      "current_price": 4.35,
+      "p_l": -41.409699759999995,
+      "p_l_percent": -7.769761912326096,
       "cost_basis": 532.9596997599999,
       "multiplier": 1.0,
-      "total_value": 510.75999999999993,
-      "pct_portfolio": 35.54
-    },
-    {
-      "symbol": "DDD   260515C00002500",
-      "underlying_symbol": "DDD",
-      "type": "EQUITY_OPTION",
-      "quantity": -1,
-      "direction": "Short",
-      "avg_open_price": 0.25,
-      "current_price": 0.25,
-      "p_l": -0.0,
-      "p_l_percent": -0.0,
-      "cost_basis": 25.0,
-      "multiplier": 100.0,
-      "total_value": 25.0,
-      "pct_portfolio": 1.74
-    },
-    {
-      "symbol": "DDD   260508C00002500",
-      "underlying_symbol": "DDD",
-      "type": "EQUITY_OPTION",
-      "quantity": -1,
-      "direction": "Short",
-      "avg_open_price": 0.1,
-      "current_price": 0.13,
-      "p_l": -3.0,
-      "p_l_percent": -30.0,
-      "cost_basis": 10.0,
-      "multiplier": 100.0,
-      "total_value": 13.0,
-      "pct_portfolio": 0.9
-    },
-    {
-      "symbol": "DDD",
-      "underlying_symbol": "DDD",
-      "type": "EQUITY",
-      "quantity": 210,
-      "direction": "Long",
-      "avg_open_price": 2.24153333,
-      "current_price": 2.4450000000000003,
-      "p_l": 42.72800070000002,
-      "p_l_percent": 9.077119990894806,
-      "cost_basis": 470.72199930000005,
-      "multiplier": 1.0,
-      "total_value": 513.45,
-      "pct_portfolio": 35.72
-    },
-    {
-      "symbol": "RR    260501C00003000",
-      "underlying_symbol": "RR",
-      "type": "EQUITY_OPTION",
-      "quantity": -1,
-      "direction": "Short",
-      "avg_open_price": 0.07,
-      "current_price": 0.0001,
-      "p_l": 6.99,
-      "p_l_percent": 99.85714285714285,
-      "cost_basis": 7.000000000000001,
-      "multiplier": 100.0,
-      "total_value": 0.01,
-      "pct_portfolio": 0.0
+      "total_value": 491.54999999999995,
+      "pct_portfolio": 34.81
     },
     {
       "symbol": "RR",
@@ -119,16 +57,61 @@
       "quantity": 105,
       "direction": "Long",
       "avg_open_price": 2.97568857,
-      "current_price": 2.47,
-      "p_l": -53.09729984999998,
-      "p_l_percent": -16.994001828625493,
+      "current_price": 2.505,
+      "p_l": -49.42229985000001,
+      "p_l_percent": -15.817803473970399,
       "cost_basis": 312.44729985,
       "multiplier": 1.0,
-      "total_value": 259.35,
-      "pct_portfolio": 18.04
+      "total_value": 263.025,
+      "pct_portfolio": 18.62
     }
   ],
   "transactions": [
+    {
+      "id": 438793794,
+      "date": "2026-05-02 16:49",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -0.054,
+      "net_value": -0.054,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 438752931,
+      "date": "2026-05-01 20:00",
+      "type": "Receive Deliver",
+      "sub_type": "Expiration",
+      "description": "Removal of 1.0 BTG 05/01/26 Call 5.00 due to expiration.",
+      "symbol": "BTG   260501C00005000",
+      "action": "Buy to Close",
+      "quantity": 1.0,
+      "price": 0,
+      "value": 0.0,
+      "net_value": 0.0,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 438752545,
+      "date": "2026-05-01 20:00",
+      "type": "Receive Deliver",
+      "sub_type": "Expiration",
+      "description": "Removal of 1.0 RR 05/01/26 Call 3.00 due to expiration.",
+      "symbol": "RR    260501C00003000",
+      "action": "Buy to Close",
+      "quantity": 1.0,
+      "price": 0,
+      "value": 0.0,
+      "net_value": 0.0,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 438231045,
       "date": "2026-04-30 19:04",
@@ -3731,32 +3714,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-05-01T07:30:26.632781",
+    "updated": "2026-05-04T07:30:25.066437",
     "sector_allocation": {
-      "Basic Materials": 35.5,
-      "Technology": 38.3,
-      "Industrials": 18.0
+      "Technology": 36.5,
+      "Basic Materials": 35.8,
+      "Industrials": 19.2
     },
     "missing_sectors": [
-      "Financial Services",
-      "Consumer Defensive",
-      "Utilities",
       "Energy",
+      "Real Estate",
+      "Financial Services",
+      "Consumer Cyclical",
+      "Utilities",
       "Communication Services",
       "Healthcare",
-      "Consumer Cyclical",
-      "Real Estate"
+      "Consumer Defensive"
     ],
     "stats": {
       "sharpe": 0.14,
       "sortino": 0.21,
       "calmar": -1.13,
-      "max_drawdown": -54.9,
-      "volatility": 188.2,
-      "win_rate": 54.0,
-      "var": -16.1,
-      "best_day": 57.7,
-      "worst_day": -37.7
+      "max_drawdown": -55.8,
+      "volatility": 189.0,
+      "win_rate": 53.0,
+      "var": -16.2,
+      "best_day": 58.7,
+      "worst_day": -38.4
     }
   }
 }
