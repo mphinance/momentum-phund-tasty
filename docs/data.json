@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-05-12T07:30:43.875562",
+  "last_refresh": "2026-05-18T07:30:29.023409",
   "balance": {
-    "net_liq": 1371.677,
-    "net_liquidating_value": 1371.677,
-    "equity_buying_power": 0.507
+    "net_liq": 1349.449,
+    "net_liquidating_value": 1349.449,
+    "equity_buying_power": 495.44
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -14,13 +14,13 @@
       "quantity": 4,
       "direction": "Long",
       "avg_open_price": 75.502,
-      "current_price": 75.535,
-      "p_l": 0.132000000000005,
-      "p_l_percent": 0.043707451458241176,
+      "current_price": 75.58500000000001,
+      "p_l": 0.3320000000000505,
+      "p_l_percent": 0.10993086275861913,
       "cost_basis": 302.008,
       "multiplier": 1.0,
-      "total_value": 302.14,
-      "pct_portfolio": 22.03
+      "total_value": 302.34000000000003,
+      "pct_portfolio": 22.4
     },
     {
       "symbol": "BOXX",
@@ -29,26 +29,13 @@
       "quantity": 2.2,
       "direction": "Long",
       "avg_open_price": 116.58996364,
-      "current_price": 116.65,
-      "p_l": 0.1320799920000269,
-      "p_l_percent": 0.051493591837277836,
+      "current_price": 116.745,
+      "p_l": 0.3410799920000244,
+      "p_l_percent": 0.13297573406809163,
       "cost_basis": 256.497920008,
       "multiplier": 1.0,
-      "total_value": 256.63000000000005,
-      "pct_portfolio": 18.71
-    },
-    {
-      "symbol": "DDD (CC)",
-      "type": "Covered Call",
-      "direction": "Net Long",
-      "quantity": "200 / -2",
-      "avg_open_price": 1.770035,
-      "current_price": 2.795,
-      "p_l": 250.993,
-      "p_l_percent": 70.90057541235059,
-      "is_composite": true,
-      "description": "True Basis: $1.77/sh",
-      "cost_basis": 354.007
+      "total_value": 256.83900000000006,
+      "pct_portfolio": 19.03
     },
     {
       "symbol": "RR",
@@ -57,16 +44,61 @@
       "quantity": 110,
       "direction": "Long",
       "avg_open_price": 2.95996727,
-      "current_price": 2.675,
-      "p_l": -31.346399700000013,
-      "p_l_percent": -9.62737908922892,
+      "current_price": 2.6900000000000004,
+      "p_l": -29.69639969999995,
+      "p_l_percent": -9.120616728981586,
       "cost_basis": 325.5963997,
       "multiplier": 1.0,
-      "total_value": 294.25,
-      "pct_portfolio": 21.45
+      "total_value": 295.90000000000003,
+      "pct_portfolio": 21.93
     }
   ],
   "transactions": [
+    {
+      "id": 442874599,
+      "date": "2026-05-16 17:52",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -0.008,
+      "net_value": -0.008,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 442800990,
+      "date": "2026-05-15 21:00",
+      "type": "Receive Deliver",
+      "sub_type": "Assignment",
+      "description": "Removal of option due to assignment",
+      "symbol": "DDD   260515C00002500",
+      "action": "",
+      "quantity": 2.0,
+      "price": 0,
+      "value": 0.0,
+      "net_value": 0.0,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 442800989,
+      "date": "2026-05-15 21:00",
+      "type": "Receive Deliver",
+      "sub_type": "Sell to Close",
+      "description": "Sell to Close 200 DDD @ 2.50",
+      "symbol": "DDD",
+      "action": "Sell to Close",
+      "quantity": 200.0,
+      "price": 2.5,
+      "value": 500.0,
+      "net_value": 494.941,
+      "commission": 0,
+      "fees": -5.059
+    },
     {
       "id": 441228482,
       "date": "2026-05-11 21:00",
@@ -3771,80 +3803,35 @@
       "net_value": 10.877,
       "commission": -1.0,
       "fees": -0.123
-    },
-    {
-      "id": 412704663,
-      "date": "2026-01-15 17:38",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 1 QQQI @ 54.63",
-      "symbol": "QQQI",
-      "action": "Sell to Close",
-      "quantity": 1.0,
-      "price": 54.63,
-      "value": 54.63,
-      "net_value": 54.629,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 412525294,
-      "date": "2026-01-14 22:00",
-      "type": "Money Movement",
-      "sub_type": "Dividend",
-      "description": "REX ETF TR",
-      "symbol": "TSII",
-      "action": "",
-      "quantity": 0,
-      "price": 0,
-      "value": 0.25,
-      "net_value": 0.25,
-      "commission": 0,
-      "fees": 0.0
-    },
-    {
-      "id": 412525293,
-      "date": "2026-01-14 22:00",
-      "type": "Money Movement",
-      "sub_type": "Deposit",
-      "description": "ACH DEPOSIT",
-      "symbol": "",
-      "action": "",
-      "quantity": 0,
-      "price": 0,
-      "value": 90.0,
-      "net_value": 90.0,
-      "commission": 0,
-      "fees": 0.0
     }
   ],
   "analytics": {
-    "updated": "2026-05-12T07:30:28.949362",
+    "updated": "2026-05-18T07:30:20.286819",
     "sector_allocation": {
-      "Technology": 42.0,
-      "Industrials": 20.0
+      "Industrials": 34.6
     },
     "missing_sectors": [
-      "Healthcare",
-      "Real Estate",
-      "Basic Materials",
-      "Energy",
-      "Financial Services",
-      "Communication Services",
-      "Utilities",
       "Consumer Defensive",
-      "Consumer Cyclical"
+      "Energy",
+      "Utilities",
+      "Basic Materials",
+      "Technology",
+      "Real Estate",
+      "Consumer Cyclical",
+      "Communication Services",
+      "Healthcare",
+      "Financial Services"
     ],
     "stats": {
-      "sharpe": -1.02,
-      "sortino": -1.23,
-      "calmar": -1.55,
-      "max_drawdown": -59.0,
-      "volatility": 178.0,
-      "win_rate": 52.0,
-      "var": -15.8,
-      "best_day": 36.1,
-      "worst_day": -39.5
+      "sharpe": -0.33,
+      "sortino": -0.43,
+      "calmar": -1.39,
+      "max_drawdown": -60.0,
+      "volatility": 195.7,
+      "win_rate": 51.0,
+      "var": -17.0,
+      "best_day": 36.7,
+      "worst_day": -40.2
     }
   }
 }
