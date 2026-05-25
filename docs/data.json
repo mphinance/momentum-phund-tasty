@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-05-20T07:30:41.575480",
+  "last_refresh": "2026-05-25T07:30:37.518558",
   "balance": {
-    "net_liq": 1299.804,
-    "net_liquidating_value": 1299.804,
-    "equity_buying_power": 11.6
+    "net_liq": 1344.435,
+    "net_liquidating_value": 1344.435,
+    "equity_buying_power": 1.38
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -11,27 +11,27 @@
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
-      "quantity": "210 / -1",
-      "avg_open_price": 2.611023809523809,
-      "current_price": 2.4050000000000002,
-      "p_l": -38.26499999999987,
-      "p_l_percent": -6.978652781703926,
+      "quantity": "210 / -2",
+      "avg_open_price": 2.6063095238095233,
+      "current_price": 2.68,
+      "p_l": 34.475000000000136,
+      "p_l_percent": 6.298816973461863,
       "is_composite": true,
       "description": "True Basis: $2.61/sh",
-      "cost_basis": 548.3149999999999
+      "cost_basis": 547.3249999999999
     },
     {
       "symbol": "BTG (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
-      "quantity": "105 / -1",
-      "avg_open_price": 4.184847619047619,
-      "current_price": 4.88,
-      "p_l": 80.99099999999999,
-      "p_l_percent": 18.431802716831015,
+      "quantity": "110 / -1",
+      "avg_open_price": 4.204672727272728,
+      "current_price": 4.58,
+      "p_l": 42.286,
+      "p_l_percent": 9.14264216866949,
       "is_composite": true,
-      "description": "True Basis: $4.18/sh",
-      "cost_basis": 439.409
+      "description": "True Basis: $4.20/sh",
+      "cost_basis": 462.514
     },
     {
       "symbol": "VBIL",
@@ -40,16 +40,76 @@
       "quantity": 4,
       "direction": "Long",
       "avg_open_price": 75.502,
-      "current_price": 75.595,
-      "p_l": 0.3720000000000141,
-      "p_l_percent": 0.1231755450186797,
+      "current_price": 75.63,
+      "p_l": 0.5120000000000005,
+      "p_l_percent": 0.1695319329289292,
       "cost_basis": 302.008,
       "multiplier": 1.0,
-      "total_value": 302.38,
-      "pct_portfolio": 23.26
+      "total_value": 302.52,
+      "pct_portfolio": 22.5
     }
   ],
   "transactions": [
+    {
+      "id": 444844392,
+      "date": "2026-05-23 19:46",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 0.018,
+      "net_value": 0.018,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 444642372,
+      "date": "2026-05-22 16:49",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 2 BTG @ 4.62",
+      "symbol": "BTG",
+      "action": "Buy to Open",
+      "quantity": 2.0,
+      "price": 4.62,
+      "value": -9.24,
+      "net_value": -9.242,
+      "commission": 0,
+      "fees": -0.002
+    },
+    {
+      "id": 444639989,
+      "date": "2026-05-22 16:44",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 3 BTG @ 4.62",
+      "symbol": "BTG",
+      "action": "Buy to Open",
+      "quantity": 3.0,
+      "price": 4.62,
+      "value": -13.86,
+      "net_value": -13.863,
+      "commission": 0,
+      "fees": -0.003
+    },
+    {
+      "id": 444638574,
+      "date": "2026-05-22 16:41",
+      "type": "Trade",
+      "sub_type": "Sell to Open",
+      "description": "Sold 1 RR 06/05/26 Call 3.00 @ 0.14",
+      "symbol": "RR    260605C00003000",
+      "action": "Sell to Open",
+      "quantity": 1.0,
+      "price": 0.14,
+      "value": 14.0,
+      "net_value": 12.867,
+      "commission": -1.0,
+      "fees": -0.133
+    },
     {
       "id": 443168374,
       "date": "2026-05-18 17:37",
@@ -3739,95 +3799,35 @@
       "net_value": -3.851,
       "commission": 0,
       "fees": -0.001
-    },
-    {
-      "id": 414817146,
-      "date": "2026-01-26 20:04",
-      "type": "Trade",
-      "sub_type": "Sell to Open",
-      "description": "Sold 1 RR 02/06/26 Put 3.50 @ 0.13",
-      "symbol": "RR    260206P00003500",
-      "action": "Sell to Open",
-      "quantity": 1.0,
-      "price": 0.13,
-      "value": 13.0,
-      "net_value": 11.877,
-      "commission": -1.0,
-      "fees": -0.123
-    },
-    {
-      "id": 414817014,
-      "date": "2026-01-26 20:04",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 BITF @ 2.60",
-      "symbol": "BITF",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 2.5963,
-      "value": -2.596,
-      "net_value": -2.597,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 414632393,
-      "date": "2026-01-26 14:39",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 1 NVDA @ 188.00",
-      "symbol": "NVDA",
-      "action": "Sell to Close",
-      "quantity": 1.0,
-      "price": 188.0,
-      "value": 188.0,
-      "net_value": 187.999,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 414555674,
-      "date": "2026-01-24 17:25",
-      "type": "Money Movement",
-      "sub_type": "Balance Adjustment",
-      "description": "Regulatory fee adjustment",
-      "symbol": "",
-      "action": "",
-      "quantity": 0,
-      "price": 0,
-      "value": -0.034,
-      "net_value": -0.034,
-      "commission": 0,
-      "fees": 0.0
     }
   ],
   "analytics": {
-    "updated": "2026-05-20T07:30:28.230328",
+    "updated": "2026-05-25T07:30:24.825644",
     "sector_allocation": {
-      "Industrials": 38.3,
-      "Basic Materials": 39.0
+      "Industrials": 41.9,
+      "Basic Materials": 36.3
     },
     "missing_sectors": [
-      "Utilities",
-      "Consumer Cyclical",
-      "Real Estate",
-      "Communication Services",
-      "Financial Services",
-      "Consumer Defensive",
       "Technology",
+      "Utilities",
+      "Financial Services",
       "Healthcare",
-      "Energy"
+      "Consumer Defensive",
+      "Energy",
+      "Communication Services",
+      "Real Estate",
+      "Consumer Cyclical"
     ],
     "stats": {
-      "sharpe": -0.7,
-      "sortino": -0.9,
-      "calmar": -1.46,
-      "max_drawdown": -64.4,
-      "volatility": 218.9,
-      "win_rate": 52.0,
-      "var": -19.3,
-      "best_day": 38.1,
-      "worst_day": -41.7
+      "sharpe": -1.06,
+      "sortino": -1.34,
+      "calmar": -1.52,
+      "max_drawdown": -62.7,
+      "volatility": 207.6,
+      "win_rate": 51.0,
+      "var": -18.5,
+      "best_day": 36.8,
+      "worst_day": -40.3
     }
   }
 }
