@@ -1,13 +1,24 @@
 [
   {
+    "symbol": "IBRX",
+    "name": "ImmunityBio, Inc.",
+    "sector": "Health Technology",
+    "price": 7.22,
+    "strike": 6.5,
+    "capital": 650.0,
+    "dte": 10,
+    "roc_weekly": 2.26,
+    "expiry": "2026-06-05"
+  },
+  {
     "symbol": "RCAT",
     "name": "Red Cat Holdings, Inc.",
     "sector": "Technology Services",
     "price": 9.41,
     "strike": 8.5,
     "capital": 850.0,
-    "dte": 11,
-    "roc_weekly": 1.83,
+    "dte": 10,
+    "roc_weekly": 1.81,
     "expiry": "2026-06-05"
   },
   {
@@ -17,8 +28,8 @@
     "price": 10.98,
     "strike": 10.0,
     "capital": 1000.0,
-    "dte": 11,
-    "roc_weekly": 3.66,
+    "dte": 10,
+    "roc_weekly": 3.85,
     "expiry": "2026-06-05"
   },
   {
@@ -28,9 +39,20 @@
     "price": 13.02,
     "strike": 11.5,
     "capital": 1150.0,
-    "dte": 11,
-    "roc_weekly": 1.8,
+    "dte": 10,
+    "roc_weekly": 3.65,
     "expiry": "2026-06-05"
+  },
+  {
+    "symbol": "RLAY",
+    "name": "Relay Therapeutics, Inc.",
+    "sector": "Health Technology",
+    "price": 13.53,
+    "strike": 12.0,
+    "capital": 1200.0,
+    "dte": 23,
+    "roc_weekly": 1.62,
+    "expiry": "2026-06-18"
   },
   {
     "symbol": "LWLG",
@@ -39,9 +61,20 @@
     "price": 12.85,
     "strike": 12.0,
     "capital": 1200.0,
-    "dte": 24,
-    "roc_weekly": 3.34,
+    "dte": 23,
+    "roc_weekly": 3.63,
     "expiry": "2026-06-18"
+  },
+  {
+    "symbol": "VG",
+    "name": "Venture Global, Inc.",
+    "sector": "Industrial Services",
+    "price": 13.83,
+    "strike": 12.5,
+    "capital": 1250.0,
+    "dte": 10,
+    "roc_weekly": 1.96,
+    "expiry": "2026-06-05"
   },
   {
     "symbol": "POET",
@@ -50,8 +83,8 @@
     "price": 14.59,
     "strike": 13.0,
     "capital": 1300.0,
-    "dte": 11,
-    "roc_weekly": 4.04,
+    "dte": 10,
+    "roc_weekly": 4.31,
     "expiry": "2026-06-05"
   },
   {
@@ -61,8 +94,8 @@
     "price": 15.18,
     "strike": 14.0,
     "capital": 1400.0,
-    "dte": 24,
-    "roc_weekly": 4.74,
+    "dte": 23,
+    "roc_weekly": 3.59,
     "expiry": "2026-06-18"
   },
   {
@@ -72,8 +105,8 @@
     "price": 16.03,
     "strike": 14.5,
     "capital": 1450.0,
-    "dte": 11,
-    "roc_weekly": 2.3,
+    "dte": 10,
+    "roc_weekly": 2.08,
     "expiry": "2026-06-05"
   },
   {
@@ -83,20 +116,9 @@
     "price": 16.95,
     "strike": 15.0,
     "capital": 1500.0,
-    "dte": 24,
-    "roc_weekly": 1.51,
+    "dte": 23,
+    "roc_weekly": 1.72,
     "expiry": "2026-06-18"
-  },
-  {
-    "symbol": "UUUU",
-    "name": "Energy Fuels Inc",
-    "sector": "Non-Energy Minerals",
-    "price": 18.04,
-    "strike": 16.0,
-    "capital": 1600.0,
-    "dte": 11,
-    "roc_weekly": 1.47,
-    "expiry": "2026-06-05"
   },
   {
     "symbol": "WULF",
@@ -105,8 +127,8 @@
     "price": 22.82,
     "strike": 20.5,
     "capital": 2050.0,
-    "dte": 11,
-    "roc_weekly": 1.75,
+    "dte": 10,
+    "roc_weekly": 2.01,
     "expiry": "2026-06-05"
   },
   {
@@ -116,20 +138,9 @@
     "price": 25.3,
     "strike": 23.0,
     "capital": 2300.0,
-    "dte": 11,
-    "roc_weekly": 2.84,
+    "dte": 10,
+    "roc_weekly": 2.74,
     "expiry": "2026-06-05"
-  },
-  {
-    "symbol": "COGT",
-    "name": "Cogent Biosciences, Inc.",
-    "sector": "Health Technology",
-    "price": 32.67,
-    "strike": 29.0,
-    "capital": 2900.0,
-    "dte": 24,
-    "roc_weekly": 2.41,
-    "expiry": "2026-06-18"
   },
   {
     "symbol": "CNQ",
@@ -138,8 +149,8 @@
     "price": 48.61,
     "strike": 44.0,
     "capital": 4400.0,
-    "dte": 11,
-    "roc_weekly": 1.59,
+    "dte": 10,
+    "roc_weekly": 1.75,
     "expiry": "2026-06-05"
   },
   {
@@ -149,8 +160,8 @@
     "price": 49.51,
     "strike": 45.0,
     "capital": 4500.0,
-    "dte": 24,
-    "roc_weekly": 1.59,
+    "dte": 23,
+    "roc_weekly": 1.69,
     "expiry": "2026-06-18"
   },
   {
@@ -160,8 +171,8 @@
     "price": 56.83,
     "strike": 51.0,
     "capital": 5100.0,
-    "dte": 11,
-    "roc_weekly": 2.25,
+    "dte": 10,
+    "roc_weekly": 2.61,
     "expiry": "2026-06-05"
   },
   {
@@ -171,8 +182,8 @@
     "price": 64.1,
     "strike": 60.0,
     "capital": 6000.0,
-    "dte": 24,
-    "roc_weekly": 1.54,
+    "dte": 23,
+    "roc_weekly": 1.68,
     "expiry": "2026-06-18"
   },
   {
@@ -182,19 +193,8 @@
     "price": 68.96,
     "strike": 62.5,
     "capital": 6250.0,
-    "dte": 24,
-    "roc_weekly": 1.48,
-    "expiry": "2026-06-18"
-  },
-  {
-    "symbol": "SEI",
-    "name": "Solaris Energy Infrastructure, ",
-    "sector": "Energy Minerals",
-    "price": 74.27,
-    "strike": 67.5,
-    "capital": 6750.0,
-    "dte": 24,
-    "roc_weekly": 1.53,
+    "dte": 23,
+    "roc_weekly": 1.58,
     "expiry": "2026-06-18"
   },
   {
@@ -204,8 +204,8 @@
     "price": 78.545,
     "strike": 71.0,
     "capital": 7100.0,
-    "dte": 24,
-    "roc_weekly": 2.36,
+    "dte": 23,
+    "roc_weekly": 3.39,
     "expiry": "2026-06-18"
   },
   {
@@ -215,8 +215,8 @@
     "price": 95.02,
     "strike": 86.0,
     "capital": 8600.0,
-    "dte": 11,
-    "roc_weekly": 3.66,
+    "dte": 10,
+    "roc_weekly": 4.48,
     "expiry": "2026-06-05"
   },
   {
@@ -226,8 +226,8 @@
     "price": 103.11,
     "strike": 93.0,
     "capital": 9300.0,
-    "dte": 11,
-    "roc_weekly": 1.68,
+    "dte": 10,
+    "roc_weekly": 1.84,
     "expiry": "2026-06-05"
   },
   {
@@ -237,8 +237,8 @@
     "price": 105.49,
     "strike": 95.0,
     "capital": 9500.0,
-    "dte": 11,
-    "roc_weekly": 1.76,
+    "dte": 10,
+    "roc_weekly": 1.92,
     "expiry": "2026-06-05"
   },
   {
@@ -248,19 +248,8 @@
     "price": 113.12,
     "strike": 102.0,
     "capital": 10200.0,
-    "dte": 11,
-    "roc_weekly": 1.61,
-    "expiry": "2026-06-05"
-  },
-  {
-    "symbol": "ALGN",
-    "name": "Align Technology, Inc.",
-    "sector": "Health Technology",
-    "price": 163.61,
-    "strike": 148.0,
-    "capital": 14800.0,
-    "dte": 11,
-    "roc_weekly": 1.78,
+    "dte": 10,
+    "roc_weekly": 1.68,
     "expiry": "2026-06-05"
   },
   {
@@ -270,8 +259,19 @@
     "price": 181.49,
     "strike": 162.5,
     "capital": 16250.0,
-    "dte": 11,
-    "roc_weekly": 3.58,
+    "dte": 10,
+    "roc_weekly": 4.05,
+    "expiry": "2026-06-05"
+  },
+  {
+    "symbol": "SCCO",
+    "name": "Southern Copper Corporation",
+    "sector": "Non-Energy Minerals",
+    "price": 179.67,
+    "strike": 162.5,
+    "capital": 16250.0,
+    "dte": 10,
+    "roc_weekly": 2.28,
     "expiry": "2026-06-05"
   }
 ]
