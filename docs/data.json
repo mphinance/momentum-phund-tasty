@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-05-28T07:30:40.864656",
+  "last_refresh": "2026-05-29T07:30:41.207236",
   "balance": {
-    "net_liq": 1390.155,
-    "net_liquidating_value": 1390.155,
-    "equity_buying_power": 17.315
+    "net_liq": 1414.875,
+    "net_liquidating_value": 1414.875,
+    "equity_buying_power": 109.065
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -11,14 +11,14 @@
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
-      "quantity": "205 / -2",
-      "avg_open_price": 2.573360975609756,
-      "current_price": 3.2199999999999998,
-      "p_l": 206.56099999999992,
-      "p_l_percent": 39.155588496774634,
+      "quantity": "200 / -2",
+      "avg_open_price": 2.5415449999999997,
+      "current_price": 3.1900000000000004,
+      "p_l": 197.69100000000014,
+      "p_l_percent": 38.89189449724482,
       "is_composite": true,
-      "description": "True Basis: $2.57/sh",
-      "cost_basis": 527.539
+      "description": "True Basis: $2.54/sh",
+      "cost_basis": 508.30899999999997
     },
     {
       "symbol": "BTG (CC)",
@@ -26,9 +26,9 @@
       "direction": "Net Long",
       "quantity": "110 / -1",
       "avg_open_price": 4.204672727272728,
-      "current_price": 4.51,
-      "p_l": 34.585999999999956,
-      "p_l_percent": 7.477827698188586,
+      "current_price": 4.59,
+      "p_l": 44.38599999999997,
+      "p_l_percent": 9.596682478800634,
       "is_composite": true,
       "description": "True Basis: $4.20/sh",
       "cost_basis": 462.514
@@ -37,19 +37,49 @@
       "symbol": "VBIL",
       "underlying_symbol": "VBIL",
       "type": "EQUITY",
-      "quantity": 4,
+      "quantity": 3,
       "direction": "Long",
-      "avg_open_price": 75.502,
-      "current_price": 75.655,
-      "p_l": 0.6120000000000232,
-      "p_l_percent": 0.20264363857911818,
-      "cost_basis": 302.008,
+      "avg_open_price": 75.50933333,
+      "current_price": 75.67500000000001,
+      "p_l": 0.49700001000002203,
+      "p_l_percent": 0.2193989308261945,
+      "cost_basis": 226.52799999,
       "multiplier": 1.0,
-      "total_value": 302.62,
-      "pct_portfolio": 21.77
+      "total_value": 227.02500000000003,
+      "pct_portfolio": 16.05
     }
   ],
   "transactions": [
+    {
+      "id": 445784553,
+      "date": "2026-05-28 16:15",
+      "type": "Trade",
+      "sub_type": "Sell to Close",
+      "description": "Sold 1 VBIL @ 75.65",
+      "symbol": "VBIL",
+      "action": "Sell to Close",
+      "quantity": 1.0,
+      "price": 75.6511,
+      "value": 75.651,
+      "net_value": 75.64,
+      "commission": 0,
+      "fees": -0.011
+    },
+    {
+      "id": 445783919,
+      "date": "2026-05-28 16:14",
+      "type": "Trade",
+      "sub_type": "Sell to Close",
+      "description": "Sold 5 RR @ 3.22",
+      "symbol": "RR",
+      "action": "Sell to Close",
+      "quantity": 5.0,
+      "price": 3.225,
+      "value": 16.125,
+      "net_value": 16.11,
+      "commission": 0,
+      "fees": -0.015
+    },
     {
       "id": 445228395,
       "date": "2026-05-26 21:35",
@@ -3769,65 +3799,35 @@
       "net_value": 50.0,
       "commission": 0,
       "fees": 0.0
-    },
-    {
-      "id": 414992511,
-      "date": "2026-01-27 16:27",
-      "type": "Trade",
-      "sub_type": "Buy to Close",
-      "description": "Bought 1 RR 02/06/26 Put 3.50 @ 0.03",
-      "symbol": "RR    260206P00003500",
-      "action": "Buy to Close",
-      "quantity": 1.0,
-      "price": 0.03,
-      "value": -3.0,
-      "net_value": -3.12,
-      "commission": 0,
-      "fees": -0.12000000000000001
-    },
-    {
-      "id": 414984399,
-      "date": "2026-01-27 16:12",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 SERV @ 12.13",
-      "symbol": "SERV",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 12.1342,
-      "value": -12.134,
-      "net_value": -12.135,
-      "commission": 0,
-      "fees": -0.001
     }
   ],
   "analytics": {
-    "updated": "2026-05-28T07:30:27.029549",
+    "updated": "2026-05-29T07:30:27.154794",
     "sector_allocation": {
-      "Industrials": 47.9,
-      "Basic Materials": 32.3
+      "Industrials": 49.0,
+      "Basic Materials": 35.2
     },
     "missing_sectors": [
-      "Technology",
-      "Financial Services",
       "Real Estate",
       "Energy",
-      "Consumer Cyclical",
       "Communication Services",
-      "Utilities",
+      "Consumer Cyclical",
+      "Technology",
       "Consumer Defensive",
-      "Healthcare"
+      "Healthcare",
+      "Financial Services",
+      "Utilities"
     ],
     "stats": {
-      "sharpe": -1.03,
-      "sortino": -1.3,
-      "calmar": -1.54,
-      "max_drawdown": -60.7,
-      "volatility": 200.8,
-      "win_rate": 53.0,
-      "var": -17.9,
-      "best_day": 35.6,
-      "worst_day": -39.0
+      "sharpe": -0.84,
+      "sortino": -1.06,
+      "calmar": -1.53,
+      "max_drawdown": -59.7,
+      "volatility": 196.7,
+      "win_rate": 54.0,
+      "var": -17.4,
+      "best_day": 35.0,
+      "worst_day": -38.3
     }
   }
 }
