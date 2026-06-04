@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-06-03T07:30:37.130361",
+  "last_refresh": "2026-06-04T07:31:49.477423",
   "balance": {
-    "net_liq": 1313.598,
-    "net_liquidating_value": 1313.598,
-    "equity_buying_power": 15.566
+    "net_liq": 1284.711,
+    "net_liquidating_value": 1284.711,
+    "equity_buying_power": 2.535
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -11,14 +11,14 @@
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
-      "quantity": "200 / -2",
-      "avg_open_price": 2.306595,
-      "current_price": 2.92,
-      "p_l": 176.68099999999998,
-      "p_l_percent": 38.299094552793186,
+      "quantity": "205 / -2",
+      "avg_open_price": 2.3171219512195123,
+      "current_price": 2.6550000000000002,
+      "p_l": 94.2650000000001,
+      "p_l_percent": 19.844845371676406,
       "is_composite": true,
-      "description": "True Basis: $2.31/sh",
-      "cost_basis": 461.319
+      "description": "True Basis: $2.32/sh",
+      "cost_basis": 475.01
     },
     {
       "symbol": "BTG (CC)",
@@ -26,9 +26,9 @@
       "direction": "Net Long",
       "quantity": "115 / -1",
       "avg_open_price": 4.143921739130435,
-      "current_price": 4.76,
-      "p_l": 83.84899999999999,
-      "p_l_percent": 17.594968849084356,
+      "current_price": 4.57,
+      "p_l": 56.99900000000008,
+      "p_l_percent": 11.960734527888953,
       "is_composite": true,
       "description": "True Basis: $4.14/sh",
       "cost_basis": 476.551
@@ -40,16 +40,46 @@
       "quantity": 3.2,
       "direction": "Long",
       "avg_open_price": 75.5068125,
-      "current_price": 75.475,
-      "p_l": -0.10180000000000292,
-      "p_l_percent": -0.04213195994732384,
+      "current_price": 75.485,
+      "p_l": -0.06979999999998654,
+      "p_l_percent": -0.028888121849926843,
       "cost_basis": 241.6218,
       "multiplier": 1.0,
-      "total_value": 241.51999999999998,
-      "pct_portfolio": 18.39
+      "total_value": 241.55200000000002,
+      "pct_portfolio": 18.8
     }
   ],
   "transactions": [
+    {
+      "id": 447468778,
+      "date": "2026-06-03 21:00",
+      "type": "Money Movement",
+      "sub_type": "Dividend",
+      "description": "VANGUARD INSTL INDEX FD",
+      "symbol": "VBIL",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 0.66,
+      "net_value": 0.66,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 447281521,
+      "date": "2026-06-03 15:29",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 5 RR @ 2.74",
+      "symbol": "RR",
+      "action": "Buy to Open",
+      "quantity": 5.0,
+      "price": 2.7374,
+      "value": -13.687,
+      "net_value": -13.691,
+      "commission": 0,
+      "fees": -0.004
+    },
     {
       "id": 446553812,
       "date": "2026-06-01 14:51",
@@ -3769,65 +3799,35 @@
       "net_value": -62.621,
       "commission": 0,
       "fees": -0.001
-    },
-    {
-      "id": 415951689,
-      "date": "2026-01-30 17:33",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 UAMY @ 7.61",
-      "symbol": "UAMY",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 7.6071,
-      "value": -7.607,
-      "net_value": -7.608,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 415901070,
-      "date": "2026-01-30 16:18",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 APLD @ 35.56",
-      "symbol": "APLD",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 35.56,
-      "value": -35.56,
-      "net_value": -35.561,
-      "commission": 0,
-      "fees": -0.001
     }
   ],
   "analytics": {
-    "updated": "2026-06-03T07:30:23.737957",
+    "updated": "2026-06-04T07:31:00.761272",
     "sector_allocation": {
-      "Industrials": 44.3,
-      "Basic Materials": 38.9
+      "Industrials": 42.3,
+      "Basic Materials": 39.8
     },
     "missing_sectors": [
-      "Technology",
       "Consumer Cyclical",
+      "Real Estate",
       "Communication Services",
       "Healthcare",
+      "Technology",
+      "Consumer Defensive",
       "Energy",
       "Utilities",
-      "Financial Services",
-      "Real Estate",
-      "Consumer Defensive"
+      "Financial Services"
     ],
     "stats": {
-      "sharpe": -0.8,
-      "sortino": -1.05,
-      "calmar": -1.73,
-      "max_drawdown": -52.7,
-      "volatility": 201.5,
-      "win_rate": 53.0,
-      "var": -17.8,
-      "best_day": 37.7,
-      "worst_day": -38.3
+      "sharpe": -0.75,
+      "sortino": -0.99,
+      "calmar": -1.68,
+      "max_drawdown": -54.1,
+      "volatility": 202.6,
+      "win_rate": 52.0,
+      "var": -17.9,
+      "best_day": 38.5,
+      "worst_day": -39.1
     }
   }
 }
