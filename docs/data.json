@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-06-08T07:31:46.076784",
+  "last_refresh": "2026-06-09T07:30:41.576825",
   "balance": {
-    "net_liq": 1224.479,
-    "net_liquidating_value": 1224.479,
-    "equity_buying_power": 101.7
+    "net_liq": 1219.927,
+    "net_liquidating_value": 1219.927,
+    "equity_buying_power": 13.567
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -11,14 +11,14 @@
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
-      "quantity": "215 / -1",
-      "avg_open_price": 2.3218279069767442,
-      "current_price": 2.4850000000000003,
-      "p_l": 44.08200000000011,
-      "p_l_percent": 8.830652673414914,
+      "quantity": "215 / -2",
+      "avg_open_price": 2.2503581395348835,
+      "current_price": 2.465,
+      "p_l": 68.14800000000002,
+      "p_l_percent": 14.085199875161994,
       "is_composite": true,
-      "description": "True Basis: $2.32/sh",
-      "cost_basis": 499.193
+      "description": "True Basis: $2.25/sh",
+      "cost_basis": 483.827
     },
     {
       "symbol": "BTG (CC)",
@@ -26,15 +26,30 @@
       "direction": "Net Long",
       "quantity": "143 / -1",
       "avg_open_price": 4.158804195804195,
-      "current_price": 4.225,
-      "p_l": 14.466000000000008,
-      "p_l_percent": 2.432450156294929,
+      "current_price": 4.199999999999999,
+      "p_l": 10.890999999999963,
+      "p_l_percent": 1.8313158200060808,
       "is_composite": true,
       "description": "True Basis: $4.16/sh",
       "cost_basis": 594.709
     }
   ],
   "transactions": [
+    {
+      "id": 448478133,
+      "date": "2026-06-08 13:30",
+      "type": "Trade",
+      "sub_type": "Sell to Open",
+      "description": "Sold 1 RR 06/26/26 Call 3.00 @ 0.13",
+      "symbol": "RR    260626C00003000",
+      "action": "Sell to Open",
+      "quantity": 1.0,
+      "price": 0.13,
+      "value": 13.0,
+      "net_value": 11.867,
+      "commission": -1.0,
+      "fees": -0.133
+    },
     {
       "id": 448414899,
       "date": "2026-06-06 18:39",
@@ -3769,50 +3784,35 @@
       "net_value": -19.492,
       "commission": 0,
       "fees": -0.002
-    },
-    {
-      "id": 417158768,
-      "date": "2026-02-04 20:07",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 RR @ 3.50",
-      "symbol": "RR",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 3.4976,
-      "value": -3.498,
-      "net_value": -3.499,
-      "commission": 0,
-      "fees": -0.001
     }
   ],
   "analytics": {
-    "updated": "2026-06-08T07:30:46.618413",
+    "updated": "2026-06-09T07:30:27.034348",
     "sector_allocation": {
-      "Industrials": 46.4,
-      "Basic Materials": 53.6
+      "Industrials": 47.7,
+      "Basic Materials": 52.3
     },
     "missing_sectors": [
+      "Financial Services",
+      "Communication Services",
       "Technology",
       "Healthcare",
-      "Consumer Defensive",
-      "Utilities",
-      "Financial Services",
-      "Energy",
+      "Real Estate",
       "Consumer Cyclical",
-      "Communication Services",
-      "Real Estate"
+      "Utilities",
+      "Energy",
+      "Consumer Defensive"
     ],
     "stats": {
-      "sharpe": 0.12,
-      "sortino": 0.16,
-      "calmar": -1.28,
-      "max_drawdown": -56.9,
-      "volatility": 205.5,
+      "sharpe": 0.14,
+      "sortino": 0.2,
+      "calmar": -1.25,
+      "max_drawdown": -57.1,
+      "volatility": 205.0,
       "win_rate": 56.0,
       "var": -17.6,
-      "best_day": 40.4,
-      "worst_day": -41.1
+      "best_day": 40.6,
+      "worst_day": -41.2
     }
   }
 }
