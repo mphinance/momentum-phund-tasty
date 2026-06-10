@@ -1,8 +1,8 @@
 {
-  "last_refresh": "2026-06-09T07:30:41.576825",
+  "last_refresh": "2026-06-10T07:30:38.395399",
   "balance": {
-    "net_liq": 1219.927,
-    "net_liquidating_value": 1219.927,
+    "net_liq": 1033.357,
+    "net_liquidating_value": 1033.357,
     "equity_buying_power": 13.567
   },
   "ytd_deposits": 1539.0,
@@ -13,9 +13,9 @@
       "direction": "Net Long",
       "quantity": "215 / -2",
       "avg_open_price": 2.2503581395348835,
-      "current_price": 2.465,
-      "p_l": 68.14800000000002,
-      "p_l_percent": 14.085199875161994,
+      "current_price": 2.2750000000000004,
+      "p_l": 17.29800000000006,
+      "p_l_percent": 3.5752448705839193,
       "is_composite": true,
       "description": "True Basis: $2.25/sh",
       "cost_basis": 483.827
@@ -26,15 +26,30 @@
       "direction": "Net Long",
       "quantity": "143 / -1",
       "avg_open_price": 4.158804195804195,
-      "current_price": 4.199999999999999,
-      "p_l": 10.890999999999963,
-      "p_l_percent": 1.8313158200060808,
+      "current_price": 3.9,
+      "p_l": -35.009000000000015,
+      "p_l_percent": -5.886744609548539,
       "is_composite": true,
       "description": "True Basis: $4.16/sh",
       "cost_basis": 594.709
     }
   ],
   "transactions": [
+    {
+      "id": 448820164,
+      "date": "2026-06-08 21:00",
+      "type": "Money Movement",
+      "sub_type": "Withdrawal",
+      "description": "ACH DISBURSEMENT",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -100.0,
+      "net_value": -100.0,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 448478133,
       "date": "2026-06-08 13:30",
@@ -3769,50 +3784,35 @@
       "net_value": 44.009,
       "commission": 0,
       "fees": -0.001
-    },
-    {
-      "id": 417158838,
-      "date": "2026-02-04 20:07",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 2 ONDS @ 9.74",
-      "symbol": "ONDS",
-      "action": "Buy to Open",
-      "quantity": 2.0,
-      "price": 9.745,
-      "value": -19.49,
-      "net_value": -19.492,
-      "commission": 0,
-      "fees": -0.002
     }
   ],
   "analytics": {
-    "updated": "2026-06-09T07:30:27.034348",
+    "updated": "2026-06-10T07:30:24.254756",
     "sector_allocation": {
-      "Industrials": 47.7,
-      "Basic Materials": 52.3
+      "Industrials": 47.2,
+      "Basic Materials": 52.8
     },
     "missing_sectors": [
-      "Financial Services",
-      "Communication Services",
       "Technology",
       "Healthcare",
-      "Real Estate",
-      "Consumer Cyclical",
-      "Utilities",
+      "Communication Services",
       "Energy",
-      "Consumer Defensive"
+      "Consumer Cyclical",
+      "Financial Services",
+      "Utilities",
+      "Consumer Defensive",
+      "Real Estate"
     ],
     "stats": {
-      "sharpe": 0.14,
-      "sortino": 0.2,
-      "calmar": -1.25,
-      "max_drawdown": -57.1,
-      "volatility": 205.0,
-      "win_rate": 56.0,
-      "var": -17.6,
-      "best_day": 40.6,
-      "worst_day": -41.2
+      "sharpe": -0.0,
+      "sortino": -0.01,
+      "calmar": -1.3,
+      "max_drawdown": -67.5,
+      "volatility": 242.9,
+      "win_rate": 55.0,
+      "var": -20.9,
+      "best_day": 47.9,
+      "worst_day": -48.7
     }
   }
 }
