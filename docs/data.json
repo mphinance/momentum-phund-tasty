@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-06-12T07:30:36.893249",
+  "last_refresh": "2026-06-15T07:31:28.231375",
   "balance": {
-    "net_liq": 1024.213,
-    "net_liquidating_value": 1024.213,
-    "equity_buying_power": 13.567
+    "net_liq": 1119.72,
+    "net_liquidating_value": 1119.72,
+    "equity_buying_power": 13.56
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -13,9 +13,9 @@
       "direction": "Net Long",
       "quantity": "215 / -2",
       "avg_open_price": 2.2503581395348835,
-      "current_price": 2.065,
-      "p_l": -28.852000000000032,
-      "p_l_percent": -5.963288530817841,
+      "current_price": 2.225,
+      "p_l": 0.5480000000000018,
+      "p_l_percent": 0.11326362522141216,
       "is_composite": true,
       "description": "True Basis: $2.25/sh",
       "cost_basis": 483.827
@@ -26,15 +26,30 @@
       "direction": "Net Long",
       "quantity": "143 / -1",
       "avg_open_price": 4.158804195804195,
-      "current_price": 4.115,
-      "p_l": -6.133999999999901,
-      "p_l_percent": -1.0314288164463463,
+      "current_price": 4.4,
+      "p_l": 35.4910000000001,
+      "p_l_percent": 5.967792651532111,
       "is_composite": true,
       "description": "True Basis: $4.16/sh",
       "cost_basis": 594.709
     }
   ],
   "transactions": [
+    {
+      "id": 450489348,
+      "date": "2026-06-13 18:58",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -0.007,
+      "net_value": -0.007,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 448820164,
       "date": "2026-06-08 21:00",
@@ -3769,50 +3784,35 @@
       "net_value": 40.68,
       "commission": 0,
       "fees": -0.002
-    },
-    {
-      "id": 417159509,
-      "date": "2026-02-04 20:09",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 1 AMDW @ 44.01",
-      "symbol": "AMDW",
-      "action": "Sell to Close",
-      "quantity": 1.0,
-      "price": 44.01,
-      "value": 44.01,
-      "net_value": 44.009,
-      "commission": 0,
-      "fees": -0.001
     }
   ],
   "analytics": {
-    "updated": "2026-06-12T07:30:24.691956",
+    "updated": "2026-06-15T07:30:35.489017",
     "sector_allocation": {
-      "Industrials": 43.6,
-      "Basic Materials": 56.4
+      "Industrials": 43.4,
+      "Basic Materials": 56.6
     },
     "missing_sectors": [
-      "Real Estate",
+      "Communication Services",
+      "Energy",
+      "Technology",
       "Healthcare",
       "Consumer Defensive",
       "Utilities",
-      "Energy",
-      "Technology",
+      "Financial Services",
       "Consumer Cyclical",
-      "Communication Services",
-      "Financial Services"
+      "Real Estate"
     ],
     "stats": {
-      "sharpe": -0.0,
-      "sortino": -0.01,
-      "calmar": -1.3,
-      "max_drawdown": -68.1,
-      "volatility": 245.0,
-      "win_rate": 55.0,
-      "var": -21.1,
-      "best_day": 48.3,
-      "worst_day": -49.1
+      "sharpe": -0.08,
+      "sortino": -0.11,
+      "calmar": -1.34,
+      "max_drawdown": -62.4,
+      "volatility": 222.5,
+      "win_rate": 54.0,
+      "var": -19.2,
+      "best_day": 44.2,
+      "worst_day": -44.9
     }
   }
 }
