@@ -1,8 +1,8 @@
 {
-  "last_refresh": "2026-06-15T07:31:28.231375",
+  "last_refresh": "2026-06-16T07:30:35.489604",
   "balance": {
-    "net_liq": 1119.72,
-    "net_liquidating_value": 1119.72,
+    "net_liq": 1108.645,
+    "net_liquidating_value": 1108.645,
     "equity_buying_power": 13.56
   },
   "ytd_deposits": 1539.0,
@@ -13,9 +13,9 @@
       "direction": "Net Long",
       "quantity": "215 / -2",
       "avg_open_price": 2.2503581395348835,
-      "current_price": 2.225,
-      "p_l": 0.5480000000000018,
-      "p_l_percent": 0.11326362522141216,
+      "current_price": 2.135,
+      "p_l": -21.80200000000002,
+      "p_l_percent": -4.506156126053325,
       "is_composite": true,
       "description": "True Basis: $2.25/sh",
       "cost_basis": 483.827
@@ -26,9 +26,9 @@
       "direction": "Net Long",
       "quantity": "143 / -1",
       "avg_open_price": 4.158804195804195,
-      "current_price": 4.4,
-      "p_l": 35.4910000000001,
-      "p_l_percent": 5.967792651532111,
+      "current_price": 4.495,
+      "p_l": 48.176000000000045,
+      "p_l_percent": 8.100768611203133,
       "is_composite": true,
       "description": "True Basis: $4.16/sh",
       "cost_basis": 594.709
@@ -3787,32 +3787,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-06-15T07:30:35.489017",
+    "updated": "2026-06-16T07:30:22.974486",
     "sector_allocation": {
-      "Industrials": 43.4,
-      "Basic Materials": 56.6
+      "Industrials": 41.8,
+      "Basic Materials": 58.2
     },
     "missing_sectors": [
-      "Communication Services",
       "Energy",
-      "Technology",
-      "Healthcare",
       "Consumer Defensive",
+      "Healthcare",
       "Utilities",
+      "Technology",
       "Financial Services",
       "Consumer Cyclical",
-      "Real Estate"
+      "Real Estate",
+      "Communication Services"
     ],
     "stats": {
       "sharpe": -0.08,
       "sortino": -0.11,
-      "calmar": -1.34,
-      "max_drawdown": -62.4,
-      "volatility": 222.5,
+      "calmar": -1.33,
+      "max_drawdown": -63.0,
+      "volatility": 224.7,
       "win_rate": 54.0,
-      "var": -19.2,
-      "best_day": 44.2,
-      "worst_day": -44.9
+      "var": -19.4,
+      "best_day": 44.6,
+      "worst_day": -45.3
     }
   }
 }
