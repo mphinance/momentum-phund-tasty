@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-06-16T07:30:35.489604",
+  "last_refresh": "2026-06-17T07:30:36.248645",
   "balance": {
-    "net_liq": 1108.645,
-    "net_liquidating_value": 1108.645,
-    "equity_buying_power": 13.56
+    "net_liq": 1113.098,
+    "net_liquidating_value": 1113.098,
+    "equity_buying_power": 9.051
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -13,9 +13,9 @@
       "direction": "Net Long",
       "quantity": "215 / -2",
       "avg_open_price": 2.2503581395348835,
-      "current_price": 2.135,
-      "p_l": -21.80200000000002,
-      "p_l_percent": -4.506156126053325,
+      "current_price": 2.12,
+      "p_l": -25.026999999999987,
+      "p_l_percent": -5.172716694190276,
       "is_composite": true,
       "description": "True Basis: $2.25/sh",
       "cost_basis": 483.827
@@ -24,17 +24,32 @@
       "symbol": "BTG (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
-      "quantity": "143 / -1",
-      "avg_open_price": 4.158804195804195,
-      "current_price": 4.495,
-      "p_l": 48.176000000000045,
-      "p_l_percent": 8.100768611203133,
+      "quantity": "144 / -1",
+      "avg_open_price": 4.161236111111111,
+      "current_price": 4.55,
+      "p_l": 56.98199999999997,
+      "p_l_percent": 9.509393910062776,
       "is_composite": true,
       "description": "True Basis: $4.16/sh",
-      "cost_basis": 594.709
+      "cost_basis": 599.218
     }
   ],
   "transactions": [
+    {
+      "id": 450994096,
+      "date": "2026-06-16 14:26",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BTG @ 4.51",
+      "symbol": "BTG",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 4.5083,
+      "value": -4.508,
+      "net_value": -4.509,
+      "commission": 0,
+      "fees": -0.001
+    },
     {
       "id": 450489348,
       "date": "2026-06-13 18:58",
@@ -3769,50 +3784,35 @@
       "net_value": -30.978,
       "commission": 0,
       "fees": -0.001
-    },
-    {
-      "id": 417161786,
-      "date": "2026-02-04 20:13",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 2 GLXY @ 20.34",
-      "symbol": "GLXY",
-      "action": "Sell to Close",
-      "quantity": 2.0,
-      "price": 20.341,
-      "value": 40.682,
-      "net_value": 40.68,
-      "commission": 0,
-      "fees": -0.002
     }
   ],
   "analytics": {
-    "updated": "2026-06-16T07:30:22.974486",
+    "updated": "2026-06-17T07:30:24.521753",
     "sector_allocation": {
-      "Industrials": 41.8,
-      "Basic Materials": 58.2
+      "Industrials": 41.2,
+      "Basic Materials": 58.8
     },
     "missing_sectors": [
-      "Energy",
-      "Consumer Defensive",
-      "Healthcare",
-      "Utilities",
       "Technology",
-      "Financial Services",
+      "Energy",
+      "Healthcare",
+      "Communication Services",
+      "Consumer Defensive",
+      "Utilities",
       "Consumer Cyclical",
-      "Real Estate",
-      "Communication Services"
+      "Financial Services",
+      "Real Estate"
     ],
     "stats": {
-      "sharpe": -0.08,
-      "sortino": -0.11,
-      "calmar": -1.33,
-      "max_drawdown": -63.0,
-      "volatility": 224.7,
-      "win_rate": 54.0,
-      "var": -19.4,
-      "best_day": 44.6,
-      "worst_day": -45.3
+      "sharpe": -0.17,
+      "sortino": -0.23,
+      "calmar": -1.35,
+      "max_drawdown": -62.8,
+      "volatility": 222.4,
+      "win_rate": 52.0,
+      "var": -19.3,
+      "best_day": 44.5,
+      "worst_day": -45.2
     }
   }
 }
