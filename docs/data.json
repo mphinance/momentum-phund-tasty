@@ -1,8 +1,8 @@
 {
-  "last_refresh": "2026-06-18T07:31:22.610252",
+  "last_refresh": "2026-06-19T07:30:37.706945",
   "balance": {
-    "net_liq": 1093.951,
-    "net_liquidating_value": 1093.951,
+    "net_liq": 1082.444,
+    "net_liquidating_value": 1082.444,
     "equity_buying_power": 9.051
   },
   "ytd_deposits": 1539.0,
@@ -11,30 +11,62 @@
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
-      "quantity": "215 / -2",
+      "quantity": "215 / -1",
       "avg_open_price": 2.2503581395348835,
-      "current_price": 2.1550000000000002,
-      "p_l": -18.351999999999975,
-      "p_l_percent": -3.793091332232384,
+      "current_price": 2.14,
+      "p_l": -21.726999999999975,
+      "p_l_percent": -4.490654717491991,
       "is_composite": true,
       "description": "True Basis: $2.25/sh",
       "cost_basis": 483.827
     },
     {
-      "symbol": "BTG (CC)",
-      "type": "Covered Call",
-      "direction": "Net Long",
-      "quantity": "144 / -1",
-      "avg_open_price": 4.161236111111111,
-      "current_price": 4.42,
-      "p_l": 37.55200000000002,
-      "p_l_percent": 6.266834440887961,
-      "is_composite": true,
-      "description": "True Basis: $4.16/sh",
-      "cost_basis": 599.218
+      "symbol": "BTG",
+      "underlying_symbol": "BTG",
+      "type": "EQUITY",
+      "quantity": 144,
+      "direction": "Long",
+      "avg_open_price": 4.71451806,
+      "current_price": 4.3,
+      "p_l": -59.69060063999997,
+      "p_l_percent": -8.792373997184344,
+      "cost_basis": 678.89060064,
+      "multiplier": 1.0,
+      "total_value": 619.1999999999999,
+      "pct_portfolio": 57.2
     }
   ],
   "transactions": [
+    {
+      "id": 452056445,
+      "date": "2026-06-18 20:00",
+      "type": "Receive Deliver",
+      "sub_type": "Expiration",
+      "description": "Removal of 1.0 BTG 06/18/26 Call 5.00 due to expiration.",
+      "symbol": "BTG   260618C00005000",
+      "action": "Buy to Close",
+      "quantity": 1.0,
+      "price": 0,
+      "value": 0.0,
+      "net_value": 0.0,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 452056415,
+      "date": "2026-06-18 20:00",
+      "type": "Receive Deliver",
+      "sub_type": "Expiration",
+      "description": "Removal of 1.0 RR 06/18/26 Call 3.00 due to expiration.",
+      "symbol": "RR    260618C00003000",
+      "action": "Buy to Close",
+      "quantity": 1.0,
+      "price": 0,
+      "value": 0.0,
+      "net_value": 0.0,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 450994096,
       "date": "2026-06-16 14:26",
@@ -3754,65 +3786,35 @@
       "net_value": -28.254,
       "commission": 0,
       "fees": -0.003
-    },
-    {
-      "id": 417162437,
-      "date": "2026-02-04 20:14",
-      "type": "Trade",
-      "sub_type": "Sell to Open",
-      "description": "Sold 1 DDD 02/13/26 Call 2.50 @ 0.05",
-      "symbol": "DDD   260213C00002500",
-      "action": "Sell to Open",
-      "quantity": 1.0,
-      "price": 0.05,
-      "value": 5.0,
-      "net_value": 3.877,
-      "commission": -1.0,
-      "fees": -0.123
-    },
-    {
-      "id": 417161910,
-      "date": "2026-02-04 20:13",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 APLD @ 30.98",
-      "symbol": "APLD",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 30.9766,
-      "value": -30.977,
-      "net_value": -30.978,
-      "commission": 0,
-      "fees": -0.001
     }
   ],
   "analytics": {
-    "updated": "2026-06-18T07:30:47.048453",
+    "updated": "2026-06-19T07:30:24.515140",
     "sector_allocation": {
-      "Industrials": 42.2,
-      "Basic Materials": 57.8
+      "Industrials": 42.7,
+      "Basic Materials": 57.3
     },
     "missing_sectors": [
-      "Technology",
       "Utilities",
-      "Consumer Defensive",
-      "Healthcare",
-      "Energy",
       "Real Estate",
+      "Financial Services",
+      "Technology",
+      "Consumer Defensive",
       "Communication Services",
-      "Consumer Cyclical",
-      "Financial Services"
+      "Energy",
+      "Healthcare",
+      "Consumer Cyclical"
     ],
     "stats": {
-      "sharpe": -0.17,
-      "sortino": -0.23,
-      "calmar": -1.34,
-      "max_drawdown": -63.9,
-      "volatility": 226.3,
-      "win_rate": 52.0,
-      "var": -19.6,
-      "best_day": 45.2,
-      "worst_day": -46.0
+      "sharpe": -0.12,
+      "sortino": -0.16,
+      "calmar": -1.32,
+      "max_drawdown": -64.6,
+      "volatility": 228.7,
+      "win_rate": 53.0,
+      "var": -19.8,
+      "best_day": 45.7,
+      "worst_day": -46.4
     }
   }
 }
