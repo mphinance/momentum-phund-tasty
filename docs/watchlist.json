@@ -6,8 +6,8 @@
     "price": 6.28,
     "strike": 5.5,
     "capital": 550.0,
-    "dte": 13,
-    "roc_weekly": 1.96,
+    "dte": 10,
+    "roc_weekly": 2.55,
     "expiry": "2026-07-02"
   },
   {
@@ -17,9 +17,9 @@
     "price": 9.35,
     "strike": 8.5,
     "capital": 850.0,
-    "dte": 7,
-    "roc_weekly": 4.71,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 5.85,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "RCAT",
@@ -28,9 +28,9 @@
     "price": 11.44,
     "strike": 10.5,
     "capital": 1050.0,
-    "dte": 7,
-    "roc_weekly": 2.62,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 4.53,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "POET",
@@ -39,9 +39,9 @@
     "price": 12.15,
     "strike": 11.0,
     "capital": 1100.0,
-    "dte": 7,
-    "roc_weekly": 3.45,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 4.45,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "RDW",
@@ -50,9 +50,20 @@
     "price": 14.35,
     "strike": 13.0,
     "capital": 1300.0,
-    "dte": 7,
-    "roc_weekly": 2.69,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 3.23,
+    "expiry": "2026-07-02"
+  },
+  {
+    "symbol": "MARA",
+    "name": "MARA Holdings, Inc.",
+    "sector": "Technology Services",
+    "price": 14.22,
+    "strike": 13.0,
+    "capital": 1300.0,
+    "dte": 10,
+    "roc_weekly": 2.1,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "UUUU",
@@ -61,9 +72,9 @@
     "price": 16.56,
     "strike": 15.0,
     "capital": 1500.0,
-    "dte": 7,
-    "roc_weekly": 1.83,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 2.43,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "NVTS",
@@ -72,9 +83,9 @@
     "price": 24.02,
     "strike": 21.5,
     "capital": 2150.0,
-    "dte": 7,
-    "roc_weekly": 2.98,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 4.23,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "FLNC",
@@ -83,9 +94,31 @@
     "price": 24.8,
     "strike": 22.0,
     "capital": 2200.0,
-    "dte": 28,
-    "roc_weekly": 2.24,
+    "dte": 25,
+    "roc_weekly": 2.51,
     "expiry": "2026-07-17"
+  },
+  {
+    "symbol": "USAR",
+    "name": "USA Rare Earth, Inc.",
+    "sector": "Producer Manufacturing",
+    "price": 24.64,
+    "strike": 22.0,
+    "capital": 2200.0,
+    "dte": 10,
+    "roc_weekly": 2.61,
+    "expiry": "2026-07-02"
+  },
+  {
+    "symbol": "WRBY",
+    "name": "Warby Parker Inc.",
+    "sector": "Retail Trade",
+    "price": 25.96,
+    "strike": 23.5,
+    "capital": 2350.0,
+    "dte": 10,
+    "roc_weekly": 2.17,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "VOYG",
@@ -94,8 +127,8 @@
     "price": 37.57,
     "strike": 34.0,
     "capital": 3400.0,
-    "dte": 28,
-    "roc_weekly": 1.76,
+    "dte": 25,
+    "roc_weekly": 2.37,
     "expiry": "2026-07-17"
   },
   {
@@ -105,20 +138,9 @@
     "price": 46.59,
     "strike": 42.0,
     "capital": 4200.0,
-    "dte": 7,
-    "roc_weekly": 1.87,
-    "expiry": "2026-06-26"
-  },
-  {
-    "symbol": "ENPH",
-    "name": "Enphase Energy, Inc.",
-    "sector": "Producer Manufacturing",
-    "price": 52.28,
-    "strike": 47.0,
-    "capital": 4700.0,
-    "dte": 7,
-    "roc_weekly": 1.68,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 2.75,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "IONQ",
@@ -127,9 +149,20 @@
     "price": 56.55,
     "strike": 51.0,
     "capital": 5100.0,
-    "dte": 7,
-    "roc_weekly": 1.75,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 2.76,
+    "expiry": "2026-07-02"
+  },
+  {
+    "symbol": "WOLF",
+    "name": "Wolfspeed, Inc.",
+    "sector": "Electronic Technology",
+    "price": 57.41,
+    "strike": 51.5,
+    "capital": 5150.0,
+    "dte": 10,
+    "roc_weekly": 10.87,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "SEDG",
@@ -138,20 +171,9 @@
     "price": 58.05,
     "strike": 52.0,
     "capital": 5200.0,
-    "dte": 7,
-    "roc_weekly": 1.73,
-    "expiry": "2026-06-26"
-  },
-  {
-    "symbol": "WOLF",
-    "name": "Wolfspeed, Inc.",
-    "sector": "Electronic Technology",
-    "price": 57.41,
-    "strike": 52.0,
-    "capital": 5200.0,
-    "dte": 7,
-    "roc_weekly": 5.01,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 2.27,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "IREN",
@@ -160,31 +182,20 @@
     "price": 59.96,
     "strike": 54.0,
     "capital": 5400.0,
-    "dte": 7,
-    "roc_weekly": 2.5,
-    "expiry": "2026-06-26"
-  },
-  {
-    "symbol": "VSAT",
-    "name": "ViaSat, Inc.",
-    "sector": "Electronic Technology",
-    "price": 64.13,
-    "strike": 60.0,
-    "capital": 6000.0,
-    "dte": 28,
-    "roc_weekly": 1.6,
-    "expiry": "2026-07-17"
+    "dte": 10,
+    "roc_weekly": 3.24,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "AXTI",
     "name": "AXT Inc",
     "sector": "Electronic Technology",
     "price": 84.57,
-    "strike": 76.0,
-    "capital": 7600.0,
-    "dte": 7,
-    "roc_weekly": 4.11,
-    "expiry": "2026-06-26"
+    "strike": 77.0,
+    "capital": 7700.0,
+    "dte": 10,
+    "roc_weekly": 5.41,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "MXL",
@@ -193,9 +204,20 @@
     "price": 88.76,
     "strike": 80.0,
     "capital": 8000.0,
-    "dte": 28,
-    "roc_weekly": 2.0,
+    "dte": 25,
+    "roc_weekly": 2.23,
     "expiry": "2026-07-17"
+  },
+  {
+    "symbol": "INOD",
+    "name": "Innodata Inc.",
+    "sector": "Technology Services",
+    "price": 95.5,
+    "strike": 86.0,
+    "capital": 8600.0,
+    "dte": 10,
+    "roc_weekly": 2.44,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "RKLB",
@@ -204,9 +226,9 @@
     "price": 107.24,
     "strike": 97.0,
     "capital": 9700.0,
-    "dte": 7,
-    "roc_weekly": 1.73,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 2.35,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "AEHR",
@@ -215,9 +237,9 @@
     "price": 115.3,
     "strike": 104.0,
     "capital": 10400.0,
-    "dte": 7,
-    "roc_weekly": 4.23,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 5.12,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "HUT",
@@ -226,20 +248,9 @@
     "price": 124.44,
     "strike": 112.0,
     "capital": 11200.0,
-    "dte": 7,
-    "roc_weekly": 1.97,
-    "expiry": "2026-06-26"
-  },
-  {
-    "symbol": "TPR",
-    "name": "Tapestry, Inc.",
-    "sector": "Retail Trade",
-    "price": 143.5,
-    "strike": 130.0,
-    "capital": 13000.0,
-    "dte": 7,
-    "roc_weekly": 1.61,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 2.16,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "AAOI",
@@ -248,20 +259,9 @@
     "price": 161.85,
     "strike": 146.0,
     "capital": 14600.0,
-    "dte": 7,
-    "roc_weekly": 3.63,
-    "expiry": "2026-06-26"
-  },
-  {
-    "symbol": "DOCN",
-    "name": "DigitalOcean Holdings, Inc.",
-    "sector": "Technology Services",
-    "price": 173.27,
-    "strike": 155.0,
-    "capital": 15500.0,
-    "dte": 7,
-    "roc_weekly": 1.94,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 4.2,
+    "expiry": "2026-07-02"
   },
   {
     "symbol": "QCOM",
@@ -270,8 +270,8 @@
     "price": 226.11,
     "strike": 202.5,
     "capital": 20250.0,
-    "dte": 7,
-    "roc_weekly": 2.49,
-    "expiry": "2026-06-26"
+    "dte": 10,
+    "roc_weekly": 2.35,
+    "expiry": "2026-07-02"
   }
 ]
