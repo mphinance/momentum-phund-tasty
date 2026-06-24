@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-06-23T07:30:39.092717",
+  "last_refresh": "2026-06-24T07:30:38.894429",
   "balance": {
-    "net_liq": 1043.397,
-    "net_liquidating_value": 1043.397,
-    "equity_buying_power": 7.972
+    "net_liq": 1017.092,
+    "net_liquidating_value": 1017.092,
+    "equity_buying_power": 10.402
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -13,9 +13,9 @@
       "direction": "Net Long",
       "quantity": "215 / -2",
       "avg_open_price": 2.213767441860465,
-      "current_price": 2.08,
-      "p_l": -17.75999999999999,
-      "p_l_percent": -3.731406000504242,
+      "current_price": 2.06,
+      "p_l": -26.799999999999955,
+      "p_l_percent": -5.63072527103117,
       "is_composite": true,
       "description": "True Basis: $2.21/sh",
       "cost_basis": 475.96
@@ -27,13 +27,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 8.945,
-      "current_price": 8.614999999999998,
-      "p_l": -0.33000000000000185,
-      "p_l_percent": -3.6892118501956603,
+      "current_price": 8.66,
+      "p_l": -0.28500000000000014,
+      "p_l_percent": -3.186137506987145,
       "cost_basis": 8.945,
       "multiplier": 1.0,
-      "total_value": 8.614999999999998,
-      "pct_portfolio": 0.83
+      "total_value": 8.66,
+      "pct_portfolio": 0.85
     },
     {
       "symbol": "BTG",
@@ -42,16 +42,46 @@
       "quantity": 144,
       "direction": "Long",
       "avg_open_price": 4.71451806,
-      "current_price": 4.045,
-      "p_l": -96.41060063999996,
-      "p_l_percent": -14.201198329909456,
+      "current_price": 3.94,
+      "p_l": -111.53060063999996,
+      "p_l_percent": -16.428361290443327,
       "cost_basis": 678.89060064,
       "multiplier": 1.0,
-      "total_value": 582.48,
-      "pct_portfolio": 55.83
+      "total_value": 567.36,
+      "pct_portfolio": 55.78
     }
   ],
   "transactions": [
+    {
+      "id": 452779526,
+      "date": "2026-06-23 21:00",
+      "type": "Money Movement",
+      "sub_type": "Dividend",
+      "description": "***B2GOLD CORP",
+      "symbol": "BTG",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 2.86,
+      "net_value": 2.86,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 452779525,
+      "date": "2026-06-23 21:00",
+      "type": "Money Movement",
+      "sub_type": "Dividend",
+      "description": "***B2GOLD CORP",
+      "symbol": "BTG",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -0.43,
+      "net_value": -0.43,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 452289366,
       "date": "2026-06-22 16:02",
@@ -3771,65 +3801,35 @@
       "net_value": 186.828,
       "commission": 0,
       "fees": -0.10400000000000001
-    },
-    {
-      "id": 417413008,
-      "date": "2026-02-05 17:37",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 2 UAMY @ 7.68",
-      "symbol": "UAMY",
-      "action": "Buy to Open",
-      "quantity": 2.0,
-      "price": 7.6771,
-      "value": -15.354,
-      "net_value": -15.356,
-      "commission": 0,
-      "fees": -0.002
-    },
-    {
-      "id": 417358121,
-      "date": "2026-02-05 16:05",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 UAMY @ 7.48",
-      "symbol": "UAMY",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 7.475,
-      "value": -7.475,
-      "net_value": -7.476,
-      "commission": 0,
-      "fees": -0.001
     }
   ],
   "analytics": {
-    "updated": "2026-06-23T07:30:25.253251",
+    "updated": "2026-06-24T07:30:23.152149",
     "sector_allocation": {
-      "Industrials": 43.7,
+      "Industrials": 43.9,
       "Technology": 0.8,
-      "Basic Materials": 55.5
+      "Basic Materials": 55.3
     },
     "missing_sectors": [
-      "Consumer Cyclical",
-      "Financial Services",
       "Consumer Defensive",
-      "Energy",
       "Real Estate",
       "Healthcare",
       "Communication Services",
-      "Utilities"
+      "Energy",
+      "Consumer Cyclical",
+      "Utilities",
+      "Financial Services"
     ],
     "stats": {
-      "sharpe": -0.05,
-      "sortino": -0.07,
-      "calmar": -1.28,
-      "max_drawdown": -67.0,
-      "volatility": 236.9,
-      "win_rate": 52.0,
-      "var": -20.4,
-      "best_day": 47.4,
-      "worst_day": -48.2
+      "sharpe": -0.01,
+      "sortino": -0.01,
+      "calmar": -1.26,
+      "max_drawdown": -68.6,
+      "volatility": 242.5,
+      "win_rate": 53.0,
+      "var": -20.9,
+      "best_day": 48.7,
+      "worst_day": -49.4
     }
   }
 }
