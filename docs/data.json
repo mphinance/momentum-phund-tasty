@@ -1,8 +1,8 @@
 {
-  "last_refresh": "2026-06-25T07:31:31.375320",
+  "last_refresh": "2026-06-26T07:30:39.945335",
   "balance": {
-    "net_liq": 990.759,
-    "net_liquidating_value": 990.759,
+    "net_liq": 986.703,
+    "net_liquidating_value": 986.703,
     "equity_buying_power": 10.402
   },
   "ytd_deposits": 1539.0,
@@ -13,9 +13,9 @@
       "direction": "Net Long",
       "quantity": "215 / -2",
       "avg_open_price": 2.213767441860465,
-      "current_price": 1.9449999999999998,
-      "p_l": -52.785000000000025,
-      "p_l_percent": -11.090217665350036,
+      "current_price": 1.82,
+      "p_l": -79.64999999999998,
+      "p_l_percent": -16.73459954618035,
       "is_composite": true,
       "description": "True Basis: $2.21/sh",
       "cost_basis": 475.96
@@ -27,13 +27,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 8.945,
-      "current_price": 7.98,
-      "p_l": -0.9649999999999999,
-      "p_l_percent": -10.788149804359975,
+      "current_price": 7.585,
+      "p_l": -1.3600000000000003,
+      "p_l_percent": -15.204024594745672,
       "cost_basis": 8.945,
       "multiplier": 1.0,
-      "total_value": 7.98,
-      "pct_portfolio": 0.81
+      "total_value": 7.585,
+      "pct_portfolio": 0.77
     },
     {
       "symbol": "BTG",
@@ -42,13 +42,13 @@
       "quantity": 144,
       "direction": "Long",
       "avg_open_price": 4.71451806,
-      "current_price": 3.915,
-      "p_l": -115.13060063999994,
-      "p_l_percent": -16.95863818580853,
+      "current_price": 4.01,
+      "p_l": -101.45060063999998,
+      "p_l_percent": -14.943585983420748,
       "cost_basis": 678.89060064,
       "multiplier": 1.0,
-      "total_value": 563.76,
-      "pct_portfolio": 56.9
+      "total_value": 577.4399999999999,
+      "pct_portfolio": 58.52
     }
   ],
   "transactions": [
@@ -3804,32 +3804,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-06-25T07:30:52.947643",
+    "updated": "2026-06-26T07:30:26.363576",
     "sector_allocation": {
-      "Industrials": 42.6,
+      "Industrials": 40.5,
       "Technology": 0.8,
-      "Basic Materials": 56.6
+      "Basic Materials": 58.7
     },
     "missing_sectors": [
-      "Communication Services",
-      "Utilities",
-      "Healthcare",
+      "Energy",
       "Real Estate",
       "Financial Services",
-      "Consumer Defensive",
-      "Energy",
-      "Consumer Cyclical"
+      "Utilities",
+      "Communication Services",
+      "Healthcare",
+      "Consumer Cyclical",
+      "Consumer Defensive"
     ],
     "stats": {
       "sharpe": -0.01,
       "sortino": -0.01,
       "calmar": -1.25,
-      "max_drawdown": -70.3,
-      "volatility": 248.9,
+      "max_drawdown": -70.6,
+      "volatility": 250.0,
       "win_rate": 53.0,
-      "var": -21.4,
-      "best_day": 50.0,
-      "worst_day": -50.7
+      "var": -21.5,
+      "best_day": 50.2,
+      "worst_day": -51.0
     }
   }
 }
