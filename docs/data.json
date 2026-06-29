@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-06-26T07:30:39.945335",
+  "last_refresh": "2026-06-29T07:30:35.123227",
   "balance": {
-    "net_liq": 986.703,
-    "net_liquidating_value": 986.703,
-    "equity_buying_power": 10.402
+    "net_liq": 1007.886,
+    "net_liquidating_value": 1007.886,
+    "equity_buying_power": 10.39
   },
   "ytd_deposits": 1539.0,
   "positions": [
@@ -11,11 +11,11 @@
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
-      "quantity": "215 / -2",
+      "quantity": "215 / -1",
       "avg_open_price": 2.213767441860465,
-      "current_price": 1.82,
-      "p_l": -79.64999999999998,
-      "p_l_percent": -16.73459954618035,
+      "current_price": 2.005,
+      "p_l": -41.88499999999999,
+      "p_l_percent": -8.800109252878393,
       "is_composite": true,
       "description": "True Basis: $2.21/sh",
       "cost_basis": 475.96
@@ -27,13 +27,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 8.945,
-      "current_price": 7.585,
-      "p_l": -1.3600000000000003,
-      "p_l_percent": -15.204024594745672,
+      "current_price": 8.21,
+      "p_l": -0.7349999999999994,
+      "p_l_percent": -8.2168809390721,
       "cost_basis": 8.945,
       "multiplier": 1.0,
-      "total_value": 7.585,
-      "pct_portfolio": 0.77
+      "total_value": 8.21,
+      "pct_portfolio": 0.81
     },
     {
       "symbol": "BTG",
@@ -42,16 +42,46 @@
       "quantity": 144,
       "direction": "Long",
       "avg_open_price": 4.71451806,
-      "current_price": 4.01,
-      "p_l": -101.45060063999998,
-      "p_l_percent": -14.943585983420748,
+      "current_price": 3.9050000000000002,
+      "p_l": -116.57060063999991,
+      "p_l_percent": -17.17074894395461,
       "cost_basis": 678.89060064,
       "multiplier": 1.0,
-      "total_value": 577.4399999999999,
-      "pct_portfolio": 58.52
+      "total_value": 562.32,
+      "pct_portfolio": 55.79
     }
   ],
   "transactions": [
+    {
+      "id": 453955771,
+      "date": "2026-06-27 18:03",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -0.012,
+      "net_value": -0.012,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 453917433,
+      "date": "2026-06-26 20:00",
+      "type": "Receive Deliver",
+      "sub_type": "Expiration",
+      "description": "Removal of 1.0 RR 06/26/26 Call 3.00 due to expiration.",
+      "symbol": "RR    260626C00003000",
+      "action": "Buy to Close",
+      "quantity": 1.0,
+      "price": 0,
+      "value": 0.0,
+      "net_value": 0.0,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 452779526,
       "date": "2026-06-23 21:00",
@@ -3771,65 +3801,35 @@
       "net_value": -3.136,
       "commission": 0,
       "fees": -0.001
-    },
-    {
-      "id": 417468053,
-      "date": "2026-02-05 19:36",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 2 APLD @ 28.63",
-      "symbol": "APLD",
-      "action": "Sell to Close",
-      "quantity": 2.0,
-      "price": 28.6324,
-      "value": 57.265,
-      "net_value": 57.263,
-      "commission": 0,
-      "fees": -0.002
-    },
-    {
-      "id": 417467424,
-      "date": "2026-02-05 19:34",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 105 BITF @ 1.78",
-      "symbol": "BITF",
-      "action": "Sell to Close",
-      "quantity": 105.0,
-      "price": 1.7803,
-      "value": 186.932,
-      "net_value": 186.828,
-      "commission": 0,
-      "fees": -0.10400000000000001
     }
   ],
   "analytics": {
-    "updated": "2026-06-26T07:30:26.363576",
+    "updated": "2026-06-29T07:30:22.817545",
     "sector_allocation": {
-      "Industrials": 40.5,
+      "Industrials": 43.2,
       "Technology": 0.8,
-      "Basic Materials": 58.7
+      "Basic Materials": 56.0
     },
     "missing_sectors": [
+      "Consumer Cyclical",
+      "Utilities",
       "Energy",
       "Real Estate",
-      "Financial Services",
-      "Utilities",
       "Communication Services",
+      "Consumer Defensive",
       "Healthcare",
-      "Consumer Cyclical",
-      "Consumer Defensive"
+      "Financial Services"
     ],
     "stats": {
-      "sharpe": -0.01,
-      "sortino": -0.01,
-      "calmar": -1.25,
-      "max_drawdown": -70.6,
-      "volatility": 250.0,
-      "win_rate": 53.0,
-      "var": -21.5,
-      "best_day": 50.2,
-      "worst_day": -51.0
+      "sharpe": -0.45,
+      "sortino": -0.6,
+      "calmar": -1.33,
+      "max_drawdown": -69.2,
+      "volatility": 236.9,
+      "win_rate": 51.0,
+      "var": -20.7,
+      "best_day": 49.1,
+      "worst_day": -49.9
     }
   }
 }
