@@ -1,24 +1,24 @@
 {
-  "last_refresh": "2026-06-29T07:30:35.123227",
+  "last_refresh": "2026-06-30T07:30:44.433011",
   "balance": {
-    "net_liq": 1007.886,
-    "net_liquidating_value": 1007.886,
-    "equity_buying_power": 10.39
+    "net_liq": 1016.0,
+    "net_liquidating_value": 1016.0,
+    "equity_buying_power": 35.39
   },
-  "ytd_deposits": 1539.0,
+  "ytd_deposits": 1564.0,
   "positions": [
     {
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
       "quantity": "215 / -1",
-      "avg_open_price": 2.213767441860465,
-      "current_price": 2.005,
-      "p_l": -41.88499999999999,
-      "p_l_percent": -8.800109252878393,
+      "avg_open_price": 2.199181395348837,
+      "current_price": 1.99,
+      "p_l": -39.97399999999999,
+      "p_l_percent": -8.454308579936718,
       "is_composite": true,
-      "description": "True Basis: $2.21/sh",
-      "cost_basis": 475.96
+      "description": "True Basis: $2.20/sh",
+      "cost_basis": 472.824
     },
     {
       "symbol": "ONDS",
@@ -27,13 +27,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 8.945,
-      "current_price": 8.21,
-      "p_l": -0.7349999999999994,
-      "p_l_percent": -8.2168809390721,
+      "current_price": 8.58,
+      "p_l": -0.3650000000000002,
+      "p_l_percent": -4.0804918949133615,
       "cost_basis": 8.945,
       "multiplier": 1.0,
-      "total_value": 8.21,
-      "pct_portfolio": 0.81
+      "total_value": 8.58,
+      "pct_portfolio": 0.84
     },
     {
       "symbol": "BTG",
@@ -42,16 +42,31 @@
       "quantity": 144,
       "direction": "Long",
       "avg_open_price": 4.71451806,
-      "current_price": 3.9050000000000002,
-      "p_l": -116.57060063999991,
-      "p_l_percent": -17.17074894395461,
+      "current_price": 3.775,
+      "p_l": -135.29060063999995,
+      "p_l_percent": -19.928188799853693,
       "cost_basis": 678.89060064,
       "multiplier": 1.0,
-      "total_value": 562.32,
-      "pct_portfolio": 55.79
+      "total_value": 543.6,
+      "pct_portfolio": 53.5
     }
   ],
   "transactions": [
+    {
+      "id": 454339098,
+      "date": "2026-06-29 21:00",
+      "type": "Money Movement",
+      "sub_type": "Deposit",
+      "description": "ACH DEPOSIT",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 25.0,
+      "net_value": 25.0,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 453955771,
       "date": "2026-06-27 18:03",
@@ -3786,50 +3801,35 @@
       "net_value": -6.255,
       "commission": 0,
       "fees": -0.002
-    },
-    {
-      "id": 417468420,
-      "date": "2026-02-05 19:36",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 RR @ 3.14",
-      "symbol": "RR",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 3.135,
-      "value": -3.135,
-      "net_value": -3.136,
-      "commission": 0,
-      "fees": -0.001
     }
   ],
   "analytics": {
-    "updated": "2026-06-29T07:30:22.817545",
+    "updated": "2026-06-30T07:30:26.430009",
     "sector_allocation": {
-      "Industrials": 43.2,
-      "Technology": 0.8,
-      "Basic Materials": 56.0
+      "Industrials": 43.9,
+      "Technology": 0.9,
+      "Basic Materials": 55.2
     },
     "missing_sectors": [
-      "Consumer Cyclical",
-      "Utilities",
-      "Energy",
       "Real Estate",
+      "Financial Services",
       "Communication Services",
-      "Consumer Defensive",
+      "Utilities",
       "Healthcare",
-      "Financial Services"
+      "Consumer Cyclical",
+      "Consumer Defensive",
+      "Energy"
     ],
     "stats": {
-      "sharpe": -0.45,
-      "sortino": -0.6,
-      "calmar": -1.33,
-      "max_drawdown": -69.2,
-      "volatility": 236.9,
+      "sharpe": -0.39,
+      "sortino": -0.53,
+      "calmar": -1.32,
+      "max_drawdown": -68.7,
+      "volatility": 233.7,
       "win_rate": 51.0,
-      "var": -20.7,
-      "best_day": 49.1,
-      "worst_day": -49.9
+      "var": -20.4,
+      "best_day": 48.7,
+      "worst_day": -49.5
     }
   }
 }
