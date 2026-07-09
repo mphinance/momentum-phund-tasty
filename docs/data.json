@@ -1,8 +1,8 @@
 {
-  "last_refresh": "2026-07-08T07:30:39.070221",
+  "last_refresh": "2026-07-09T07:31:15.217019",
   "balance": {
-    "net_liq": 1211.557,
-    "net_liquidating_value": 1211.557,
+    "net_liq": 1214.482,
+    "net_liquidating_value": 1214.482,
     "equity_buying_power": 225.227
   },
   "ytd_deposits": 1789.0,
@@ -27,13 +27,13 @@
       "quantity": 3,
       "direction": "Long",
       "avg_open_price": 8.46833333,
-      "current_price": 7.3100000000000005,
-      "p_l": -3.474999989999999,
-      "p_l_percent": -13.678409727879709,
+      "current_price": 7.675,
+      "p_l": -2.379999990000001,
+      "p_l_percent": -9.368234563813518,
       "cost_basis": 25.40499999,
       "multiplier": 1.0,
-      "total_value": 21.93,
-      "pct_portfolio": 1.81
+      "total_value": 23.025,
+      "pct_portfolio": 1.9
     },
     {
       "symbol": "BTG",
@@ -42,13 +42,13 @@
       "quantity": 149,
       "direction": "Long",
       "avg_open_price": 4.68178456,
-      "current_price": 3.87,
-      "p_l": -120.95589943999994,
-      "p_l_percent": -17.3392122084319,
+      "current_price": 3.865,
+      "p_l": -121.70089943999992,
+      "p_l_percent": -17.446009091883536,
       "cost_basis": 697.5858994399999,
       "multiplier": 1.0,
-      "total_value": 576.63,
-      "pct_portfolio": 47.59
+      "total_value": 575.885,
+      "pct_portfolio": 47.42
     }
   ],
   "transactions": [
@@ -3804,32 +3804,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-07-08T07:30:28.064533",
+    "updated": "2026-07-09T07:30:46.772728",
     "sector_allocation": {
       "Industrials": 39.7,
-      "Technology": 2.2,
-      "Basic Materials": 58.1
+      "Technology": 2.3,
+      "Basic Materials": 58.0
     },
     "missing_sectors": [
-      "Utilities",
-      "Energy",
-      "Real Estate",
       "Healthcare",
-      "Communication Services",
+      "Utilities",
+      "Consumer Cyclical",
       "Consumer Defensive",
+      "Energy",
       "Financial Services",
-      "Consumer Cyclical"
+      "Communication Services",
+      "Real Estate"
     ],
     "stats": {
       "sharpe": -0.04,
       "sortino": -0.05,
       "calmar": -1.27,
-      "max_drawdown": -57.6,
-      "volatility": 198.7,
+      "max_drawdown": -57.4,
+      "volatility": 198.2,
       "win_rate": 53.0,
       "var": -17.1,
-      "best_day": 40.9,
-      "worst_day": -41.5
+      "best_day": 40.8,
+      "worst_day": -41.4
     }
   }
 }
