@@ -1,24 +1,24 @@
 {
-  "last_refresh": "2026-07-15T07:31:36.913387",
+  "last_refresh": "2026-07-16T07:31:30.884993",
   "balance": {
-    "net_liq": 1166.691,
-    "net_liquidating_value": 1166.691,
-    "equity_buying_power": 213.404
+    "net_liq": 1191.314,
+    "net_liquidating_value": 1191.314,
+    "equity_buying_power": 248.404
   },
-  "ytd_deposits": 1789.0,
+  "ytd_deposits": 1824.0,
   "positions": [
     {
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
       "quantity": "222 / -1",
-      "avg_open_price": 2.268238738738739,
-      "current_price": 1.665,
-      "p_l": -132.91899999999998,
-      "p_l_percent": -26.39643808249048,
+      "avg_open_price": 2.2496801801801802,
+      "current_price": 1.6400000000000001,
+      "p_l": -135.33899999999994,
+      "p_l_percent": -27.098746768809974,
       "is_composite": true,
-      "description": "True Basis: $2.27/sh",
-      "cost_basis": 503.549
+      "description": "True Basis: $2.25/sh",
+      "cost_basis": 499.429
     },
     {
       "symbol": "ONDS",
@@ -27,13 +27,13 @@
       "quantity": 3,
       "direction": "Long",
       "avg_open_price": 8.46833333,
-      "current_price": 7.4,
-      "p_l": -3.2049999899999992,
-      "p_l_percent": -12.615626810712701,
+      "current_price": 6.880000000000001,
+      "p_l": -4.764999989999998,
+      "p_l_percent": -18.756150332122072,
       "cost_basis": 25.40499999,
       "multiplier": 1.0,
-      "total_value": 22.200000000000003,
-      "pct_portfolio": 1.9
+      "total_value": 20.64,
+      "pct_portfolio": 1.73
     },
     {
       "symbol": "BTG",
@@ -42,16 +42,31 @@
       "quantity": 149,
       "direction": "Long",
       "avg_open_price": 4.68178456,
-      "current_price": 3.785,
-      "p_l": -133.62089943999993,
-      "p_l_percent": -19.15475922710975,
+      "current_price": 3.825,
+      "p_l": -127.66089943999992,
+      "p_l_percent": -18.30038415949664,
       "cost_basis": 697.5858994399999,
       "multiplier": 1.0,
-      "total_value": 563.965,
-      "pct_portfolio": 48.34
+      "total_value": 569.9250000000001,
+      "pct_portfolio": 47.84
     }
   ],
   "transactions": [
+    {
+      "id": 458155119,
+      "date": "2026-07-15 21:00",
+      "type": "Money Movement",
+      "sub_type": "Deposit",
+      "description": "ACH DEPOSIT",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 35.0,
+      "net_value": 35.0,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 457767141,
       "date": "2026-07-14 18:47",
@@ -3786,50 +3801,35 @@
       "net_value": -0.052,
       "commission": 0,
       "fees": 0.0
-    },
-    {
-      "id": 417694797,
-      "date": "2026-02-06 15:45",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 RR 02/13/26 Put 2.50 @ 0.03",
-      "symbol": "RR    260213P00002500",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 0.03,
-      "value": -3.0,
-      "net_value": -4.12,
-      "commission": -1.0,
-      "fees": -0.12000000000000001
     }
   ],
   "analytics": {
-    "updated": "2026-07-15T07:31:16.735501",
+    "updated": "2026-07-16T07:31:11.628375",
     "sector_allocation": {
-      "Industrials": 38.7,
-      "Technology": 2.3,
-      "Basic Materials": 58.9
+      "Industrials": 38.2,
+      "Technology": 2.2,
+      "Basic Materials": 59.6
     },
     "missing_sectors": [
-      "Real Estate",
-      "Financial Services",
+      "Consumer Cyclical",
       "Healthcare",
-      "Energy",
       "Communication Services",
+      "Energy",
+      "Financial Services",
       "Consumer Defensive",
-      "Utilities",
-      "Consumer Cyclical"
+      "Real Estate",
+      "Utilities"
     ],
     "stats": {
-      "sharpe": -0.21,
-      "sortino": -0.29,
-      "calmar": -1.29,
-      "max_drawdown": -59.9,
-      "volatility": 203.4,
-      "win_rate": 50.0,
-      "var": -17.6,
-      "best_day": 42.4,
-      "worst_day": -43.1
+      "sharpe": -0.14,
+      "sortino": -0.19,
+      "calmar": -1.27,
+      "max_drawdown": -58.6,
+      "volatility": 199.3,
+      "win_rate": 51.0,
+      "var": -17.2,
+      "best_day": 41.5,
+      "worst_day": -42.2
     }
   }
 }
