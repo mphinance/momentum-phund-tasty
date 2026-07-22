@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-07-21T07:30:38.166226",
+  "last_refresh": "2026-07-22T07:30:33.536126",
   "balance": {
-    "net_liq": 1184.88,
-    "net_liquidating_value": 1184.88,
-    "equity_buying_power": 248.41
+    "net_liq": 1211.28,
+    "net_liquidating_value": 1211.28,
+    "equity_buying_power": 233.294
   },
   "ytd_deposits": 1824.0,
   "positions": [
@@ -11,16 +11,16 @@
       "symbol": "ONDS",
       "underlying_symbol": "ONDS",
       "type": "EQUITY",
-      "quantity": 3,
+      "quantity": 5,
       "direction": "Long",
-      "avg_open_price": 8.46833333,
-      "current_price": 7.025,
-      "p_l": -4.329999989999999,
-      "p_l_percent": -17.04388896557523,
-      "cost_basis": 25.40499999,
+      "avg_open_price": 8.1038,
+      "current_price": 7.595,
+      "p_l": -2.5439999999999996,
+      "p_l_percent": -6.2785359954589195,
+      "cost_basis": 40.519,
       "multiplier": 1.0,
-      "total_value": 21.075000000000003,
-      "pct_portfolio": 1.78
+      "total_value": 37.975,
+      "pct_portfolio": 3.14
     },
     {
       "symbol": "BTG",
@@ -29,13 +29,13 @@
       "quantity": 149,
       "direction": "Long",
       "avg_open_price": 4.68178456,
-      "current_price": 3.7300000000000004,
-      "p_l": -141.8158994399999,
-      "p_l_percent": -20.329524945077768,
+      "current_price": 3.885,
+      "p_l": -118.72089943999998,
+      "p_l_percent": -17.01882155807699,
       "cost_basis": 697.5858994399999,
       "multiplier": 1.0,
-      "total_value": 555.7700000000001,
-      "pct_portfolio": 46.91
+      "total_value": 578.865,
+      "pct_portfolio": 47.79
     },
     {
       "symbol": "RR",
@@ -44,16 +44,31 @@
       "quantity": 222,
       "direction": "Long",
       "avg_open_price": 2.67096081,
-      "current_price": 1.625,
-      "p_l": -232.20329981999998,
-      "p_l_percent": -39.16047012310899,
+      "current_price": 1.6349999999999998,
+      "p_l": -229.98329982000004,
+      "p_l_percent": -38.786073016174285,
       "cost_basis": 592.95329982,
       "multiplier": 1.0,
-      "total_value": 360.75,
-      "pct_portfolio": 30.45
+      "total_value": 362.96999999999997,
+      "pct_portfolio": 29.97
     }
   ],
   "transactions": [
+    {
+      "id": 459574381,
+      "date": "2026-07-21 14:26",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 2 ONDS @ 7.56",
+      "symbol": "ONDS",
+      "action": "Buy to Open",
+      "quantity": 2.0,
+      "price": 7.557,
+      "value": -15.114,
+      "net_value": -15.116,
+      "commission": 0,
+      "fees": -0.002
+    },
     {
       "id": 459111501,
       "date": "2026-07-18 19:27",
@@ -3788,50 +3803,35 @@
       "net_value": -8.098,
       "commission": 0,
       "fees": -0.004
-    },
-    {
-      "id": 418151737,
-      "date": "2026-02-09 17:44",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 5 HIMZ @ 1.63",
-      "symbol": "HIMZ",
-      "action": "Buy to Open",
-      "quantity": 5.0,
-      "price": 1.6276,
-      "value": -8.138,
-      "net_value": -8.142,
-      "commission": 0,
-      "fees": -0.004
     }
   ],
   "analytics": {
-    "updated": "2026-07-21T07:30:25.337052",
+    "updated": "2026-07-22T07:30:24.306263",
     "sector_allocation": {
-      "Technology": 2.2,
-      "Basic Materials": 59.3,
-      "Industrials": 38.5
+      "Technology": 3.9,
+      "Basic Materials": 59.1,
+      "Industrials": 37.0
     },
     "missing_sectors": [
-      "Energy",
-      "Utilities",
       "Consumer Defensive",
-      "Financial Services",
       "Consumer Cyclical",
+      "Utilities",
+      "Energy",
       "Real Estate",
-      "Communication Services",
-      "Healthcare"
+      "Healthcare",
+      "Financial Services",
+      "Communication Services"
     ],
     "stats": {
-      "sharpe": -0.29,
-      "sortino": -0.39,
+      "sharpe": -0.3,
+      "sortino": -0.4,
       "calmar": -1.32,
-      "max_drawdown": -58.9,
-      "volatility": 198.1,
+      "max_drawdown": -57.6,
+      "volatility": 192.8,
       "win_rate": 52.0,
-      "var": -17.2,
-      "best_day": 41.8,
-      "worst_day": -42.4
+      "var": -16.8,
+      "best_day": 40.9,
+      "worst_day": -41.5
     }
   }
 }
