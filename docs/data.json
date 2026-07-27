@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-07-24T07:31:04.877091",
+  "last_refresh": "2026-07-27T07:30:46.568484",
   "balance": {
-    "net_liq": 1313.638,
-    "net_liquidating_value": 1313.638,
-    "equity_buying_power": 43.02
+    "net_liq": 1306.242,
+    "net_liquidating_value": 1306.242,
+    "equity_buying_power": 60.91
   },
   "ytd_deposits": 1949.0,
   "positions": [
@@ -14,13 +14,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.1,
-      "current_price": 0.12,
-      "p_l": -1.9999999999999991,
-      "p_l_percent": -19.99999999999999,
+      "current_price": 0.13,
+      "p_l": -3.0,
+      "p_l_percent": -30.0,
       "cost_basis": 10.0,
       "multiplier": 100.0,
-      "total_value": 12.0,
-      "pct_portfolio": 0.91
+      "total_value": 13.0,
+      "pct_portfolio": 1.0
     },
     {
       "symbol": "RR",
@@ -29,28 +29,28 @@
       "quantity": 235,
       "direction": "Long",
       "avg_open_price": 2.61209915,
-      "current_price": 1.625,
-      "p_l": -231.96830025000003,
-      "p_l_percent": -37.78949776849014,
+      "current_price": 1.58,
+      "p_l": -242.54330025000002,
+      "p_l_percent": -39.51225013797811,
       "cost_basis": 613.8433002500001,
       "multiplier": 1.0,
-      "total_value": 381.875,
-      "pct_portfolio": 29.07
+      "total_value": 371.3,
+      "pct_portfolio": 28.43
     },
     {
       "symbol": "SLV   260821C00062000",
       "underlying_symbol": "SLV",
       "type": "EQUITY_OPTION",
-      "quantity": 2,
+      "quantity": 3,
       "direction": "Long",
-      "avg_open_price": 0.465,
-      "current_price": 0.38,
-      "p_l": -17.000000000000004,
-      "p_l_percent": -18.27956989247312,
-      "cost_basis": 93.0,
+      "avg_open_price": 0.44,
+      "current_price": 0.39,
+      "p_l": -14.999999999999996,
+      "p_l_percent": -11.36363636363636,
+      "cost_basis": 132.0,
       "multiplier": 100.0,
-      "total_value": 76.0,
-      "pct_portfolio": 5.79
+      "total_value": 117.0,
+      "pct_portfolio": 8.96
     },
     {
       "symbol": "ONDS",
@@ -59,13 +59,13 @@
       "quantity": 5,
       "direction": "Long",
       "avg_open_price": 8.1038,
-      "current_price": 8.004999999999999,
-      "p_l": -0.4940000000000033,
-      "p_l_percent": -1.219181124904374,
+      "current_price": 8.045,
+      "p_l": -0.2939999999999987,
+      "p_l_percent": -0.7255855277770891,
       "cost_basis": 40.519,
       "multiplier": 1.0,
-      "total_value": 40.02499999999999,
-      "pct_portfolio": 3.05
+      "total_value": 40.225,
+      "pct_portfolio": 3.08
     },
     {
       "symbol": "BTG",
@@ -74,16 +74,46 @@
       "quantity": 149,
       "direction": "Long",
       "avg_open_price": 4.68178456,
-      "current_price": 3.87,
-      "p_l": -120.95589943999994,
-      "p_l_percent": -17.3392122084319,
+      "current_price": 3.9050000000000002,
+      "p_l": -115.74089943999991,
+      "p_l_percent": -16.591634024270427,
       "cost_basis": 697.5858994399999,
       "multiplier": 1.0,
-      "total_value": 576.63,
-      "pct_portfolio": 43.9
+      "total_value": 581.845,
+      "pct_portfolio": 44.54
     }
   ],
   "transactions": [
+    {
+      "id": 461015653,
+      "date": "2026-07-25 18:07",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 0.01,
+      "net_value": 0.01,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 460642326,
+      "date": "2026-07-24 13:30",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 SLV 08/21/26 Call 62.00 @ 0.39",
+      "symbol": "SLV   260821C00062000",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 0.39,
+      "value": -39.0,
+      "net_value": -40.12,
+      "commission": -1.0,
+      "fees": -0.12000000000000001
+    },
     {
       "id": 460577427,
       "date": "2026-07-23 19:55",
@@ -3803,65 +3833,35 @@
       "net_value": -26.628,
       "commission": 0,
       "fees": -0.003
-    },
-    {
-      "id": 418660613,
-      "date": "2026-02-11 16:54",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 GOOW @ 66.99",
-      "symbol": "GOOW",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 66.99,
-      "value": -66.99,
-      "net_value": -66.991,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 418638118,
-      "date": "2026-02-11 16:09",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 7 ONDS @ 9.19",
-      "symbol": "ONDS",
-      "action": "Buy to Open",
-      "quantity": 7.0,
-      "price": 9.1876,
-      "value": -64.313,
-      "net_value": -64.319,
-      "commission": 0,
-      "fees": -0.006
     }
   ],
   "analytics": {
-    "updated": "2026-07-24T07:30:33.313811",
+    "updated": "2026-07-27T07:30:29.471530",
     "sector_allocation": {
-      "Industrials": 36.3,
-      "Technology": 3.7,
-      "Basic Materials": 53.1
+      "Industrials": 34.2,
+      "Technology": 3.6,
+      "Basic Materials": 51.8
     },
     "missing_sectors": [
-      "Communication Services",
       "Consumer Cyclical",
+      "Real Estate",
       "Energy",
       "Utilities",
-      "Real Estate",
       "Financial Services",
+      "Healthcare",
       "Consumer Defensive",
-      "Healthcare"
+      "Communication Services"
     ],
     "stats": {
-      "sharpe": -0.5,
-      "sortino": -0.68,
-      "calmar": -1.51,
-      "max_drawdown": -51.0,
-      "volatility": 180.2,
+      "sharpe": -0.35,
+      "sortino": -0.47,
+      "calmar": -1.45,
+      "max_drawdown": -50.3,
+      "volatility": 179.2,
       "win_rate": 51.0,
-      "var": -15.8,
-      "best_day": 37.7,
-      "worst_day": -38.3
+      "var": -15.6,
+      "best_day": 37.9,
+      "worst_day": -38.5
     }
   }
 }
