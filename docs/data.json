@@ -1,8 +1,8 @@
 {
-  "last_refresh": "2026-07-28T07:31:00.458945",
+  "last_refresh": "2026-07-29T07:31:48.863288",
   "balance": {
-    "net_liq": 1252.865,
-    "net_liquidating_value": 1252.865,
+    "net_liq": 1207.458,
+    "net_liquidating_value": 1207.458,
     "equity_buying_power": 60.91
   },
   "ytd_deposits": 1949.0,
@@ -14,13 +14,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.1,
-      "current_price": 0.13,
-      "p_l": -3.0,
-      "p_l_percent": -30.0,
+      "current_price": 0.15,
+      "p_l": -4.999999999999999,
+      "p_l_percent": -49.999999999999986,
       "cost_basis": 10.0,
       "multiplier": 100.0,
-      "total_value": 13.0,
-      "pct_portfolio": 1.04
+      "total_value": 15.0,
+      "pct_portfolio": 1.24
     },
     {
       "symbol": "RR",
@@ -29,13 +29,13 @@
       "quantity": 235,
       "direction": "Long",
       "avg_open_price": 2.61209915,
-      "current_price": 1.49,
-      "p_l": -263.69330025000005,
-      "p_l_percent": -42.95775487695404,
+      "current_price": 1.415,
+      "p_l": -281.31830025000005,
+      "p_l_percent": -45.82900882610065,
       "cost_basis": 613.8433002500001,
       "multiplier": 1.0,
-      "total_value": 350.15,
-      "pct_portfolio": 27.95
+      "total_value": 332.52500000000003,
+      "pct_portfolio": 27.54
     },
     {
       "symbol": "SLV   260821C00062000",
@@ -44,13 +44,13 @@
       "quantity": 3,
       "direction": "Long",
       "avg_open_price": 0.44,
-      "current_price": 0.34,
-      "p_l": -29.999999999999993,
-      "p_l_percent": -22.72727272727272,
+      "current_price": 0.24,
+      "p_l": -60.00000000000001,
+      "p_l_percent": -45.45454545454546,
       "cost_basis": 132.0,
       "multiplier": 100.0,
-      "total_value": 102.0,
-      "pct_portfolio": 8.14
+      "total_value": 72.0,
+      "pct_portfolio": 5.96
     },
     {
       "symbol": "ONDS",
@@ -59,13 +59,13 @@
       "quantity": 5,
       "direction": "Long",
       "avg_open_price": 8.1038,
-      "current_price": 7.825,
-      "p_l": -1.3939999999999975,
-      "p_l_percent": -3.4403613119770906,
+      "current_price": 7.725,
+      "p_l": -1.8940000000000001,
+      "p_l_percent": -4.674350304795281,
       "cost_basis": 40.519,
       "multiplier": 1.0,
-      "total_value": 39.125,
-      "pct_portfolio": 3.12
+      "total_value": 38.625,
+      "pct_portfolio": 3.2
     },
     {
       "symbol": "BTG",
@@ -74,13 +74,13 @@
       "quantity": 149,
       "direction": "Long",
       "avg_open_price": 4.68178456,
-      "current_price": 3.835,
-      "p_l": -126.17089943999996,
-      "p_l_percent": -18.08679039259337,
+      "current_price": 3.8499999999999996,
+      "p_l": -123.93589944,
+      "p_l_percent": -17.766399742238463,
       "cost_basis": 697.5858994399999,
       "multiplier": 1.0,
-      "total_value": 571.415,
-      "pct_portfolio": 45.61
+      "total_value": 573.65,
+      "pct_portfolio": 47.51
     }
   ],
   "transactions": [
@@ -3836,32 +3836,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-07-28T07:30:41.800129",
+    "updated": "2026-07-29T07:31:03.566217",
     "sector_allocation": {
-      "Industrials": 33.8,
-      "Technology": 3.6,
-      "Basic Materials": 53.1
+      "Industrials": 33.7,
+      "Technology": 3.7,
+      "Basic Materials": 55.6
     },
     "missing_sectors": [
-      "Financial Services",
       "Energy",
-      "Healthcare",
-      "Consumer Defensive",
       "Utilities",
+      "Financial Services",
+      "Consumer Cyclical",
       "Real Estate",
+      "Healthcare",
       "Communication Services",
-      "Consumer Cyclical"
+      "Consumer Defensive"
     ],
     "stats": {
       "sharpe": -0.35,
       "sortino": -0.47,
-      "calmar": -1.43,
-      "max_drawdown": -52.8,
-      "volatility": 186.9,
+      "calmar": -1.42,
+      "max_drawdown": -55.0,
+      "volatility": 193.9,
       "win_rate": 51.0,
-      "var": -16.3,
-      "best_day": 39.5,
-      "worst_day": -40.1
+      "var": -16.9,
+      "best_day": 41.0,
+      "worst_day": -41.6
     }
   }
 }
