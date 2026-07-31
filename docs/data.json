@@ -1,11 +1,11 @@
 {
-  "last_refresh": "2026-07-30T07:30:49.101082",
+  "last_refresh": "2026-07-31T07:30:49.124238",
   "balance": {
-    "net_liq": 1194.756,
-    "net_liquidating_value": 1194.756,
-    "equity_buying_power": 33.038
+    "net_liq": 1320.202,
+    "net_liquidating_value": 1320.202,
+    "equity_buying_power": 102.038
   },
-  "ytd_deposits": 1949.0,
+  "ytd_deposits": 2018.0,
   "positions": [
     {
       "symbol": "RR    260807P00001500",
@@ -14,13 +14,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.1,
-      "current_price": 0.2,
-      "p_l": -10.0,
-      "p_l_percent": -100.0,
+      "current_price": 0.14,
+      "p_l": -4.000000000000001,
+      "p_l_percent": -40.00000000000001,
       "cost_basis": 10.0,
       "multiplier": 100.0,
-      "total_value": 20.0,
-      "pct_portfolio": 1.67
+      "total_value": 14.000000000000002,
+      "pct_portfolio": 1.06
     },
     {
       "symbol": "RR",
@@ -29,13 +29,13 @@
       "quantity": 240,
       "direction": "Long",
       "avg_open_price": 2.58528458,
-      "current_price": 1.3650000000000002,
-      "p_l": -292.86829919999997,
-      "p_l_percent": -47.2011704026796,
+      "current_price": 1.455,
+      "p_l": -271.2682992,
+      "p_l_percent": -43.71992889076838,
       "cost_basis": 620.4682992,
       "multiplier": 1.0,
-      "total_value": 327.6,
-      "pct_portfolio": 27.42
+      "total_value": 349.20000000000005,
+      "pct_portfolio": 26.45
     },
     {
       "symbol": "SLV   260821C00062000",
@@ -44,13 +44,13 @@
       "quantity": 3,
       "direction": "Long",
       "avg_open_price": 0.44,
-      "current_price": 0.24,
-      "p_l": -60.00000000000001,
-      "p_l_percent": -45.45454545454546,
+      "current_price": 0.34,
+      "p_l": -29.999999999999993,
+      "p_l_percent": -22.72727272727272,
       "cost_basis": 132.0,
       "multiplier": 100.0,
-      "total_value": 72.0,
-      "pct_portfolio": 6.03
+      "total_value": 102.0,
+      "pct_portfolio": 7.73
     },
     {
       "symbol": "ONDS",
@@ -59,13 +59,13 @@
       "quantity": 8,
       "direction": "Long",
       "avg_open_price": 7.719875,
-      "current_price": 7.055,
-      "p_l": -5.319000000000003,
-      "p_l_percent": -8.612509917582866,
+      "current_price": 7.63,
+      "p_l": -0.7190000000000012,
+      "p_l_percent": -1.1642027882575838,
       "cost_basis": 61.759,
       "multiplier": 1.0,
-      "total_value": 56.44,
-      "pct_portfolio": 4.72
+      "total_value": 61.04,
+      "pct_portfolio": 4.62
     },
     {
       "symbol": "BTG",
@@ -74,16 +74,31 @@
       "quantity": 149,
       "direction": "Long",
       "avg_open_price": 4.68178456,
-      "current_price": 3.8200000000000003,
-      "p_l": -128.4058994399999,
-      "p_l_percent": -18.407181042948277,
+      "current_price": 3.785,
+      "p_l": -133.62089943999993,
+      "p_l_percent": -19.15475922710975,
       "cost_basis": 697.5858994399999,
       "multiplier": 1.0,
-      "total_value": 569.1800000000001,
-      "pct_portfolio": 47.64
+      "total_value": 563.965,
+      "pct_portfolio": 42.72
     }
   ],
   "transactions": [
+    {
+      "id": 462471460,
+      "date": "2026-07-30 21:00",
+      "type": "Money Movement",
+      "sub_type": "Deposit",
+      "description": "ACH DEPOSIT",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 69.0,
+      "net_value": 69.0,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 461882241,
       "date": "2026-07-29 16:05",
@@ -3818,50 +3833,35 @@
       "net_value": 0.0,
       "commission": 0,
       "fees": 0.0
-    },
-    {
-      "id": 419423432,
-      "date": "2026-02-13 21:00",
-      "type": "Receive Deliver",
-      "sub_type": "Expiration",
-      "description": "Removal of 1.0 DDD 02/13/26 Call 2.50 due to expiration.",
-      "symbol": "DDD   260213C00002500",
-      "action": "Buy to Close",
-      "quantity": 1.0,
-      "price": 0,
-      "value": 0.0,
-      "net_value": 0.0,
-      "commission": 0,
-      "fees": 0.0
     }
   ],
   "analytics": {
-    "updated": "2026-07-30T07:30:30.987209",
+    "updated": "2026-07-31T07:30:32.078905",
     "sector_allocation": {
       "Industrials": 33.3,
-      "Technology": 5.4,
-      "Basic Materials": 54.5
+      "Technology": 5.6,
+      "Basic Materials": 51.7
     },
     "missing_sectors": [
-      "Consumer Cyclical",
       "Consumer Defensive",
       "Energy",
-      "Financial Services",
-      "Utilities",
-      "Healthcare",
       "Communication Services",
-      "Real Estate"
+      "Consumer Cyclical",
+      "Healthcare",
+      "Real Estate",
+      "Financial Services",
+      "Utilities"
     ],
     "stats": {
-      "sharpe": -0.35,
-      "sortino": -0.47,
-      "calmar": -1.5,
-      "max_drawdown": -52.0,
-      "volatility": 195.9,
-      "win_rate": 51.0,
-      "var": -17.0,
-      "best_day": 41.4,
-      "worst_day": -42.1
+      "sharpe": -0.23,
+      "sortino": -0.31,
+      "calmar": -1.45,
+      "max_drawdown": -46.8,
+      "volatility": 176.6,
+      "win_rate": 52.0,
+      "var": -15.3,
+      "best_day": 37.5,
+      "worst_day": -38.1
     }
   }
 }
