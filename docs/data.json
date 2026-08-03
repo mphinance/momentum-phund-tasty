@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-07-31T07:30:49.124238",
+  "last_refresh": "2026-08-03T07:30:47.852696",
   "balance": {
-    "net_liq": 1320.202,
-    "net_liquidating_value": 1320.202,
-    "equity_buying_power": 102.038
+    "net_liq": 1258.754,
+    "net_liquidating_value": 1258.754,
+    "equity_buying_power": 102.04
   },
   "ytd_deposits": 2018.0,
   "positions": [
@@ -20,7 +20,7 @@
       "cost_basis": 10.0,
       "multiplier": 100.0,
       "total_value": 14.000000000000002,
-      "pct_portfolio": 1.06
+      "pct_portfolio": 1.11
     },
     {
       "symbol": "RR",
@@ -29,13 +29,13 @@
       "quantity": 240,
       "direction": "Long",
       "avg_open_price": 2.58528458,
-      "current_price": 1.455,
-      "p_l": -271.2682992,
-      "p_l_percent": -43.71992889076838,
+      "current_price": 1.44,
+      "p_l": -274.8682992,
+      "p_l_percent": -44.300135809420254,
       "cost_basis": 620.4682992,
       "multiplier": 1.0,
-      "total_value": 349.20000000000005,
-      "pct_portfolio": 26.45
+      "total_value": 345.59999999999997,
+      "pct_portfolio": 27.46
     },
     {
       "symbol": "SLV   260821C00062000",
@@ -44,13 +44,13 @@
       "quantity": 3,
       "direction": "Long",
       "avg_open_price": 0.44,
-      "current_price": 0.34,
-      "p_l": -29.999999999999993,
-      "p_l_percent": -22.72727272727272,
+      "current_price": 0.18,
+      "p_l": -78.0,
+      "p_l_percent": -59.09090909090909,
       "cost_basis": 132.0,
       "multiplier": 100.0,
-      "total_value": 102.0,
-      "pct_portfolio": 7.73
+      "total_value": 54.0,
+      "pct_portfolio": 4.29
     },
     {
       "symbol": "ONDS",
@@ -59,13 +59,13 @@
       "quantity": 8,
       "direction": "Long",
       "avg_open_price": 7.719875,
-      "current_price": 7.63,
-      "p_l": -0.7190000000000012,
-      "p_l_percent": -1.1642027882575838,
+      "current_price": 7.45,
+      "p_l": -2.158999999999999,
+      "p_l_percent": -3.495846759176798,
       "cost_basis": 61.759,
       "multiplier": 1.0,
-      "total_value": 61.04,
-      "pct_portfolio": 4.62
+      "total_value": 59.6,
+      "pct_portfolio": 4.73
     },
     {
       "symbol": "BTG",
@@ -74,16 +74,31 @@
       "quantity": 149,
       "direction": "Long",
       "avg_open_price": 4.68178456,
-      "current_price": 3.785,
-      "p_l": -133.62089943999993,
-      "p_l_percent": -19.15475922710975,
+      "current_price": 3.79,
+      "p_l": -132.87589943999996,
+      "p_l_percent": -19.047962343658114,
       "cost_basis": 697.5858994399999,
       "multiplier": 1.0,
-      "total_value": 563.965,
-      "pct_portfolio": 42.72
+      "total_value": 564.71,
+      "pct_portfolio": 44.86
     }
   ],
   "transactions": [
+    {
+      "id": 462945702,
+      "date": "2026-08-01 19:09",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 0.002,
+      "net_value": 0.002,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 462471460,
       "date": "2026-07-30 21:00",
@@ -3818,50 +3833,35 @@
       "net_value": -305.0,
       "commission": 0,
       "fees": -5.0
-    },
-    {
-      "id": 419424684,
-      "date": "2026-02-13 21:00",
-      "type": "Receive Deliver",
-      "sub_type": "Expiration",
-      "description": "Removal of 1.0 RR 02/13/26 Put 2.50 due to expiration.",
-      "symbol": "RR    260213P00002500",
-      "action": "Sell to Close",
-      "quantity": 1.0,
-      "price": 0,
-      "value": 0.0,
-      "net_value": 0.0,
-      "commission": 0,
-      "fees": 0.0
     }
   ],
   "analytics": {
-    "updated": "2026-07-31T07:30:32.078905",
+    "updated": "2026-08-03T07:30:31.493033",
     "sector_allocation": {
-      "Industrials": 33.3,
-      "Technology": 5.6,
-      "Basic Materials": 51.7
+      "Industrials": 34.6,
+      "Technology": 5.7,
+      "Basic Materials": 54.4
     },
     "missing_sectors": [
+      "Healthcare",
+      "Financial Services",
+      "Utilities",
       "Consumer Defensive",
+      "Real Estate",
       "Energy",
       "Communication Services",
-      "Consumer Cyclical",
-      "Healthcare",
-      "Real Estate",
-      "Financial Services",
-      "Utilities"
+      "Consumer Cyclical"
     ],
     "stats": {
-      "sharpe": -0.23,
-      "sortino": -0.31,
-      "calmar": -1.45,
-      "max_drawdown": -46.8,
-      "volatility": 176.6,
+      "sharpe": -0.22,
+      "sortino": -0.3,
+      "calmar": -1.44,
+      "max_drawdown": -49.2,
+      "volatility": 184.2,
       "win_rate": 52.0,
-      "var": -15.3,
-      "best_day": 37.5,
-      "worst_day": -38.1
+      "var": -16.0,
+      "best_day": 39.3,
+      "worst_day": -39.9
     }
   }
 }
