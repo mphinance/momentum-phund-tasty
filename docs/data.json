@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-08-11T07:31:46.568886",
+  "last_refresh": "2026-08-12T07:30:49.428709",
   "balance": {
-    "net_liq": 2432.964,
-    "net_liquidating_value": 2432.964,
-    "equity_buying_power": 973.86
+    "net_liq": 2414.747,
+    "net_liquidating_value": 2414.747,
+    "equity_buying_power": 959.847
   },
   "ytd_deposits": 2718.0,
   "positions": [
@@ -11,14 +11,14 @@
       "symbol": "BTG (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
-      "quantity": "140 / -1",
-      "avg_open_price": 3.938928571428571,
-      "current_price": 5.035,
-      "p_l": 177.45000000000005,
-      "p_l_percent": 32.17880134191678,
+      "quantity": "135 / -1",
+      "avg_open_price": 3.895259259259259,
+      "current_price": 5.130000000000001,
+      "p_l": 188.69000000000005,
+      "p_l_percent": 35.88217396265166,
       "is_composite": true,
-      "description": "True Basis: $3.94/sh",
-      "cost_basis": 551.4499999999999
+      "description": "True Basis: $3.90/sh",
+      "cost_basis": 525.86
     },
     {
       "symbol": "SLV   260821C00062000",
@@ -27,28 +27,28 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.39,
-      "current_price": 1.09,
-      "p_l": 70.0,
-      "p_l_percent": 179.4871794871795,
+      "current_price": 0.63,
+      "p_l": 24.0,
+      "p_l_percent": 61.53846153846154,
       "cost_basis": 39.0,
       "multiplier": 100.0,
-      "total_value": 109.00000000000001,
-      "pct_portfolio": 4.48
+      "total_value": 63.0,
+      "pct_portfolio": 2.61
     },
     {
       "symbol": "ONDS",
       "underlying_symbol": "ONDS",
       "type": "EQUITY",
-      "quantity": 16,
+      "quantity": 20,
       "direction": "Long",
-      "avg_open_price": 8.2417875,
-      "current_price": 9.285,
-      "p_l": 16.691400000000016,
-      "p_l_percent": 12.65760006551978,
-      "cost_basis": 131.8686,
+      "avg_open_price": 8.57339,
+      "current_price": 9.885,
+      "p_l": 26.2322,
+      "p_l_percent": 15.29861583341012,
+      "cost_basis": 171.4678,
       "multiplier": 1.0,
-      "total_value": 148.56,
-      "pct_portfolio": 6.11
+      "total_value": 197.7,
+      "pct_portfolio": 8.19
     },
     {
       "symbol": "RR",
@@ -57,16 +57,46 @@
       "quantity": 300,
       "direction": "Long",
       "avg_open_price": 2.374274,
-      "current_price": 1.725,
-      "p_l": -194.78220000000005,
-      "p_l_percent": -27.346211936785732,
+      "current_price": 1.76,
+      "p_l": -184.28220000000007,
+      "p_l_percent": -25.872077106517622,
       "cost_basis": 712.2822000000001,
       "multiplier": 1.0,
-      "total_value": 517.5,
-      "pct_portfolio": 21.27
+      "total_value": 528.0,
+      "pct_portfolio": 21.87
     }
   ],
   "transactions": [
+    {
+      "id": 465630659,
+      "date": "2026-08-12 11:53",
+      "type": "Trade",
+      "sub_type": "Sell to Close",
+      "description": "Sold 5 BTG @ 5.12",
+      "symbol": "BTG",
+      "action": "Sell to Close",
+      "quantity": 5.0,
+      "price": 5.121,
+      "value": 25.605,
+      "net_value": 25.59,
+      "commission": 0,
+      "fees": -0.015
+    },
+    {
+      "id": 465630564,
+      "date": "2026-08-12 11:50",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 4 ONDS @ 9.90",
+      "symbol": "ONDS",
+      "action": "Buy to Open",
+      "quantity": 4.0,
+      "price": 9.8998,
+      "value": -39.599,
+      "net_value": -39.603,
+      "commission": 0,
+      "fees": -0.004
+    },
     {
       "id": 464923040,
       "date": "2026-08-08 18:07",
@@ -3786,65 +3816,35 @@
       "net_value": 42.849,
       "commission": 0,
       "fees": -0.001
-    },
-    {
-      "id": 420548441,
-      "date": "2026-02-20 17:49",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 XOMX @ 42.52",
-      "symbol": "XOMX",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 42.5196,
-      "value": -42.52,
-      "net_value": -42.521,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 420544137,
-      "date": "2026-02-20 17:40",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 2 UAMY @ 7.30",
-      "symbol": "UAMY",
-      "action": "Buy to Open",
-      "quantity": 2.0,
-      "price": 7.2999,
-      "value": -14.6,
-      "net_value": -14.602,
-      "commission": 0,
-      "fees": -0.002
     }
   ],
   "analytics": {
-    "updated": "2026-08-11T07:30:42.446920",
+    "updated": "2026-08-12T07:30:31.814572",
     "sector_allocation": {
-      "Basic Materials": 48.5,
-      "Technology": 9.9,
-      "Industrials": 34.4
+      "Basic Materials": 47.5,
+      "Technology": 13.1,
+      "Industrials": 35.1
     },
     "missing_sectors": [
-      "Consumer Defensive",
-      "Communication Services",
-      "Financial Services",
-      "Consumer Cyclical",
-      "Real Estate",
       "Utilities",
+      "Communication Services",
+      "Real Estate",
+      "Consumer Defensive",
       "Healthcare",
-      "Energy"
+      "Consumer Cyclical",
+      "Energy",
+      "Financial Services"
     ],
     "stats": {
-      "sharpe": 1.2,
-      "sortino": 1.92,
-      "calmar": 2.06,
-      "max_drawdown": -23.9,
-      "volatility": 105.6,
-      "win_rate": 52.0,
+      "sharpe": 1.26,
+      "sortino": 2.02,
+      "calmar": 2.22,
+      "max_drawdown": -24.1,
+      "volatility": 105.8,
+      "win_rate": 53.0,
       "var": -8.7,
-      "best_day": 26.0,
-      "worst_day": -20.7
+      "best_day": 26.2,
+      "worst_day": -20.8
     }
   }
 }
