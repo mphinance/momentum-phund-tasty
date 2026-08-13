@@ -1,39 +1,37 @@
 {
-  "last_refresh": "2026-08-12T07:30:49.428709",
+  "last_refresh": "2026-08-13T07:30:49.164114",
   "balance": {
-    "net_liq": 2414.747,
-    "net_liquidating_value": 2414.747,
-    "equity_buying_power": 959.847
+    "net_liq": 2411.031,
+    "net_liquidating_value": 2411.031,
+    "equity_buying_power": 1052.581
   },
   "ytd_deposits": 2718.0,
   "positions": [
+    {
+      "symbol": "RR (CC)",
+      "type": "Covered Call",
+      "direction": "Net Long",
+      "quantity": "300 / -1",
+      "avg_open_price": 1.0073133333333333,
+      "current_price": 1.7349999999999999,
+      "p_l": 223.30599999999998,
+      "p_l_percent": 73.89491518693289,
+      "is_composite": true,
+      "description": "True Basis: $1.01/sh",
+      "cost_basis": 302.194
+    },
     {
       "symbol": "BTG (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
       "quantity": "135 / -1",
       "avg_open_price": 3.895259259259259,
-      "current_price": 5.130000000000001,
-      "p_l": 188.69000000000005,
-      "p_l_percent": 35.88217396265166,
+      "current_price": 5.135,
+      "p_l": 197.365,
+      "p_l_percent": 37.53185258433804,
       "is_composite": true,
       "description": "True Basis: $3.90/sh",
       "cost_basis": 525.86
-    },
-    {
-      "symbol": "SLV   260821C00062000",
-      "underlying_symbol": "SLV",
-      "type": "EQUITY_OPTION",
-      "quantity": 1,
-      "direction": "Long",
-      "avg_open_price": 0.39,
-      "current_price": 0.63,
-      "p_l": 24.0,
-      "p_l_percent": 61.53846153846154,
-      "cost_basis": 39.0,
-      "multiplier": 100.0,
-      "total_value": 63.0,
-      "pct_portfolio": 2.61
     },
     {
       "symbol": "ONDS",
@@ -42,31 +40,46 @@
       "quantity": 20,
       "direction": "Long",
       "avg_open_price": 8.57339,
-      "current_price": 9.885,
-      "p_l": 26.2322,
-      "p_l_percent": 15.29861583341012,
+      "current_price": 9.28,
+      "p_l": 14.13219999999999,
+      "p_l_percent": 8.241897312498317,
       "cost_basis": 171.4678,
       "multiplier": 1.0,
-      "total_value": 197.7,
-      "pct_portfolio": 8.19
-    },
-    {
-      "symbol": "RR",
-      "underlying_symbol": "RR",
-      "type": "EQUITY",
-      "quantity": 300,
-      "direction": "Long",
-      "avg_open_price": 2.374274,
-      "current_price": 1.76,
-      "p_l": -184.28220000000007,
-      "p_l_percent": -25.872077106517622,
-      "cost_basis": 712.2822000000001,
-      "multiplier": 1.0,
-      "total_value": 528.0,
-      "pct_portfolio": 21.87
+      "total_value": 185.6,
+      "pct_portfolio": 7.7
     }
   ],
   "transactions": [
+    {
+      "id": 465684722,
+      "date": "2026-08-12 13:51",
+      "type": "Trade",
+      "sub_type": "Sell to Close",
+      "description": "Sold 1 SLV 08/21/26 Call 62.00 @ 0.88",
+      "symbol": "SLV   260821C00062000",
+      "action": "Sell to Close",
+      "quantity": 1.0,
+      "price": 0.88,
+      "value": 88.0,
+      "net_value": 87.867,
+      "commission": 0,
+      "fees": -0.133
+    },
+    {
+      "id": 465645137,
+      "date": "2026-08-12 13:30",
+      "type": "Trade",
+      "sub_type": "Sell to Open",
+      "description": "Sold 1 RR 09/11/26 Call 2.50 @ 0.06",
+      "symbol": "RR    260911C00002500",
+      "action": "Sell to Open",
+      "quantity": 1.0,
+      "price": 0.06,
+      "value": 6.0,
+      "net_value": 4.867,
+      "commission": -1.0,
+      "fees": -0.133
+    },
     {
       "id": 465630659,
       "date": "2026-08-12 11:53",
@@ -3786,65 +3799,35 @@
       "net_value": -0.069,
       "commission": 0,
       "fees": 0.0
-    },
-    {
-      "id": 420728100,
-      "date": "2026-02-20 21:00",
-      "type": "Receive Deliver",
-      "sub_type": "Expiration",
-      "description": "Removal of 1.0 RR 02/20/26 Call 3.00 due to expiration.",
-      "symbol": "RR    260220C00003000",
-      "action": "Buy to Close",
-      "quantity": 1.0,
-      "price": 0,
-      "value": 0.0,
-      "net_value": 0.0,
-      "commission": 0,
-      "fees": 0.0
-    },
-    {
-      "id": 420636552,
-      "date": "2026-02-20 20:49",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 1 XOMX @ 42.85",
-      "symbol": "XOMX",
-      "action": "Sell to Close",
-      "quantity": 1.0,
-      "price": 42.85,
-      "value": 42.85,
-      "net_value": 42.849,
-      "commission": 0,
-      "fees": -0.001
     }
   ],
   "analytics": {
-    "updated": "2026-08-12T07:30:31.814572",
+    "updated": "2026-08-13T07:30:31.360936",
     "sector_allocation": {
-      "Basic Materials": 47.5,
-      "Technology": 13.1,
-      "Industrials": 35.1
+      "Industrials": 36.6,
+      "Basic Materials": 50.4,
+      "Technology": 13.0
     },
     "missing_sectors": [
-      "Utilities",
-      "Communication Services",
       "Real Estate",
-      "Consumer Defensive",
+      "Communication Services",
       "Healthcare",
+      "Consumer Defensive",
       "Consumer Cyclical",
+      "Financial Services",
       "Energy",
-      "Financial Services"
+      "Utilities"
     ],
     "stats": {
-      "sharpe": 1.26,
-      "sortino": 2.02,
-      "calmar": 2.22,
-      "max_drawdown": -24.1,
-      "volatility": 105.8,
-      "win_rate": 53.0,
-      "var": -8.7,
-      "best_day": 26.2,
-      "worst_day": -20.8
+      "sharpe": 1.34,
+      "sortino": 2.15,
+      "calmar": 2.52,
+      "max_drawdown": -24.2,
+      "volatility": 106.7,
+      "win_rate": 54.0,
+      "var": -8.8,
+      "best_day": 26.3,
+      "worst_day": -20.9
     }
   }
 }
