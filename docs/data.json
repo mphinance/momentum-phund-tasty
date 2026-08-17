@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-08-14T07:30:54.479744",
+  "last_refresh": "2026-08-17T07:31:41.812075",
   "balance": {
-    "net_liq": 2424.131,
-    "net_liquidating_value": 2424.131,
-    "equity_buying_power": 1052.581
+    "net_liq": 2451.224,
+    "net_liquidating_value": 2451.224,
+    "equity_buying_power": 1052.57
   },
   "ytd_deposits": 2718.0,
   "positions": [
@@ -13,9 +13,9 @@
       "direction": "Net Long",
       "quantity": "300 / -1",
       "avg_open_price": 1.0073133333333333,
-      "current_price": 1.73,
-      "p_l": 220.80599999999998,
-      "p_l_percent": 73.06763205093417,
+      "current_price": 1.795,
+      "p_l": 240.30599999999998,
+      "p_l_percent": 79.52044051172425,
       "is_composite": true,
       "description": "True Basis: $1.01/sh",
       "cost_basis": 302.194
@@ -26,9 +26,9 @@
       "direction": "Net Long",
       "quantity": "135 / -1",
       "avg_open_price": 3.895259259259259,
-      "current_price": 5.105,
-      "p_l": 181.31500000000005,
-      "p_l_percent": 34.47970942836498,
+      "current_price": 5.199999999999999,
+      "p_l": 198.13999999999987,
+      "p_l_percent": 37.679230213364754,
       "is_composite": true,
       "description": "True Basis: $3.90/sh",
       "cost_basis": 525.86
@@ -40,16 +40,31 @@
       "quantity": 20,
       "direction": "Long",
       "avg_open_price": 8.57339,
-      "current_price": 9.415,
-      "p_l": 16.832199999999986,
-      "p_l_percent": 9.81653698245384,
+      "current_price": 9.065000000000001,
+      "p_l": 9.832200000000029,
+      "p_l_percent": 5.734137838124726,
       "cost_basis": 171.4678,
       "multiplier": 1.0,
-      "total_value": 188.29999999999998,
-      "pct_portfolio": 7.77
+      "total_value": 181.3,
+      "pct_portfolio": 7.4
     }
   ],
   "transactions": [
+    {
+      "id": 466753628,
+      "date": "2026-08-15 18:56",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -0.011,
+      "net_value": -0.011,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 465684722,
       "date": "2026-08-12 13:51",
@@ -3784,50 +3799,35 @@
       "net_value": -29.731,
       "commission": 0,
       "fees": -0.001
-    },
-    {
-      "id": 420752195,
-      "date": "2026-02-21 18:16",
-      "type": "Money Movement",
-      "sub_type": "Balance Adjustment",
-      "description": "Regulatory fee adjustment",
-      "symbol": "",
-      "action": "",
-      "quantity": 0,
-      "price": 0,
-      "value": -0.069,
-      "net_value": -0.069,
-      "commission": 0,
-      "fees": 0.0
     }
   ],
   "analytics": {
-    "updated": "2026-08-14T07:30:33.564985",
+    "updated": "2026-08-17T07:31:08.726518",
     "sector_allocation": {
-      "Industrials": 36.9,
-      "Basic Materials": 49.8,
-      "Technology": 13.3
+      "Industrials": 37.5,
+      "Basic Materials": 50.0,
+      "Technology": 12.5
     },
     "missing_sectors": [
-      "Consumer Defensive",
       "Utilities",
       "Financial Services",
+      "Consumer Defensive",
       "Healthcare",
+      "Energy",
       "Consumer Cyclical",
-      "Real Estate",
       "Communication Services",
-      "Energy"
+      "Real Estate"
     ],
     "stats": {
       "sharpe": 1.34,
       "sortino": 2.15,
       "calmar": 2.53,
-      "max_drawdown": -24.0,
-      "volatility": 106.1,
+      "max_drawdown": -23.7,
+      "volatility": 104.9,
       "win_rate": 54.0,
-      "var": -8.7,
-      "best_day": 26.1,
-      "worst_day": -20.7
+      "var": -8.6,
+      "best_day": 25.9,
+      "worst_day": -20.5
     }
   }
 }
