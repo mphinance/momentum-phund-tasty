@@ -1,11 +1,11 @@
 {
-  "last_refresh": "2026-08-18T07:30:36.510358",
+  "last_refresh": "2026-08-19T07:30:38.067622",
   "balance": {
-    "net_liq": 2748.552,
-    "net_liquidating_value": 2748.552,
-    "equity_buying_power": 790.058
+    "net_liq": 2973.534,
+    "net_liquidating_value": 2973.534,
+    "equity_buying_power": 1004.394
   },
-  "ytd_deposits": 3078.0,
+  "ytd_deposits": 3328.0,
   "positions": [
     {
       "symbol": "BTG (CC)",
@@ -13,9 +13,9 @@
       "direction": "Net Long",
       "quantity": "135 / -1",
       "avg_open_price": 3.755503703703704,
-      "current_price": 5.17,
-      "p_l": 216.95700000000005,
-      "p_l_percent": 42.79289852128137,
+      "current_price": 5.055,
+      "p_l": 184.43199999999996,
+      "p_l_percent": 36.37762257072582,
       "is_composite": true,
       "description": "True Basis: $3.76/sh",
       "cost_basis": 506.993
@@ -27,13 +27,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.2,
-      "current_price": 0.21,
-      "p_l": -0.9999999999999981,
-      "p_l_percent": -4.99999999999999,
+      "current_price": 0.33,
+      "p_l": -13.0,
+      "p_l_percent": -65.0,
       "cost_basis": 20.0,
       "multiplier": 100.0,
-      "total_value": 21.0,
-      "pct_portfolio": 0.76
+      "total_value": 33.0,
+      "pct_portfolio": 1.11
     },
     {
       "symbol": "RR (CC)",
@@ -41,9 +41,9 @@
       "direction": "Net Long",
       "quantity": "330 / -1",
       "avg_open_price": 1.071721212121212,
-      "current_price": 1.67,
-      "p_l": 201.43200000000002,
-      "p_l_percent": 56.95511044256195,
+      "current_price": 1.605,
+      "p_l": 178.98199999999997,
+      "p_l_percent": 50.60734926541275,
       "is_composite": true,
       "description": "True Basis: $1.07/sh",
       "cost_basis": 353.668
@@ -52,19 +52,64 @@
       "symbol": "ONDS",
       "underlying_symbol": "ONDS",
       "type": "EQUITY",
-      "quantity": 30,
+      "quantity": 34,
       "direction": "Long",
-      "avg_open_price": 8.71216,
-      "current_price": 8.625,
-      "p_l": -2.6148000000000238,
-      "p_l_percent": -1.0004407632550458,
-      "cost_basis": 261.3648,
+      "avg_open_price": 8.73602353,
+      "current_price": 8.915,
+      "p_l": 6.085199979999949,
+      "p_l_percent": 2.0487178106306967,
+      "cost_basis": 297.02480002000004,
       "multiplier": 1.0,
-      "total_value": 258.75,
-      "pct_portfolio": 9.41
+      "total_value": 303.10999999999996,
+      "pct_portfolio": 10.19
     }
   ],
   "transactions": [
+    {
+      "id": 467551855,
+      "date": "2026-08-18 21:00",
+      "type": "Money Movement",
+      "sub_type": "Deposit",
+      "description": "ACH DEPOSIT",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 200.0,
+      "net_value": 200.0,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 467551854,
+      "date": "2026-08-18 21:00",
+      "type": "Money Movement",
+      "sub_type": "Deposit",
+      "description": "ACH DEPOSIT",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 50.0,
+      "net_value": 50.0,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 467370289,
+      "date": "2026-08-18 15:26",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 4 ONDS @ 8.92",
+      "symbol": "ONDS",
+      "action": "Buy to Open",
+      "quantity": 4.0,
+      "price": 8.915,
+      "value": -35.66,
+      "net_value": -35.664,
+      "commission": 0,
+      "fees": -0.004
+    },
     {
       "id": 467141802,
       "date": "2026-08-17 21:00",
@@ -3769,80 +3814,35 @@
       "net_value": 8.669,
       "commission": 0,
       "fees": -0.001
-    },
-    {
-      "id": 421441695,
-      "date": "2026-02-25 16:13",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 1 ONDS @ 10.69",
-      "symbol": "ONDS",
-      "action": "Sell to Close",
-      "quantity": 1.0,
-      "price": 10.6927,
-      "value": 10.693,
-      "net_value": 10.692,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 421353660,
-      "date": "2026-02-25 14:32",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 1 UAMY @ 8.62",
-      "symbol": "UAMY",
-      "action": "Sell to Close",
-      "quantity": 1.0,
-      "price": 8.6216,
-      "value": 8.622,
-      "net_value": 8.621,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 421350513,
-      "date": "2026-02-25 14:30",
-      "type": "Trade",
-      "sub_type": "Sell to Open",
-      "description": "Sold 1 DDD 02/27/26 Put 2.00 @ 0.05",
-      "symbol": "DDD   260227P00002000",
-      "action": "Sell to Open",
-      "quantity": 1.0,
-      "price": 0.05,
-      "value": 5.0,
-      "net_value": 3.877,
-      "commission": -1.0,
-      "fees": -0.123
     }
   ],
   "analytics": {
-    "updated": "2026-08-18T07:30:23.486041",
+    "updated": "2026-08-19T07:30:24.746587",
     "sector_allocation": {
-      "Basic Materials": 47.8,
-      "Industrials": 35.6,
-      "Technology": 16.6
+      "Basic Materials": 46.4,
+      "Industrials": 34.1,
+      "Technology": 19.4
     },
     "missing_sectors": [
-      "Energy",
-      "Financial Services",
-      "Consumer Defensive",
-      "Real Estate",
+      "Consumer Cyclical",
       "Utilities",
       "Healthcare",
-      "Consumer Cyclical",
+      "Energy",
+      "Real Estate",
+      "Consumer Defensive",
+      "Financial Services",
       "Communication Services"
     ],
     "stats": {
-      "sharpe": 1.62,
-      "sortino": 2.63,
-      "calmar": 3.81,
-      "max_drawdown": -20.9,
-      "volatility": 95.5,
-      "win_rate": 53.0,
-      "var": -7.8,
-      "best_day": 23.1,
-      "worst_day": -18.3
+      "sharpe": 1.88,
+      "sortino": 3.08,
+      "calmar": 5.12,
+      "max_drawdown": -19.2,
+      "volatility": 88.8,
+      "win_rate": 54.0,
+      "var": -7.2,
+      "best_day": 21.3,
+      "worst_day": -16.9
     }
   }
 }
