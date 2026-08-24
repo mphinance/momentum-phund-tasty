@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-08-21T07:30:39.188179",
+  "last_refresh": "2026-08-24T07:31:28.112561",
   "balance": {
-    "net_liq": 3131.865,
-    "net_liquidating_value": 3131.865,
-    "equity_buying_power": 746.455
+    "net_liq": 3253.86,
+    "net_liquidating_value": 3253.86,
+    "equity_buying_power": 1241.43
   },
   "ytd_deposits": 3528.0,
   "positions": [
@@ -12,13 +12,13 @@
       "type": "Covered Call",
       "direction": "Net Long",
       "quantity": "400 / -2",
-      "avg_open_price": 1.1508574999999999,
-      "current_price": 1.6150000000000002,
-      "p_l": 197.65700000000015,
-      "p_l_percent": 42.93689705284976,
+      "avg_open_price": 1.1555499999999999,
+      "current_price": 1.665,
+      "p_l": 216.78000000000003,
+      "p_l_percent": 46.89974471031111,
       "is_composite": true,
-      "description": "True Basis: $1.15/sh",
-      "cost_basis": 460.34299999999996
+      "description": "True Basis: $1.16/sh",
+      "cost_basis": 462.21999999999997
     },
     {
       "symbol": "SOFI  260918C00020000",
@@ -27,26 +27,13 @@
       "quantity": 4,
       "direction": "Long",
       "avg_open_price": 0.4975,
-      "current_price": 0.34,
-      "p_l": -62.999999999999986,
-      "p_l_percent": -31.658291457286424,
+      "current_price": 0.63,
+      "p_l": 53.0,
+      "p_l_percent": 26.633165829145728,
       "cost_basis": 199.0,
       "multiplier": 100.0,
-      "total_value": 136.0,
-      "pct_portfolio": 4.34
-    },
-    {
-      "symbol": "BTG (CC)",
-      "type": "Covered Call",
-      "direction": "Net Long",
-      "quantity": "120 / -1",
-      "avg_open_price": 3.57015,
-      "current_price": 5.52,
-      "p_l": 271.98199999999997,
-      "p_l_percent": 63.48519436624977,
-      "is_composite": true,
-      "description": "True Basis: $3.57/sh",
-      "cost_basis": 428.418
+      "total_value": 252.0,
+      "pct_portfolio": 7.74
     },
     {
       "symbol": "BTG   260918P00005000",
@@ -55,13 +42,28 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.2,
-      "current_price": 0.18,
-      "p_l": 2.0000000000000018,
-      "p_l_percent": 10.000000000000009,
+      "current_price": 0.13,
+      "p_l": 7.000000000000001,
+      "p_l_percent": 35.0,
       "cost_basis": 20.0,
       "multiplier": 100.0,
-      "total_value": 18.0,
-      "pct_portfolio": 0.57
+      "total_value": 13.0,
+      "pct_portfolio": 0.4
+    },
+    {
+      "symbol": "BTG",
+      "underlying_symbol": "BTG",
+      "type": "EQUITY",
+      "quantity": 20,
+      "direction": "Long",
+      "avg_open_price": 4.11418,
+      "current_price": 5.52,
+      "p_l": 28.116399999999988,
+      "p_l_percent": 34.17011409320932,
+      "cost_basis": 82.2836,
+      "multiplier": 1.0,
+      "total_value": 110.39999999999999,
+      "pct_portfolio": 3.39
     },
     {
       "symbol": "ONDS",
@@ -70,16 +72,61 @@
       "quantity": 60,
       "direction": "Long",
       "avg_open_price": 8.70881333,
-      "current_price": 8.395,
-      "p_l": -18.82879980000002,
-      "p_l_percent": -3.6033994312288278,
+      "current_price": 8.56,
+      "p_l": -8.928799799999965,
+      "p_l_percent": -1.708767019811635,
       "cost_basis": 522.5287998,
       "multiplier": 1.0,
-      "total_value": 503.7,
-      "pct_portfolio": 16.08
+      "total_value": 513.6,
+      "pct_portfolio": 15.78
     }
   ],
   "transactions": [
+    {
+      "id": 468807860,
+      "date": "2026-08-22 20:13",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 0.015,
+      "net_value": 0.015,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 468731053,
+      "date": "2026-08-21 21:00",
+      "type": "Receive Deliver",
+      "sub_type": "Assignment",
+      "description": "Removal of option due to assignment",
+      "symbol": "BTG   260821C00005000",
+      "action": "",
+      "quantity": 1.0,
+      "price": 0,
+      "value": 0.0,
+      "net_value": 0.0,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 468731052,
+      "date": "2026-08-21 21:00",
+      "type": "Receive Deliver",
+      "sub_type": "Sell to Close",
+      "description": "Sell to Close 100 BTG @ 5.00",
+      "symbol": "BTG",
+      "action": "Sell to Close",
+      "quantity": 100.0,
+      "price": 5.0,
+      "value": 500.0,
+      "net_value": 494.96,
+      "commission": 0,
+      "fees": -5.04
+    },
     {
       "id": 468319507,
       "date": "2026-08-20 21:00",
@@ -3784,80 +3831,35 @@
       "net_value": 36.459,
       "commission": 0,
       "fees": -0.001
-    },
-    {
-      "id": 422438230,
-      "date": "2026-03-02 15:31",
-      "type": "Trade",
-      "sub_type": "Sell to Open",
-      "description": "Sold 1 DDD 03/13/26 Call 2.50 @ 0.05",
-      "symbol": "DDD   260313C00002500",
-      "action": "Sell to Open",
-      "quantity": 1.0,
-      "price": 0.05,
-      "value": 5.0,
-      "net_value": 3.877,
-      "commission": -1.0,
-      "fees": -0.123
-    },
-    {
-      "id": 422411900,
-      "date": "2026-03-02 15:04",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 YINN @ 36.24",
-      "symbol": "YINN",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 36.2391,
-      "value": -36.239,
-      "net_value": -36.24,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 422406214,
-      "date": "2026-03-02 15:00",
-      "type": "Trade",
-      "sub_type": "Sell to Open",
-      "description": "Sold 1 RR 03/06/26 Call 3.00 @ 0.03",
-      "symbol": "RR    260306C00003000",
-      "action": "Sell to Open",
-      "quantity": 1.0,
-      "price": 0.03,
-      "value": 3.0,
-      "net_value": 1.877,
-      "commission": -1.0,
-      "fees": -0.123
     }
   ],
   "analytics": {
-    "updated": "2026-08-21T07:30:25.996607",
+    "updated": "2026-08-24T07:30:48.785212",
     "sector_allocation": {
-      "Industrials": 32.6,
-      "Financial Services": 6.7,
-      "Basic Materials": 35.6,
-      "Technology": 25.0
+      "Industrials": 43.3,
+      "Financial Services": 16.1,
+      "Basic Materials": 7.9,
+      "Technology": 32.8
     },
     "missing_sectors": [
-      "Real Estate",
-      "Communication Services",
-      "Consumer Defensive",
-      "Consumer Cyclical",
       "Energy",
+      "Utilities",
+      "Consumer Defensive",
+      "Communication Services",
+      "Consumer Cyclical",
       "Healthcare",
-      "Utilities"
+      "Real Estate"
     ],
     "stats": {
-      "sharpe": 1.66,
-      "sortino": 2.67,
-      "calmar": 4.26,
-      "max_drawdown": -18.1,
-      "volatility": 86.8,
-      "win_rate": 54.0,
-      "var": -7.1,
-      "best_day": 20.2,
-      "worst_day": -16.1
+      "sharpe": 2.27,
+      "sortino": 3.87,
+      "calmar": 7.98,
+      "max_drawdown": -17.4,
+      "volatility": 87.7,
+      "win_rate": 55.0,
+      "var": -7.0,
+      "best_day": 19.5,
+      "worst_day": -15.5
     }
   }
 }
