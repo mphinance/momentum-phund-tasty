@@ -1,11 +1,11 @@
 {
-  "last_refresh": "2026-09-03T07:30:49.696955",
+  "last_refresh": "2026-09-04T07:30:49.215766",
   "balance": {
-    "net_liq": 3041.566,
-    "net_liquidating_value": 3041.566,
-    "equity_buying_power": 25.516
+    "net_liq": 3109.805,
+    "net_liquidating_value": 3109.805,
+    "equity_buying_power": 50.516
   },
-  "ytd_deposits": 3528.0,
+  "ytd_deposits": 3553.0,
   "positions": [
     {
       "symbol": "CRWV",
@@ -14,13 +14,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 84.345,
-      "current_price": 80.21000000000001,
-      "p_l": -4.134999999999991,
-      "p_l_percent": -4.902483846108235,
+      "current_price": 86.32,
+      "p_l": 1.9749999999999943,
+      "p_l_percent": 2.341573300136338,
       "cost_basis": 84.345,
       "multiplier": 1.0,
-      "total_value": 80.21000000000001,
-      "pct_portfolio": 2.64
+      "total_value": 86.32,
+      "pct_portfolio": 2.78
     },
     {
       "symbol": "SERV",
@@ -29,13 +29,13 @@
       "quantity": 12,
       "direction": "Long",
       "avg_open_price": 4.85028333,
-      "current_price": 4.85,
-      "p_l": -0.0033999600000029773,
-      "p_l_percent": -0.005841514417267003,
+      "current_price": 4.9,
+      "p_l": 0.5966000400000055,
+      "p_l_percent": 1.0250260988361781,
       "cost_basis": 58.20339996,
       "multiplier": 1.0,
-      "total_value": 58.199999999999996,
-      "pct_portfolio": 1.91
+      "total_value": 58.800000000000004,
+      "pct_portfolio": 1.89
     },
     {
       "symbol": "SOUN",
@@ -44,13 +44,13 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 6.9662,
-      "current_price": 6.875,
-      "p_l": -0.18239999999999945,
-      "p_l_percent": -1.3091786052654206,
+      "current_price": 6.715,
+      "p_l": -0.5023999999999997,
+      "p_l_percent": -3.605983175906519,
       "cost_basis": 13.9324,
       "multiplier": 1.0,
-      "total_value": 13.75,
-      "pct_portfolio": 0.45
+      "total_value": 13.43,
+      "pct_portfolio": 0.43
     },
     {
       "symbol": "SOUN  260904P00007000",
@@ -65,7 +65,7 @@
       "cost_basis": 24.0,
       "multiplier": 100.0,
       "total_value": 30.0,
-      "pct_portfolio": 0.99
+      "pct_portfolio": 0.96
     },
     {
       "symbol": "ACHR",
@@ -74,13 +74,13 @@
       "quantity": 3,
       "direction": "Long",
       "avg_open_price": 5.885,
-      "current_price": 5.735,
-      "p_l": -0.4499999999999984,
-      "p_l_percent": -2.5488530161427265,
+      "current_price": 5.76,
+      "p_l": -0.375,
+      "p_l_percent": -2.1240441801189465,
       "cost_basis": 17.655,
       "multiplier": 1.0,
-      "total_value": 17.205000000000002,
-      "pct_portfolio": 0.57
+      "total_value": 17.28,
+      "pct_portfolio": 0.56
     },
     {
       "symbol": "ACHR  260918P00005500",
@@ -89,13 +89,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.19,
-      "current_price": 0.19,
-      "p_l": -0.0,
-      "p_l_percent": -0.0,
+      "current_price": 0.16,
+      "p_l": 3.0,
+      "p_l_percent": 15.789473684210526,
       "cost_basis": 19.0,
       "multiplier": 100.0,
-      "total_value": 19.0,
-      "pct_portfolio": 0.62
+      "total_value": 16.0,
+      "pct_portfolio": 0.51
     },
     {
       "symbol": "RR (CC)",
@@ -103,9 +103,9 @@
       "direction": "Net Long",
       "quantity": "404 / -3",
       "avg_open_price": 1.1151831683168316,
-      "current_price": 1.855,
-      "p_l": 322.88599999999997,
-      "p_l_percent": 71.6673991308092,
+      "current_price": 1.75,
+      "p_l": 268.64599999999996,
+      "p_l_percent": 59.628352133246324,
       "is_composite": true,
       "description": "True Basis: $1.12/sh",
       "cost_basis": 450.534
@@ -117,13 +117,13 @@
       "quantity": 4,
       "direction": "Long",
       "avg_open_price": 0.4975,
-      "current_price": 0.14,
-      "p_l": -143.0,
-      "p_l_percent": -71.85929648241206,
+      "current_price": 0.25,
+      "p_l": -99.0,
+      "p_l_percent": -49.74874371859296,
       "cost_basis": 199.0,
       "multiplier": 100.0,
-      "total_value": 56.00000000000001,
-      "pct_portfolio": 1.84
+      "total_value": 100.0,
+      "pct_portfolio": 3.22
     },
     {
       "symbol": "ONDS",
@@ -132,13 +132,13 @@
       "quantity": 100,
       "direction": "Long",
       "avg_open_price": 8.584288,
-      "current_price": 7.5649999999999995,
-      "p_l": -101.92880000000014,
-      "p_l_percent": -11.873879347943605,
+      "current_price": 7.7,
+      "p_l": -88.42880000000007,
+      "p_l_percent": -10.301238728243979,
       "cost_basis": 858.4288000000001,
       "multiplier": 1.0,
-      "total_value": 756.5,
-      "pct_portfolio": 24.87
+      "total_value": 770.0,
+      "pct_portfolio": 24.76
     },
     {
       "symbol": "BTG",
@@ -147,16 +147,46 @@
       "quantity": 20,
       "direction": "Long",
       "avg_open_price": 4.11418,
-      "current_price": 5.61,
-      "p_l": 29.916400000000003,
-      "p_l_percent": 36.35767030125079,
+      "current_price": 5.59,
+      "p_l": 29.516399999999994,
+      "p_l_percent": 35.8715466994638,
       "cost_basis": 82.2836,
       "multiplier": 1.0,
-      "total_value": 112.2,
-      "pct_portfolio": 3.69
+      "total_value": 111.8,
+      "pct_portfolio": 3.6
     }
   ],
   "transactions": [
+    {
+      "id": 471972080,
+      "date": "2026-09-03 21:00",
+      "type": "Money Movement",
+      "sub_type": "Deposit",
+      "description": "ACH DEPOSIT",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 10.0,
+      "net_value": 10.0,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 471972079,
+      "date": "2026-09-03 21:00",
+      "type": "Money Movement",
+      "sub_type": "Deposit",
+      "description": "ACH DEPOSIT",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": 15.0,
+      "net_value": 15.0,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 470816274,
       "date": "2026-08-31 18:39",
@@ -3876,65 +3906,35 @@
       "net_value": -0.02,
       "commission": 0,
       "fees": 0.0
-    },
-    {
-      "id": 426434261,
-      "date": "2026-03-17 21:00",
-      "type": "Money Movement",
-      "sub_type": "Dividend",
-      "description": "ROUNDHILL ETF TR",
-      "symbol": "GOOW",
-      "action": "",
-      "quantity": 0,
-      "price": 0,
-      "value": 0.32,
-      "net_value": 0.32,
-      "commission": 0,
-      "fees": 0.0
-    },
-    {
-      "id": 426434259,
-      "date": "2026-03-17 21:00",
-      "type": "Money Movement",
-      "sub_type": "Dividend",
-      "description": "ROUNDHILL ETF TRUST",
-      "symbol": "GDXW",
-      "action": "",
-      "quantity": 0,
-      "price": 0,
-      "value": 0.33,
-      "net_value": 0.33,
-      "commission": 0,
-      "fees": 0.0
     }
   ],
   "analytics": {
-    "updated": "2026-09-03T07:30:34.636819",
+    "updated": "2026-09-04T07:30:32.560864",
     "sector_allocation": {
-      "Technology": 45.9,
-      "Industrials": 45.3,
-      "Financial Services": 2.9,
+      "Technology": 46.8,
+      "Industrials": 42.1,
+      "Financial Services": 5.2,
       "Basic Materials": 5.9
     },
     "missing_sectors": [
-      "Energy",
       "Healthcare",
-      "Real Estate",
       "Utilities",
+      "Real Estate",
       "Consumer Cyclical",
       "Consumer Defensive",
-      "Communication Services"
+      "Communication Services",
+      "Energy"
     ],
     "stats": {
-      "sharpe": 1.7,
-      "sortino": 2.77,
-      "calmar": 4.77,
-      "max_drawdown": -18.7,
-      "volatility": 98.4,
+      "sharpe": 1.73,
+      "sortino": 2.82,
+      "calmar": 4.93,
+      "max_drawdown": -18.3,
+      "volatility": 96.3,
       "win_rate": 52.0,
-      "var": -8.0,
-      "best_day": 20.8,
-      "worst_day": -16.5
+      "var": -7.8,
+      "best_day": 20.4,
+      "worst_day": -16.2
     }
   }
 }
