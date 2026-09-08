@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-09-07T07:31:38.338753",
+  "last_refresh": "2026-09-08T07:30:43.125887",
   "balance": {
-    "net_liq": 3096.724,
-    "net_liquidating_value": 3096.724,
-    "equity_buying_power": 78.83
+    "net_liq": 3097.488,
+    "net_liquidating_value": 3097.488,
+    "equity_buying_power": 137.968
   },
   "ytd_deposits": 3578.0,
   "positions": [
@@ -14,28 +14,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 84.345,
-      "current_price": 89.36,
-      "p_l": 5.015000000000001,
-      "p_l_percent": 5.945817772244947,
+      "current_price": 91.50999999999999,
+      "p_l": 7.164999999999992,
+      "p_l_percent": 8.494872250874376,
       "cost_basis": 84.345,
       "multiplier": 1.0,
-      "total_value": 89.36,
-      "pct_portfolio": 2.89
-    },
-    {
-      "symbol": "SERV",
-      "underlying_symbol": "SERV",
-      "type": "EQUITY",
-      "quantity": 12,
-      "direction": "Long",
-      "avg_open_price": 4.85028333,
-      "current_price": 4.945,
-      "p_l": 1.1366000400000047,
-      "p_l_percent": 1.9528069507642638,
-      "cost_basis": 58.20339996,
-      "multiplier": 1.0,
-      "total_value": 59.34,
-      "pct_portfolio": 1.92
+      "total_value": 91.50999999999999,
+      "pct_portfolio": 2.95
     },
     {
       "symbol": "SOUN",
@@ -44,13 +29,13 @@
       "quantity": 103,
       "direction": "Long",
       "avg_open_price": 6.99623689,
-      "current_price": 6.74,
-      "p_l": -26.392399669999936,
-      "p_l_percent": -3.6624959107123574,
+      "current_price": 6.735,
+      "p_l": -26.907399669999926,
+      "p_l_percent": -3.7339629018765157,
       "cost_basis": 720.61239967,
       "multiplier": 1.0,
-      "total_value": 694.22,
-      "pct_portfolio": 22.42
+      "total_value": 693.705,
+      "pct_portfolio": 22.4
     },
     {
       "symbol": "ACHR",
@@ -59,12 +44,12 @@
       "quantity": 3,
       "direction": "Long",
       "avg_open_price": 5.885,
-      "current_price": 5.71,
-      "p_l": -0.5249999999999995,
-      "p_l_percent": -2.9736618521665217,
+      "current_price": 5.715,
+      "p_l": -0.5099999999999998,
+      "p_l_percent": -2.8887000849617657,
       "cost_basis": 17.655,
       "multiplier": 1.0,
-      "total_value": 17.13,
+      "total_value": 17.145,
       "pct_portfolio": 0.55
     },
     {
@@ -88,9 +73,9 @@
       "direction": "Net Long",
       "quantity": "404 / -3",
       "avg_open_price": 1.1151831683168316,
-      "current_price": 1.75,
-      "p_l": 268.52599999999995,
-      "p_l_percent": 59.60171707351719,
+      "current_price": 1.755,
+      "p_l": 270.54599999999994,
+      "p_l_percent": 60.050073912290735,
       "is_composite": true,
       "description": "True Basis: $1.12/sh",
       "cost_basis": 450.534
@@ -108,7 +93,7 @@
       "cost_basis": 199.0,
       "multiplier": 100.0,
       "total_value": 72.0,
-      "pct_portfolio": 2.33
+      "pct_portfolio": 2.32
     },
     {
       "symbol": "ONDS",
@@ -117,13 +102,13 @@
       "quantity": 100,
       "direction": "Long",
       "avg_open_price": 8.584288,
-      "current_price": 7.62,
-      "p_l": -96.42880000000007,
-      "p_l_percent": -11.233173910288198,
+      "current_price": 7.615,
+      "p_l": -96.92880000000005,
+      "p_l_percent": -11.29141985916596,
       "cost_basis": 858.4288000000001,
       "multiplier": 1.0,
-      "total_value": 762.0,
-      "pct_portfolio": 24.61
+      "total_value": 761.5,
+      "pct_portfolio": 24.58
     },
     {
       "symbol": "BTG",
@@ -132,16 +117,31 @@
       "quantity": 20,
       "direction": "Long",
       "avg_open_price": 4.11418,
-      "current_price": 5.61,
-      "p_l": 29.916400000000003,
-      "p_l_percent": 36.35767030125079,
+      "current_price": 5.57,
+      "p_l": 29.116400000000002,
+      "p_l_percent": 35.385423097676814,
       "cost_basis": 82.2836,
       "multiplier": 1.0,
-      "total_value": 112.2,
-      "pct_portfolio": 3.62
+      "total_value": 111.4,
+      "pct_portfolio": 3.6
     }
   ],
   "transactions": [
+    {
+      "id": 472459281,
+      "date": "2026-09-08 12:15",
+      "type": "Trade",
+      "sub_type": "Sell to Close",
+      "description": "Sold 12 SERV @ 4.93",
+      "symbol": "SERV",
+      "action": "Sell to Close",
+      "quantity": 12.0,
+      "price": 4.93,
+      "value": 59.16,
+      "net_value": 59.138,
+      "commission": 0,
+      "fees": -0.022
+    },
     {
       "id": 472400324,
       "date": "2026-09-05 18:59",
@@ -3876,48 +3876,33 @@
       "net_value": -16.144,
       "commission": 0,
       "fees": -0.004
-    },
-    {
-      "id": 428016052,
-      "date": "2026-03-23 16:30",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 5 ASM @ 5.58",
-      "symbol": "ASM",
-      "action": "Sell to Close",
-      "quantity": 5.0,
-      "price": 5.575,
-      "value": 27.875,
-      "net_value": 27.87,
-      "commission": 0,
-      "fees": -0.005
     }
   ],
   "analytics": {
-    "updated": "2026-09-07T07:30:46.125743",
+    "updated": "2026-09-08T07:30:28.900462",
     "sector_allocation": {
-      "Technology": 60.8,
-      "Industrials": 31.9,
-      "Financial Services": 2.8,
-      "Basic Materials": 4.4
+      "Technology": 62.3,
+      "Industrials": 30.3,
+      "Financial Services": 2.9,
+      "Basic Materials": 4.5
     },
     "missing_sectors": [
       "Consumer Defensive",
-      "Consumer Cyclical",
-      "Communication Services",
-      "Energy",
       "Healthcare",
+      "Energy",
       "Real Estate",
-      "Utilities"
+      "Consumer Cyclical",
+      "Utilities",
+      "Communication Services"
     ],
     "stats": {
-      "sharpe": 0.71,
-      "sortino": 1.02,
-      "calmar": 0.31,
+      "sharpe": 0.75,
+      "sortino": 1.07,
+      "calmar": 0.38,
       "max_drawdown": -32.9,
-      "volatility": 107.6,
+      "volatility": 107.0,
       "win_rate": 51.0,
-      "var": -9.1,
+      "var": -9.0,
       "best_day": 20.5,
       "worst_day": -22.2
     }
