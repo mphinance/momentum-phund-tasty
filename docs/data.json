@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-09-25T07:30:58.058413",
+  "last_refresh": "2026-09-28T07:30:49.293791",
   "balance": {
-    "net_liq": 3251.349,
-    "net_liquidating_value": 3251.349,
-    "equity_buying_power": 60.823
+    "net_liq": 3226.617,
+    "net_liquidating_value": 3226.617,
+    "equity_buying_power": 24.24
   },
   "ytd_deposits": 3823.0,
   "positions": [
@@ -13,9 +13,9 @@
       "direction": "Net Long",
       "quantity": "440 / -3",
       "avg_open_price": 1.14405,
-      "current_price": 1.65,
-      "p_l": 244.618,
-      "p_l_percent": 48.59490406887811,
+      "current_price": 1.665,
+      "p_l": 246.21800000000002,
+      "p_l_percent": 48.912754131057525,
       "is_composite": true,
       "description": "True Basis: $1.14/sh",
       "cost_basis": 503.382
@@ -27,13 +27,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.09,
-      "current_price": 0.09,
-      "p_l": -0.0,
-      "p_l_percent": -0.0,
+      "current_price": 0.06,
+      "p_l": 3.0,
+      "p_l_percent": 33.33333333333333,
       "cost_basis": 9.0,
       "multiplier": 100.0,
-      "total_value": 9.0,
-      "pct_portfolio": 0.28
+      "total_value": 6.0,
+      "pct_portfolio": 0.19
     },
     {
       "symbol": "RR    270319C00003000",
@@ -42,13 +42,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.24,
-      "current_price": 0.24,
-      "p_l": 0.0,
-      "p_l_percent": 0.0,
+      "current_price": 0.22,
+      "p_l": -1.9999999999999991,
+      "p_l_percent": -8.33333333333333,
       "cost_basis": 24.0,
       "multiplier": 100.0,
-      "total_value": 24.0,
-      "pct_portfolio": 0.74
+      "total_value": 22.0,
+      "pct_portfolio": 0.68
     },
     {
       "symbol": "ACHR (CC)",
@@ -56,9 +56,9 @@
       "direction": "Net Long",
       "quantity": "110 / -1",
       "avg_open_price": 5.258636363636364,
-      "current_price": 5.74,
-      "p_l": 79.94999999999993,
-      "p_l_percent": 13.821419310225592,
+      "current_price": 5.574999999999999,
+      "p_l": 55.79999999999984,
+      "p_l_percent": 9.64646901201484,
       "is_composite": true,
       "description": "True Basis: $5.26/sh",
       "cost_basis": 578.45
@@ -69,9 +69,9 @@
       "direction": "Net Long",
       "quantity": "110 / -1",
       "avg_open_price": 6.4912363636363635,
-      "current_price": 6.115,
-      "p_l": -30.385999999999967,
-      "p_l_percent": -4.255527732495276,
+      "current_price": 5.995,
+      "p_l": -45.5859999999999,
+      "p_l_percent": -6.3842719414707245,
       "is_composite": true,
       "description": "True Basis: $6.49/sh",
       "cost_basis": 714.036
@@ -81,28 +81,28 @@
       "type": "Covered Call",
       "direction": "Net Long",
       "quantity": "110 / -1",
-      "avg_open_price": 8.236372727272727,
-      "current_price": 7.67,
-      "p_l": -48.30099999999993,
-      "p_l_percent": -5.3312303187303245,
+      "avg_open_price": 8.331999999999999,
+      "current_price": 7.609999999999999,
+      "p_l": -66.42000000000007,
+      "p_l_percent": -7.24697769824991,
       "is_composite": true,
-      "description": "True Basis: $8.24/sh",
-      "cost_basis": 906.001
+      "description": "True Basis: $8.33/sh",
+      "cost_basis": 916.52
     },
     {
       "symbol": "BULL",
       "underlying_symbol": "BULL",
       "type": "EQUITY",
-      "quantity": 5,
+      "quantity": 10,
       "direction": "Long",
-      "avg_open_price": 7.935,
-      "current_price": 7.34,
-      "p_l": -2.9749999999999988,
-      "p_l_percent": -7.498424700693129,
-      "cost_basis": 39.675,
+      "avg_open_price": 7.62394,
+      "current_price": 7.155,
+      "p_l": -4.689399999999999,
+      "p_l_percent": -6.150887861132169,
+      "cost_basis": 76.2394,
       "multiplier": 1.0,
-      "total_value": 36.7,
-      "pct_portfolio": 1.13
+      "total_value": 71.55,
+      "pct_portfolio": 2.22
     },
     {
       "symbol": "GLXY",
@@ -111,13 +111,13 @@
       "quantity": 3,
       "direction": "Long",
       "avg_open_price": 22.64333333,
-      "current_price": 25.415,
-      "p_l": 8.315000009999995,
-      "p_l_percent": 12.240541750661047,
+      "current_price": 23.75,
+      "p_l": 3.3200000099999976,
+      "p_l_percent": 4.887384087279164,
       "cost_basis": 67.92999999,
       "multiplier": 1.0,
-      "total_value": 76.245,
-      "pct_portfolio": 2.35
+      "total_value": 71.25,
+      "pct_portfolio": 2.21
     },
     {
       "symbol": "BTG",
@@ -126,16 +126,76 @@
       "quantity": 20,
       "direction": "Long",
       "avg_open_price": 4.11418,
-      "current_price": 5.390000000000001,
-      "p_l": 25.516400000000008,
-      "p_l_percent": 31.01031068159391,
+      "current_price": 5.23,
+      "p_l": 22.316400000000005,
+      "p_l_percent": 27.121321867297983,
       "cost_basis": 82.2836,
       "multiplier": 1.0,
-      "total_value": 107.80000000000001,
-      "pct_portfolio": 3.32
+      "total_value": 104.60000000000001,
+      "pct_portfolio": 3.24
     }
   ],
   "transactions": [
+    {
+      "id": 477671592,
+      "date": "2026-09-26 13:46",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -0.014,
+      "net_value": -0.014,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 477279497,
+      "date": "2026-09-25 13:14",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 3 BULL @ 7.31",
+      "symbol": "BULL",
+      "action": "Buy to Open",
+      "quantity": 3.0,
+      "price": 7.3088,
+      "value": -21.926,
+      "net_value": -21.929,
+      "commission": 0,
+      "fees": -0.003
+    },
+    {
+      "id": 477279346,
+      "date": "2026-09-25 13:12",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BULL @ 7.32",
+      "symbol": "BULL",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 7.319,
+      "value": -7.319,
+      "net_value": -7.32,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 477279287,
+      "date": "2026-09-25 13:11",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BULL @ 7.32",
+      "symbol": "BULL",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 7.319,
+      "value": -7.319,
+      "net_value": -7.32,
+      "commission": 0,
+      "fees": -0.001
+    },
     {
       "id": 477247601,
       "date": "2026-09-24 21:00",
@@ -3825,95 +3885,35 @@
       "net_value": 50.225,
       "commission": 0,
       "fees": -0.11
-    },
-    {
-      "id": 438192589,
-      "date": "2026-04-30 18:07",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 BTG @ 4.42",
-      "symbol": "BTG",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 4.425,
-      "value": -4.425,
-      "net_value": -4.426,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 438188590,
-      "date": "2026-04-30 18:02",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 2 BTG @ 4.43",
-      "symbol": "BTG",
-      "action": "Buy to Open",
-      "quantity": 2.0,
-      "price": 4.4276,
-      "value": -8.855,
-      "net_value": -8.857,
-      "commission": 0,
-      "fees": -0.002
-    },
-    {
-      "id": 437591705,
-      "date": "2026-04-28 21:00",
-      "type": "Money Movement",
-      "sub_type": "Dividend",
-      "description": "ROUNDHILL ETF TRUST",
-      "symbol": "GDXW",
-      "action": "",
-      "quantity": 0,
-      "price": 0,
-      "value": 1.26,
-      "net_value": 1.26,
-      "commission": 0,
-      "fees": 0.0
-    },
-    {
-      "id": 437525246,
-      "date": "2026-04-28 18:47",
-      "type": "Trade",
-      "sub_type": "Sell to Close",
-      "description": "Sold 1 ONDS @ 10.53",
-      "symbol": "ONDS",
-      "action": "Sell to Close",
-      "quantity": 1.0,
-      "price": 10.53,
-      "value": 10.53,
-      "net_value": 10.519,
-      "commission": 0,
-      "fees": -0.011
     }
   ],
   "analytics": {
-    "updated": "2026-09-25T07:30:37.458426",
+    "updated": "2026-09-28T07:30:32.789625",
     "sector_allocation": {
-      "Industrials": 45.0,
-      "Technology": 49.3,
-      "Financial Services": 2.4,
-      "Basic Materials": 3.4
+      "Industrials": 44.4,
+      "Technology": 50.0,
+      "Financial Services": 2.2,
+      "Basic Materials": 3.3
     },
     "missing_sectors": [
-      "Consumer Cyclical",
-      "Utilities",
-      "Energy",
       "Healthcare",
-      "Real Estate",
+      "Consumer Defensive",
       "Communication Services",
-      "Consumer Defensive"
+      "Consumer Cyclical",
+      "Real Estate",
+      "Utilities",
+      "Energy"
     ],
     "stats": {
-      "sharpe": 0.22,
-      "sortino": 0.3,
-      "calmar": -0.45,
-      "max_drawdown": -42.8,
-      "volatility": 112.3,
-      "win_rate": 49.0,
+      "sharpe": 0.17,
+      "sortino": 0.24,
+      "calmar": -0.51,
+      "max_drawdown": -43.1,
+      "volatility": 112.5,
+      "win_rate": 47.0,
       "var": -9.6,
-      "best_day": 19.5,
-      "worst_day": -21.1
+      "best_day": 19.6,
+      "worst_day": -21.3
     }
   }
 }
