@@ -1,21 +1,36 @@
 {
-  "last_refresh": "2026-10-01T07:31:07.800125",
+  "last_refresh": "2026-10-02T07:30:42.068782",
   "balance": {
-    "net_liq": 3213.712,
-    "net_liquidating_value": 3213.712,
-    "equity_buying_power": 43.15
+    "net_liq": 3258.612,
+    "net_liquidating_value": 3258.612,
+    "equity_buying_power": 22.372
   },
   "ytd_deposits": 3898.0,
   "positions": [
+    {
+      "symbol": "BULL",
+      "underlying_symbol": "BULL",
+      "type": "EQUITY",
+      "quantity": 21,
+      "direction": "Long",
+      "avg_open_price": 7.29032381,
+      "current_price": 7.105,
+      "p_l": -3.891800009999997,
+      "p_l_percent": -2.5420518324000185,
+      "cost_basis": 153.09680001,
+      "multiplier": 1.0,
+      "total_value": 149.205,
+      "pct_portfolio": 4.58
+    },
     {
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
       "quantity": "440 / -3",
       "avg_open_price": 1.14405,
-      "current_price": 1.5750000000000002,
-      "p_l": 200.6180000000001,
-      "p_l_percent": 39.85402735894412,
+      "current_price": 1.745,
+      "p_l": 287.41800000000006,
+      "p_l_percent": 57.09739323217756,
       "is_composite": true,
       "description": "True Basis: $1.14/sh",
       "cost_basis": 503.382
@@ -27,13 +42,13 @@
       "quantity": -1,
       "direction": "Short",
       "avg_open_price": 0.09,
-      "current_price": 0.07,
-      "p_l": 1.9999999999999991,
-      "p_l_percent": 22.222222222222214,
+      "current_price": 0.06,
+      "p_l": 3.0,
+      "p_l_percent": 33.33333333333333,
       "cost_basis": 9.0,
       "multiplier": 100.0,
-      "total_value": 7.000000000000001,
-      "pct_portfolio": 0.22
+      "total_value": 6.0,
+      "pct_portfolio": 0.18
     },
     {
       "symbol": "RR    270319C00003000",
@@ -42,13 +57,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.24,
-      "current_price": 0.19,
-      "p_l": -4.999999999999999,
-      "p_l_percent": -20.83333333333333,
+      "current_price": 0.21,
+      "p_l": -3.0,
+      "p_l_percent": -12.5,
       "cost_basis": 24.0,
       "multiplier": 100.0,
-      "total_value": 19.0,
-      "pct_portfolio": 0.59
+      "total_value": 21.0,
+      "pct_portfolio": 0.64
     },
     {
       "symbol": "ACHR (CC)",
@@ -56,9 +71,9 @@
       "direction": "Net Long",
       "quantity": "110 / -1",
       "avg_open_price": 5.258636363636364,
-      "current_price": 5.015,
-      "p_l": -20.800000000000068,
-      "p_l_percent": -3.595816405912364,
+      "current_price": 5.085,
+      "p_l": -14.100000000000023,
+      "p_l_percent": -2.4375486213155884,
       "is_composite": true,
       "description": "True Basis: $5.26/sh",
       "cost_basis": 578.45
@@ -69,9 +84,9 @@
       "direction": "Net Long",
       "quantity": "110 / -1",
       "avg_open_price": 6.4912363636363635,
-      "current_price": 6.085,
-      "p_l": -38.68599999999992,
-      "p_l_percent": -5.417934109764763,
+      "current_price": 6.125,
+      "p_l": -35.285999999999945,
+      "p_l_percent": -4.941767641967624,
       "is_composite": true,
       "description": "True Basis: $6.49/sh",
       "cost_basis": 714.036
@@ -82,27 +97,12 @@
       "direction": "Net Long",
       "quantity": "110 / -1",
       "avg_open_price": 8.331999999999999,
-      "current_price": 7.405,
-      "p_l": -95.96999999999991,
-      "p_l_percent": -10.471129926242735,
+      "current_price": 7.205,
+      "p_l": -119.97000000000003,
+      "p_l_percent": -13.089730720551653,
       "is_composite": true,
       "description": "True Basis: $8.33/sh",
       "cost_basis": 916.52
-    },
-    {
-      "symbol": "BULL",
-      "underlying_symbol": "BULL",
-      "type": "EQUITY",
-      "quantity": 18,
-      "direction": "Long",
-      "avg_open_price": 7.35121111,
-      "current_price": 7.005,
-      "p_l": -6.231799980000009,
-      "p_l_percent": -4.709579208370748,
-      "cost_basis": 132.32179998,
-      "multiplier": 1.0,
-      "total_value": 126.09,
-      "pct_portfolio": 3.92
     },
     {
       "symbol": "GLXY",
@@ -111,13 +111,13 @@
       "quantity": 3,
       "direction": "Long",
       "avg_open_price": 22.64333333,
-      "current_price": 23.03,
-      "p_l": 1.160000010000001,
-      "p_l_percent": 1.7076402328437583,
+      "current_price": 23.689999999999998,
+      "p_l": 3.1400000099999907,
+      "p_l_percent": 4.62240543274287,
       "cost_basis": 67.92999999,
       "multiplier": 1.0,
-      "total_value": 69.09,
-      "pct_portfolio": 2.15
+      "total_value": 71.07,
+      "pct_portfolio": 2.18
     },
     {
       "symbol": "BTG",
@@ -126,16 +126,46 @@
       "quantity": 20,
       "direction": "Long",
       "avg_open_price": 4.11418,
-      "current_price": 5.265,
-      "p_l": 23.01639999999999,
-      "p_l_percent": 27.9720381704252,
+      "current_price": 5.225,
+      "p_l": 22.21639999999999,
+      "p_l_percent": 26.99979096685122,
       "cost_basis": 82.2836,
       "multiplier": 1.0,
-      "total_value": 105.3,
-      "pct_portfolio": 3.28
+      "total_value": 104.5,
+      "pct_portfolio": 3.21
     }
   ],
   "transactions": [
+    {
+      "id": 478906625,
+      "date": "2026-10-01 15:04",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BULL @ 6.92",
+      "symbol": "BULL",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 6.925,
+      "value": -6.925,
+      "net_value": -6.926,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 478905805,
+      "date": "2026-10-01 15:03",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 2 BULL @ 6.92",
+      "symbol": "BULL",
+      "action": "Buy to Open",
+      "quantity": 2.0,
+      "price": 6.925,
+      "value": -13.85,
+      "net_value": -13.852,
+      "commission": 0,
+      "fees": -0.002
+    },
     {
       "id": 478783691,
       "date": "2026-10-01 11:33",
@@ -3855,65 +3885,35 @@
       "net_value": -11.423,
       "commission": 0,
       "fees": -0.1
-    },
-    {
-      "id": 439884258,
-      "date": "2026-05-06 18:39",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 0.15 VBIL @ 75.49",
-      "symbol": "VBIL",
-      "action": "Buy to Open",
-      "quantity": 0.15,
-      "price": 75.49,
-      "value": -11.324,
-      "net_value": -11.424,
-      "commission": 0,
-      "fees": -0.1
-    },
-    {
-      "id": 439883810,
-      "date": "2026-05-06 18:38",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 0.1 VBIL @ 75.48",
-      "symbol": "VBIL",
-      "action": "Buy to Open",
-      "quantity": 0.1,
-      "price": 75.485,
-      "value": -7.549,
-      "net_value": -7.649,
-      "commission": 0,
-      "fees": -0.1
     }
   ],
   "analytics": {
-    "updated": "2026-10-01T07:30:31.881321",
+    "updated": "2026-10-02T07:30:26.895748",
     "sector_allocation": {
-      "Industrials": 41.8,
-      "Technology": 52.6,
+      "Technology": 51.0,
+      "Industrials": 43.5,
       "Financial Services": 2.2,
-      "Basic Materials": 3.4
+      "Basic Materials": 3.3
     },
     "missing_sectors": [
-      "Real Estate",
+      "Energy",
       "Healthcare",
-      "Consumer Defensive",
       "Utilities",
+      "Consumer Defensive",
       "Communication Services",
-      "Consumer Cyclical",
-      "Energy"
+      "Real Estate",
+      "Consumer Cyclical"
     ],
     "stats": {
       "sharpe": 0.2,
-      "sortino": 0.28,
-      "calmar": -0.49,
-      "max_drawdown": -43.3,
-      "volatility": 113.6,
+      "sortino": 0.27,
+      "calmar": -0.48,
+      "max_drawdown": -42.8,
+      "volatility": 112.0,
       "win_rate": 47.0,
-      "var": -9.7,
-      "best_day": 19.7,
-      "worst_day": -21.4
+      "var": -9.6,
+      "best_day": 19.4,
+      "worst_day": -21.1
     }
   }
 }
