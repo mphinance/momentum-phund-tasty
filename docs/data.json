@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-10-09T07:30:42.346902",
+  "last_refresh": "2026-10-12T07:30:46.401379",
   "balance": {
-    "net_liq": 3209.442,
-    "net_liquidating_value": 3209.442,
-    "equity_buying_power": 138.911
+    "net_liq": 3191.554,
+    "net_liquidating_value": 3191.554,
+    "equity_buying_power": 132.609
   },
   "ytd_deposits": 4003.0,
   "positions": [
@@ -11,16 +11,16 @@
       "symbol": "BULL",
       "underlying_symbol": "BULL",
       "type": "EQUITY",
-      "quantity": 33,
+      "quantity": 34,
       "direction": "Long",
-      "avg_open_price": 6.79323636,
-      "current_price": 6.205,
-      "p_l": -19.411799879999993,
-      "p_l_percent": -8.659147552463489,
-      "cost_basis": 224.17679988,
+      "avg_open_price": 6.77843529,
+      "current_price": 6.234999999999999,
+      "p_l": -18.47679986000002,
+      "p_l_percent": -8.017119980502176,
+      "cost_basis": 230.46679986,
       "multiplier": 1.0,
-      "total_value": 204.76500000000001,
-      "pct_portfolio": 6.38
+      "total_value": 211.98999999999998,
+      "pct_portfolio": 6.64
     },
     {
       "symbol": "RR (CC)",
@@ -28,9 +28,9 @@
       "direction": "Net Long",
       "quantity": "440 / -3",
       "avg_open_price": 1.151140909090909,
-      "current_price": 1.61,
-      "p_l": 209.89800000000008,
-      "p_l_percent": 41.44070507125343,
+      "current_price": 1.63,
+      "p_l": 218.69799999999992,
+      "p_l_percent": 43.17811183371436,
       "is_composite": true,
       "description": "True Basis: $1.15/sh",
       "cost_basis": 506.502
@@ -42,13 +42,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.24,
-      "current_price": 0.19,
-      "p_l": -4.999999999999999,
-      "p_l_percent": -20.83333333333333,
+      "current_price": 0.2,
+      "p_l": -3.9999999999999982,
+      "p_l_percent": -16.66666666666666,
       "cost_basis": 24.0,
       "multiplier": 100.0,
-      "total_value": 19.0,
-      "pct_portfolio": 0.59
+      "total_value": 20.0,
+      "pct_portfolio": 0.63
     },
     {
       "symbol": "ACHR (CC)",
@@ -69,25 +69,12 @@
       "direction": "Net Long",
       "quantity": "110 / -1",
       "avg_open_price": 6.4912363636363635,
-      "current_price": 5.595,
-      "p_l": -97.58600000000001,
-      "p_l_percent": -13.666817919544675,
+      "current_price": 5.365,
+      "p_l": -122.88599999999997,
+      "p_l_percent": -17.210056635799873,
       "is_composite": true,
       "description": "True Basis: $6.49/sh",
       "cost_basis": 714.036
-    },
-    {
-      "symbol": "ONDS (CC)",
-      "type": "Covered Call",
-      "direction": "Net Long",
-      "quantity": "110 / -1",
-      "avg_open_price": 8.331999999999999,
-      "current_price": 6.915,
-      "p_l": -155.78999999999996,
-      "p_l_percent": -16.997992406057694,
-      "is_composite": true,
-      "description": "True Basis: $8.33/sh",
-      "cost_basis": 916.52
     },
     {
       "symbol": "GLXY",
@@ -96,13 +83,28 @@
       "quantity": 6,
       "direction": "Long",
       "avg_open_price": 22.02916667,
-      "current_price": 20.825000000000003,
-      "p_l": -7.225000019999975,
-      "p_l_percent": -5.4662379564265,
+      "current_price": 20.38,
+      "p_l": -9.895000019999998,
+      "p_l_percent": -7.486287133348016,
       "cost_basis": 132.17500002,
       "multiplier": 1.0,
-      "total_value": 124.95000000000002,
-      "pct_portfolio": 3.89
+      "total_value": 122.28,
+      "pct_portfolio": 3.83
+    },
+    {
+      "symbol": "ONDS",
+      "underlying_symbol": "ONDS",
+      "type": "EQUITY",
+      "quantity": 110,
+      "direction": "Long",
+      "avg_open_price": 8.45717,
+      "current_price": 6.925,
+      "p_l": -168.53869999999998,
+      "p_l_percent": -18.116816854810768,
+      "cost_basis": 930.2887,
+      "multiplier": 1.0,
+      "total_value": 761.75,
+      "pct_portfolio": 23.87
     },
     {
       "symbol": "BTG",
@@ -111,16 +113,61 @@
       "quantity": 20,
       "direction": "Long",
       "avg_open_price": 4.11418,
-      "current_price": 5.23,
-      "p_l": 22.316400000000005,
-      "p_l_percent": 27.121321867297983,
+      "current_price": 5.195,
+      "p_l": 21.616400000000002,
+      "p_l_percent": 26.270605564170747,
       "cost_basis": 82.2836,
       "multiplier": 1.0,
-      "total_value": 104.60000000000001,
+      "total_value": 103.9,
       "pct_portfolio": 3.26
     }
   ],
   "transactions": [
+    {
+      "id": 481421468,
+      "date": "2026-10-12 12:02",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BULL @ 6.29",
+      "symbol": "BULL",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 6.29,
+      "value": -6.29,
+      "net_value": -6.291,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 481389184,
+      "date": "2026-10-10 18:58",
+      "type": "Money Movement",
+      "sub_type": "Balance Adjustment",
+      "description": "Regulatory fee adjustment",
+      "symbol": "",
+      "action": "",
+      "quantity": 0,
+      "price": 0,
+      "value": -0.011,
+      "net_value": -0.011,
+      "commission": 0,
+      "fees": 0.0
+    },
+    {
+      "id": 481355010,
+      "date": "2026-10-09 20:00",
+      "type": "Receive Deliver",
+      "sub_type": "Expiration",
+      "description": "Removal of 1.0 ONDS 10/09/26 Call 8.50 due to expiration.",
+      "symbol": "ONDS  261009C00008500",
+      "action": "Buy to Close",
+      "quantity": 1.0,
+      "price": 0,
+      "value": 0.0,
+      "net_value": 0.0,
+      "commission": 0,
+      "fees": 0.0
+    },
     {
       "id": 480860639,
       "date": "2026-10-08 17:10",
@@ -3825,80 +3872,35 @@
       "net_value": -7.892,
       "commission": 0,
       "fees": -0.003
-    },
-    {
-      "id": 441036902,
-      "date": "2026-05-11 15:57",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 0.2 BOXX @ 116.66",
-      "symbol": "BOXX",
-      "action": "Buy to Open",
-      "quantity": 0.2,
-      "price": 116.655,
-      "value": -23.331,
-      "net_value": -23.431,
-      "commission": 0,
-      "fees": -0.1
-    },
-    {
-      "id": 441019458,
-      "date": "2026-05-11 15:33",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 VBIL @ 75.52",
-      "symbol": "VBIL",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 75.525,
-      "value": -75.525,
-      "net_value": -75.526,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 441015616,
-      "date": "2026-05-11 15:29",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 BOXX @ 116.66",
-      "symbol": "BOXX",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 116.655,
-      "value": -116.655,
-      "net_value": -116.656,
-      "commission": 0,
-      "fees": -0.001
     }
   ],
   "analytics": {
-    "updated": "2026-10-09T07:30:28.354738",
+    "updated": "2026-10-12T07:30:30.176356",
     "sector_allocation": {
-      "Technology": 51.2,
-      "Industrials": 41.4,
+      "Technology": 50.7,
+      "Industrials": 42.0,
       "Financial Services": 4.0,
       "Basic Materials": 3.4
     },
     "missing_sectors": [
-      "Healthcare",
-      "Energy",
-      "Real Estate",
-      "Utilities",
       "Communication Services",
-      "Consumer Defensive",
-      "Consumer Cyclical"
+      "Utilities",
+      "Real Estate",
+      "Energy",
+      "Consumer Cyclical",
+      "Healthcare",
+      "Consumer Defensive"
     ],
     "stats": {
-      "sharpe": -0.43,
-      "sortino": -0.58,
-      "calmar": -1.03,
-      "max_drawdown": -43.3,
-      "volatility": 107.3,
-      "win_rate": 46.0,
-      "var": -9.4,
-      "best_day": 19.7,
-      "worst_day": -21.4
+      "sharpe": -0.17,
+      "sortino": -0.23,
+      "calmar": -0.76,
+      "max_drawdown": -43.5,
+      "volatility": 102.8,
+      "win_rate": 45.0,
+      "var": -8.9,
+      "best_day": 19.9,
+      "worst_day": -21.5
     }
   }
 }
