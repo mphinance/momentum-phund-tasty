@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-10-12T07:30:46.401379",
+  "last_refresh": "2026-10-13T07:30:50.982878",
   "balance": {
-    "net_liq": 3191.554,
-    "net_liquidating_value": 3191.554,
-    "equity_buying_power": 132.609
+    "net_liq": 3008.835,
+    "net_liquidating_value": 3008.835,
+    "equity_buying_power": 120.172
   },
   "ytd_deposits": 4003.0,
   "positions": [
@@ -11,29 +11,29 @@
       "symbol": "BULL",
       "underlying_symbol": "BULL",
       "type": "EQUITY",
-      "quantity": 34,
+      "quantity": 36,
       "direction": "Long",
-      "avg_open_price": 6.77843529,
-      "current_price": 6.234999999999999,
-      "p_l": -18.47679986000002,
-      "p_l_percent": -8.017119980502176,
-      "cost_basis": 230.46679986,
+      "avg_open_price": 6.74727222,
+      "current_price": 6.18,
+      "p_l": -20.421799920000016,
+      "p_l_percent": -8.40743046232097,
+      "cost_basis": 242.90179992,
       "multiplier": 1.0,
-      "total_value": 211.98999999999998,
-      "pct_portfolio": 6.64
+      "total_value": 222.48,
+      "pct_portfolio": 7.39
     },
     {
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
       "quantity": "440 / -3",
-      "avg_open_price": 1.151140909090909,
-      "current_price": 1.63,
-      "p_l": 218.69799999999992,
-      "p_l_percent": 43.17811183371436,
+      "avg_open_price": 1.1212454545454547,
+      "current_price": 1.51,
+      "p_l": 176.05199999999996,
+      "p_l_percent": 35.685155306193586,
       "is_composite": true,
-      "description": "True Basis: $1.15/sh",
-      "cost_basis": 506.502
+      "description": "True Basis: $1.12/sh",
+      "cost_basis": 493.348
     },
     {
       "symbol": "RR    270319C00003000",
@@ -42,13 +42,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.24,
-      "current_price": 0.2,
-      "p_l": -3.9999999999999982,
-      "p_l_percent": -16.66666666666666,
+      "current_price": 0.14,
+      "p_l": -9.999999999999998,
+      "p_l_percent": -41.66666666666666,
       "cost_basis": 24.0,
       "multiplier": 100.0,
-      "total_value": 20.0,
-      "pct_portfolio": 0.63
+      "total_value": 14.000000000000002,
+      "pct_portfolio": 0.47
     },
     {
       "symbol": "ACHR (CC)",
@@ -56,9 +56,9 @@
       "direction": "Net Long",
       "quantity": "110 / -1",
       "avg_open_price": 5.258636363636364,
-      "current_price": 4.925,
-      "p_l": -34.700000000000045,
-      "p_l_percent": -5.998789869478787,
+      "current_price": 4.625,
+      "p_l": -69.55000000000007,
+      "p_l_percent": -12.023511107269439,
       "is_composite": true,
       "description": "True Basis: $5.26/sh",
       "cost_basis": 578.45
@@ -69,9 +69,9 @@
       "direction": "Net Long",
       "quantity": "110 / -1",
       "avg_open_price": 6.4912363636363635,
-      "current_price": 5.365,
-      "p_l": -122.88599999999997,
-      "p_l_percent": -17.210056635799873,
+      "current_price": 4.890000000000001,
+      "p_l": -176.12599999999986,
+      "p_l_percent": -24.666263325658633,
       "is_composite": true,
       "description": "True Basis: $6.49/sh",
       "cost_basis": 714.036
@@ -83,13 +83,13 @@
       "quantity": 6,
       "direction": "Long",
       "avg_open_price": 22.02916667,
-      "current_price": 20.38,
-      "p_l": -9.895000019999998,
-      "p_l_percent": -7.486287133348016,
+      "current_price": 20.555,
+      "p_l": -8.845000019999993,
+      "p_l_percent": -6.6918857716373115,
       "cost_basis": 132.17500002,
       "multiplier": 1.0,
-      "total_value": 122.28,
-      "pct_portfolio": 3.83
+      "total_value": 123.33,
+      "pct_portfolio": 4.1
     },
     {
       "symbol": "ONDS",
@@ -98,13 +98,13 @@
       "quantity": 110,
       "direction": "Long",
       "avg_open_price": 8.45717,
-      "current_price": 6.925,
-      "p_l": -168.53869999999998,
-      "p_l_percent": -18.116816854810768,
+      "current_price": 6.555,
+      "p_l": -209.2387,
+      "p_l_percent": -22.491802813470702,
       "cost_basis": 930.2887,
       "multiplier": 1.0,
-      "total_value": 761.75,
-      "pct_portfolio": 23.87
+      "total_value": 721.05,
+      "pct_portfolio": 23.96
     },
     {
       "symbol": "BTG",
@@ -113,16 +113,46 @@
       "quantity": 20,
       "direction": "Long",
       "avg_open_price": 4.11418,
-      "current_price": 5.195,
-      "p_l": 21.616400000000002,
-      "p_l_percent": 26.270605564170747,
+      "current_price": 5.33,
+      "p_l": 24.316399999999998,
+      "p_l_percent": 29.551939876232925,
       "cost_basis": 82.2836,
       "multiplier": 1.0,
-      "total_value": 103.9,
-      "pct_portfolio": 3.26
+      "total_value": 106.6,
+      "pct_portfolio": 3.54
     }
   ],
   "transactions": [
+    {
+      "id": 481717518,
+      "date": "2026-10-13 11:23",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BULL @ 6.27",
+      "symbol": "BULL",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 6.27,
+      "value": -6.27,
+      "net_value": -6.271,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 481461521,
+      "date": "2026-10-12 13:52",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BULL @ 6.16",
+      "symbol": "BULL",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 6.165,
+      "value": -6.165,
+      "net_value": -6.166,
+      "commission": 0,
+      "fees": -0.001
+    },
     {
       "id": 481421468,
       "date": "2026-10-12 12:02",
@@ -3842,65 +3872,35 @@
       "net_value": -250.0,
       "commission": 0,
       "fees": 0.0
-    },
-    {
-      "id": 441054303,
-      "date": "2026-05-11 16:24",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 2 RR @ 2.63",
-      "symbol": "RR",
-      "action": "Buy to Open",
-      "quantity": 2.0,
-      "price": 2.63,
-      "value": -5.26,
-      "net_value": -5.262,
-      "commission": 0,
-      "fees": -0.002
-    },
-    {
-      "id": 441053911,
-      "date": "2026-05-11 16:24",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 3 RR @ 2.63",
-      "symbol": "RR",
-      "action": "Buy to Open",
-      "quantity": 3.0,
-      "price": 2.6297,
-      "value": -7.889,
-      "net_value": -7.892,
-      "commission": 0,
-      "fees": -0.003
     }
   ],
   "analytics": {
-    "updated": "2026-10-12T07:30:30.176356",
+    "updated": "2026-10-13T07:30:35.708273",
     "sector_allocation": {
-      "Technology": 50.7,
-      "Industrials": 42.0,
-      "Financial Services": 4.0,
-      "Basic Materials": 3.4
+      "Technology": 51.0,
+      "Industrials": 41.1,
+      "Financial Services": 4.2,
+      "Basic Materials": 3.7
     },
     "missing_sectors": [
-      "Communication Services",
       "Utilities",
-      "Real Estate",
-      "Energy",
       "Consumer Cyclical",
+      "Consumer Defensive",
+      "Energy",
+      "Communication Services",
       "Healthcare",
-      "Consumer Defensive"
+      "Real Estate"
     ],
     "stats": {
       "sharpe": -0.17,
       "sortino": -0.23,
-      "calmar": -0.76,
-      "max_drawdown": -43.5,
-      "volatility": 102.8,
-      "win_rate": 45.0,
-      "var": -8.9,
-      "best_day": 19.9,
-      "worst_day": -21.5
+      "calmar": -0.78,
+      "max_drawdown": -45.6,
+      "volatility": 108.3,
+      "win_rate": 44.0,
+      "var": -9.4,
+      "best_day": 21.1,
+      "worst_day": -22.8
     }
   }
 }
