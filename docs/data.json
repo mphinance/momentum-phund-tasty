@@ -1,24 +1,39 @@
 {
-  "last_refresh": "2026-10-19T07:30:46.278165",
+  "last_refresh": "2026-10-20T07:30:42.460338",
   "balance": {
-    "net_liq": 2816.802,
-    "net_liquidating_value": 2816.802,
-    "equity_buying_power": 95.6
+    "net_liq": 2670.394,
+    "net_liquidating_value": 2670.394,
+    "equity_buying_power": 356.457
   },
   "ytd_deposits": 4003.0,
   "positions": [
     {
+      "symbol": "SOUN",
+      "underlying_symbol": "SOUN",
+      "type": "EQUITY",
+      "quantity": 110,
+      "direction": "Long",
+      "avg_open_price": 6.94206727,
+      "current_price": 4.585,
+      "p_l": -259.2773997,
+      "p_l_percent": -33.953391379337646,
+      "cost_basis": 763.6273997,
+      "multiplier": 1.0,
+      "total_value": 504.35,
+      "pct_portfolio": 18.89
+    },
+    {
       "symbol": "RR (CC)",
       "type": "Covered Call",
       "direction": "Net Long",
-      "quantity": "440 / -2",
-      "avg_open_price": 1.1413977272727271,
-      "current_price": 1.3250000000000002,
-      "p_l": 80.8250000000001,
-      "p_l_percent": 16.093704887349062,
+      "quantity": "220 / -2",
+      "avg_open_price": 1.0098090909090909,
+      "current_price": 1.31,
+      "p_l": 66.06199999999995,
+      "p_l_percent": 29.73649384672168,
       "is_composite": true,
-      "description": "True Basis: $1.14/sh",
-      "cost_basis": 502.215
+      "description": "True Basis: $1.01/sh",
+      "cost_basis": 222.15800000000002
     },
     {
       "symbol": "RR    270319C00003000",
@@ -27,28 +42,28 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.24,
-      "current_price": 0.12,
-      "p_l": -12.0,
-      "p_l_percent": -50.0,
+      "current_price": 0.1,
+      "p_l": -13.999999999999998,
+      "p_l_percent": -58.33333333333333,
       "cost_basis": 24.0,
       "multiplier": 100.0,
-      "total_value": 12.0,
-      "pct_portfolio": 0.43
+      "total_value": 10.0,
+      "pct_portfolio": 0.37
     },
     {
       "symbol": "BULL",
       "underlying_symbol": "BULL",
       "type": "EQUITY",
-      "quantity": 40,
+      "quantity": 42,
       "direction": "Long",
-      "avg_open_price": 6.68673,
-      "current_price": 6.13,
-      "p_l": -22.269199999999998,
-      "p_l_percent": -8.325893224341344,
-      "cost_basis": 267.4692,
+      "avg_open_price": 6.64819524,
+      "current_price": 5.84,
+      "p_l": -33.944200079999995,
+      "p_l_percent": -12.156611092546672,
+      "cost_basis": 279.22420008,
       "multiplier": 1.0,
-      "total_value": 245.2,
-      "pct_portfolio": 8.7
+      "total_value": 245.28,
+      "pct_portfolio": 9.19
     },
     {
       "symbol": "GLXY",
@@ -57,28 +72,13 @@
       "quantity": 6,
       "direction": "Long",
       "avg_open_price": 22.02916667,
-      "current_price": 16.82,
-      "p_l": -31.25500001999999,
-      "p_l_percent": -23.646680548719996,
+      "current_price": 15.255,
+      "p_l": -40.64500001999998,
+      "p_l_percent": -30.750898440589978,
       "cost_basis": 132.17500002,
       "multiplier": 1.0,
-      "total_value": 100.92,
-      "pct_portfolio": 3.58
-    },
-    {
-      "symbol": "SOUN",
-      "underlying_symbol": "SOUN",
-      "type": "EQUITY",
-      "quantity": 110,
-      "direction": "Long",
-      "avg_open_price": 6.94206727,
-      "current_price": 4.825,
-      "p_l": -232.87739969999996,
-      "p_l_percent": -30.496207940088137,
-      "cost_basis": 763.6273997,
-      "multiplier": 1.0,
-      "total_value": 530.75,
-      "pct_portfolio": 18.84
+      "total_value": 91.53,
+      "pct_portfolio": 3.43
     },
     {
       "symbol": "ACHR",
@@ -87,13 +87,13 @@
       "quantity": 110,
       "direction": "Long",
       "avg_open_price": 5.51976818,
-      "current_price": 4.15,
-      "p_l": -150.67449979999995,
-      "p_l_percent": -24.81568311080774,
+      "current_price": 4.0,
+      "p_l": -167.17449979999998,
+      "p_l_percent": -27.533188540537584,
       "cost_basis": 607.1744997999999,
       "multiplier": 1.0,
-      "total_value": 456.50000000000006,
-      "pct_portfolio": 16.21
+      "total_value": 440.0,
+      "pct_portfolio": 16.48
     },
     {
       "symbol": "ONDS",
@@ -102,13 +102,13 @@
       "quantity": 110,
       "direction": "Long",
       "avg_open_price": 8.45717,
-      "current_price": 6.195,
-      "p_l": -248.83869999999993,
-      "p_l_percent": -26.748545908383058,
+      "current_price": 5.890000000000001,
+      "p_l": -282.3886999999999,
+      "p_l_percent": -30.35495325268381,
       "cost_basis": 930.2887,
       "multiplier": 1.0,
-      "total_value": 681.45,
-      "pct_portfolio": 24.19
+      "total_value": 647.9000000000001,
+      "pct_portfolio": 24.26
     },
     {
       "symbol": "BTG",
@@ -117,16 +117,61 @@
       "quantity": 20,
       "direction": "Long",
       "avg_open_price": 4.11418,
-      "current_price": 5.275,
-      "p_l": 23.216400000000004,
-      "p_l_percent": 28.215099971318708,
+      "current_price": 5.145,
+      "p_l": 20.616399999999988,
+      "p_l_percent": 25.055296559703255,
       "cost_basis": 82.2836,
       "multiplier": 1.0,
-      "total_value": 105.5,
-      "pct_portfolio": 3.75
+      "total_value": 102.89999999999999,
+      "pct_portfolio": 3.85
     }
   ],
   "transactions": [
+    {
+      "id": 483737411,
+      "date": "2026-10-20 11:50",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BULL @ 5.84",
+      "symbol": "BULL",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 5.84,
+      "value": -5.84,
+      "net_value": -5.841,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 483737370,
+      "date": "2026-10-20 11:49",
+      "type": "Trade",
+      "sub_type": "Sell to Close",
+      "description": "Sold 220 RR @ 1.24",
+      "symbol": "RR",
+      "action": "Sell to Close",
+      "quantity": 220.0,
+      "price": 1.24,
+      "value": 272.8,
+      "net_value": 272.614,
+      "commission": 0,
+      "fees": -0.186
+    },
+    {
+      "id": 483494788,
+      "date": "2026-10-19 14:33",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BULL @ 5.92",
+      "symbol": "BULL",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 5.915,
+      "value": -5.915,
+      "net_value": -5.916,
+      "commission": 0,
+      "fees": -0.001
+    },
     {
       "id": 483331973,
       "date": "2026-10-16 20:00",
@@ -3831,80 +3876,35 @@
       "net_value": 268.421,
       "commission": 0,
       "fees": -0.11
-    },
-    {
-      "id": 443164577,
-      "date": "2026-05-18 17:30",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 3 RR @ 2.48",
-      "symbol": "RR",
-      "action": "Buy to Open",
-      "quantity": 3.0,
-      "price": 2.48,
-      "value": -7.44,
-      "net_value": -7.443,
-      "commission": 0,
-      "fees": -0.003
-    },
-    {
-      "id": 443162820,
-      "date": "2026-05-18 17:27",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 1 BTG @ 4.75",
-      "symbol": "BTG",
-      "action": "Buy to Open",
-      "quantity": 1.0,
-      "price": 4.7483,
-      "value": -4.748,
-      "net_value": -4.749,
-      "commission": 0,
-      "fees": -0.001
-    },
-    {
-      "id": 443007482,
-      "date": "2026-05-18 14:13",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 0.1 BOXX @ 116.75",
-      "symbol": "BOXX",
-      "action": "Buy to Open",
-      "quantity": 0.1,
-      "price": 116.7475,
-      "value": -11.675,
-      "net_value": -11.775,
-      "commission": 0,
-      "fees": -0.1
     }
   ],
   "analytics": {
-    "updated": "2026-10-19T07:30:29.258937",
+    "updated": "2026-10-20T07:30:28.166266",
     "sector_allocation": {
-      "Industrials": 38.7,
-      "Technology": 53.7,
-      "Financial Services": 3.7,
-      "Basic Materials": 3.9
+      "Technology": 60.0,
+      "Industrials": 31.7,
+      "Financial Services": 3.9,
+      "Basic Materials": 4.4
     },
     "missing_sectors": [
-      "Utilities",
+      "Communication Services",
       "Real Estate",
-      "Consumer Cyclical",
       "Energy",
-      "Healthcare",
       "Consumer Defensive",
-      "Communication Services"
+      "Healthcare",
+      "Consumer Cyclical",
+      "Utilities"
     ],
     "stats": {
-      "sharpe": 0.1,
-      "sortino": 0.14,
-      "calmar": -0.47,
-      "max_drawdown": -48.2,
-      "volatility": 102.5,
-      "win_rate": 43.0,
-      "var": -8.8,
-      "best_day": 22.5,
-      "worst_day": -24.4
+      "sharpe": 0.49,
+      "sortino": 0.69,
+      "calmar": -0.08,
+      "max_drawdown": -50.3,
+      "volatility": 108.8,
+      "win_rate": 44.0,
+      "var": -9.2,
+      "best_day": 23.7,
+      "worst_day": -25.7
     }
   }
 }
