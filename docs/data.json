@@ -1,8 +1,8 @@
 {
-  "last_refresh": "2026-11-12T07:30:48.770375",
+  "last_refresh": "2026-11-13T07:31:10.096077",
   "balance": {
-    "net_liq": 2591.917,
-    "net_liquidating_value": 2591.917,
+    "net_liq": 2506.399,
+    "net_liquidating_value": 2506.399,
     "equity_buying_power": 7.659
   },
   "ytd_deposits": 4028.0,
@@ -14,13 +14,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.12,
-      "current_price": 0.13,
-      "p_l": 1.0000000000000009,
-      "p_l_percent": 8.333333333333341,
+      "current_price": 0.09,
+      "p_l": -3.0,
+      "p_l_percent": -25.0,
       "cost_basis": 12.0,
       "multiplier": 100.0,
-      "total_value": 13.0,
-      "pct_portfolio": 0.5
+      "total_value": 9.0,
+      "pct_portfolio": 0.36
     },
     {
       "symbol": "BULL",
@@ -29,13 +29,13 @@
       "quantity": 114,
       "direction": "Long",
       "avg_open_price": 5.98204386,
-      "current_price": 5.15,
-      "p_l": -94.85300003999997,
-      "p_l_percent": -13.90902306089076,
+      "current_price": 4.970000000000001,
+      "p_l": -115.37300003999994,
+      "p_l_percent": -16.918028080121758,
       "cost_basis": 681.95300004,
       "multiplier": 1.0,
-      "total_value": 587.1,
-      "pct_portfolio": 22.65
+      "total_value": 566.58,
+      "pct_portfolio": 22.61
     },
     {
       "symbol": "JOBY (CC)",
@@ -43,9 +43,9 @@
       "direction": "Net Long",
       "quantity": "105 / -1",
       "avg_open_price": 4.529247619047619,
-      "current_price": 5.734999999999999,
-      "p_l": 132.60399999999998,
-      "p_l_percent": 27.88311314188628,
+      "current_price": 5.385,
+      "p_l": 92.85399999999998,
+      "p_l_percent": 19.524739733919855,
       "is_composite": true,
       "description": "True Basis: $4.53/sh",
       "cost_basis": 475.57099999999997
@@ -57,13 +57,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 54.99,
-      "current_price": 53.165,
-      "p_l": -1.8250000000000028,
-      "p_l_percent": -3.318785233678856,
+      "current_price": 50.510000000000005,
+      "p_l": -4.479999999999997,
+      "p_l_percent": -8.14693580651027,
       "cost_basis": 54.99,
       "multiplier": 1.0,
-      "total_value": 53.165,
-      "pct_portfolio": 2.05
+      "total_value": 50.510000000000005,
+      "pct_portfolio": 2.02
     },
     {
       "symbol": "NVDA",
@@ -72,13 +72,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 213.2273,
-      "current_price": 158.69,
-      "p_l": -54.537300000000016,
-      "p_l_percent": -25.5770719790571,
+      "current_price": 168.945,
+      "p_l": -44.28230000000002,
+      "p_l_percent": -20.767650296186286,
       "cost_basis": 213.2273,
       "multiplier": 1.0,
-      "total_value": 158.69,
-      "pct_portfolio": 6.12
+      "total_value": 168.945,
+      "pct_portfolio": 6.74
     },
     {
       "symbol": "NBIS",
@@ -87,13 +87,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 171.58,
-      "current_price": 130.74,
-      "p_l": -40.84,
-      "p_l_percent": -23.80230796130085,
+      "current_price": 126.64500000000001,
+      "p_l": -44.935,
+      "p_l_percent": -26.188949761044412,
       "cost_basis": 171.58,
       "multiplier": 1.0,
-      "total_value": 130.74,
-      "pct_portfolio": 5.04
+      "total_value": 126.64500000000001,
+      "pct_portfolio": 5.05
     },
     {
       "symbol": "RR    270319C00003000",
@@ -102,13 +102,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.24,
-      "current_price": 0.03,
-      "p_l": -21.0,
-      "p_l_percent": -87.5,
+      "current_price": 0.02,
+      "p_l": -22.0,
+      "p_l_percent": -91.66666666666666,
       "cost_basis": 24.0,
       "multiplier": 100.0,
-      "total_value": 3.0,
-      "pct_portfolio": 0.12
+      "total_value": 2.0,
+      "pct_portfolio": 0.08
     },
     {
       "symbol": "GLXY",
@@ -117,13 +117,13 @@
       "quantity": 22,
       "direction": "Long",
       "avg_open_price": 17.02673182,
-      "current_price": 15.0,
-      "p_l": -44.588100039999965,
-      "p_l_percent": -11.90323452219616,
+      "current_price": 14.89,
+      "p_l": -47.00810003999995,
+      "p_l_percent": -12.549277469033385,
       "cost_basis": 374.58810004,
       "multiplier": 1.0,
-      "total_value": 330.0,
-      "pct_portfolio": 12.73
+      "total_value": 327.58000000000004,
+      "pct_portfolio": 13.07
     },
     {
       "symbol": "ONDS",
@@ -132,13 +132,13 @@
       "quantity": 105,
       "direction": "Long",
       "avg_open_price": 8.47399714,
-      "current_price": 5.699999999999999,
-      "p_l": -291.26969970000005,
-      "p_l_percent": -32.73540330696879,
+      "current_price": 5.355,
+      "p_l": -327.49469969999996,
+      "p_l_percent": -36.80668152786277,
       "cost_basis": 889.7696996999999,
       "multiplier": 1.0,
-      "total_value": 598.4999999999999,
-      "pct_portfolio": 23.09
+      "total_value": 562.2750000000001,
+      "pct_portfolio": 22.43
     },
     {
       "symbol": "BTG",
@@ -147,13 +147,13 @@
       "quantity": 26,
       "direction": "Long",
       "avg_open_price": 4.38476154,
-      "current_price": 5.075,
-      "p_l": 17.946199959999994,
-      "p_l_percent": 15.74175593594537,
+      "current_price": 4.98,
+      "p_l": 15.47619996,
+      "p_l_percent": 13.575161489853791,
       "cost_basis": 114.00380004000002,
       "multiplier": 1.0,
-      "total_value": 131.95000000000002,
-      "pct_portfolio": 5.09
+      "total_value": 129.48000000000002,
+      "pct_portfolio": 5.17
     }
   ],
   "transactions": [
@@ -3909,32 +3909,32 @@
     }
   ],
   "analytics": {
-    "updated": "2026-11-12T07:30:39.509481",
+    "updated": "2026-11-13T07:31:00.940133",
     "sector_allocation": {
-      "Technology": 51.9,
-      "Industrials": 23.4,
+      "Technology": 52.0,
+      "Industrials": 22.7,
       "Energy": 2.0,
       "Communication Services": 5.0,
-      "Financial Services": 12.6,
-      "Basic Materials": 5.0
+      "Financial Services": 13.0,
+      "Basic Materials": 5.2
     },
     "missing_sectors": [
-      "Consumer Defensive",
-      "Consumer Cyclical",
       "Healthcare",
-      "Utilities",
-      "Real Estate"
+      "Consumer Defensive",
+      "Real Estate",
+      "Consumer Cyclical",
+      "Utilities"
     ],
     "stats": {
       "sharpe": -0.49,
       "sortino": -0.69,
       "calmar": -1.27,
-      "max_drawdown": -54.6,
-      "volatility": 134.2,
+      "max_drawdown": -56.0,
+      "volatility": 138.8,
       "win_rate": 37.0,
-      "var": -11.7,
-      "best_day": 24.5,
-      "worst_day": -26.5
+      "var": -12.1,
+      "best_day": 25.3,
+      "worst_day": -27.4
     }
   }
 }
