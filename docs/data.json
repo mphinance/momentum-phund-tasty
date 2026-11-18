@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-11-17T07:30:49.230594",
+  "last_refresh": "2026-11-18T07:31:04.332263",
   "balance": {
-    "net_liq": 2301.099,
-    "net_liquidating_value": 2301.099,
-    "equity_buying_power": 33.679
+    "net_liq": 2209.414,
+    "net_liquidating_value": 2209.414,
+    "equity_buying_power": 20.308
   },
   "ytd_deposits": 4028.0,
   "positions": [
@@ -13,9 +13,9 @@
       "direction": "Net Long",
       "quantity": "105 / -1",
       "avg_open_price": 4.663723809523809,
-      "current_price": 4.74,
-      "p_l": 8.169000000000096,
-      "p_l_percent": 1.668194841236636,
+      "current_price": 4.470000000000001,
+      "p_l": -20.330999999999904,
+      "p_l_percent": -4.151801850554718,
       "is_composite": true,
       "description": "True Basis: $4.66/sh",
       "cost_basis": 489.691
@@ -27,13 +27,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.13,
-      "current_price": 0.03,
-      "p_l": -10.0,
-      "p_l_percent": -76.92307692307693,
+      "current_price": 0.02,
+      "p_l": -11.0,
+      "p_l_percent": -84.61538461538461,
       "cost_basis": 13.0,
       "multiplier": 100.0,
-      "total_value": 3.0,
-      "pct_portfolio": 0.13
+      "total_value": 2.0,
+      "pct_portfolio": 0.09
     },
     {
       "symbol": "BULL  261120C00005500",
@@ -42,13 +42,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.12,
-      "current_price": 0.07,
-      "p_l": -4.999999999999999,
-      "p_l_percent": -41.66666666666666,
+      "current_price": 0.05,
+      "p_l": -6.999999999999999,
+      "p_l_percent": -58.33333333333333,
       "cost_basis": 12.0,
       "multiplier": 100.0,
-      "total_value": 7.000000000000001,
-      "pct_portfolio": 0.3
+      "total_value": 5.0,
+      "pct_portfolio": 0.23
     },
     {
       "symbol": "BULL",
@@ -57,13 +57,13 @@
       "quantity": 114,
       "direction": "Long",
       "avg_open_price": 5.98204386,
-      "current_price": 4.96,
-      "p_l": -116.51300004000001,
-      "p_l_percent": -17.0851950256346,
+      "current_price": 4.83,
+      "p_l": -131.33300004,
+      "p_l_percent": -19.258365317301436,
       "cost_basis": 681.95300004,
       "multiplier": 1.0,
-      "total_value": 565.4399999999999,
-      "pct_portfolio": 24.57
+      "total_value": 550.62,
+      "pct_portfolio": 24.92
     },
     {
       "symbol": "NVDA",
@@ -72,13 +72,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 213.2273,
-      "current_price": 157.9,
-      "p_l": -55.32730000000001,
-      "p_l_percent": -25.947568627469376,
+      "current_price": 160.28,
+      "p_l": -52.94730000000001,
+      "p_l_percent": -24.83138885123997,
       "cost_basis": 213.2273,
       "multiplier": 1.0,
-      "total_value": 157.9,
-      "pct_portfolio": 6.86
+      "total_value": 160.28,
+      "pct_portfolio": 7.25
     },
     {
       "symbol": "NBIS",
@@ -87,13 +87,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 171.58,
-      "current_price": 110.445,
-      "p_l": -61.13500000000002,
-      "p_l_percent": -35.6306096281618,
+      "current_price": 110.605,
+      "p_l": -60.97500000000001,
+      "p_l_percent": -35.537358666511246,
       "cost_basis": 171.58,
       "multiplier": 1.0,
-      "total_value": 110.445,
-      "pct_portfolio": 4.8
+      "total_value": 110.605,
+      "pct_portfolio": 5.01
     },
     {
       "symbol": "RR    270319C00003000",
@@ -114,16 +114,16 @@
       "symbol": "GLXY",
       "underlying_symbol": "GLXY",
       "type": "EQUITY",
-      "quantity": 23,
+      "quantity": 24,
       "direction": "Long",
-      "avg_open_price": 16.83948261,
-      "current_price": 13.3,
-      "p_l": -81.40810003000001,
-      "p_l_percent": -21.018951068592244,
-      "cost_basis": 387.30810003000005,
+      "avg_open_price": 16.69492083,
+      "current_price": 13.335,
+      "p_l": -80.63809992,
+      "p_l_percent": -20.125407387152013,
+      "cost_basis": 400.67809992,
       "multiplier": 1.0,
-      "total_value": 305.90000000000003,
-      "pct_portfolio": 13.29
+      "total_value": 320.04,
+      "pct_portfolio": 14.49
     },
     {
       "symbol": "ONDS",
@@ -132,13 +132,13 @@
       "quantity": 105,
       "direction": "Long",
       "avg_open_price": 8.47399714,
-      "current_price": 4.6850000000000005,
-      "p_l": -397.8446996999999,
-      "p_l_percent": -44.71322184090328,
+      "current_price": 4.43,
+      "p_l": -424.6196997,
+      "p_l_percent": -47.72242748243364,
       "cost_basis": 889.7696996999999,
       "multiplier": 1.0,
-      "total_value": 491.92500000000007,
-      "pct_portfolio": 21.38
+      "total_value": 465.15,
+      "pct_portfolio": 21.05
     },
     {
       "symbol": "BTG",
@@ -147,16 +147,31 @@
       "quantity": 26,
       "direction": "Long",
       "avg_open_price": 4.38476154,
-      "current_price": 4.765000000000001,
-      "p_l": 9.886199960000004,
-      "p_l_percent": 8.671816164488618,
+      "current_price": 4.595000000000001,
+      "p_l": 5.466199960000006,
+      "p_l_percent": 4.794752418851042,
       "cost_basis": 114.00380004000002,
       "multiplier": 1.0,
-      "total_value": 123.89000000000001,
-      "pct_portfolio": 5.38
+      "total_value": 119.47000000000001,
+      "pct_portfolio": 5.41
     }
   ],
   "transactions": [
+    {
+      "id": 491788035,
+      "date": "2026-11-17 13:33",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 GLXY @ 13.37",
+      "symbol": "GLXY",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 13.37,
+      "value": -13.37,
+      "net_value": -13.371,
+      "commission": 0,
+      "fees": -0.001
+    },
     {
       "id": 491408382,
       "date": "2026-11-16 15:28",
@@ -3891,50 +3906,35 @@
       "net_value": 18.867,
       "commission": -1.0,
       "fees": -0.133
-    },
-    {
-      "id": 464497998,
-      "date": "2026-08-06 21:00",
-      "type": "Money Movement",
-      "sub_type": "Deposit",
-      "description": "ACH DEPOSIT",
-      "symbol": "",
-      "action": "",
-      "quantity": 0,
-      "price": 0,
-      "value": 25.0,
-      "net_value": 25.0,
-      "commission": 0,
-      "fees": 0.0
     }
   ],
   "analytics": {
-    "updated": "2026-11-17T07:30:39.917657",
+    "updated": "2026-11-18T07:30:52.470378",
     "sector_allocation": {
-      "Industrials": 22.2,
-      "Technology": 53.9,
-      "Communication Services": 4.9,
-      "Financial Services": 13.5,
-      "Basic Materials": 5.5
+      "Industrials": 21.5,
+      "Technology": 53.6,
+      "Communication Services": 5.0,
+      "Financial Services": 14.5,
+      "Basic Materials": 5.4
     },
     "missing_sectors": [
-      "Consumer Cyclical",
-      "Energy",
-      "Utilities",
-      "Real Estate",
       "Consumer Defensive",
-      "Healthcare"
+      "Real Estate",
+      "Utilities",
+      "Healthcare",
+      "Energy",
+      "Consumer Cyclical"
     ],
     "stats": {
-      "sharpe": -0.41,
-      "sortino": -0.57,
-      "calmar": -1.2,
-      "max_drawdown": -59.7,
-      "volatility": 148.1,
-      "win_rate": 40.0,
-      "var": -12.9,
-      "best_day": 27.5,
-      "worst_day": -29.8
+      "sharpe": -0.46,
+      "sortino": -0.65,
+      "calmar": -1.23,
+      "max_drawdown": -61.5,
+      "volatility": 154.2,
+      "win_rate": 38.0,
+      "var": -13.5,
+      "best_day": 28.7,
+      "worst_day": -31.1
     }
   }
 }
