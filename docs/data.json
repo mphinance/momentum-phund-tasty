@@ -1,9 +1,9 @@
 {
-  "last_refresh": "2026-11-24T07:31:09.636222",
+  "last_refresh": "2026-11-25T07:31:47.162534",
   "balance": {
-    "net_liq": 1989.935,
-    "net_liquidating_value": 1989.935,
-    "equity_buying_power": 42.233
+    "net_liq": 1842.978,
+    "net_liquidating_value": 1842.978,
+    "equity_buying_power": 13.864
   },
   "ytd_deposits": 4028.0,
   "positions": [
@@ -14,13 +14,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 48.5091,
-      "current_price": 49.28,
-      "p_l": 0.7709000000000046,
-      "p_l_percent": 1.5891863588481432,
+      "current_price": 50.35,
+      "p_l": 1.8409000000000049,
+      "p_l_percent": 3.7949580594156664,
       "cost_basis": 48.5091,
       "multiplier": 1.0,
-      "total_value": 49.28,
-      "pct_portfolio": 2.48
+      "total_value": 50.35,
+      "pct_portfolio": 2.73
     },
     {
       "symbol": "JOBY (CC)",
@@ -28,9 +28,9 @@
       "direction": "Net Long",
       "quantity": "115 / -1",
       "avg_open_price": 4.604,
-      "current_price": 3.795,
-      "p_l": -93.02500000000003,
-      "p_l_percent": -17.569788085974395,
+      "current_price": 3.41,
+      "p_l": -137.19,
+      "p_l_percent": -25.911305858799526,
       "is_composite": true,
       "description": "True Basis: $4.60/sh",
       "cost_basis": 529.46
@@ -42,13 +42,13 @@
       "quantity": 1,
       "direction": "Long",
       "avg_open_price": 0.13,
-      "current_price": 0.0001,
-      "p_l": -12.990000000000002,
-      "p_l_percent": -99.92307692307693,
+      "current_price": 0.0039,
+      "p_l": -12.610000000000001,
+      "p_l_percent": -97.00000000000001,
       "cost_basis": 13.0,
       "multiplier": 100.0,
-      "total_value": 0.01,
-      "pct_portfolio": 0.0
+      "total_value": 0.38999999999999996,
+      "pct_portfolio": 0.02
     },
     {
       "symbol": "NBIS",
@@ -57,13 +57,13 @@
       "quantity": 2,
       "direction": "Long",
       "avg_open_price": 138.625,
-      "current_price": 92.86,
-      "p_l": -91.53,
-      "p_l_percent": -33.01352569882777,
+      "current_price": 81.715,
+      "p_l": -113.82,
+      "p_l_percent": -41.0532010820559,
       "cost_basis": 277.25,
       "multiplier": 1.0,
-      "total_value": 185.72,
-      "pct_portfolio": 9.33
+      "total_value": 163.43,
+      "pct_portfolio": 8.87
     },
     {
       "symbol": "BULL",
@@ -72,13 +72,13 @@
       "quantity": 118,
       "direction": "Long",
       "avg_open_price": 5.93539237,
-      "current_price": 4.42,
-      "p_l": -178.81629965999997,
-      "p_l_percent": -25.531460694316323,
+      "current_price": 4.13,
+      "p_l": -213.03629966,
+      "p_l_percent": -30.417405580888328,
       "cost_basis": 700.37629966,
       "multiplier": 1.0,
-      "total_value": 521.56,
-      "pct_portfolio": 26.21
+      "total_value": 487.34,
+      "pct_portfolio": 26.44
     },
     {
       "symbol": "RR    270319C00003000",
@@ -93,40 +93,85 @@
       "cost_basis": 24.0,
       "multiplier": 100.0,
       "total_value": 2.0,
-      "pct_portfolio": 0.1
+      "pct_portfolio": 0.11
     },
     {
       "symbol": "GLXY",
       "underlying_symbol": "GLXY",
       "type": "EQUITY",
-      "quantity": 27,
+      "quantity": 29,
       "direction": "Long",
-      "avg_open_price": 16.25383333,
-      "current_price": 12.005,
-      "p_l": -114.71849990999995,
-      "p_l_percent": -26.140500174551732,
-      "cost_basis": 438.85349991,
+      "avg_open_price": 15.95977586,
+      "current_price": 10.95,
+      "p_l": -145.28349994000004,
+      "p_l_percent": -31.390013894593636,
+      "cost_basis": 462.83349994,
       "multiplier": 1.0,
-      "total_value": 324.13500000000005,
-      "pct_portfolio": 16.29
+      "total_value": 317.54999999999995,
+      "pct_portfolio": 17.23
     },
     {
       "symbol": "BTG",
       "underlying_symbol": "BTG",
       "type": "EQUITY",
-      "quantity": 100,
+      "quantity": 101,
       "direction": "Long",
-      "avg_open_price": 4.390968,
-      "current_price": 4.3149999999999995,
-      "p_l": -7.596800000000048,
-      "p_l_percent": -1.7300968715782141,
-      "cost_basis": 439.0968,
+      "avg_open_price": 4.39091881,
+      "current_price": 4.215,
+      "p_l": -17.767799809999975,
+      "p_l_percent": -4.00642365783119,
+      "cost_basis": 443.48279980999996,
       "multiplier": 1.0,
-      "total_value": 431.49999999999994,
-      "pct_portfolio": 21.68
+      "total_value": 425.715,
+      "pct_portfolio": 23.1
     }
   ],
   "transactions": [
+    {
+      "id": 494057793,
+      "date": "2026-11-24 13:38",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 BTG @ 4.39",
+      "symbol": "BTG",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 4.386,
+      "value": -4.386,
+      "net_value": -4.387,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 494057539,
+      "date": "2026-11-24 13:35",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 GLXY @ 11.99",
+      "symbol": "GLXY",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 11.99,
+      "value": -11.99,
+      "net_value": -11.991,
+      "commission": 0,
+      "fees": -0.001
+    },
+    {
+      "id": 494057472,
+      "date": "2026-11-24 13:34",
+      "type": "Trade",
+      "sub_type": "Buy to Open",
+      "description": "Bought 1 GLXY @ 11.99",
+      "symbol": "GLXY",
+      "action": "Buy to Open",
+      "quantity": 1.0,
+      "price": 11.99,
+      "value": -11.99,
+      "net_value": -11.991,
+      "commission": 0,
+      "fees": -0.001
+    },
     {
       "id": 493860247,
       "date": "2026-11-23 17:39",
@@ -3831,80 +3876,35 @@
       "net_value": -46.12,
       "commission": -1.0,
       "fees": -0.12000000000000001
-    },
-    {
-      "id": 467990736,
-      "date": "2026-08-20 13:30",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 2 SOFI 09/18/26 Call 20.00 @ 0.60",
-      "symbol": "SOFI  260918C00020000",
-      "action": "Buy to Open",
-      "quantity": 2.0,
-      "price": 0.6,
-      "value": -120.0,
-      "net_value": -122.24,
-      "commission": -2.0,
-      "fees": -0.24000000000000002
-    },
-    {
-      "id": 467985803,
-      "date": "2026-08-20 13:05",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 40 RR @ 1.62",
-      "symbol": "RR",
-      "action": "Buy to Open",
-      "quantity": 40.0,
-      "price": 1.62,
-      "value": -64.8,
-      "net_value": -64.832,
-      "commission": 0,
-      "fees": -0.032
-    },
-    {
-      "id": 467985068,
-      "date": "2026-08-20 13:01",
-      "type": "Trade",
-      "sub_type": "Buy to Open",
-      "description": "Bought 10 RR @ 1.62",
-      "symbol": "RR",
-      "action": "Buy to Open",
-      "quantity": 10.0,
-      "price": 1.615,
-      "value": -16.15,
-      "net_value": -16.158,
-      "commission": 0,
-      "fees": -0.008
     }
   ],
   "analytics": {
-    "updated": "2026-11-24T07:30:36.154671",
+    "updated": "2026-11-25T07:31:04.278000",
     "sector_allocation": {
-      "Industrials": 22.5,
-      "Communication Services": 9.5,
-      "Technology": 26.7,
-      "Financial Services": 16.6,
-      "Basic Materials": 22.1
+      "Industrials": 21.5,
+      "Communication Services": 8.9,
+      "Technology": 26.5,
+      "Financial Services": 17.3,
+      "Basic Materials": 23.1
     },
     "missing_sectors": [
-      "Consumer Defensive",
-      "Utilities",
-      "Healthcare",
-      "Energy",
       "Consumer Cyclical",
-      "Real Estate"
+      "Healthcare",
+      "Real Estate",
+      "Energy",
+      "Utilities",
+      "Consumer Defensive"
     ],
     "stats": {
-      "sharpe": -2.37,
-      "sortino": -2.96,
-      "calmar": -1.48,
-      "max_drawdown": -66.4,
-      "volatility": 160.0,
+      "sharpe": -2.1,
+      "sortino": -2.66,
+      "calmar": -1.39,
+      "max_drawdown": -70.3,
+      "volatility": 168.8,
       "win_rate": 34.0,
-      "var": -14.8,
-      "best_day": 24.9,
-      "worst_day": -34.5
+      "var": -15.5,
+      "best_day": 26.8,
+      "worst_day": -37.2
     }
   }
 }
