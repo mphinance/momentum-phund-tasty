@@ -6,8 +6,8 @@
     "price": 3.21,
     "strike": 3.0,
     "capital": 300.0,
-    "dte": 8,
-    "roc_weekly": 2.33,
+    "dte": 7,
+    "roc_weekly": 2.67,
     "expiry": "2026-12-04"
   },
   {
@@ -17,8 +17,8 @@
     "price": 4.48,
     "strike": 4.0,
     "capital": 400.0,
-    "dte": 8,
-    "roc_weekly": 2.19,
+    "dte": 7,
+    "roc_weekly": 2.5,
     "expiry": "2026-12-04"
   },
   {
@@ -28,8 +28,8 @@
     "price": 12.42,
     "strike": 11.0,
     "capital": 1100.0,
-    "dte": 8,
-    "roc_weekly": 2.55,
+    "dte": 7,
+    "roc_weekly": 2.82,
     "expiry": "2026-12-04"
   },
   {
@@ -39,20 +39,9 @@
     "price": 12.77,
     "strike": 11.5,
     "capital": 1150.0,
-    "dte": 8,
-    "roc_weekly": 2.66,
+    "dte": 7,
+    "roc_weekly": 2.61,
     "expiry": "2026-12-04"
-  },
-  {
-    "symbol": "RLAY",
-    "name": "Relay Therapeutics, Inc.",
-    "sector": "Health Technology",
-    "price": 18.24,
-    "strike": 16.0,
-    "capital": 1600.0,
-    "dte": 22,
-    "roc_weekly": 1.39,
-    "expiry": "2026-12-18"
   },
   {
     "symbol": "S",
@@ -61,20 +50,9 @@
     "price": 24.09,
     "strike": 21.5,
     "capital": 2150.0,
-    "dte": 8,
-    "roc_weekly": 2.95,
+    "dte": 7,
+    "roc_weekly": 3.72,
     "expiry": "2026-12-04"
-  },
-  {
-    "symbol": "TNGX",
-    "name": "Tango Therapeutics, Inc.",
-    "sector": "Health Technology",
-    "price": 25.0,
-    "strike": 22.0,
-    "capital": 2200.0,
-    "dte": 22,
-    "roc_weekly": 1.41,
-    "expiry": "2026-12-18"
   },
   {
     "symbol": "NAVN",
@@ -83,20 +61,20 @@
     "price": 27.11,
     "strike": 25.0,
     "capital": 2500.0,
-    "dte": 22,
-    "roc_weekly": 1.81,
+    "dte": 21,
+    "roc_weekly": 1.84,
     "expiry": "2026-12-18"
   },
   {
-    "symbol": "ZETA",
-    "name": "Zeta Global Holdings Corp.",
-    "sector": "Technology Services",
-    "price": 31.97,
-    "strike": 29.0,
-    "capital": 2900.0,
-    "dte": 8,
-    "roc_weekly": 1.77,
-    "expiry": "2026-12-04"
+    "symbol": "DFTX",
+    "name": "Definium Therapeutics, Inc.",
+    "sector": "Health Technology",
+    "price": 31.09,
+    "strike": 28.0,
+    "capital": 2800.0,
+    "dte": 21,
+    "roc_weekly": 2.32,
+    "expiry": "2026-12-18"
   },
   {
     "symbol": "AXTA",
@@ -105,8 +83,8 @@
     "price": 36.06,
     "strike": 32.0,
     "capital": 3200.0,
-    "dte": 22,
-    "roc_weekly": 1.69,
+    "dte": 21,
+    "roc_weekly": 1.77,
     "expiry": "2026-12-18"
   },
   {
@@ -116,8 +94,8 @@
     "price": 38.86,
     "strike": 35.0,
     "capital": 3500.0,
-    "dte": 8,
-    "roc_weekly": 3.0,
+    "dte": 7,
+    "roc_weekly": 3.71,
     "expiry": "2026-12-04"
   },
   {
@@ -127,20 +105,20 @@
     "price": 45.17,
     "strike": 41.0,
     "capital": 4100.0,
-    "dte": 8,
-    "roc_weekly": 2.56,
+    "dte": 7,
+    "roc_weekly": 5.0,
     "expiry": "2026-12-04"
   },
   {
-    "symbol": "FRO",
-    "name": "Frontline Plc",
-    "sector": "Transportation",
-    "price": 47.65,
-    "strike": 45.0,
-    "capital": 4500.0,
-    "dte": 22,
-    "roc_weekly": 1.82,
-    "expiry": "2026-12-18"
+    "symbol": "U",
+    "name": "Unity Software Inc.",
+    "sector": "Technology Services",
+    "price": 48.24,
+    "strike": 43.5,
+    "capital": 4350.0,
+    "dte": 7,
+    "roc_weekly": 1.75,
+    "expiry": "2026-12-04"
   },
   {
     "symbol": "TXG",
@@ -149,8 +127,8 @@
     "price": 55.68,
     "strike": 50.0,
     "capital": 5000.0,
-    "dte": 22,
-    "roc_weekly": 1.72,
+    "dte": 21,
+    "roc_weekly": 2.2,
     "expiry": "2026-12-18"
   },
   {
@@ -160,8 +138,8 @@
     "price": 61.01,
     "strike": 55.0,
     "capital": 5500.0,
-    "dte": 22,
-    "roc_weekly": 1.68,
+    "dte": 21,
+    "roc_weekly": 1.76,
     "expiry": "2026-12-18"
   },
   {
@@ -171,8 +149,8 @@
     "price": 76.79,
     "strike": 70.0,
     "capital": 7000.0,
-    "dte": 22,
-    "roc_weekly": 1.47,
+    "dte": 21,
+    "roc_weekly": 1.71,
     "expiry": "2026-12-18"
   },
   {
@@ -182,8 +160,8 @@
     "price": 80.75,
     "strike": 73.0,
     "capital": 7300.0,
-    "dte": 8,
-    "roc_weekly": 2.52,
+    "dte": 7,
+    "roc_weekly": 5.95,
     "expiry": "2026-12-04"
   },
   {
@@ -193,9 +171,20 @@
     "price": 84.84,
     "strike": 76.0,
     "capital": 7600.0,
-    "dte": 8,
-    "roc_weekly": 1.84,
+    "dte": 7,
+    "roc_weekly": 2.11,
     "expiry": "2026-12-04"
+  },
+  {
+    "symbol": "XMTR",
+    "name": "Xometry, Inc.",
+    "sector": "Technology Services",
+    "price": 107.25,
+    "strike": 95.0,
+    "capital": 9500.0,
+    "dte": 21,
+    "roc_weekly": 1.99,
+    "expiry": "2026-12-18"
   },
   {
     "symbol": "TWST",
@@ -204,8 +193,8 @@
     "price": 108.07,
     "strike": 95.0,
     "capital": 9500.0,
-    "dte": 22,
-    "roc_weekly": 1.79,
+    "dte": 21,
+    "roc_weekly": 1.75,
     "expiry": "2026-12-18"
   },
   {
@@ -215,8 +204,8 @@
     "price": 107.97,
     "strike": 97.0,
     "capital": 9700.0,
-    "dte": 8,
-    "roc_weekly": 3.07,
+    "dte": 7,
+    "roc_weekly": 3.61,
     "expiry": "2026-12-04"
   },
   {
@@ -226,20 +215,20 @@
     "price": 148.47,
     "strike": 135.0,
     "capital": 13500.0,
-    "dte": 22,
-    "roc_weekly": 1.83,
+    "dte": 21,
+    "roc_weekly": 2.26,
     "expiry": "2026-12-18"
   },
   {
-    "symbol": "DUOL",
-    "name": "Duolingo, Inc.",
-    "sector": "Technology Services",
-    "price": 153.45,
-    "strike": 139.0,
-    "capital": 13900.0,
-    "dte": 8,
-    "roc_weekly": 1.29,
-    "expiry": "2026-12-04"
+    "symbol": "PI",
+    "name": "Impinj, Inc.",
+    "sector": "Electronic Technology",
+    "price": 154.62,
+    "strike": 140.0,
+    "capital": 14000.0,
+    "dte": 21,
+    "roc_weekly": 1.9,
+    "expiry": "2026-12-18"
   },
   {
     "symbol": "OKTA",
@@ -248,8 +237,8 @@
     "price": 201.77,
     "strike": 182.5,
     "capital": 18250.0,
-    "dte": 8,
-    "roc_weekly": 3.93,
+    "dte": 7,
+    "roc_weekly": 6.33,
     "expiry": "2026-12-04"
   },
   {
@@ -259,8 +248,19 @@
     "price": 220.84,
     "strike": 200.0,
     "capital": 20000.0,
-    "dte": 8,
-    "roc_weekly": 1.93,
+    "dte": 7,
+    "roc_weekly": 1.77,
+    "expiry": "2026-12-04"
+  },
+  {
+    "symbol": "TXN",
+    "name": "Texas Instruments Incorporated",
+    "sector": "Electronic Technology",
+    "price": 270.19,
+    "strike": 242.5,
+    "capital": 24250.0,
+    "dte": 7,
+    "roc_weekly": 3.13,
     "expiry": "2026-12-04"
   },
   {
@@ -270,8 +270,8 @@
     "price": 283.3,
     "strike": 255.0,
     "capital": 25500.0,
-    "dte": 8,
-    "roc_weekly": 1.5,
+    "dte": 7,
+    "roc_weekly": 1.87,
     "expiry": "2026-12-04"
   }
 ]
